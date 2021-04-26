@@ -1,0 +1,20 @@
+.mainWrapper{
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 320px 1fr;
+}
+
+.sidebar{
+    text-align: left;
+    overflow-y: scroll;
+    color: rgb(44, 150, 56);
+    padding: 3vw;
+    /* background: rgb(194, 166, 166); */
+}
+
+.mainArticle{
+    /* color: rgb(28, 224, 28); */
+    text-align: left;
+    overflow-y: scroll;
+    padding: 5vw;
+}

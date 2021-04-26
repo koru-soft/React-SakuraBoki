@@ -1,0 +1,10 @@
+.title{
+    color: rgb(13, 105, 205);
+    font-size: 30px;
+    padding-left: 20px;
+    border-bottom: 5px solid gray;
+}
+
+.introduction{
+    font-size: 1rem;
+}

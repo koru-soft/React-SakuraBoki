@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import TopMenu from './components/TopMenu';
 import reportWebVitals from './reportWebVitals';
+import MainFrame from './components/mainFrame';
+
+const root = document.getElementById('root');
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TopMenu />
+    <MainFrame />
   </React.StrictMode>,
-  document.getElementById('root')
+  root
 );
 
 // If you want to start measuring performance in your app, pass a function
