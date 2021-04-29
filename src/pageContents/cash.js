@@ -689,7 +689,6 @@ const cashContent = (
                 </tr>
             </table>
 	<div>B社は手形代金を受け取ることができる権利を取得したわけですから、この権利を受取手形勘定の増加として処理します。</div>
-<<<<<<< HEAD
 
 	<table border="1" cellspacing="0" class="journal">
                 <caption class="question">B社が裏書譲渡によって受け取った手形が、以前にB社自身が振り出した手形（自己振出手形）であったことが判明した</caption>
@@ -706,31 +705,6 @@ const cashContent = (
 		<div>以前、手形を振り出したときに「支払手形」の増加として処理していたものが戻ってくることにより手形代金を支払う義務が無くなるため、振り出したときとは逆に「支払手形」を減少させるわけです。</div>
 		</article>
         </section>
-=======
-
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">B社が裏書譲渡によって受け取った手形が、以前にB社自身が振り出した手形（自己振出手形）であったことが判明した</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td>支払手形　100</td>
-                    <td>売上高　100</td>
-                </tr>
-            </table>
-		<div>B社が裏書譲渡によって受け取った手形が、以前にB社自身が振り出した手形（自己振出手形）である場合には、受取手形勘定の増加ではなく支払手形勘定の減少として処理します。</div>
-		<div>以前、手形を振り出したときに「支払手形」の増加として処理していたものが戻ってくることにより手形代金を支払う義務が無くなるため、振り出したときとは逆に「支払手形」を減少させるわけです。</div>
-		</article>
-        </section>
-
-
-
-
-
-</div>
-            
->>>>>>> origin/master
 
         <Title title="手形の割引とは"/>
         <section>
@@ -1906,12 +1880,6 @@ const cashContent = (
 	<div></div>
 	<div></div>
 	<div></div>
-<<<<<<< HEAD
-=======
-                    <td>出金口座 100,000</td>
-                </tr>
-            </table>
->>>>>>> origin/master
 
             <table border="1" cellspacing="0" class="journal">
                 <caption class="question">100,000円で購入した株式を120,000円で売却した。</caption>
