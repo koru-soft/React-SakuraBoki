@@ -1,10 +1,25 @@
+/* .select_level{
+    border: 2px solid rgb(149, 126, 128);
+    display: inline;
+    margin-left: 10px;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border-radius:  5px;
+    color:rgb(149, 126, 128);
+} */
+
 .title{
-    color: rgb(13, 105, 205);
+    /* color: rgb(13, 105, 205); */
+    color: rgb(233, 88, 132);
     font-size: 30px;
     padding-left: 20px;
     border-bottom: 5px solid gray;
 }
 
-.introduction{
-    font-size: 1rem;
-}
+/* .level1{
+    grid-column: 2;
+    font-size: 30px;
+    border-bottom: 5px solid gray;
+} */
+
+

@@ -4,9 +4,14 @@ import './title.css';
 const Title = (props) => {
     return (
         <React.Fragment>
-    <h2 className="title">{ props.title }</h2>
+            {/* <div class="select_level">ボキ3級</div>
+            <div class="select_level">ボキ2級</div>
+            <div class="select_level">ボキ1級</div> */}
+                <h2 className="title">{ props.title }</h2>
+                
+                
     {/* <img src="https://dplhqivlpbfks.cloudfront.net/box_resize/1220x1240/7673efd5-2217548.jpg" width="100%"></img> */}
-    <img src="https://cdn.pixabay.com/photo/2016/11/07/00/00/maze-1804499__340.jpg" width="100%"></img>
+    {/* <img src="https://cdn.pixabay.com/photo/2016/11/07/00/00/maze-1804499__340.jpg" width="100%"></img>
     <p class="introduction">
         <div>会計は、巨大な迷路です。</div>
         <div>会計を学び始めた者の前には、幾通りもの道が示されます。</div>
@@ -18,7 +23,8 @@ const Title = (props) => {
         <div>学べば学ぶほど、新しい会計処理が眼前に現れます。</div>
         <div>臆することなく、選択して下さい。</div>
         <div>正解は1つではないからです。</div>
-    </p>
+    </p> */}
+            
     </React.Fragment>
     );
 }

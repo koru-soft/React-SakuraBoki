@@ -1,13 +1,13 @@
 import './TopMenu.css';
-import React, { Component } from 'react';
+import React from 'react';
 
 const topElement = (
     <header>
         <ul className="topMenu">
-            <li className="a li">Acc-core</li>
-            <li className="b li">BooGi</li>
-            <li className="c li">Gatsby</li>
-            <li className="d li">Docs</li>
+            <li className="a li">サクラボキ</li>
+            <li className="b li">ボキ3級</li>
+            <li className="c li">ボキ2級</li>
+            <li className="d li">ボキ1級</li>
         </ul>
     </header>
 );

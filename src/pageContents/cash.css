@@ -7,7 +7,7 @@ article{
 }
 
 .yellow{
-    color: rgba(254, 183, 3, 0.849);
+    color: rgba(204, 6, 6, 0.849);
 }
 
 .journal{
@@ -15,7 +15,7 @@ article{
     border-collapse: collapse;
     text-align: center;
     width: 100%;
-    color: rgb(0, 127, 162);
+    color: rgb(177, 78, 78);
 }
 
 .question{

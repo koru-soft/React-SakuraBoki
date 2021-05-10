@@ -1,3 +1,40 @@
+/* 追加 */
+
+.sidebar{
+    text-align: left;
+    overflow-y: scroll;
+    /* color: rgb(44, 150, 56); */
+    padding: 3vw;
+    /* background: rgb(194, 166, 166); */
+}
+
+.mainArticle{
+    /* color: rgb(28, 224, 28); */
+    text-align: left;
+    overflow-y: scroll;
+    padding: 5vw;
+}
+
+.select_level{
+    border: 2px solid rgb(149, 126, 128);
+    display: inline;
+    margin-left: 10px;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border-radius:  5px;
+    color:rgb(149, 126, 128);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+/* .margin_top{
+    
+} */
+
+/* 既存 */
+
 .sideMenu{
     padding-inline-start: 0;
     margin-block-start: 0;
@@ -8,8 +45,55 @@
     list-style: none;
     font-size: 20px;
     padding-bottom: 5px;
+    color: rgb(177, 78, 78);
+}
+
+.sideList a{
+    color: rgb(177, 78, 78);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(200, 0, 255);
+}
+
+.titleColor a{
+    /* color: rgb(1, 120, 156); */
+    color: rgb(242, 107, 107);
 }
 
 .titleColor{
-    color: rgb(1, 120, 156);
+    color: rgb(242, 107, 107);
 }
+
+.pink{
+    color: rgb(242, 107, 107);
+}
+
+.page1{
+    color: red;
+}
+
+.mainWrapper{
+    display: grid;
+    grid-template-rows: 90vh;
+    grid-template-columns: 320px 1fr;
+}
+
+/* .sidebar{
+    text-align: left;
+    overflow-y: scroll;
+    color: rgb(44, 150, 56);
+    padding: 3vw;
+    background: rgb(194, 166, 166);
+} */
+
+/* .mainArticle{
+    color: rgb(28, 224, 28);
+    text-align: left;
+    overflow-y: scroll;
+    padding: 5vw;
+} */

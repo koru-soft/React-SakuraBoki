@@ -6,13 +6,7 @@ import Cash from '../pageContents/cash';
 
 const mainFrameElement = (
     <main className="mainWrapper">
-        <aside className="sidebar">
-            <SideBar />
-        </aside>
-
-        <article className="mainArticle">
-            <TopContent />
-        </article>
+        <SideBar />
     </main>
 );
 
