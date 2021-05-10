@@ -1704,7 +1704,7 @@ const SideBar = () => {
                 <li className="sideList"><Link to="/promissory-notes">手形</Link></li>
                 <li className="sideList"><Link to="/other">その他債権債務</Link></li>
                 <li className="sideList"><Link to="/fixed-assets">固定資産</Link></li>
-                <li className="sideList">有価証券</li>
+                <li className="sideList">有価証券の会計処理</li>
                 <li className="sideList">リース取引</li>
                 <li className="sideList">研究開発費</li>
                 <li className="sideList">引当金</li>
