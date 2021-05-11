@@ -1,14 +1,39 @@
 import './sideMenu.css';
 import React, { Component } from 'react';
 import Title from './title';
+import TopImage from './サクラボキ.mp4';
 import TopContent from '../pageContents/aboutTop';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 
 // コンテンツのコンポーネント
+const Home = () => {
+    return(
+        <>
+            <video src={ TopImage } autoPlay muted playsInline className="top-image-size"></video>
+            {/* <img src={ TopImage } alt="サクラボキTOP画像" class="top-image-size"></img> */}
+            <section className="font-color">
+                <h1 className="intro">サクラボキとは</h1>
+                <div>サクラボキは、独学で日商簿記３級、２級、１級、そして税理士試験や公認会計士試験に向けた学習を志した全ての人を応援する無料学習サイトです。</div>
+            </section>
+
+            <section className="font-color">
+                <h1 className="intro">難易度選択について</h1>
+                <div>各コンテンツには「ボキ３級」「ボキ２級」「ボキ１級」といったレベル選択が出来るようになっています。内容を理解したら、より高い級のページをクリックしてみて下さい。どんどん深い話が展開されて行きます。</div>
+            </section>
+
+            <section className="font-color">
+                <h1 className="intro">サクラモードとヨザクラモードについて</h1>
+                <div>サクラモードでは、理論を学ぶことが出来ます。内容が理解出来るまで繰り返し読んでみて下さい。</div>
+                <div>ヨザクラモードでは、問題演習を行うことが出来ます。繰り返し問題を解くことで、本番での対応力を養いましょう！</div>
+            </section>
+        </>
+    );
+}
+
 const Cash = () => {
     return (
         <>
-    <div class="select_level">ボキ3級</div>
+    
     <Title title="現金とは"/>
         <section>
             <article>
@@ -1570,7 +1595,7 @@ const home = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <Cash />
+                <Home />
             </aside>
         </main>
     );
@@ -1620,6 +1645,11 @@ const cash = () => {
     return (
         <main className="mainArticle">
             <aside>
+                <div class="level_change_wrapper">
+                    <Link to="/fixed-assets"><div class="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div class="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div class="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
                 <Cash />
             </aside>
         </main>
@@ -1704,7 +1734,7 @@ const SideBar = () => {
                 <li className="sideList"><Link to="/promissory-notes">手形</Link></li>
                 <li className="sideList"><Link to="/other">その他債権債務</Link></li>
                 <li className="sideList"><Link to="/fixed-assets">固定資産</Link></li>
-                <li className="sideList">有価証券の会計処理</li>
+                <li className="sideList">有価証券</li>
                 <li className="sideList">リース取引</li>
                 <li className="sideList">研究開発費</li>
                 <li className="sideList">引当金</li>
@@ -1726,6 +1756,7 @@ const SideBar = () => {
                 <li className="sideList">財務諸表理論</li>
             </ul>
         </div>
+
               <Switch>
                 <Route exact path="/" component={ home } />
                 <Route path="/bookkeeping" component={ bookKeeping } />
@@ -1744,28 +1775,5 @@ const SideBar = () => {
             </BrowserRouter>
        );
 }
-
-// class SideBar extends Component {
-//     render(props) {
-//         console.log(props.name);
-//             return (
-//                 <BrowserRouter>
-//                 <h2 className="titleColor">Acc-coreについて</h2>
-//                 <ul className="sideMenu">
-//                     <li className="sideList"><Link to="/">簿記の仕組み</Link></li>
-//                     <li className="sideList"><Link to="/pageA">試算表</Link></li>
-//                     <li className="sideList"><Link to="/pageB">確定申告</Link></li>
-//                     <li className="sideList"><Link to="/pageC">決算</Link></li>
-//                 </ul>
-//                   <Switch>
-//                     <Route exact path="/" component={TopContent} />
-//                     <Route path="/pageA" component={PageA} />
-//                     <Route path="/pageB" component={PageB} />
-//                     <Route component={NotFound} />{/* ←pathを指定しない */}
-//                   </Switch>
-//                 </BrowserRouter>
-//               );
-//     }
-// }
 
 export default SideBar;

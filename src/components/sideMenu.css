@@ -5,6 +5,7 @@
     overflow-y: scroll;
     /* color: rgb(44, 150, 56); */
     padding: 3vw;
+    grid-column: 2;
     /* background: rgb(194, 166, 166); */
 }
 
@@ -15,15 +16,47 @@
     padding: 5vw;
 }
 
-.select_level{
-    border: 2px solid rgb(149, 126, 128);
-    display: inline;
-    margin-left: 10px;
-    padding: 5px;
-    background: rgb(255, 255, 255);
-    border-radius:  5px;
-    color:rgb(149, 126, 128);
+/* .level_change_wrapper{
+    display: grid;
+    grid-template-columns: 19vw 1vw 19vw 1vw 19vw;
 }
+
+.bookkeeping3{
+    grid-column: 1;
+}
+
+.bookkeeping2{
+    grid-column: 3;
+}
+
+.bookkeeping1{
+    grid-column: 5;
+} */
+
+.select_level{
+    border: 2px solid rgb(177, 78, 78);
+    /* display: flex; */
+    display: inline-block;
+    margin-left: 10px;
+    padding: 1vh 7vw;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    color:rgb(177, 78, 78);
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+
+.select_level:hover{
+    background: rgb(195, 255, 16);
+}
+
+.action{
+    background: rgb(182, 255, 232);
+}
+
+/* .select_level:nth-child(1){
+    margin-left: 0;
+} */
 
 section {
     margin-bottom: 50px;
@@ -32,6 +65,23 @@ section {
 /* .margin_top{
     
 } */
+
+.top-image-size {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.intro{
+    border-left: 10px solid rgb(177, 78, 78);
+    padding-left: 10px;
+    color:rgb(242, 107, 107);
+    font-size: 30px;
+}
+
+.font-color{
+    color: rgb(75, 75, 75);
+    font-size: 20px;
+}
 
 /* 既存 */
 
@@ -79,8 +129,8 @@ a:hover {
 
 .mainWrapper{
     display: grid;
-    grid-template-rows: 90vh;
-    grid-template-columns: 320px 1fr;
+    grid-template-rows: 88vh;
+    grid-template-columns: 5vw 20vw 1fr 5vw;
 }
 
 /* .sidebar{
