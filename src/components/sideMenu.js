@@ -30,6 +30,56 @@ const Home = () => {
     );
 }
 
+const Bookkeeping = () => {
+    return(
+        <>
+            <section className="font-color">
+                <h1 className="intro">簿記が必要な理由</h1>
+                <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
+                <br />
+                <div>■個人事業主の場合■</div>
+                <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
+                <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。
+                    会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
+                    日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
+
+                <br />
+                <div>■法人の場合■</div>
+                <div>会社は法律上、人格を与えられ法人と呼ばれます。人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+                <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
+
+                <h1 className="intro">簿記とは</h1>
+                <div>１年間のお金の動きを、帳簿と呼ばれるものに記録することを、略して<span className="underline font-color2">簿記</span>と呼びます。したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
+                <div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
+
+                <h1 className="intro">複式簿記とは</h1>
+                <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼びます。例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
+                <br />
+                <div>最終的に発生したもの（結果）：チョコレート</div>
+                <div>何故、その結果は発生したのか（原因）：現金100円を使ったため</div>
+                <br />
+                <div>そして、簿記ではお金の動きを記録する際、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くことにしました。これを<span className="underline font-color2">仕訳</span>と呼びます。</div>
+                <br />
+                <table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">最終的に発生したもの（結果）</th>
+                        <th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">チョコレート 100円</td>
+                        <td className="table-size table-align">現金 100円</td>
+                    </tr>
+                </table>
+                <br />
+                
+                {/* <div></div> */}
+                {/* <div className="deco1">帳簿記録のこと</div> */}
+            </section>
+        </>
+    );
+}
+
 const Cash = () => {
     return (
         <>
@@ -1601,11 +1651,11 @@ const home = () => {
     );
 }
 
-const bookKeeping = () => {
+const bookkeeping = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <Cash />
+                <Bookkeeping />
             </aside>
         </main>
     );
@@ -1759,7 +1809,7 @@ const SideBar = () => {
 
               <Switch>
                 <Route exact path="/" component={ home } />
-                <Route path="/bookkeeping" component={ bookKeeping } />
+                <Route path="/bookkeeping" component={ bookkeeping } />
                 <Route path="/trial-balance" component={ trialBalance } />
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />

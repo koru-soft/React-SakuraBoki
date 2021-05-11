@@ -79,10 +79,33 @@ section {
 }
 
 .font-color{
-    color: rgb(75, 75, 75);
+    color: rgb(78, 95, 106);
     font-size: 20px;
 }
 
+.font-color2{
+    color:rgb(81, 139, 255);
+}
+
+.deco1{
+    border: 10px dashed rgb(2, 255, 238);
+}
+
+.deco2{
+    border: 10px solid rgb(225, 255, 253);
+}
+
+.underline{
+    background: linear-gradient(transparent  70%, #fcdf08  70%);
+}
+
+.table-size{
+    width: 30vw;
+}
+
+.table-align{
+    text-align: center;
+}
 /* 既存 */
 
 .sideMenu{
