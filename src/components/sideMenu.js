@@ -595,19 +595,59 @@ const TrialBalance = () => {
 				    </tr>
 
 				    <tr>
-					<td className="table-size table-align">費用<br />（売ったらお金になるもの）</td>
-					<td className="table-size table-align">収益<br />（他人から借りた）</td>
+					<td className="table-size table-align">費用<br />（事業活動で発生したお金）</td>
+					<td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td>
 				    </tr>
 				　　<tr>
 					<td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td>
 					<td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td>
 				    </tr>
 				</table>
-			</section>
+				<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
+				<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「売上を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
+				
+			<h1 className="intro">損益計算書と貸借対照表のつながりについて</h1>
+			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
+			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
+			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span class="pink">クリーン・サープラス関係</span>と呼びます。</div>
+		</section>
 		</>
 	);
 }
 
+const FinalTaxReturn = () => {
+	return(
+		<>
+		　　　<section className="font-color">
+			<h1 className="intro">確定申告とは</h1>
+			<div>個人事業主が1年間の損益を算出し、所得税の金額を確定させることを<span class="pink">確定申告</span>と呼びます。</div>
+			
+			<div>このセクションでは、確定申告までの簡単な流れを抑えることが目的となります。</div>
+		
+			<h1 className="intro">控除とは</h1>
+			<div>1年間の損益は、1年間に獲得した収益から、1年間に発生した費用を引いた金額になります。</div>
+			<div>ただし、この損益に対して直接税率がかかるというものではなく、この金額からさらに各種の控除を引いた金額に対して、税率がかかってくるという仕組みです。</div>
+			<div>そもそもどうしてこのような仕組みがあるのでしょうか？次の例を見て下さい</div>
+			<br />
+			<div>①健康な独身男性/年収400万</div>
+			<div>②健康だが養っている妻や子供がいる既婚男性/年収400万</div>
+			<div>③病気で療養中の男性/年収400万</div>
+			<br />
+			<div>もし、この3名に同じ税金を課してしまった場合、②や③の男性と①の男性を比較すると、税金の負担度合いに不公平性が生じてしまいます。</div>
+			<div>そこで、控除という仕組みが登場します。1年間の損益から、更に一定の金額を引くことができ、この金額に対して税率をかけることで、公平性を担保しようとしているのです。</div>
+			<div>所得税額=(1年間に獲得した収益-1年間に発生した費用-所得控除)-税額控除</div>
+	
+			<h1 className="intro">所得控除とは</h1>
+			
+			
+			<h1 className="intro">税額控除とは</h1>
+				
+			
+		     </section>
+		</>
+	);
+}
+	
 
 
 const Cash = () => {
@@ -2230,7 +2270,7 @@ const finalTaxReturn = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <Cash />
+                <FinalTaxReturn />
             </aside>
         </main>
     );
