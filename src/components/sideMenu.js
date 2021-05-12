@@ -4,6 +4,7 @@ import Title from './title';
 import TopImage from './サクラボキ.mp4';
 import TopContent from '../pageContents/aboutTop';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+import { ImMenu3 } from "react-icons/im";
 
 
 //ホーム画面のコンポーネント
@@ -2363,54 +2364,65 @@ const NotFound = () => {
 const SideBar = () => {
         return (
 	<BrowserRouter>
-        <div class="sidebar">
-            <h2 className="titleColor"><Link to="/">HOME</Link></h2>
-	　　    <h2 className="titleColor">基礎編</h2>
-            <ul className="sideMenu">
-                <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
-		<li className="sideList"><Link to="/account">勘定科目</Link></li>
-		<li className="sideList"><Link to="/accounts-list">勘定科目一覧表</Link></li>
-                <li className="sideList"><Link to="/trial-balance">試算表</Link></li>
-                <li className="sideList"><Link to="/final-tax-return">確定申告</Link></li>
-                <li className="sideList"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
-            </ul>
+        <header>
+            {/* <ul className="topMenu"> */}
+                <div className="grid1"></div>
+                <li className="a li">サクラボキ</li>
+                <div className="grid2"></div>
+                <li className="c li">ヨザクラモードに切り替える</li>
+                <div className="grid3"></div>
+                <span className="icon"><ImMenu3 /></span>
+            {/* </ul> */}
+        </header>
 
-            <h2 className="titleColor">計算編</h2>
-            <ul className="sideMenu">
-                <li className="sideList"><Link to="/cash">現金</Link></li>
-                <li className="sideList"><Link to="/savings">預金</Link></li>
-                <li className="sideList"><Link to="/tradings">商品売買</Link></li>
-                <li className="sideList"><Link to="/promissory-notes">手形</Link></li>
-                <li className="sideList"><Link to="/other">その他債権債務</Link></li>
-                <li className="sideList"><Link to="/fixed-assets">固定資産</Link></li>
-                <li className="sideList"><Link to="/fixed-assets">有価証券</Link></li>
-                <li className="sideList"><Link to="/cash">リース取引</Link></li>
-                <li className="sideList"><Link to="/cash">研究開発費</Link></li>
-                <li className="sideList"><Link to="/cash">引当金</Link></li>
-                <li className="sideList"><Link to="/cash">外貨建取引</Link></li>
-                <li className="sideList"><Link to="/cash">税効果会計</Link></li>
-                <li className="sideList"><Link to="/cash">連結会計</Link></li>
-            </ul>
+            <div class="sidebar">
+                <h2 className="titleColor"><Link to="/">HOME</Link></h2>
+        　　    <h2 className="titleColor">基礎編</h2>
+                <ul className="sideMenu">
+                    <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
+                    <li className="sideList"><Link to="/account">勘定科目</Link></li>
+                    <li className="sideList"><Link to="/accounts-list">勘定科目一覧表</Link></li>
+                    <li className="sideList"><Link to="/trial-balance">試算表</Link></li>
+                    <li className="sideList"><Link to="/final-tax-return">確定申告</Link></li>
+                    <li className="sideList"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+                </ul>
 
-            <h2 className="titleColor">理論編</h2>
-            <ul className="sideMenu">
-                <li className="sideList"><Link to="/cash">企業会計原則</Link></li>
-                <li className="sideList"><Link to="/cash">損益会計</Link></li>
-                <li className="sideList"><Link to="/cash">資産会計</Link></li>
-                <li className="sideList"><Link to="/cash">負債会計</Link></li>
-                <li className="sideList"><Link to="/cash">純資産会計</Link></li>
-                <li className="sideList"><Link to="/cash">棚卸会計</Link></li>
-                <li className="sideList"><Link to="/cash">固定資産会計</Link></li>
-                <li className="sideList"><Link to="/cash">リース取引会計</Link></li>
-                <li className="sideList"><Link to="/cash">財務諸表理論</Link></li>
-            </ul>
-        </div>
+                <h2 className="titleColor">計算編</h2>
+                <ul className="sideMenu">
+                    <li className="sideList"><Link to="/cash">現金</Link></li>
+                    <li className="sideList"><Link to="/savings">預金</Link></li>
+                    <li className="sideList"><Link to="/tradings">商品売買</Link></li>
+                    <li className="sideList"><Link to="/promissory-notes">手形</Link></li>
+                    <li className="sideList"><Link to="/other">その他債権債務</Link></li>
+                    <li className="sideList"><Link to="/fixed-assets">固定資産</Link></li>
+                    <li className="sideList"><Link to="/fixed-assets">有価証券</Link></li>
+                    <li className="sideList"><Link to="/cash">リース取引</Link></li>
+                    <li className="sideList"><Link to="/cash">研究開発費</Link></li>
+                    <li className="sideList"><Link to="/cash">引当金</Link></li>
+                    <li className="sideList"><Link to="/cash">外貨建取引</Link></li>
+                    <li className="sideList"><Link to="/cash">税効果会計</Link></li>
+                    <li className="sideList"><Link to="/cash">連結会計</Link></li>
+                </ul>
+
+                <h2 className="titleColor">理論編</h2>
+                <ul className="sideMenu">
+                    <li className="sideList"><Link to="/cash">企業会計原則</Link></li>
+                    <li className="sideList"><Link to="/cash">損益会計</Link></li>
+                    <li className="sideList"><Link to="/cash">資産会計</Link></li>
+                    <li className="sideList"><Link to="/cash">負債会計</Link></li>
+                    <li className="sideList"><Link to="/cash">純資産会計</Link></li>
+                    <li className="sideList"><Link to="/cash">棚卸会計</Link></li>
+                    <li className="sideList"><Link to="/cash">固定資産会計</Link></li>
+                    <li className="sideList"><Link to="/cash">リース取引会計</Link></li>
+                    <li className="sideList"><Link to="/cash">財務諸表理論</Link></li>
+                </ul>
+            </div>
 
               <Switch>
                 <Route exact path="/" component={ home } />
                 <Route path="/bookkeeping" component={ bookkeeping } />
-		<Route path="/account" component={ account } />
-		<Route path="/accounts-list" component={ accountsList } />
+                <Route path="/account" component={ account } />
+                <Route path="/accounts-list" component={ accountsList } />
                 <Route path="/trial-balance" component={ trialBalance } />
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />

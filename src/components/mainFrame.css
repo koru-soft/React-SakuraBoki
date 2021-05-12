@@ -1,21 +1,16 @@
 .mainWrapper{
     display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: 10vw 20vw 1fr 10vw;
+    grid-template-rows: 14vh 86vh;
+    grid-template-columns: 5vw 20vw 1fr 20vw 5vw;
 }
 
 .sidebar{
     text-align: left;
     overflow-y: scroll;
-    /* color: rgb(44, 150, 56); */
-    /* color: rgb(94, 89, 32); */
-    /* color: rgb(94, 83, 83); */
     padding: 3vw;
-    /* background: rgb(194, 166, 166); */
 }
 
 .mainArticle{
-    /* color: rgb(28, 224, 28); */
     text-align: left;
     overflow-y: scroll;
     padding: 5vw;
