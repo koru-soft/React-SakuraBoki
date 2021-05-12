@@ -124,7 +124,7 @@ const Bookkeeping = () => {
 	    	<br />
 	    	<h1 className="intro">貨幣的評価の公準とは</h1>
 	    	<div>物の価値は何で測定すればよいでしょうか？</div>
-	    	<div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。</div>
+	    	<div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。特に企業の経済活動を記録するにあたって、その活動内容を貨幣によって記録することを定めたルールのことを<span className="underline font-color2">貨幣的評価の公準</span>と呼びます。</div>
 	    	<div>これにより、「お金を動かした」という経済活動を記録することが出来るようになるのです。</div>
 	    	<div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
 	    	<table border="1" cellspacing="0">
@@ -139,6 +139,7 @@ const Bookkeeping = () => {
                     </tr>
                 </table>
 	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
+	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
 	    	{/* <div></div> */}
                 {/* <div className="deco1">帳簿記録のこと</div> */}
 	    {/* <span className="underline font-color2"></span> */}
@@ -146,6 +147,29 @@ const Bookkeeping = () => {
         </>
     );
 }
+
+const Account = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">勘定科目の分類について</h1>
+				
+			</section>
+		</>
+	);
+}
+
+const TrialBalance = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">試算表とは</h1>
+			</section>
+		</>
+	);
+}
+
+
 
 const Cash = () => {
     return (
@@ -1732,7 +1756,17 @@ const trialBalance = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <Cash />
+                <TrialBalance />
+            </aside>
+        </main>
+    );
+}
+
+const account = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <Account />
             </aside>
         </main>
     );
@@ -1837,7 +1871,8 @@ const SideBar = () => {
         <div class="sidebar">
             <h2 className="titleColor"><Link to="/">HOME</Link></h2>
             <ul className="sideMenu">
-                <li className="sideList"><Link to="bookkeeping">ボキのシクミ</Link></li>
+                <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
+		<li className="sideList"><Link to="/account">勘定科目</Link></li>
                 <li className="sideList"><Link to="/trial-balance">試算表</Link></li>
                 <li className="sideList"><Link to="/final-tax-return">確定申告</Link></li>
                 <li className="sideList"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
