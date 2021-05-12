@@ -33,6 +33,12 @@
     grid-column: 5;
 } */
 
+.level_change_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+
 .select_level{
     border: 2px solid rgb(177, 78, 78);
     /* display: flex; */
