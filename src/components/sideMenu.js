@@ -647,6 +647,45 @@ const FinalTaxReturn = () => {
 		</>
 	);
 }
+
+const TheEndOfTheFiscalPeriod = () => {
+	return(
+		<>
+			<section className="font-color">
+				<h1 className="intro">決算とは</h1>
+				<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span class="pink">決算</span>と呼びます。</div>
+				<div>損益計算書と貸借対照表を作成するところまでは個人事業主と共通しますが、株主向けの決算書と、税務署へ提出する決算書では適用する法律が変わるところに注意して下さい。</div>
+				<div></div>
+		
+				<h1 className="intro">トライアングル体制とは</h1>
+				<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span class="pink">トライアングル体制</span>と呼びます。</div>
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">法の名称</th>
+					<th className="table-size table-align">概要</th>
+				    </tr>
+
+				    <tr>
+					<td className="table-size table-align">商法・会社法</td>
+					<td className="table-size table-align"></td>
+				    </tr>
+				　　<tr>
+					<td className="table-size table-align">租税法</td>
+					<td className="table-size table-align"></td>
+				    </tr>
+				    <tr>
+					<td className="table-size table-align">金融商品取引法</td>
+					<td className="table-size table-align"></td>
+				    </tr>
+				</table>
+				<br />
+				
+			</section>
+		
+			
+		</>
+	);
+}
 	
 
 
@@ -709,7 +748,6 @@ const Cash = () => {
             </article>
         </section>
 
-        <div className="select_level margin_top">ボキ3級</div>
         <Title title="通貨代用証券とは"/>
         <section>
             <article>
@@ -772,8 +810,7 @@ const Cash = () => {
 
             </article>
         </section>
-
-        <div class="select_level">ボキ3級</div>
+	    
         <Title title="小切手とは"/>
         <section>
             <article>
@@ -815,7 +852,6 @@ const Cash = () => {
             </article>
         </section>
 
-        <div class="select_level">ボキ1級</div>
         <Title title="その他の通貨代用証券"/>
         <section>
             <article>
@@ -852,14 +888,14 @@ const Cash = () => {
 const Savings = () => {
     return (
     <>
-        <div class="select_level">ボキ3級</div>
+        
         <Title title="預金とは"/>
         <section>
             <article>
             <div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
             <div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
             <div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
-            <table border="1" cellspacing="0" class="journal">
+            <table border="1" cellspacing="0" className="journal">
                 <tr>
                     <th>預金の名前</th>
                     <th>どんなもの？</th>
@@ -890,7 +926,7 @@ const Savings = () => {
             </article>
         </section>
 
-        <div class="select_level">ボキ3級</div>
+        
         <Title title="当座預金の会計処理"/>
         <section>
             <article>
@@ -924,7 +960,7 @@ const Savings = () => {
             </article>
         </section>
 
-        <div class="select_level">ボキ3級</div>
+        
         <Title title="当座借越"/>
         <section>
             <article>
@@ -1010,7 +1046,7 @@ const Savings = () => {
 const Tradings = () => {
     return (
         <>
-            <div class="select_level">ボキ3級</div>
+            
             <Title title="発生主義とは"/>
             <section>
                 <article>
@@ -1019,7 +1055,7 @@ const Tradings = () => {
                 </article>
             </section>
 
-            <div class="select_level">ボキ3級</div>
+            
             <Title title="売掛金・買掛金とは"/>
             <section>
                 <article>
@@ -1101,7 +1137,7 @@ const Tradings = () => {
 const PromissoryNotes = () => {
     return (
         <>
-            <div class="select_level">ボキ3級</div>
+            
             <Title title="手形とは"/>
             <section>
                 <article>
@@ -2280,7 +2316,7 @@ const theEndOfTheFiscalPeriod = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <Cash />
+                <TheEndOfTheFiscalPeriod />
             </aside>
         </main>
     );
@@ -2290,10 +2326,10 @@ const cash = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <div class="level_change_wrapper">
-                    <Link to="/fixed-assets"><div class="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/fixed-assets"><div class="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/fixed-assets"><div class="select_level bookkeeping1">ボキ1級</div></Link>
+                <div className="level_change_wrapper">
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
                 <Cash />
             </aside>
@@ -2305,6 +2341,11 @@ const savings = () => {
     return (
         <main className="mainArticle">
             <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
                 <Savings />
             </aside>
         </main>
@@ -2315,6 +2356,11 @@ const tradings = () => {
     return (
         <main className="mainArticle">
             <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
                 <Tradings />
             </aside>
         </main>
@@ -2325,6 +2371,11 @@ const promissoryNotes = () => {
     return (
         <main className="mainArticle">
             <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
                 <PromissoryNotes />
             </aside>
         </main>
@@ -2335,6 +2386,11 @@ const other = () => {
     return (
         <main className="mainArticle">
             <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
                 <Other />
             </aside>
         </main>
@@ -2345,6 +2401,11 @@ const fixedAssets = () => {
     return (
         <main className="mainArticle">
             <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
                 <FixedAssets />
             </aside>
         </main>
@@ -2365,6 +2426,7 @@ const SideBar = () => {
 	<BrowserRouter>
         <div class="sidebar">
             <h2 className="titleColor"><Link to="/">HOME</Link></h2>
+	　　<h2 className="titleColor">基礎編</h2>
             <ul className="sideMenu">
                 <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
 		<li className="sideList"><Link to="/account">勘定科目</Link></li>
@@ -2382,26 +2444,26 @@ const SideBar = () => {
                 <li className="sideList"><Link to="/promissory-notes">手形</Link></li>
                 <li className="sideList"><Link to="/other">その他債権債務</Link></li>
                 <li className="sideList"><Link to="/fixed-assets">固定資産</Link></li>
-                <li className="sideList">有価証券</li>
-                <li className="sideList">リース取引</li>
-                <li className="sideList">研究開発費</li>
-                <li className="sideList">引当金</li>
-                <li className="sideList">外貨建取引</li>
-                <li className="sideList">税効果会計</li>
-                <li className="sideList">連結会計</li>
+                <li className="sideList"><Link to="/fixed-assets">有価証券</Link></li>
+                <li className="sideList"><Link to="/cash">リース取引</Link></li>
+                <li className="sideList"><Link to="/cash">研究開発費</Link></li>
+                <li className="sideList"><Link to="/cash">引当金</Link></li>
+                <li className="sideList"><Link to="/cash">外貨建取引</Link></li>
+                <li className="sideList"><Link to="/cash">税効果会計</Link></li>
+                <li className="sideList"><Link to="/cash">連結会計</Link></li>
             </ul>
 
             <h2 className="titleColor">理論編</h2>
             <ul className="sideMenu">
-                <li className="sideList">企業会計原則</li>
-                <li className="sideList">損益会計</li>
-                <li className="sideList">資産会計</li>
-                <li className="sideList">負債会計</li>
-                <li className="sideList">純資産会計</li>
-                <li className="sideList">棚卸会計</li>
-                <li className="sideList">固定資産会計</li>
-                <li className="sideList">リース取引会計</li>
-                <li className="sideList">財務諸表理論</li>
+                <li className="sideList"><Link to="/cash">企業会計原則</Link></li>
+                <li className="sideList"><Link to="/cash">損益会計</Link></li>
+                <li className="sideList"><Link to="/cash">資産会計</Link></li>
+                <li className="sideList"><Link to="/cash">負債会計</Link></li>
+                <li className="sideList"><Link to="/cash">純資産会計</Link></li>
+                <li className="sideList"><Link to="/cash">棚卸会計</Link></li>
+                <li className="sideList"><Link to="/cash">固定資産会計</Link></li>
+                <li className="sideList"><Link to="/cash">リース取引会計</Link></li>
+                <li className="sideList"><Link to="/cash">財務諸表理論</Link></li>
             </ul>
         </div>
 
