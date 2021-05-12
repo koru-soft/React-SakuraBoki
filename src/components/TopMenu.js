@@ -1,5 +1,6 @@
 import './TopMenu.css';
 import React from 'react';
+import { ImMenu3 } from "react-icons/im";
 
 const topElement = (
     <header>
@@ -9,6 +10,7 @@ const topElement = (
             <li className="c li">ボキ2級</li>
             <li className="d li">ボキ1級</li> */}
             <li className="c li">ヨザクラモードに切り替える</li>
+            <span className="icon"><ImMenu3 /></span>
         </ul>
     </header>
 );

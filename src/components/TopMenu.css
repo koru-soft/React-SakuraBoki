@@ -57,3 +57,35 @@ grid-column: 4;
 font-size: 15px;
 border-right: 2px solid rgb(149, 126, 128);
 }
+
+.icon{
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    .a{
+        font-size: 20px;
+    }
+
+    .material-icons-outlined{
+        content: e5d2;
+        font-family: 'Material Icons';
+    }
+
+    .c{
+        display: none;
+    }
+
+    .topMenu{
+        grid-template-columns: 5vw 1fr 25vw 5vw;
+    }
+
+    .icon{
+        color: rgb(233, 88, 132);
+        grid-column: 3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 40px;
+    }
+}
