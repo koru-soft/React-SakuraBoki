@@ -139,10 +139,9 @@ const Bookkeeping = () => {
                     </tr>
                 </table>
 	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
+	    	<br />
 	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
-	    	{/* <div></div> */}
-                {/* <div className="deco1">帳簿記録のこと</div> */}
-	    {/* <span className="underline font-color2"></span> */}
+	    	
             </section>
         </>
     );
@@ -153,8 +152,405 @@ const Account = () => {
 		<>
 			<section className="font-color">
 				<h1 className="intro">勘定科目の分類について</h1>
-				
+				<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を勘定科目と呼びます。</div>
+				<div>この「共通の性質」は、大きく分けると5種類に分かれていきます。</div>
+			<table border="1" cellspacing="0">
+				<tr>
+					<th className="table-size table-align">分類の名前</th>
+					<th className="table-size table-align">概要</th>
+				</tr>
+
+				<tr>
+					<td className="table-size table-align">資産</td>
+					<td className="table-size table-align">売ったらお金になるという性質をもつ財産</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align">負債</td>
+					<td className="table-size table-align">いずれ引き渡す義務があるという性質をもつ財産</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align">純資産</td>
+					<td className="table-size table-align">自分で用意したという性質をもつ財産</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align">収益</td>
+					<td className="table-size table-align">事業活動により獲得したお金</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align">費用</td>
+					<td className="table-size table-align">事業活動で発生したお金</td>
+				</tr>
+                	</table>
+			<br />
+			<div>それでは、各分類の詳細を見ていきましょう。</div>
+		
+			<h1 className="intro">資産とは</h1>
+			<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
+			<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
+			<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
+			
+			<h1 className="intro">負債とは</h1>
+			<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
+			<div>例えば、借金がこれに該当します。</div>
+		
+			<h1 className="intro">純資産とは</h1>
+			<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます</div>
+			<div>「自分で用意した」というのは、具体的には次の2つのお金を意味しています。これらは、負債のように他人から資産を得たのではなく、自身の力によって生み出した資産になります。</div>
+			<br />
+			<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
+			<div>②事業活動を通して、獲得したお金</div>
+			
+			<h1 className="intro">収益とは</h1>
+			<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
+			<div>例えば、売上がこれに該当します。</div>
+		
+			<h1 className="intro">費用とは</h1>
+			<div>事業活動で発生したお金を<span className="underline font-color2">費用</span>と呼びます</div>
+			<div>例えば、仕入がこれに該当します。</div>
 			</section>
+		{/* <div></div> */}
+                {/* <div className="deco1">帳簿記録のこと</div> */}
+	    {/* <span className="underline font-color2"></span> */}
+		</>
+	);
+}
+
+const AccountsList = () => {
+	return(
+		<>
+			<table border="1" cellspacing="0">
+				<tr>
+					<th className="table-size table-align">勘定科目の分類項目</th>
+					<th className="table-size table-align">勘定科目名</th>
+					<th className="table-size table-align">勘定科目の概要</th>
+				</tr>
+
+				<tr>
+					<td className="table-size table-align">資産</td>
+					<td className="table-size table-align">現 金</td>
+					<td className="table-size table-align">紙幣や硬貨などのお金、郵便小為替</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">小口現金</td>
+					<td className="table-size table-align">少額の支払いのための現金</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">当座預金</td>
+					<td className="table-size table-align">銀行に預け入れ当座預金</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">普通預金</td>
+					<td className="table-size table-align">銀行に預け入れた普通預金</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">売掛金</td>
+					<td className="table-size table-align">得意先に掛け売りしたときの代金を請求する権利</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">商品</td>
+					<td className="table-size table-align">在庫商品</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">貯蔵品</td>
+					<td className="table-size table-align">まとめて購入した封筒、便せん、パンフレットなどの消耗品などで期末に未使用のもの</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">前払費用</td>
+					<td className="table-size table-align">家賃、保守料、会費、損害保険料などの支払金額のうち、翌年以降にかかる前払部分</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">前払金</td>
+					<td className="table-size table-align">商品の仕入や諸経費の前渡金、手付金</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">短期貸付金</td>
+					<td className="table-size table-align">貸付金で1年以内に返済の予定されているもの</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">立替金</td>
+					<td className="table-size table-align">一時的に立て替えた金額</td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+				<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align"></td>
+				</tr>
+                	</table>
 		</>
 	);
 }
@@ -164,6 +560,49 @@ const TrialBalance = () => {
 		<>
 			<section className="font-color">
 				<h1 className="intro">試算表とは</h1>
+				<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span class="pink">試算表</span>と呼びます。</div>
+				<div>このセクションでは、貸借対照表と損益計算書を解説していきます。</div>
+				
+				<h1 className="intro">貸借対照表とは</h1>
+				<div>ある時点での財政状態を示す一覧表のことを<span class="pink">貸借対照表</span>と呼びます。</div>
+				<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
+		
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">最終的に発生したもの（結果）</th>
+					<th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
+				    </tr>
+
+				    <tr>
+					<td className="table-size table-align">資産<br />（売ったらお金になるもの）</td>
+					<td className="table-size table-align">負債<br />（他人から借りた）</td>
+				    </tr>
+				　　<tr>
+					<td className="table-size table-align"></td>
+					<td className="table-size table-align">純資産<br />（自分で用意した）</td>
+				    </tr>
+				</table>
+				<div>なお、最終的に発生したもの（結果）のことを<span class="pink">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="pink">調達源泉</span>と呼びます。</div>
+				<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
+		
+				<h1 className="intro">損益計算書とは</h1>
+				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span class="pink">損益計算書</span>と呼びます。</div>
+				<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">最終的に発生したもの（結果）</th>
+					<th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
+				    </tr>
+
+				    <tr>
+					<td className="table-size table-align">費用<br />（売ったらお金になるもの）</td>
+					<td className="table-size table-align">収益<br />（他人から借りた）</td>
+				    </tr>
+				　　<tr>
+					<td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td>
+					<td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td>
+				    </tr>
+				</table>
 			</section>
 		</>
 	);
@@ -230,7 +669,7 @@ const Cash = () => {
             </article>
         </section>
 
-        <div class="select_level margin_top">ボキ3級</div>
+        <div className="select_level margin_top">ボキ3級</div>
         <Title title="通貨代用証券とは"/>
         <section>
             <article>
@@ -1772,6 +2211,21 @@ const account = () => {
     );
 }
 
+const accountsList = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AccountList />
+            </aside>
+        </main>
+    );
+}
+
 const finalTaxReturn = () => {
     return (
         <main className="mainArticle">
@@ -1867,12 +2321,14 @@ const NotFound = () => {
 
 // サイドメニュー
 const SideBar = () => {
-        return (<BrowserRouter>
+        return (
+	<BrowserRouter>
         <div class="sidebar">
             <h2 className="titleColor"><Link to="/">HOME</Link></h2>
             <ul className="sideMenu">
                 <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
 		<li className="sideList"><Link to="/account">勘定科目</Link></li>
+		<li className="sideList"><Link to="/accounts-list">勘定科目一覧表</Link></li>
                 <li className="sideList"><Link to="/trial-balance">試算表</Link></li>
                 <li className="sideList"><Link to="/final-tax-return">確定申告</Link></li>
                 <li className="sideList"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
@@ -1912,6 +2368,8 @@ const SideBar = () => {
               <Switch>
                 <Route exact path="/" component={ home } />
                 <Route path="/bookkeeping" component={ bookkeeping } />
+		<Route path="/account" component={ account } />
+		<Route path="/accounts-list" component={ accountsList } />
                 <Route path="/trial-balance" component={ trialBalance } />
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
@@ -1922,9 +2380,9 @@ const SideBar = () => {
                 <Route path="/other" component={ other } />
                 <Route path="/fixed-assets" component={ fixedAssets } />
                 <Route path="/pageB" component={ PageB } />
-                <Route component={ NotFound } />{/* ←pathを指定しない */}
+                <Route component={ home } />{/* ←pathを指定しない */}
               </Switch>
-            </BrowserRouter>
+        </BrowserRouter>
        );
 }
 
