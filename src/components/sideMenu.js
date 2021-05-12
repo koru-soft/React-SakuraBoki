@@ -495,11 +495,11 @@ const TrialBalance = () => {
 		<>
 			<section className="font-color">
 				<h1 className="intro">試算表とは</h1>
-				<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span class="pink">試算表</span>と呼びます。</div>
+				<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span class="underline font-color2">試算表</span>と呼びます。</div>
 				<div>このセクションでは、貸借対照表と損益計算書を解説していきます。</div>
 				
 				<h1 className="intro">貸借対照表とは</h1>
-				<div>ある時点での財政状態を示す一覧表のことを<span class="pink">貸借対照表</span>と呼びます。</div>
+				<div>ある時点での財政状態を示す一覧表のことを<span class="underline font-color2">貸借対照表</span>と呼びます。</div>
 				<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
 		
 				<table border="1" cellspacing="0">
@@ -517,11 +517,11 @@ const TrialBalance = () => {
 					<td className="table-size table-align">純資産<br />（自分で用意した）</td>
 				    </tr>
 				</table>
-				<div>なお、最終的に発生したもの（結果）のことを<span class="pink">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="pink">調達源泉</span>と呼びます。</div>
+				<div>なお、最終的に発生したもの（結果）のことを<span class="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
 				<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
 		
 				<h1 className="intro">損益計算書とは</h1>
-				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span class="pink">損益計算書</span>と呼びます。</div>
+				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span class="underline font-color2">損益計算書</span>と呼びます。</div>
 				<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
 				<table border="1" cellspacing="0">
 				    <tr>
@@ -556,7 +556,7 @@ const FinalTaxReturn = () => {
 		<>
 		　　　<section className="font-color">
 			<h1 className="intro">確定申告とは</h1>
-			<div>個人事業主が1年間の損益を算出し、所得税の金額を確定させることを<span class="pink">確定申告</span>と呼びます。</div>
+			<div>個人事業主が1年間の損益を算出し、所得税の金額を確定させることを<span class="underline font-color2">確定申告</span>と呼びます。</div>
 			
 			<div>このセクションでは、確定申告までの簡単な流れを抑えることが目的となります。</div>
 		
@@ -590,12 +590,12 @@ const TheEndOfTheFiscalPeriod = () => {
 		<>
 			<section className="font-color">
 				<h1 className="intro">決算とは</h1>
-				<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span class="pink">決算</span>と呼びます。</div>
+				<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span class="underline font-color2">決算</span>と呼びます。</div>
 				<div>損益計算書と貸借対照表を作成するところまでは個人事業主と共通しますが、株主向けの決算書と、税務署へ提出する決算書では適用する法律が変わるところに注意して下さい。</div>
 				<div></div>
 		
 				<h1 className="intro">トライアングル体制とは</h1>
-				<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span class="pink">トライアングル体制</span>と呼びます。</div>
+				<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span class="underline font-color2">トライアングル体制</span>と呼びます。</div>
 				<table border="1" cellspacing="0">
 				    <tr>
 					<th className="table-size table-align">法の名称</th>
@@ -2235,7 +2235,7 @@ const accountsList = () => {
                     <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <AccountList />
+                <AccountsList />
             </aside>
         </main>
     );
@@ -2365,7 +2365,7 @@ const SideBar = () => {
 	<BrowserRouter>
         <div class="sidebar">
             <h2 className="titleColor"><Link to="/">HOME</Link></h2>
-	　　<h2 className="titleColor">基礎編</h2>
+	　　    <h2 className="titleColor">基礎編</h2>
             <ul className="sideMenu">
                 <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
 		<li className="sideList"><Link to="/account">勘定科目</Link></li>

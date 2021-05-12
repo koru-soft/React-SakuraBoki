@@ -5,7 +5,7 @@ margin: 0;
 .topMenu{
 display: grid;
 grid-template-rows: 12vh;
-grid-template-columns: 25vw 1fr 20vw;
+grid-template-columns: 5vw 25vw 1fr 25vw 5vw;
 /* background: rgb(233, 88, 132); */
 /* background: white; */
 background: rgb(239, 195, 189);
@@ -20,7 +20,7 @@ z-index: 99;
 list-style: none;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: flex-start;
 /* color: rgb(1, 207, 210); */
 color: rgb(233, 88, 132);
 /* color: rgb(149, 126, 128); */
@@ -28,9 +28,13 @@ font-size: 20px;
 font-weight: bold;
 }
 
+.li:nth-child(2){
+    justify-content: flex-end;
+}
+
 .a{
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 2;
     /* border-right: 2px solid rgb(149, 126, 128); */
     font-size: 25px;
 }
@@ -43,7 +47,7 @@ font-size: 15px;
 
 .c{
 grid-row: 1;
-grid-column: 3;
+grid-column: 4;
 font-size: 15px;
 }
 

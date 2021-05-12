@@ -176,3 +176,24 @@ a:hover {
     overflow-y: scroll;
     padding: 5vw;
 } */
+
+@media only screen and (max-width:900px) {
+    body {
+        /* background: rgb(205, 214, 36); */
+    }
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        
+    }
+
+    .mainWrapper{
+        display: block;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+}
