@@ -461,11 +461,11 @@ const TrialBalance = () => {
 		<>
 			<section className="font-color">
 				<h1 className="intro">試算表とは</h1>
-				<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span class="underline font-color2">試算表</span>と呼びます。</div>
+				<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span className="underline font-color2">試算表</span>と呼びます。</div>
 				<div>このセクションでは、貸借対照表と損益計算書を解説していきます。</div>
 				
 				<h1 className="intro">貸借対照表とは</h1>
-				<div>ある時点での財政状態を示す一覧表のことを<span class="underline font-color2">貸借対照表</span>と呼びます。</div>
+				<div>ある時点での財政状態を示す一覧表のことを<span className="underline font-color2">貸借対照表</span>と呼びます。</div>
 				<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
 		
 				<table border="1" cellspacing="0">
@@ -475,11 +475,10 @@ const TrialBalance = () => {
 				    </tr>
 
 				    <tr>
-					<td className="table-size table-align">資産<br />（売ったらお金になるもの）</td>
+					<td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td>
 					<td className="table-size table-align">負債<br />（他人から借りた）</td>
 				    </tr>
 				　　<tr>
-					<td className="table-size table-align"></td>
 					<td className="table-size table-align">純資産<br />（自分で用意した）</td>
 				    </tr>
 				</table>
@@ -570,15 +569,15 @@ const TheEndOfTheFiscalPeriod = () => {
 
 				    <tr>
 					<td className="table-size table-align">商法・会社法</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-align">Lorem Ipsum</td>
 				    </tr>
 				　　<tr>
 					<td className="table-size table-align">租税法</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-align">Lorem Ipsum</td>
 				    </tr>
 				    <tr>
 					<td className="table-size table-align">金融商品取引法</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-align">Lorem Ipsum</td>
 				    </tr>
 				</table>
 				<br />
