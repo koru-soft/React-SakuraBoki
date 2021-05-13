@@ -3479,8 +3479,454 @@ const leaseGrade1 = () => {
 
 
 
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜リース取引コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜研究開発費コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
+const ResearchAndDevelopmentCostsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ResearchAndDevelopmentCostsGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ResearchAndDevelopmentCostsGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+
+const researchAndDevelopmentCostsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ResearchAndDevelopmentCostsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const researchAndDevelopmentCostsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ResearchAndDevelopmentCostsGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const researchAndDevelopmentCostsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <ResearchAndDevelopmentCostsGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜研究開発費コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AllowanceGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const AllowanceGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const AllowanceGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const allowanceGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const allowanceGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const allowanceGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜外貨建取引コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const ForeignCurrencyGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ForeignCurrencyGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ForeignCurrencyGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const foreignCurrencyGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/foreign-currency-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/foreign-currency-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/foreign-currency-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ForeignCurrencyGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const foreignCurrencyGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/foreign-currency-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/foreign-currency-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/foreign-currency-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ForeignCurrencyGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const foreignCurrencyGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/foreign-currency-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/foreign-currency-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/foreign-currency-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <ForeignCurrencyGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜外貨建取引コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税効果会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const TaxEffectGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const TaxEffectGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const TaxEffectGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const taxEffectGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tax-effect-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/tax-effect-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/tax-effect-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <TaxEffectGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const taxEffectGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tax-effect-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/tax-effect-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/tax-effect-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <TaxEffectGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const taxEffectGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tax-effect-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/tax-effect-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/tax-effect-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <TaxEffectGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税効果会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜連結会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const ConsolidatedAccountingGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ConsolidatedAccountingGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ConsolidatedAccountingGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const consolidatedAccountingGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/consolidated-accounting-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/consolidated-accounting-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/consolidated-accounting-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ConsolidatedAccountingGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const consolidatedAccountingGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/consolidated-accounting-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/consolidated-accounting-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/consolidated-accounting-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ConsolidatedAccountingGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const consolidatedAccountingGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/consolidated-accounting-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/consolidated-accounting-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/consolidated-accounting-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <ConsolidatedAccountingGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜連結会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const PageB = () => {
     return <div>pageB</div>;
@@ -3525,11 +3971,11 @@ const SideBar = () => {
                     <li className="sideList"><Link to="/fixed-assets-grade3">固定資産</Link></li>
                     <li className="sideList"><Link to="/securiteis-grade3">有価証券</Link></li>
                     <li className="sideList"><Link to="/lease-grade3">リース取引</Link></li>
-                    <li className="sideList"><Link to="/cash">研究開発費</Link></li>
-                    <li className="sideList"><Link to="/cash">引当金</Link></li>
-                    <li className="sideList"><Link to="/cash">外貨建取引</Link></li>
-                    <li className="sideList"><Link to="/cash">税効果会計</Link></li>
-                    <li className="sideList"><Link to="/cash">連結会計</Link></li>
+                    <li className="sideList"><Link to="/research-and-development-costs-grade3">研究開発費</Link></li>
+                    <li className="sideList"><Link to="/allowance-grade3">引当金</Link></li>
+                    <li className="sideList"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
+                    <li className="sideList"><Link to="/tax-effect-grade3">税効果会計</Link></li>
+                    <li className="sideList"><Link to="/consolidated-accounting-grade3">連結会計</Link></li>
                 </ul>
 
                 <h2 className="titleColor">理論編</h2>
@@ -3580,6 +4026,21 @@ const SideBar = () => {
 		<Route path="/lease-grade3" component={ leaseGrade3 } />
 		<Route path="/lease-grade2" component={ leaseGrade2 } />
 		<Route path="/lease-grade1" component={ leaseGrade1 } />
+		<Route path="/research-and-development-costs-grade3" component={ researchAndDevelopmentCostsGrade3 } />
+		<Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2 } />
+		<Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1 } />
+		<Route path="/allowance-grade3" component={ allowanceGrade3 } />
+		<Route path="/allowance-grade2" component={ allowanceGrade2 } />
+		<Route path="/allowance-grade1" component={ allowanceGrade1 } />
+		<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
+		<Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
+		<Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
+		<Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
+		<Route path="/tax-effect-grade2" component={ taxEffectGrade2 } />
+		<Route path="/tax-effect-grade1" component={ taxEffectGrade1 } />
+		<Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
+		<Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
+		<Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
 		
 		
                 <Route path="/pageB" component={ PageB } />
