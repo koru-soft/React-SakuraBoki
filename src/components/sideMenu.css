@@ -349,5 +349,9 @@ a:hover {
     .mainArticle{
         grid-column: 2 / span 3;
     }
+    
+    table{
+        width: 100%;
+    }
 
 }
