@@ -43,7 +43,7 @@ const Bookkeeping = () => {
                 <h1 className="intro">簿記が必要な理由</h1>
                 <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
                 <br />
-                <div>■個人事業主の場合■</div>
+                <div>■　個人事業主の場合　■</div>
                 <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
                 <br />
                 <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
@@ -52,7 +52,7 @@ const Bookkeeping = () => {
                     日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
 
                 <br />
-                <div>■法人の場合■</div>
+                <div>■　法人の場合　■</div>
                 <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
 	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
                 <br />
@@ -176,8 +176,9 @@ const Account = () => {
 		<>
 			<section className="font-color">
 				<h1 className="intro">勘定科目の分類について</h1>
-				<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を勘定科目と呼びます。</div>
+				<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
 				<div>この「共通の性質」は、大きく分けると5種類に分かれていきます。</div>
+                <br />
 			<table border="1" cellspacing="0">
 				<tr>
 					<th className="table-size table-align">分類の名前</th>
@@ -246,8 +247,8 @@ const AccountsListGrade3 = () => {
 			<section className="font-color">
 			<table border="1" cellspacing="0">
 				<tr>
-					<th className="table-size table-align">勘定科目の大分類</th>
-					<th className="table-size table-align">勘定科目の小分類</th>
+					<th className="table-size table-align">大分類</th>
+					<th className="table-size table-align">小分類</th>
 					<th className="table-size table-align">勘定科目名</th>
 					<th className="table-size table-align">勘定科目の概要</th>
 					
@@ -481,8 +482,8 @@ const AccountsListGrade2 = () => {
 			<section className="font-color">
 			<table border="1" cellspacing="0">
 				<tr>
-					<th className="table-size table-align">勘定科目の大分類</th>
-					<th className="table-size table-align">勘定科目の小分類</th>
+					<th className="table-size table-align">大分類</th>
+					<th className="table-size table-align">小分類</th>
 					<th className="table-size table-align">勘定科目名</th>
 					<th className="table-size table-align">勘定科目の概要</th>
 					
@@ -1045,8 +1046,8 @@ const AccountsListGrade1 = () => {
 			<section className="font-color">
 			<table border="1" cellspacing="0">
 				<tr>
-					<th className="table-size table-align">勘定科目の大分類</th>
-					<th className="table-size table-align">勘定科目の小分類</th>
+					<th className="table-size table-align">大分類</th>
+					<th className="table-size table-align">小分類</th>
 					<th className="table-size table-align">勘定科目名</th>
 					<th className="table-size table-align">勘定科目の概要</th>
 					
@@ -1055,8 +1056,8 @@ const AccountsListGrade1 = () => {
 				<tr>
 					<td className="table-size table-align" rowspan="20">資産</td>
 					<td className="table-size table-align">流動資産</td>
-					<td className="table-size table-align">現金</td>
-					<td className="table-size table-align">紙幣や硬貨などのお金、郵便小為替</td>
+					<td className="table-size table-align">積送品</td>
+					<td className="table-size table-align">委託販売のために発送した商品</td>
 				</tr>
                 	</table>
 		</section>
@@ -1076,43 +1077,16 @@ const TrialBalance = () => {
 				<h1 className="intro">貸借対照表とは</h1>
 				<div>ある時点での財政状態を示す一覧表のことを<span className="underline font-color2">貸借対照表</span>と呼びます。</div>
 				<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
-		
-				<table border="1" cellspacing="0">
-				    <tr>
-					<th className="table-size table-align">最終的に発生したもの（結果）</th>
-					<th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
-				    </tr>
-
-				    <tr>
-					<td className="table-size table-align">資産<br />（売ったらお金になるもの）</td>
-					<td className="table-size table-align">負債<br />（他人から借りた）</td>
-				    </tr>
-				　　<tr>
-                    <td className="table-size table-align"></td>
-					<td className="table-size table-align">純資産<br />（自分で用意した）</td>
-				    </tr>
-				</table>
-				<div>なお、最終的に発生したもの（結果）のことを<span class="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
+                <br />
+				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
+				<br />
+                <div>なお、最終的に発生したもの（結果）のことを<span class="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
 				<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
 		
 				<h1 className="intro">損益計算書とは</h1>
 				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span class="underline font-color2">損益計算書</span>と呼びます。</div>
 				<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
-				<table border="1" cellspacing="0">
-				    <tr>
-					<th className="table-size table-align">最終的に発生したもの（結果）</th>
-					<th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
-				    </tr>
-
-				    <tr>
-					<td className="table-size table-align">費用<br />（事業活動で発生したお金）</td>
-					<td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td>
-				    </tr>
-				　　<tr>
-					<td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td>
-					<td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td>
-				    </tr>
-				</table>
+				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
 				<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
 				<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「売上を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
 				
@@ -1166,30 +1140,14 @@ const TheEndOfTheFiscalPeriod = () => {
 			<section className="font-color">
 				<h1 className="intro">決算とは</h1>
 				<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span class="underline font-color2">決算</span>と呼びます。</div>
-				<div>損益計算書と貸借対照表を作成するところまでは個人事業主と共通しますが、株主向けの決算書と、税務署へ提出する決算書では適用する法律が変わるところに注意して下さい。</div>
+				<br />
+                <div>損益計算書と貸借対照表を作成するところまでは個人事業主と共通しますが、株主向けの決算書と、税務署へ提出する決算書では適用する法律が変わるところに注意して下さい。</div>
 				<div></div>
 		
 				<h1 className="intro">トライアングル体制とは</h1>
 				<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span class="underline font-color2">トライアングル体制</span>と呼びます。</div>
-				<table border="1" cellspacing="0">
-				    <tr>
-					<th className="table-size table-align">法の名称</th>
-					<th className="table-size table-align">概要</th>
-				    </tr>
-
-				    <tr>
-					<td className="table-size table-align">商法・会社法</td>
-					<td className="table-size table-align">Lorem Ipsum</td>
-				    </tr>
-				　　<tr>
-					<td className="table-size table-align">租税法</td>
-					<td className="table-size table-align">Lorem Ipsum</td>
-				    </tr>
-				    <tr>
-					<td className="table-size table-align">金融商品取引法</td>
-					<td className="table-size table-align">Lorem Ipsum</td>
-				    </tr>
-				</table>
+                <br />
+                <table border="1" cellspacing="0"><tr><th className="table-size table-align">法の名称</th><th className="table-size table-align">概要</th></tr><tr><td className="table-size table-align">商法・会社法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">租税法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">金融商品取引法</td><td className="table-size table-align">Lorem Ipsum</td></tr></table>
 				<br />
 				
 			</section>
