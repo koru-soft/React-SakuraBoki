@@ -223,6 +223,7 @@ const Account = () => {
 const AccountsList = () => {
 	return(
 		<>
+			<section className="font-color">
 			<table border="1" cellspacing="0">
 				<tr>
 					<th className="table-size table-align">勘定科目の大分類</th>
@@ -486,6 +487,7 @@ const AccountsList = () => {
 					<td className="table-size table-align">銀行の振込手数料、売買契約の仲介者に対して支払う手数料等を表す勘定科目</td>
 				</tr>
                 	</table>
+		<section>
 		</>
 	);
 }
