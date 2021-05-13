@@ -220,7 +220,7 @@ const Account = () => {
 }
 
 //勘定科目一覧表のコンポーネント
-const AccountsListRank3 = () => {
+const AccountsListGrade3 = () => {
 	return(
 		<>
 			<section className="font-color">
@@ -455,7 +455,7 @@ const AccountsListRank3 = () => {
 	);
 }
 
-const AccountsListRank2 = () => {
+const AccountsListGrade2 = () => {
 	return(
 		<>
 			<section className="font-color">
@@ -1019,7 +1019,7 @@ const AccountsListRank2 = () => {
 	);
 }
 
-const AccountsListRank1 = () => {
+const AccountsListGrade1 = () => {
 	return(
 		<>
 			<section className="font-color">
@@ -1175,363 +1175,6 @@ const TheEndOfTheFiscalPeriod = () => {
 			</section>
 		</>
 	);
-}
-	
-
-//現金のコンポーネント
-const Cash = () => {
-    return (
-        <>
-    
-    <Title title="現金とは"/>
-        <section>
-            <article>
-                <div>現金とは、「事業で利用するための」硬貨や紙幣の事です（<span class="pink">流動資産</span>）。</div>
-                <div>他にも、現金に交換できる価値のあるものを「<span class="pink">通貨代用証券</span>」と言い、現金として扱います（後述）。</div>
-                <div>例えば、現金を使った支払いは以下のような仕訳となります。</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">現金100円で、チョコレートを買った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>消耗品費（＝チョコレート）　100</td>
-                        <td>現金　100</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を使った場合、資産の減少を表現したいという意図から、貸方に計上されます。</div>
-                <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">普通預金口座から現金を10,000円引き出した。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>現金　10,000</td>
-                        <td>普通預金　10,000</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を引き出した場合、資産の増加を表現したいという意図から、借方に現金を計上します。</div>
-                <div>一方、普通預金口座も資産の勘定科目として扱うのですが、現金を引き出した場合、普通預金口座という資産の減少を表現したいという意図から、貸方に普通預金を計上します。</div>
-                <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">個人事業主がプライベートの現金100円で、コーラを買った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>消耗品費（＝コーラ）　100</td>
-                        <td>事業主借　100</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上のような仕訳になるかというと、そもそも「現金」という勘定科目は「事業で利用するための」現金を表します。確定申告や決算は、事業で発生した収支が記録の対象となりますので、プライベート利用分の現金は明確に分ける必要があります。</div>
-                <div>もし、プライベートの現金で事業用の支払をしてしまった場合、上記のように事業主勘定科目を使って調整が必要となります。</div>
-            </article>
-        </section>
-
-        <Title title="通貨代用証券とは"/>
-        <section>
-            <article>
-                <div>簿記の世界では、上記の他にも、いつでも通貨に換金できる価値を持つ証券も現金として扱います。</div>
-                <div>これを「<span class="pink">通貨代用証券</span>」と言います。</div>
-                <div>代表的なものとして、以下の通貨代用証券があります。</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <tr>
-                        <th>通貨代用証券の名前</th>
-                        <th>どんなもの？</th>
-                    </tr>
-                    <tr>
-                        <td>他人振出小切手</td>
-                        <td>他人から受け取った小切手です。銀行に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>送金小切手</td>
-                        <td>銀行が振出してくれる小切手です。銀行に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>郵便為替証書</td>
-                        <td>郵便局が振出してくれる証書です。郵便局に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>株式配当金領収証</td>
-                        <td>株式会社が発行する配当金の支払通知書です。銀行に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>期限到来済公社債利札</td>
-                        <td>支払期限が到来している利札です。所定の金融機関に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                </table>
-
-                <div>それでは、いくつか仕訳を紹介します。</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">株式配当金領収証を10,000円受け取った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>現金　10,000</td>
-                        <td>受取配当金　10,000</td>
-                    </tr>
-                </table>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">手元にあった公社債利札5,000円に関して、支払期限が到来した。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>現金　5,000</td>
-                        <td>有価証券利息　5,000</td>
-                    </tr>
-                </table>
-
-            </article>
-        </section>
-	    
-        <Title title="小切手とは"/>
-        <section>
-            <article>
-                <div>例えば、誰かにお金をあげたいと考えます。</div>
-                <div>一番シンプルな方法は、お金を現金の形で手渡しすることです。</div>
-                <div>では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
-                <div>手渡しも可能ではあるのですが、わざわざ現地まで大量の現金を抱えて持っていくのはいろいろなリスクが伴います。</div>
-                <div>ここで登場するのが「<span class="pink">小切手</span>」です。以下のようなメリットがあります。</div>
-                <div>①紙きれを発行するだけでお金を渡すことができる</div>
-                <div>②お金を渡したい相手が銀行口座を持っていなくても関係ない</div>
-                <div>③その他の文書類と同封して送付出来る</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                <tr>
-                    <th>簿記で扱う小切手の種類</th>
-                    <th>どんなもの？</th>
-                </tr>
-                <tr>
-                    <td>未渡小切手</td>
-                    <td>支払のために振り出したが、まだ相手方に引き渡されず手許にある小切手</td>
-                </tr>
-                <tr>
-                    <td>他人振出小切手</td>
-                    <td>郵便振替貯金の払出が出来る証書。</td>
-                </tr>
-                <tr>
-                    <td>不渡小切手</td>
-                    <td>支払資金の不足などの原因で、銀行に支払を拒絶された小切手</td>
-                </tr>
-                <tr>
-                    <td>先日付小切手</td>
-                    <td>実際の振出日よりも先の日付を振出日として記載した小切手</td>
-                </tr>
-                <tr>
-                    <td>自己振出小切手</td>
-                    <td>自分が振り出した小切手</td>
-                </tr>
-            </table>
-            </article>
-        </section>
-
-        <Title title="その他の通貨代用証券"/>
-        <section>
-            <article>
-            <div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
-
-            <table border="1" cellspacing="0" class="journal">
-                <tr>
-                    <th>通貨代用証券の名前</th>
-                    <th>どんなもの？</th>
-                </tr>
-                <tr>
-                    <td>預金手形</td>
-                    <td>預金者に対して銀行が降り出す手形。銀行が支払人となる証券。</td>
-                </tr>
-                <tr>
-                    <td>振替貯金払出証書</td>
-                    <td>郵便振替貯金の払出が出来る証書。</td>
-                </tr>
-                <tr>
-                    <td>一覧払手形</td>
-                    <td>受取人が支払人に呈示した日が満期となる手形。</td>
-                </tr>
-                <tr>
-                    <td>国庫金支払通知書</td>
-                    <td>官公庁から税金の還付がある場合などに発行される支払通知書。</td>
-                </tr>
-            </table>
-            </article>
-        </section>
-        </>
-    );
-}
-
-//預金のコンポーネント
-const Savings = () => {
-    return (
-    <>
-        
-        <Title title="預金とは"/>
-        <section>
-            <article>
-            <div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
-            <div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
-            <div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
-            <table border="1" cellspacing="0" className="journal">
-                <tr>
-                    <th>預金の名前</th>
-                    <th>どんなもの？</th>
-                </tr>
-                <tr>
-                    <td>当座預金</td>
-                    <td>銀行との当座取引契約に基づいて随時引き出せる無利息の預金</td>
-                </tr>
-                <tr>
-                    <td>普通預金</td>
-                    <td>いつでも預け入れ、払い戻しが可能な預金</td>
-                </tr>
-                <tr>
-                    <td>通知預金</td>
-                    <td>引き出す時に予め数日前頃より通知することが必要な預金</td>
-                </tr>
-                <tr>
-                    <td>定期預金</td>
-                    <td>官予め満期日を設定し、満期日までは降ろせない預金</td>
-                </tr>
-                <tr>
-                    <td>別段預金</td>
-                    <td>経過的・一時的に金融機関に預け入れた預金</td>
-                </tr>
-            </table>
-
-            <div>別段口座とは、例えば株式会社の設立時に払い込まれた一時的なお金がを処理する口座になります。</div>
-            </article>
-        </section>
-
-        
-        <Title title="当座預金の会計処理"/>
-        <section>
-            <article>
-                <div>当座預金とは、小切手を管理するための口座です。</div>
-                <div>２種類の仕訳を紹介します。</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>当座預金　20,000</td>
-                        <td>現金　20,000</td>
-                    </tr>
-                </table>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>買掛金　3,000</td>
-                        <td>当座預金　3,000</td>
-                    </tr>
-                </table>
-                
-            </article>
-        </section>
-
-        
-        <Title title="当座借越"/>
-        <section>
-            <article>
-                <div>当座借越とは、当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことです。</div>
-                <div>記帳方法は2種類に分かれます。</div>
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座借越の記帳方法</caption>
-                    <tr>
-                        <th>二勘定法</th>
-                        <th>一勘定法</th>
-                    </tr>
-                    <tr>
-                        <td>当座預金勘定と当座借越勘定の2つを用いて仕訳を行う方法</td>
-                        <td>当座勘定のみを用いて、当座預金と当座借越を記帳する方法</td>
-                    </tr>
-                </table>
-
-                <div>仕訳を紹介します。</div>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
-                    <caption class="question">二勘定法の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>当座預金　20,000</td>
-                        <td>現金　20,000</td>
-                    </tr>
-                </table>
-
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">一勘定法の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>当座　20,000</td>
-                        <td>現金　20,000</td>
-                    </tr>
-                </table>
-                
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座預金口座には20,000円が預け入れられていたとする。また、借越限度額は30,000円とする。買掛金の支払いのため、30,000円の小切手の振出を行った。</caption>
-                    <caption class="question">二勘定法の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>買掛金　30,000</td>
-                        <td>当座預金　20,000</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>当座借越　10,000</td>
-                    </tr>
-                </table>
-                
-
-                <table border="1" cellspacing="0" class="journal">
-                
-                    <caption class="question">一勘定法の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>買掛金　30,000</td>
-                        <td>当座　30,000</td>
-                    </tr>
-                </table>
-                
-            </article>
-        </section>
-        
-    </>
-    );
 }
 
 //商品売買のコンポーネント
@@ -2781,46 +2424,46 @@ const account = () => {
     );
 }
 
-const accountsListRank3 = () => {
+const accountsListGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/accounts-list-rank3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/accounts-list-rank2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/accounts-list-rank1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <AccountsListRank3 />
+                <AccountsListGrade3 />
             </aside>
         </main>
     );
 }
 
-const accountsListRank2 = () => {
+const accountsListGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/accounts-list-rank3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/accounts-list-rank2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/accounts-list-rank1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <AccountsListRank2 />
+                <AccountsListGrade2 />
             </aside>
         </main>
     );
 }
 
-const accountsListRank1 = () => {
+const accountsListGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/accounts-list-rank3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/accounts-list-rank2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/accounts-list-rank1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
                 </div>
-                <AccountsListRank1 />
+                <AccountsListGrade1 />
             </aside>
         </main>
     );
@@ -2846,36 +2489,516 @@ const theEndOfTheFiscalPeriod = () => {
     );
 }
 
-const cash = () => {
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜現金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+//現金のコンポーネント
+const CashGrade3 = () => {
+    return (
+        <>
+    
+    <Title title="現金とは"/>
+        <section>
+            <article>
+                <div>現金とは、「事業で利用するための」硬貨や紙幣の事です（<span class="pink">流動資産</span>）。</div>
+                <div>他にも、現金に交換できる価値のあるものを「<span class="pink">通貨代用証券</span>」と言い、現金として扱います（後述）。</div>
+                <div>例えば、現金を使った支払いは以下のような仕訳となります。</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">現金100円で、チョコレートを買った。</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>消耗品費（＝チョコレート）　100</td>
+                        <td>現金　100</td>
+                    </tr>
+                </table>
+
+                <div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を使った場合、資産の減少を表現したいという意図から、貸方に計上されます。</div>
+                <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">普通預金口座から現金を10,000円引き出した。</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>現金　10,000</td>
+                        <td>普通預金　10,000</td>
+                    </tr>
+                </table>
+
+                <div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を引き出した場合、資産の増加を表現したいという意図から、借方に現金を計上します。</div>
+                <div>一方、普通預金口座も資産の勘定科目として扱うのですが、現金を引き出した場合、普通預金口座という資産の減少を表現したいという意図から、貸方に普通預金を計上します。</div>
+                <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">個人事業主がプライベートの現金100円で、コーラを買った。</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>消耗品費（＝コーラ）　100</td>
+                        <td>事業主借　100</td>
+                    </tr>
+                </table>
+
+                <div>なぜ上のような仕訳になるかというと、そもそも「現金」という勘定科目は「事業で利用するための」現金を表します。確定申告や決算は、事業で発生した収支が記録の対象となりますので、プライベート利用分の現金は明確に分ける必要があります。</div>
+                <div>もし、プライベートの現金で事業用の支払をしてしまった場合、上記のように事業主勘定科目を使って調整が必要となります。</div>
+            </article>
+        </section>
+
+        <Title title="通貨代用証券とは"/>
+        <section>
+            <article>
+                <div>簿記の世界では、上記の他にも、いつでも通貨に換金できる価値を持つ証券も現金として扱います。</div>
+                <div>これを「<span class="pink">通貨代用証券</span>」と言います。</div>
+                <div>代表的なものとして、以下の通貨代用証券があります。</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <tr>
+                        <th>通貨代用証券の名前</th>
+                        <th>どんなもの？</th>
+                    </tr>
+                    <tr>
+                        <td>他人振出小切手</td>
+                        <td>他人から受け取った小切手です。銀行に持っていくと現金に換金出来ます。</td>
+                    </tr>
+                    <tr>
+                        <td>送金小切手</td>
+                        <td>銀行が振出してくれる小切手です。銀行に持っていくと現金に換金出来ます。</td>
+                    </tr>
+                    <tr>
+                        <td>郵便為替証書</td>
+                        <td>郵便局が振出してくれる証書です。郵便局に持っていくと現金に換金出来ます。</td>
+                    </tr>
+                    <tr>
+                        <td>株式配当金領収証</td>
+                        <td>株式会社が発行する配当金の支払通知書です。銀行に持っていくと現金に換金出来ます。</td>
+                    </tr>
+                    <tr>
+                        <td>期限到来済公社債利札</td>
+                        <td>支払期限が到来している利札です。所定の金融機関に持っていくと現金に換金出来ます。</td>
+                    </tr>
+                </table>
+
+                <div>それでは、いくつか仕訳を紹介します。</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">株式配当金領収証を10,000円受け取った。</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>現金　10,000</td>
+                        <td>受取配当金　10,000</td>
+                    </tr>
+                </table>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">手元にあった公社債利札5,000円に関して、支払期限が到来した。</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>現金　5,000</td>
+                        <td>有価証券利息　5,000</td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+	    
+        <Title title="小切手とは"/>
+        <section>
+            <article>
+                <div>例えば、誰かにお金をあげたいと考えます。</div>
+                <div>一番シンプルな方法は、お金を現金の形で手渡しすることです。</div>
+                <div>では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
+                <div>手渡しも可能ではあるのですが、わざわざ現地まで大量の現金を抱えて持っていくのはいろいろなリスクが伴います。</div>
+                <div>ここで登場するのが「<span class="pink">小切手</span>」です。以下のようなメリットがあります。</div>
+                <div>①紙きれを発行するだけでお金を渡すことができる</div>
+                <div>②お金を渡したい相手が銀行口座を持っていなくても関係ない</div>
+                <div>③その他の文書類と同封して送付出来る</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                <tr>
+                    <th>簿記で扱う小切手の種類</th>
+                    <th>どんなもの？</th>
+                </tr>
+                <tr>
+                    <td>未渡小切手</td>
+                    <td>支払のために振り出したが、まだ相手方に引き渡されず手許にある小切手</td>
+                </tr>
+                <tr>
+                    <td>他人振出小切手</td>
+                    <td>郵便振替貯金の払出が出来る証書。</td>
+                </tr>
+                <tr>
+                    <td>不渡小切手</td>
+                    <td>支払資金の不足などの原因で、銀行に支払を拒絶された小切手</td>
+                </tr>
+                <tr>
+                    <td>先日付小切手</td>
+                    <td>実際の振出日よりも先の日付を振出日として記載した小切手</td>
+                </tr>
+                <tr>
+                    <td>自己振出小切手</td>
+                    <td>自分が振り出した小切手</td>
+                </tr>
+            </table>
+            </article>
+        </section>
+
+        <Title title="その他の通貨代用証券"/>
+        <section>
+            <article>
+            <div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
+
+            <table border="1" cellspacing="0" class="journal">
+                <tr>
+                    <th>通貨代用証券の名前</th>
+                    <th>どんなもの？</th>
+                </tr>
+                <tr>
+                    <td>預金手形</td>
+                    <td>預金者に対して銀行が降り出す手形。銀行が支払人となる証券。</td>
+                </tr>
+                <tr>
+                    <td>振替貯金払出証書</td>
+                    <td>郵便振替貯金の払出が出来る証書。</td>
+                </tr>
+                <tr>
+                    <td>一覧払手形</td>
+                    <td>受取人が支払人に呈示した日が満期となる手形。</td>
+                </tr>
+                <tr>
+                    <td>国庫金支払通知書</td>
+                    <td>官公庁から税金の還付がある場合などに発行される支払通知書。</td>
+                </tr>
+            </table>
+            </article>
+        </section>
+        </>
+    );
+}
+
+const CashGrade2 = () => {
+    return (
+        <>
+    
+    <Title title="Lorem Ipsum"/>
+        <section>
+            <article>
+                Lorem Ipsum
+            </article>
+        </section>
+        </>
+    );
+}
+
+const CashGrade1 = () => {
+    return (
+        <>
+    
+    <Title title="Lorem Ipsum"/>
+        <section>
+            <article>
+                Lorem Ipsum
+            </article>
+        </section>
+        </>
+    );
+}
+
+const cashGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
                 <div className="level_change_wrapper">
-                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                    <Link to="/cash-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/cash-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/cash-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <Cash />
+                <CashGrade3 />
             </aside>
         </main>
     );
 }
 
-const savings = () => {
+const cashGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <div className="level_change_wrapper">
+                    <Link to="/cash-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/cash-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/cash-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <CashGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const cashGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <div className="level_change_wrapper">
+                    <Link to="/cash-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/cash-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/cash-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <CashGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜現金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜預金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+//預金のコンポーネント
+const SavingsGrade3 = () => {
+    return (
+    <>
+        
+        <Title title="預金とは"/>
+        <section>
+            <article>
+            <div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
+            <div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
+            <div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
+            <table border="1" cellspacing="0" className="journal">
+                <tr>
+                    <th>預金の名前</th>
+                    <th>どんなもの？</th>
+                </tr>
+                <tr>
+                    <td>当座預金</td>
+                    <td>銀行との当座取引契約に基づいて随時引き出せる無利息の預金</td>
+                </tr>
+                <tr>
+                    <td>普通預金</td>
+                    <td>いつでも預け入れ、払い戻しが可能な預金</td>
+                </tr>
+                <tr>
+                    <td>通知預金</td>
+                    <td>引き出す時に予め数日前頃より通知することが必要な預金</td>
+                </tr>
+                <tr>
+                    <td>定期預金</td>
+                    <td>官予め満期日を設定し、満期日までは降ろせない預金</td>
+                </tr>
+                <tr>
+                    <td>別段預金</td>
+                    <td>経過的・一時的に金融機関に預け入れた預金</td>
+                </tr>
+            </table>
+
+            <div>別段口座とは、例えば株式会社の設立時に払い込まれた一時的なお金がを処理する口座になります。</div>
+            </article>
+        </section>
+
+        
+        <Title title="当座預金の会計処理"/>
+        <section>
+            <article>
+                <div>当座預金とは、小切手を管理するための口座です。</div>
+                <div>２種類の仕訳を紹介します。</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>当座預金　20,000</td>
+                        <td>現金　20,000</td>
+                    </tr>
+                </table>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>買掛金　3,000</td>
+                        <td>当座預金　3,000</td>
+                    </tr>
+                </table>
+                
+            </article>
+        </section>
+
+        
+        <Title title="当座借越"/>
+        <section>
+            <article>
+                <div>当座借越とは、当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことです。</div>
+                <div>記帳方法は2種類に分かれます。</div>
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">当座借越の記帳方法</caption>
+                    <tr>
+                        <th>二勘定法</th>
+                        <th>一勘定法</th>
+                    </tr>
+                    <tr>
+                        <td>当座預金勘定と当座借越勘定の2つを用いて仕訳を行う方法</td>
+                        <td>当座勘定のみを用いて、当座預金と当座借越を記帳する方法</td>
+                    </tr>
+                </table>
+
+                <div>仕訳を紹介します。</div>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
+                    <caption class="question">二勘定法の場合</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>当座預金　20,000</td>
+                        <td>現金　20,000</td>
+                    </tr>
+                </table>
+
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">一勘定法の場合</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>当座　20,000</td>
+                        <td>現金　20,000</td>
+                    </tr>
+                </table>
+                
+                <table border="1" cellspacing="0" class="journal">
+                    <caption class="question">当座預金口座には20,000円が預け入れられていたとする。また、借越限度額は30,000円とする。買掛金の支払いのため、30,000円の小切手の振出を行った。</caption>
+                    <caption class="question">二勘定法の場合</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>買掛金　30,000</td>
+                        <td>当座預金　20,000</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>当座借越　10,000</td>
+                    </tr>
+                </table>
+                
+
+                <table border="1" cellspacing="0" class="journal">
+                
+                    <caption class="question">一勘定法の場合</caption>
+                    <tr>
+                        <th>借方（運用形態）</th>
+                        <th>貸方（調達源泉）</th>
+                    </tr>
+                    <tr>
+                        <td>買掛金　30,000</td>
+                        <td>当座　30,000</td>
+                    </tr>
+                </table>
+                
+            </article>
+        </section>
+        
+    </>
+    );
+}
+
+const SavingsGrade2 = () => {
+    return (
+    <>
+        <Title title="Lorem Ipusum"/>
+        <section>
+            <article>
+            	Lorem Ipusum
+            </article>
+        </section>
+    </>
+    );
+}
+
+const SavingsGrade1= () => {
+    return (
+    <>
+        <Title title="Lorem Ipusum"/>
+        <section>
+            <article>
+            	Lorem Ipusum
+            </article>
+        </section>
+    </>
+    );
+}
+
+const savingsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/fixed-assets"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/fixed-assets"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/fixed-assets"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                    <Link to="/savings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/savings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/savings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <Savings />
+                <SavingsGrade3 />
             </aside>
         </main>
     );
 }
 
+const savingsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/savings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/savings-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/savings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <SavingsGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const savingsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/savings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/savings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/savings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <SavingsGrade1 />
+            </aside>
+        </main>
+    );
+}
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜預金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜預金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 const tradings = () => {
     return (
         <main className="mainArticle">
@@ -2963,7 +3086,7 @@ const SideBar = () => {
                 <ul className="sideMenu">
                     <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
                     <li className="sideList"><Link to="/account">勘定科目</Link></li>
-                    <li className="sideList"><Link to="/accounts-list-rank3">勘定科目一覧表</Link></li>
+                    <li className="sideList"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
                     <li className="sideList"><Link to="/trial-balance">試算表</Link></li>
                     <li className="sideList"><Link to="/final-tax-return">確定申告</Link></li>
                     <li className="sideList"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
@@ -2971,8 +3094,8 @@ const SideBar = () => {
 
                 <h2 className="titleColor">計算編</h2>
                 <ul className="sideMenu">
-                    <li className="sideList"><Link to="/cash">現金</Link></li>
-                    <li className="sideList"><Link to="/savings">預金</Link></li>
+                    <li className="sideList"><Link to="/cash-grade3">現金</Link></li>
+                    <li className="sideList"><Link to="/savings-grade3">預金</Link></li>
                     <li className="sideList"><Link to="/tradings">商品売買</Link></li>
                     <li className="sideList"><Link to="/promissory-notes">手形</Link></li>
                     <li className="sideList"><Link to="/other">その他債権債務</Link></li>
@@ -3004,14 +3127,18 @@ const SideBar = () => {
                 <Route exact path="/" component={ home } />
                 <Route path="/bookkeeping" component={ bookkeeping } />
                 <Route path="/account" component={ account } />
-                <Route path="/accounts-list-rank3" component={ accountsListRank3 } />
-                <Route path="/accounts-list-rank2" component={ accountsListRank2 } />
-                <Route path="/accounts-list-rank1" component={ accountsListRank1 } />
+                <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
+                <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
+                <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
                 <Route path="/trial-balance" component={ trialBalance } />
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
-                <Route path="/cash" component={ cash } />
-                <Route path="/savings" component={ savings } />
+                <Route path="/cash-grade3" component={ cashGrade3 } />
+		<Route path="/cash-grade2" component={ cashGrade2 } />
+		<Route path="/cash-grade1" component={ cashGrade1 } />
+                <Route path="/savings-grade3" component={ savingsGrade3 } />
+		<Route path="/savings-grade2" component={ savingsGrade2 } />
+		<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings" component={ tradings } />
                 <Route path="/promissory-notes" component={ promissoryNotes } />
                 <Route path="/other" component={ other } />
