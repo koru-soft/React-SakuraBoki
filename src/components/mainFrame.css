@@ -1,7 +1,7 @@
 .mainWrapper{
     display: grid;
     grid-template-rows: 14vh 86vh;
-    grid-template-columns: 5vw 20vw 1fr 20vw 5vw;
+    grid-template-columns: 5vw 17vw 1fr 20vw 5vw;
 }
 
 .sidebar{

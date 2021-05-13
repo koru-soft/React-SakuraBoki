@@ -21,12 +21,14 @@ const Home = () => {
             <section className="font-color">
                 <h1 className="intro">難易度選択について</h1>
                 <div>各コンテンツには「ボキ３級」「ボキ２級」「ボキ１級」といったレベル選択が出来るようになっています。</div>
-	    	<div>現在の級の内容を理解出来たら、より高い級のページをクリックしてみて下さい。どんどん深い話が展開されて行きます。</div>
+                <br />
+            <div>現在の級の内容を理解出来たら、より高い級のページをクリックしてみて下さい。どんどん深い話が展開されて行きます。</div>
             </section>
 
             <section className="font-color">
                 <h1 className="intro">サクラモードとヨザクラモードについて</h1>
                 <div>サクラモードでは、理論を学ぶことが出来ます。内容が理解出来るまで繰り返し読んでみて下さい。</div>
+                <br />
                 <div>ヨザクラモードでは、問題演習を行うことが出来ます。繰り返し問題を解くことで、本番での対応力を養いましょう！</div>
             </section>
         </>
@@ -43,19 +45,22 @@ const Bookkeeping = () => {
                 <br />
                 <div>■個人事業主の場合■</div>
                 <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
-                <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。
-                    会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
+                <br />
+                <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
+                <br />
+                <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
                     日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
 
                 <br />
                 <div>■法人の場合■</div>
                 <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
-	    	<div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+                <br />
                 <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
 
                 <h1 className="intro">簿記とは</h1>
                 <div>１年間のお金の動き（<span className="underline font-color2">取引</span>）を、帳簿と呼ばれるものに記録することを、略して<span className="underline font-color2">簿記</span>と呼びます。</div>
-	    	<div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
+	    	    <div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
                 <div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
 
                 <h1 className="intro">複式簿記とは</h1>
@@ -82,10 +87,12 @@ const Bookkeeping = () => {
 	    	
                 <h1 className="intro">仕訳とは</h1>
 	    	<div>お金の動きに関して、その因果を記録する仕組みを<span className="underline font-color2">仕訳</span>と呼びます。</div>
-	    	<div>先程、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くということをお伝えしましたが、左側のことを<span className="underline font-color2">借方</span>、右側のことを<span className="underline font-color2">貸方</span>と呼びます。</div>
-	    	<div>したがって、先程の表は簿記では以下のような表記となります。</div>
 	    	<br />
-	   	<table border="1" cellspacing="0">
+            <div>先程、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くということをお伝えしましたが、左側のことを<span className="underline font-color2">借方</span>、右側のことを<span className="underline font-color2">貸方</span>と呼びます。</div>
+	    	<br />
+            <div>したがって、先程の表は簿記では以下のような表記となります。</div>
+	    	<br />
+            <table border="1" cellspacing="0">
                     <tr>
                         <th className="table-size table-align">借方</th>
                         <th className="table-size table-align">貸方</th>
@@ -99,19 +106,27 @@ const Bookkeeping = () => {
 	    	<br />
 	    	<div>借方と貸方についてですが、その名前から「何かを借りたのか？」「何かを貸したのか？」を想像してしまい、仕訳の仕組みが理解出来なくなってしまう方がいらっしゃるかもしれません。</div>
 	    	<div>借方と貸方に、借りるという意味や貸したという意味はないということを認識しておいて下さい。</div>
-	    	<div>背景として、簿記の仕組みは明治時代に輸入されてきました。当時、翻訳にあたったのが福沢諭吉になります。</div>
-	    	<div>『帳合之法』では、簿記の翻訳について、相当苦労したことが記載されております。</div>
+	    	<br />
+            <div>背景として、簿記の仕組みは明治時代に輸入されてきました。当時、翻訳にあたったのが福沢諭吉になります。</div>
+	    	<br />
+            <div>『帳合之法』では、簿記の翻訳について、相当苦労したことが記載されております。</div>
 	    	<div>簿記自体、もともとイタリアで生まれた仕組みになるため、その翻訳作業の中でイタリアの語感を日本語へ翻訳する作業が必要でした。</div>
-	    	<div>仕訳の左側、右側のことを日本語風の言葉へ変換することも考えていましたが、当時、すでに欧米諸国で借方、貸方という言葉が普及してしまっており、日本だけその言葉を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
-	    	<div>そこで、「日本語の語感には合わない」が、世界で使われている言葉をそのまま流用する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
+	    	<br />
+            <div>仕訳の左側、右側のことを日本語風の言葉へ変換することも考えていましたが、当時、すでに欧米諸国で借方、貸方という言葉が普及してしまっており、日本だけその言葉を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
+	    	<br />
+            <div>そこで、「日本語の語感には合わない」が、世界で使われている言葉をそのまま流用する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
 	    	
 	    	<h1 className="intro">勘定科目とは</h1>
 	    	<div>お金の動きを、誰もが同じように記録でき、また、誰もが帳簿を見れば同じ理解を得られるようにするためにはどうすれば良いでしょうか？</div>
-	    	<div>これを実現するため、お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
-                <div>例えば、さきほどの「チョコレート」というものは、簿記では「消耗品」や「消耗品費」という扱いになります。そのため、記録を行う時に「チョコレート」と記録はせず、「消耗品」や「消耗品費」として記録を行います。</div>
-	    	<div>もし、この仕組みがなければ、各自がそれぞれの実態に合わせて具体的な取引内容を記録していくことになりますが、全員がその内容をみて共通の理解が出来るかというと、そうではありません。</div>
+	    	<br />
+            <div>これを実現するため、お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
+            <br />
+            <div>例えば、さきほどの「チョコレート」というものは、簿記では「消耗品」や「消耗品費」という扱いになります。そのため、記録を行う時に「チョコレート」と記録はせず、「消耗品」や「消耗品費」として記録を行います。</div>
+	    	<br />
+            <div>もし、この仕組みがなければ、各自がそれぞれの実態に合わせて具体的な取引内容を記録していくことになりますが、全員がその内容をみて共通の理解が出来るかというと、そうではありません。</div>
 	    	<div>また、取引内容の説明を追加すれば理解は出来るかもしれませんが、1年間に発生したすべてのお金の動きに注釈を付けていては、管理コストが非常に高くなります。</div>
-	    	<div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
+	    	<br />
+            <div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
 	    	<br />
 	    	<table border="1" cellspacing="0">
                     <tr>
@@ -127,10 +142,14 @@ const Bookkeeping = () => {
 	    	<br />
 	    	<h1 className="intro">貨幣的評価の公準とは</h1>
 	    	<div>物の価値は何で測定すればよいでしょうか？</div>
-	    	<div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。特に企業の経済活動を記録するにあたって、その活動内容を貨幣によって記録することを定めたルールのことを<span className="underline font-color2">貨幣的評価の公準</span>と呼びます。</div>
-	    	<div>これにより、「お金を動かした」という経済活動を記録することが出来るようになるのです。</div>
-	    	<div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
-	    	<table border="1" cellspacing="0">
+	    	<br />
+            <div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。特に企業の経済活動を記録するにあたって、その活動内容を貨幣によって記録することを定めたルールのことを<span className="underline font-color2">貨幣的評価の公準</span>と呼びます。</div>
+	    	<br />
+            <div>これにより、「お金を動かした」という経済活動を記録することが出来るようになるのです。</div>
+	    	<br />
+            <div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
+	    	<br />
+            <table border="1" cellspacing="0">
                     <tr>
                         <th className="table-size table-align">借方</th>
                         <th className="table-size table-align">貸方</th>
@@ -141,6 +160,7 @@ const Bookkeeping = () => {
                         <td className="table-size table-align">現金 100</td>
                     </tr>
                 </table>
+                <br />
 	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
 	    	<br />
 	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
@@ -1947,7 +1967,7 @@ const tradingsGrade1 = () => {
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
                     <Link to="/tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/tradings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
                 </div>
@@ -3236,7 +3256,7 @@ const NonCurrentAssetsGrade2 = () => {
     );
 }
 
-const NonCurrentAssetsGrade3 = () => {
+const NonCurrentAssetsGrade1 = () => {
     return (
         <>
             <Title title="Lorem Ipusum"/>
@@ -4044,32 +4064,6 @@ const liabilitiesAccounting = () => {
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜負債会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜純資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const LiabilitiesAccounting = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const liabilitiesAccounting = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <LiabilitiesAccounting />
-            </aside>
-        </main>
-    );
-}
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜純資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 

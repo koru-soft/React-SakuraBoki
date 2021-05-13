@@ -67,10 +67,15 @@
         grid-row: 1;
         grid-column: 2;
         /* border-right: 2px solid rgb(149, 126, 128); */
-        font-size: 25px;
+        font-size: 35px;
         background: rgb(239, 195, 189);
         color: rgb(233, 88, 132);
+        font-weight: bold;
         /* box-shadow: 0px 1px 10px 1px gray; */
+    }
+
+    .a a{
+        color: rgb(233, 88, 132);
     }
 
     .grid1{
@@ -103,7 +108,7 @@
     .c{
     grid-row: 1;
     grid-column: 4;
-    font-size: 15px;
+    font-size: 20px;
     background: rgb(239, 195, 189);
     /* box-shadow: 5px 0 5px gray; */
     }
@@ -273,8 +278,13 @@ a{
 }
 
 a:hover {
-    color: rgb(200, 0, 255);
+    color: rgb(0, 157, 255);
 }
+
+.a a:hover{
+    color: rgb(233, 88, 132);
+}
+
 
 .titleColor a{
     /* color: rgb(1, 120, 156); */
@@ -327,7 +337,7 @@ a:hover {
     }
 
     .a{
-        font-size: 20px;
+        font-size: 5vw;
     }
 
     .material-icons-outlined{
