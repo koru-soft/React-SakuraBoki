@@ -450,7 +450,7 @@ const AccountsListRank3 = () => {
 					<td className="table-size table-align">銀行の振込手数料、売買契約の仲介者に対して支払う手数料等を表す勘定科目</td>
 				</tr>
                 	</table>
-		<section>
+		</section>
 		</>
 	);
 }
@@ -1014,7 +1014,32 @@ const AccountsListRank2 = () => {
 					<td className="table-size table-align"></td>
 				</tr>
                 	</table>
-		<section>
+		</section>
+		</>
+	);
+}
+
+const AccountsListRank1 = () => {
+	return(
+		<>
+			<section className="font-color">
+			<table border="1" cellspacing="0">
+				<tr>
+					<th className="table-size table-align">勘定科目の大分類</th>
+					<th className="table-size table-align">勘定科目の小分類</th>
+					<th className="table-size table-align">勘定科目名</th>
+					<th className="table-size table-align">勘定科目の概要</th>
+					
+				</tr>
+
+				<tr>
+					<td className="table-size table-align" rowspan="20">資産</td>
+					<td className="table-size table-align">流動資産</td>
+					<td className="table-size table-align">現金</td>
+					<td className="table-size table-align">紙幣や硬貨などのお金、郵便小為替</td>
+				</tr>
+                	</table>
+		</section>
 		</>
 	);
 }
@@ -1039,10 +1064,11 @@ const TrialBalance = () => {
 				    </tr>
 
 				    <tr>
-					<td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td>
+					<td className="table-size table-align">資産<br />（売ったらお金になるもの）</td>
 					<td className="table-size table-align">負債<br />（他人から借りた）</td>
 				    </tr>
 				　　<tr>
+                    <td className="table-size table-align"></td>
 					<td className="table-size table-align">純資産<br />（自分で用意した）</td>
 				    </tr>
 				</table>
@@ -2979,8 +3005,8 @@ const SideBar = () => {
                 <Route path="/bookkeeping" component={ bookkeeping } />
                 <Route path="/account" component={ account } />
                 <Route path="/accounts-list-rank3" component={ accountsListRank3 } />
-		<Route path="/accounts-list-rank2" component={ accountsListRank2 } />
-		<Route path="/accounts-list-rank1" component={ accountsListRank1 } />
+                <Route path="/accounts-list-rank2" component={ accountsListRank2 } />
+                <Route path="/accounts-list-rank1" component={ accountsListRank1 } />
                 <Route path="/trial-balance" component={ trialBalance } />
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />

@@ -69,6 +69,7 @@
         /* border-right: 2px solid rgb(149, 126, 128); */
         font-size: 25px;
         background: rgb(239, 195, 189);
+        color: rgb(233, 88, 132);
         /* box-shadow: 0px 1px 10px 1px gray; */
     }
 
@@ -237,6 +238,10 @@ section {
     background: linear-gradient(transparent  70%, #fcdf08  70%);
 }
 
+table{
+    width: 100%;
+}
+
 .table-size{
     width: 30vw;
 }
@@ -350,10 +355,6 @@ a:hover {
 
     .mainArticle{
         grid-column: 2 / span 3;
-    }
-    
-    table{
-        width: 100%;
     }
 
 }
