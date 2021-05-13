@@ -2906,7 +2906,7 @@ const otherGrade1 = () => {
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
-const FixedAssetsGrade3 = () => {
+const NonCurrentAssetsGrade3 = () => {
     return (
         <>
             <Title title="固定資産とは"/>
@@ -3223,7 +3223,7 @@ const FixedAssetsGrade3 = () => {
     );
 }
 
-const FixedAssetsGrade2 = () => {
+const NonCurrentAssetsGrade2 = () => {
     return (
         <>
             <Title title="Lorem Ipusum"/>
@@ -3236,7 +3236,7 @@ const FixedAssetsGrade2 = () => {
     );
 }
 
-const FixedAssetsGrade1 = () => {
+const NonCurrentAssetsGrade3 = () => {
     return (
         <>
             <Title title="Lorem Ipusum"/>
@@ -3249,46 +3249,46 @@ const FixedAssetsGrade1 = () => {
     );
 }
 
-const fixedAssetsGrade3 = () => {
+const nonCurrentAssetsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/fixed-assets-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/fixed-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/fixed-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                    <Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <FixedAssetsGrade3 />
+                <NonCurrentAssetsGrade3 />
             </aside>
         </main>
     );
 }
 
-const fixedAssetsGrade2 = () => {
+const nonCurrentAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/fixed-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/fixed-assets-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/fixed-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                    <Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <FixedAssetsGrade2 />
+                <NonCurrentAssetsGrade2 />
             </aside>
         </main>
     );
 }
 
-const fixedAssetsGrade1 = () => {
+const nonCurrentAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/fixed-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/fixed-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/fixed-assets-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                    <Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
                 </div>
-                <FixedAssetsGrade1 />
+                <NonCurrentAssetsGrade1 />
             </aside>
         </main>
     );
@@ -3928,6 +3928,294 @@ const consolidatedAccountingGrade1 = () => {
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜連結会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜企業会計原則コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const CorporateAccountingPrinciples = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const corporateAccountingPrinciples = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <CorporateAccountingPrinciples />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜企業会計原則コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜損益会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const ProfitAndLossAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const profitAndLossAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <ProfitAndLossAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜損益会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AssetAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const assetAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AssetAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜負債会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const LiabilitiesAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const liabilitiesAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <LiabilitiesAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜負債会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜純資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const LiabilitiesAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const liabilitiesAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <LiabilitiesAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜純資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const NetAssetsAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const netAssetsAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <NetAssetsAccounting />
+            </aside>
+        </main>
+    );
+}
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜純資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜棚卸会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const InventoryAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const inventoryAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <InventoryAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜棚卸会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const NonCurrentAssetsAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const nonCurrentAssetsAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <NonCurrentAssetsAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜リース取引会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const LeaseAccounting = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const leaseAccounting = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <LeaseAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜リース取引会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜財務諸表理論コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const FinancialStatementsTheory = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const financialStatementsTheory = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <FinancialStatementsTheory />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜財務諸表理論コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
 const PageB = () => {
     return <div>pageB</div>;
 }
@@ -3968,7 +4256,7 @@ const SideBar = () => {
                     <li className="sideList"><Link to="/tradings-grade3">商品売買</Link></li>
                     <li className="sideList"><Link to="/promissory-notes-grade3">手形</Link></li>
                     <li className="sideList"><Link to="/other-grade3">その他債権債務</Link></li>
-                    <li className="sideList"><Link to="/fixed-assets-grade3">固定資産</Link></li>
+                    <li className="sideList"><Link to="/non-current-assets-grade3">固定資産</Link></li>
                     <li className="sideList"><Link to="/securiteis-grade3">有価証券</Link></li>
                     <li className="sideList"><Link to="/lease-grade3">リース取引</Link></li>
                     <li className="sideList"><Link to="/research-and-development-costs-grade3">研究開発費</Link></li>
@@ -3980,15 +4268,15 @@ const SideBar = () => {
 
                 <h2 className="titleColor">理論編</h2>
                 <ul className="sideMenu">
-                    <li className="sideList"><Link to="/cash">企業会計原則</Link></li>
-                    <li className="sideList"><Link to="/cash">損益会計</Link></li>
-                    <li className="sideList"><Link to="/cash">資産会計</Link></li>
-                    <li className="sideList"><Link to="/cash">負債会計</Link></li>
-                    <li className="sideList"><Link to="/cash">純資産会計</Link></li>
-                    <li className="sideList"><Link to="/cash">棚卸会計</Link></li>
-                    <li className="sideList"><Link to="/cash">固定資産会計</Link></li>
-                    <li className="sideList"><Link to="/cash">リース取引会計</Link></li>
-                    <li className="sideList"><Link to="/cash">財務諸表理論</Link></li>
+                    <li className="sideList"><Link to="/corporate-accounting-principles">企業会計原則</Link></li>
+                    <li className="sideList"><Link to="/profit-and-loss-accounting">損益会計</Link></li>
+                    <li className="sideList"><Link to="/asset-accounting">資産会計</Link></li>
+                    <li className="sideList"><Link to="/liabilities-accounting">負債会計</Link></li>
+                    <li className="sideList"><Link to="/net-assets-accounting">純資産会計</Link></li>
+                    <li className="sideList"><Link to="/inventory-accounting">棚卸会計</Link></li>
+                    <li className="sideList"><Link to="/non-current-assets-accounting">固定資産会計</Link></li>
+                    <li className="sideList"><Link to="/lease-accounting">リース取引会計</Link></li>
+                    <li className="sideList"><Link to="/financial-statements-theory">財務諸表理論</Link></li>
                 </ul>
             </div>
 
@@ -4017,9 +4305,9 @@ const SideBar = () => {
                 <Route path="/other-grade3" component={ otherGrade3 } />
 		<Route path="/other-grade2" component={ otherGrade2 } />
 		<Route path="/other-grade1" component={ otherGrade1 } />
-                <Route path="/fixed-assets-grade3" component={ fixedAssetsGrade3 } />
-		<Route path="/fixed-assets-grade2" component={ fixedAssetsGrade2 } />
-		<Route path="/fixed-assets-grade1" component={ fixedAssetsGrade1 } />
+                <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
+		<Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
+		<Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
 		<Route path="/securiteis-grade3" component={ securiteisGrade3 } />
 		<Route path="/securiteis-grade2" component={ securiteisGrade2 } />
 		<Route path="/securiteis-grade1" component={ securiteisGrade1 } />
@@ -4041,6 +4329,15 @@ const SideBar = () => {
 		<Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
 		<Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
 		<Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
+		<Route path="/corporate-accounting-principles" component={ corporateAccountingPrinciples } />
+		<Route path="/profit-and-loss-accounting" component={ profitAndLossAccounting } />
+		<Route path="/asset-accounting" component={ assetAccounting } />
+		<Route path="/liabilities-accounting" component={ liabilitiesAccounting } />
+		<Route path="/net-assets-accounting" component={ netAssetsAccounting } />
+		<Route path="/inventory-accounting" component={ inventoryAccounting } />
+		<Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } />
+		<Route path="/lease-accounting" component={ leaseAccounting } />
+		<Route path="/financial-statements-theory" component={ financialStatementsTheory } />
 		
 		
                 <Route path="/pageB" component={ PageB } />
