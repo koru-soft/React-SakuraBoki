@@ -1074,18 +1074,172 @@ const FinalTaxReturn = () => {
 			<div>所得税額=(1年間に獲得した収益-1年間に発生した費用-所得控除)-税額控除</div>
 	
 			<h1 className="intro">所得控除とは</h1>
-			<div>納税者の個人的事情に合わせることで納税の不公平性を解消するため、1年間の所得から、さらに一定の金額を差し引くことの出来る仕組みを<span className="underline font-color2">所得控除</span>と呼びます。</div>
-			<div>例えば、病気で療養中の男性は、一定の金額を医療費として控除することが出来ます。</div>
-			<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	<div></div>
-	
-			
+			<div>納税者の個人的事情に起因する様々な納税の不公平性を緩和するため、1年間の所得から、さらに一定の金額を差し引くことの出来る仕組みを<span className="underline font-color2">所得控除</span>と呼びます。</div>
+			<br />
+			<div>例えば、病気で療養中の男性は、一定の金額を医療費として控除することが出来ます。その結果、所得税の計算の元になる金額は400万ではなく、400万から医療費控除で認められた金額を引いた金額になるのです。</div>
+			<div>2021年現在、所得控除は全部で14種類あります。</div>
+			<br />
+			<table border="1" cellspacing="0">
+			    <tr>
+				<th className="table-size table-align">所得控除の種類</th>
+				<th className="table-size table-align">目的</th>
+				<th className="table-size table-align">概要</th>
+			    </tr>
+
+			    <tr>
+				<td className="table-size table-align">基礎控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			    </tr>
+			　　<tr>
+				<td className="table-size table-align">配偶者控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			    </tr>
+			　　　<tr>
+				<td className="table-size table-align">配偶者特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			    </tr>
+			<tr>
+				<td className="table-size table-align">扶養控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">医療費控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">寄付金控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">社会保険料控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">生命保険料控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">地震保険料控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">小規模企業共済等掛金控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">ひとり親控除・寡婦控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">勤労学生控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">障害者控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">雑損控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align"></td>
+			</tr>
+			</table>	
+		
 			<h1 className="intro">税額控除とは</h1>
-				
+			<div>最終的に算出された所得税の金額から、さらに一定額を直接差し引くことの出来る仕組みを<span className="underline font-color2">税額控除</span>と呼びます。</div>
+			<div>2021年現在、所得控除は全部で14種類あります。</div>
+			<br />
+			<table border="1" cellspacing="0">
+			    <tr>
+				<th className="table-size table-align">所得控除の種類</th>
+				<th className="table-size table-align">目的</th>
+				<th className="table-size table-align">概要</th>
+			    </tr>
+
+			    <tr>
+				<td className="table-size table-align">配当控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">国内株式の配当金について総合課税を選択して確定申告をした場合に、配当金に一定率を掛けた金額が所得税・住民税から控除されること</td>
+			    </tr>
+			　　<tr>
+				<td className="table-size table-align">外国税額控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">外国で生じた所得のうち、日本の所得税と類似した性質のものがその外国で課税されている場合に、二重課税にならないよう設けられている制度</td>
+			    </tr>
+			　　　<tr>
+				<td className="table-size table-align">政党等寄付金特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">政党などに対する寄付金とは、政治資金規正法に定められた政党や政治資金団体へ、同法が定める政治活動のために支出うお金のこと。</td>
+			    </tr>
+			<tr>
+				<td className="table-size table-align">認定NPO法人等寄付金特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">認定されているNPO法人等のＮＰＯ活動の為に、一定の寄付金を支払った場合に受けられます</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">公益社団法人等寄付金特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">学校法人や公益社団法人、公益財団法人、社会福祉法人や更生保護法人という公益法人等に、一定の条件をクリアして寄付金を支払った場合に受けられる</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">住宅借入金等特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">住宅借入金などをもって住宅の取得や増改築などを行い、その取得年中に当該住宅を住居として利用した場合に受けられる</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">住宅耐震改修特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">1981年5月以前に建てられて現在も住居として利用している家屋に、耐震改修をした場合に受けられる</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">住宅特定改修特別税額控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">段差をなくすためや省エネの為の増改築改修工事で、定められた条件を満たす場合に受けられる</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">認定住宅新築等特別税額控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">認定長期優良住宅の新築または、建築後未入居未使用の認定長期優良住宅の取得、低炭素建築物である家屋の新築または、建築後未入居未使用の低炭素建築物の取得があった場合に受けられる</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">中小企業者が新しく機械等を購入、取得したときの所得税額に対する特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">青色申告者である中小企業者が、新品の特定機械装置などを購入、取得し、事業に利用した場合に受けられる</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">中小企業者が経営力向上設備等を購入、取得したときの所得税額に対する特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">青色申告者である中小企業者が、新品の経営力向上設備等などを購入、取得し、事業に利用した場合受けられる</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">試験研究費の総額に係る所得税額の特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">必要経費に認められる試験研究費を所得税額から控除</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">エネルギー環境負荷低減推進設備等を取得した場合の所得税額の特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">青色申告者で、新品のエネルギー環境負荷低減推進設備などを取得し、事業に利用した場合で、特別償却の適用を受けていないときに適用</td>
+			</tr>
+			<tr>
+				<td className="table-size table-align">雇用者給与等支給額が増加した場合の所得税額の特別控除</td>
+				<td className="table-size table-align"></td>
+				<td className="table-size table-align">青色申告者で国内の雇用者への給与支給額が規定の額以上増えた場合に金額を控除できるもの</td>
+			</tr>
+			</table>
 			
 		     </section>
 		</>
