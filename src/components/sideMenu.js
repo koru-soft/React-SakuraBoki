@@ -170,76 +170,6 @@ const Bookkeeping = () => {
     );
 }
 
-//勘定科目のコンポーネント
-const Account = () => {
-	return (
-		<>
-			<section className="font-color">
-				<h1 className="intro">勘定科目の分類について</h1>
-				<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
-				<div>この「共通の性質」は、大きく分けると5種類に分かれていきます。</div>
-                <br />
-			<table border="1" cellspacing="0">
-				<tr>
-					<th className="table-size table-align">分類の名前</th>
-					<th className="table-size table-align">概要</th>
-				</tr>
-
-				<tr>
-					<td className="table-size table-align">資産</td>
-					<td className="table-size table-align">売ったらお金になるという性質をもつ財産</td>
-				</tr>
-				<tr>
-					<td className="table-size table-align">負債</td>
-					<td className="table-size table-align">いずれ引き渡す義務があるという性質をもつ財産</td>
-				</tr>
-				<tr>
-					<td className="table-size table-align">純資産</td>
-					<td className="table-size table-align">自分で用意したという性質をもつ財産</td>
-				</tr>
-				<tr>
-					<td className="table-size table-align">収益</td>
-					<td className="table-size table-align">事業活動により獲得したお金</td>
-				</tr>
-				<tr>
-					<td className="table-size table-align">費用</td>
-					<td className="table-size table-align">事業活動で発生したお金</td>
-				</tr>
-                	</table>
-			<br />
-			<div>それでは、各分類の詳細を見ていきましょう。</div>
-		
-			<h1 className="intro">資産とは</h1>
-			<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
-			<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
-			<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
-			
-			<h1 className="intro">負債とは</h1>
-			<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
-			<div>例えば、借金がこれに該当します。</div>
-		
-			<h1 className="intro">純資産とは</h1>
-			<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます</div>
-			<div>「自分で用意した」というのは、具体的には次の2つのお金を意味しています。これらは、負債のように他人から資産を得たのではなく、自身の力によって生み出した資産になります。</div>
-			<br />
-			<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
-			<div>②事業活動を通して、獲得したお金</div>
-			
-			<h1 className="intro">収益とは</h1>
-			<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
-			<div>例えば、売上がこれに該当します。</div>
-		
-			<h1 className="intro">費用とは</h1>
-			<div>事業活動で発生したお金を<span className="underline font-color2">費用</span>と呼びます</div>
-			<div>例えば、仕入がこれに該当します。</div>
-			</section>
-		{/* <div></div> */}
-                {/* <div className="deco1">帳簿記録のこと</div> */}
-	    {/* <span className="underline font-color2"></span> */}
-		</>
-	);
-}
-
 //勘定科目一覧表のコンポーネント
 const AccountsListGrade3 = () => {
 	return(
@@ -1086,14 +1016,17 @@ const TrialBalance = () => {
 				<h1 className="intro">損益計算書とは</h1>
 				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span class="underline font-color2">損益計算書</span>と呼びます。</div>
 				<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
+				<br />
 				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
+				<br />
 				<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
-				<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「売上を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
+				<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「収益を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
 				
 			<h1 className="intro">損益計算書と貸借対照表のつながりについて</h1>
 			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
 			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
-			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span class="pink">クリーン・サープラス関係</span>と呼びます。</div>
+			<br />	
+			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span class="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
 		</section>
 		</>
 	);
@@ -1186,15 +1119,171 @@ const trialBalance = () => {
     );
 }
 
-const account = () => {
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+//勘定科目のコンポーネント
+const AccountGrade3 = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">勘定科目の分類について</h1>
+				<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
+				<div>この「共通の性質」は、大きく分けると5種類に分かれていきます。</div>
+                		<br />
+				<table border="1" cellspacing="0">
+					<tr>
+						<th className="table-size table-align">分類の名前</th>
+						<th className="table-size table-align">概要</th>
+					</tr>
+
+					<tr>
+						<td className="table-size table-align">資産</td>
+						<td className="table-size table-align">売ったらお金になるという性質をもつ財産</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">負債</td>
+						<td className="table-size table-align">いずれ引き渡す義務があるという性質をもつ財産</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">純資産</td>
+						<td className="table-size table-align">自分で用意したという性質をもつ財産</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">収益</td>
+						<td className="table-size table-align">事業活動により獲得したお金</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">費用</td>
+						<td className="table-size table-align">事業活動で発生したお金</td>
+					</tr>
+					</table>
+					<br />
+					<div>それでは、各分類の詳細を見ていきましょう。</div>
+
+					<h1 className="intro">資産とは</h1>
+					<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
+					<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
+					<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
+
+					<h1 className="intro">負債とは</h1>
+					<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
+					<div>例えば、借金がこれに該当します。</div>
+
+					<h1 className="intro">純資産とは</h1>
+					<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます</div>
+					<div>「自分で用意した」というのは、具体的には次の2つのお金を意味しています。これらは、負債のように他人から資産を得たのではなく、自身の力によって生み出した資産になります。</div>
+					<br />
+					<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
+					<div>②事業活動を通して、獲得したお金</div>
+
+					<h1 className="intro">収益とは</h1>
+					<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
+					<div>例えば、売上がこれに該当します。</div>
+
+					<h1 className="intro">費用とは</h1>
+					<div>事業活動で発生したお金を<span className="underline font-color2">費用</span>と呼びます</div>
+					<div>例えば、仕入がこれに該当します。</div>
+				</section>
+		{/* <div></div> */}
+                {/* <div className="deco1">帳簿記録のこと</div> */}
+	    {/* <span className="underline font-color2"></span> */}
+		</>
+	);
+}
+
+const AccountGrade2 = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">勘定科目の大分類、中分類、小分類とは</h1>
+				<h1 className="intro">流動資産とは</h1>
+				<h1 className="intro">固定資産とは</h1>
+				<h1 className="intro">繰延資産とは</h1>
+				<h1 className="intro">流動負債とは</h1>
+				<h1 className="intro">固定負債とは</h1>
+				<h1 className="intro">売上高とは</h1>
+				<h1 className="intro">営業外収益とは</h1>
+				<h1 className="intro">特別利益とは</h1>
+				<h1 className="intro">売上原価とは</h1>
+				<h1 className="intro">販売費及び一般管理費とは</h1>
+				<h1 className="intro">営業外費用とは</h1>
+				<h1 className="intro">特別損失とは</h1>
+				<h1 className="intro">法人税等とは</h1>
+			</section>
+		</>
+	);
+}
+
+const AccountGrade1 = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">財務会計の概念フレームワークとは</h1>
+				<h1 className="intro">資産とは</h1>
+				<div>資産とは、過去の取引または事象の結果として、報告主体が支配している経済的資源をいう</div>
+				<br />
+				<h1 className="intro">負債とは</h1>
+				<div>負債とは、過去の取引または事象の結果として、報告主体が支配している経済的資源を放棄もしくは引き渡す義務、またはその同等物をいう</div>
+				<br />
+				<h1 className="intro">純資産とは</h1>
+				<div>純資産とは、資産と負債の差額をいう。</div>
+				<br />
+				<h1 className="intro">収益とは</h1>
+				<div>収益とは、純利益または少数株主損益を増加させる項目であり、特定期間の期末までに生じた資産の増加や負債の減少に見合う額のうち、投資のリスクから解放された部分である（</div>
+				<br />
+				<h1 className="intro">費用とは</h1>
+				<div>費用とは、純利益または少数株主損益を減少させる項目であり、特定期間の期末までに生じた資産の減少や負債の増加に見合う額のうち、投資のリスクから解放された部分である</div>
+			</section>
+		</>
+	);
+}
+
+const accountGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <Account />
+	    	<div className="level_change_wrapper">
+                    <Link to="/account-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/account-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/account-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AccountGrade3 />
             </aside>
         </main>
     );
 }
+
+const accountGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/account-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/account-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/account-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AccountGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const accountGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/account-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/account-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/account-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <AccountGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const accountsListGrade3 = () => {
     return (
@@ -4167,16 +4256,11 @@ const financialStatementsTheory = () => {
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜財務諸表理論コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
-
-const PageB = () => {
-    return <div>pageB</div>;
-}
-
 const NotFound = () => {
     return <div>404</div>;
 }
 
-// サイドメニュー
+// サイドメニュー兼ルーティング
 const SideBar = () => {
         return (
 	<BrowserRouter>
@@ -4194,7 +4278,7 @@ const SideBar = () => {
         　　    <h2 className="titleColor">基礎編</h2>
                 <ul className="sideMenu">
                     <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
-                    <li className="sideList"><Link to="/account">勘定科目</Link></li>
+                    <li className="sideList"><Link to="/account-grade3">勘定科目</Link></li>
                     <li className="sideList"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
                     <li className="sideList"><Link to="/trial-balance">試算表</Link></li>
                     <li className="sideList"><Link to="/final-tax-return">確定申告</Link></li>
@@ -4235,7 +4319,9 @@ const SideBar = () => {
               <Switch>
                 <Route exact path="/" component={ home } />
                 <Route path="/bookkeeping" component={ bookkeeping } />
-                <Route path="/account" component={ account } />
+                <Route path="/account-grade3" component={ accountGrade3 } />
+		<Route path="/account-grade2" component={ accountGrade2 } />
+		<Route path="/account-grade1" component={ accountGrade1 } />
                 <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
                 <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
                 <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
@@ -4290,10 +4376,7 @@ const SideBar = () => {
 		<Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } />
 		<Route path="/lease-accounting" component={ leaseAccounting } />
 		<Route path="/financial-statements-theory" component={ financialStatementsTheory } />
-		
-		
-                <Route path="/pageB" component={ PageB } />
-                <Route component={ home } />{/* ←pathを指定しない */}
+                <Route component={ home } />{/* ←404の場合 */}
               </Switch>
         </BrowserRouter>
        );
