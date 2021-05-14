@@ -162,10 +162,28 @@ const Bookkeeping = () => {
                 </table>
                 <br />
 	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
-	    	<br />
-	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
 	    	
-            </section>
+	    	<h1 className="intro">貸借平均の原理とは</h1>
+	    	<div>仕訳において、借方に記入された金額の合計と貸方に記入された金額の合計は一致するという原則のことを<span className="underline font-color2">貸借平均の原理</span>と呼びます。</div>
+		<br />
+	    	<div>なぜ一致するのかというと、仕訳はお金が動いたという事実を、因果という2つの側面から見たことを表すものになるため、動いた金額は変わらないからです。</div>
+	    	<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">消耗品費 10,000</td>
+                        <td className="table-size table-align">現金 100</td>
+                    </tr>
+                </table>
+	    	<div>これは、現金100円を使って10,000円のチョコレートを買ったという仕訳になります。金額が一致していないのでおかしいですね。</div>
+		<br />	    
+	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
+	    </section>
         </>
     );
 }
