@@ -1010,11 +1010,11 @@ const TrialBalance = () => {
                 <br />
 				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
 				<br />
-                <div>なお、最終的に発生したもの（結果）のことを<span class="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
+                <div>なお、最終的に発生したもの（結果）のことを<span className="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
 				<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
 		
 				<h1 className="intro">損益計算書とは</h1>
-				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span class="underline font-color2">損益計算書</span>と呼びます。</div>
+				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span className="underline font-color2">損益計算書</span>と呼びます。</div>
 				<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
 				<br />
 				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
@@ -1026,7 +1026,7 @@ const TrialBalance = () => {
 			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
 			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
 			<br />	
-			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span class="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
+			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
 		</section>
 		</>
 	);
@@ -1038,7 +1038,7 @@ const FinalTaxReturn = () => {
 		<>
 		　　　<section className="font-color">
 			<h1 className="intro">確定申告とは</h1>
-			<div>個人事業主が1年間の損益を算出し、所得税の金額を確定させることを<span class="underline font-color2">確定申告</span>と呼びます。</div>
+			<div>個人事業主が1年間の損益を算出し、所得税の金額を確定させることを<span className="underline font-color2">確定申告</span>と呼びます。</div>
 			
 			<div>このセクションでは、確定申告までの簡単な流れを抑えることが目的となります。</div>
 		
@@ -1056,7 +1056,15 @@ const FinalTaxReturn = () => {
 			<div>所得税額=(1年間に獲得した収益-1年間に発生した費用-所得控除)-税額控除</div>
 	
 			<h1 className="intro">所得控除とは</h1>
-			
+			<div>納税者の個人的事情に合わせることで納税の不公平性を解消するため、1年間の所得から、さらに一定の金額を差し引くことの出来る仕組みを<span className="underline font-color2">所得控除</span>と呼びます。</div>
+			<div>例えば、病気で療養中の男性は、一定の金額を医療費として控除することが出来ます。</div>
+			<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	
 			
 			<h1 className="intro">税額控除とは</h1>
 				
@@ -1072,13 +1080,13 @@ const TheEndOfTheFiscalPeriod = () => {
 		<>
 			<section className="font-color">
 				<h1 className="intro">決算とは</h1>
-				<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span class="underline font-color2">決算</span>と呼びます。</div>
+				<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span className="underline font-color2">決算</span>と呼びます。</div>
 				<br />
                 <div>損益計算書と貸借対照表を作成するところまでは個人事業主と共通しますが、株主向けの決算書と、税務署へ提出する決算書では適用する法律が変わるところに注意して下さい。</div>
 				<div></div>
 		
 				<h1 className="intro">トライアングル体制とは</h1>
-				<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span class="underline font-color2">トライアングル体制</span>と呼びます。</div>
+				<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span className="underline font-color2">トライアングル体制</span>と呼びます。</div>
                 <br />
                 <table border="1" cellspacing="0"><tr><th className="table-size table-align">法の名称</th><th className="table-size table-align">概要</th></tr><tr><td className="table-size table-align">商法・会社法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">租税法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">金融商品取引法</td><td className="table-size table-align">Lorem Ipsum</td></tr></table>
 				<br />
@@ -1220,19 +1228,19 @@ const AccountGrade1 = () => {
 			<section className="font-color">
 				<h1 className="intro">財務会計の概念フレームワークとは</h1>
 				<h1 className="intro">資産とは</h1>
-				<div>資産とは、過去の取引または事象の結果として、報告主体が支配している経済的資源をいう</div>
+				<div><span className="underline font-color2">資産とは、過去の取引または事象の結果として、報告主体が支配している経済的資源をいう</span></div>
 				<br />
 				<h1 className="intro">負債とは</h1>
-				<div>負債とは、過去の取引または事象の結果として、報告主体が支配している経済的資源を放棄もしくは引き渡す義務、またはその同等物をいう</div>
+				<div><span className="underline font-color2">負債とは、過去の取引または事象の結果として、報告主体が支配している経済的資源を放棄もしくは引き渡す義務、またはその同等物をいう</span></div>
 				<br />
 				<h1 className="intro">純資産とは</h1>
-				<div>純資産とは、資産と負債の差額をいう。</div>
+				<div><span className="underline font-color2">純資産とは、資産と負債の差額をいう。</span></div>
 				<br />
 				<h1 className="intro">収益とは</h1>
-				<div>収益とは、純利益または少数株主損益を増加させる項目であり、特定期間の期末までに生じた資産の増加や負債の減少に見合う額のうち、投資のリスクから解放された部分である（</div>
+				<div><span className="underline font-color2">収益とは、純利益または少数株主損益を増加させる項目であり、特定期間の期末までに生じた資産の増加や負債の減少に見合う額のうち、投資のリスクから解放された部分である</span></div>
 				<br />
 				<h1 className="intro">費用とは</h1>
-				<div>費用とは、純利益または少数株主損益を減少させる項目であり、特定期間の期末までに生じた資産の減少や負債の増加に見合う額のうち、投資のリスクから解放された部分である</div>
+				<div><span className="underline font-color2">費用とは、純利益または少数株主損益を減少させる項目であり、特定期間の期末までに生じた資産の減少や負債の増加に見合う額のうち、投資のリスクから解放された部分である</span></div>
 			</section>
 		</>
 	);
@@ -1360,12 +1368,12 @@ const CashGrade3 = () => {
     <Title title="現金とは"/>
         <section>
             <article>
-                <div>現金とは、「事業で利用するための」硬貨や紙幣の事です（<span class="pink">流動資産</span>）。</div>
-                <div>他にも、現金に交換できる価値のあるものを「<span class="pink">通貨代用証券</span>」と言い、現金として扱います（後述）。</div>
+                <div>現金とは、「事業で利用するための」硬貨や紙幣の事です。</div>
+                <div>他にも、現金に交換できる価値のあるものを<span className="underline font-color2">通貨代用証券</span>と言い、現金として扱います（後述）。</div>
                 <div>例えば、現金を使った支払いは以下のような仕訳となります。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">現金100円で、チョコレートを買った。</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">現金100円で、チョコレートを買った。</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1379,8 +1387,8 @@ const CashGrade3 = () => {
                 <div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を使った場合、資産の減少を表現したいという意図から、貸方に計上されます。</div>
                 <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">普通預金口座から現金を10,000円引き出した。</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">普通預金口座から現金を10,000円引き出した。</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1395,8 +1403,8 @@ const CashGrade3 = () => {
                 <div>一方、普通預金口座も資産の勘定科目として扱うのですが、現金を引き出した場合、普通預金口座という資産の減少を表現したいという意図から、貸方に普通預金を計上します。</div>
                 <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">個人事業主がプライベートの現金100円で、コーラを買った。</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">個人事業主がプライベートの現金100円で、コーラを買った。</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1416,10 +1424,10 @@ const CashGrade3 = () => {
         <section>
             <article>
                 <div>簿記の世界では、上記の他にも、いつでも通貨に換金できる価値を持つ証券も現金として扱います。</div>
-                <div>これを「<span class="pink">通貨代用証券</span>」と言います。</div>
+                <div>これを「<span className="underline font-color2">通貨代用証券</span>」と言います。</div>
                 <div>代表的なものとして、以下の通貨代用証券があります。</div>
 
-                <table border="1" cellspacing="0" class="journal">
+                <table border="1" cellspacing="0" className="journal">
                     <tr>
                         <th>通貨代用証券の名前</th>
                         <th>どんなもの？</th>
@@ -1448,8 +1456,8 @@ const CashGrade3 = () => {
 
                 <div>それでは、いくつか仕訳を紹介します。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">株式配当金領収証を10,000円受け取った。</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">株式配当金領収証を10,000円受け取った。</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1460,8 +1468,8 @@ const CashGrade3 = () => {
                     </tr>
                 </table>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">手元にあった公社債利札5,000円に関して、支払期限が到来した。</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">手元にあった公社債利札5,000円に関して、支払期限が到来した。</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1482,12 +1490,12 @@ const CashGrade3 = () => {
                 <div>一番シンプルな方法は、お金を現金の形で手渡しすることです。</div>
                 <div>では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
                 <div>手渡しも可能ではあるのですが、わざわざ現地まで大量の現金を抱えて持っていくのはいろいろなリスクが伴います。</div>
-                <div>ここで登場するのが「<span class="pink">小切手</span>」です。以下のようなメリットがあります。</div>
+                <div>ここで登場するのが「<span className="pink">小切手</span>」です。以下のようなメリットがあります。</div>
                 <div>①紙きれを発行するだけでお金を渡すことができる</div>
                 <div>②お金を渡したい相手が銀行口座を持っていなくても関係ない</div>
                 <div>③その他の文書類と同封して送付出来る</div>
 
-                <table border="1" cellspacing="0" class="journal">
+                <table border="1" cellspacing="0" className="journal">
                 <tr>
                     <th>簿記で扱う小切手の種類</th>
                     <th>どんなもの？</th>
@@ -1515,36 +1523,6 @@ const CashGrade3 = () => {
             </table>
             </article>
         </section>
-
-        <Title title="その他の通貨代用証券"/>
-        <section>
-            <article>
-            <div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
-
-            <table border="1" cellspacing="0" class="journal">
-                <tr>
-                    <th>通貨代用証券の名前</th>
-                    <th>どんなもの？</th>
-                </tr>
-                <tr>
-                    <td>預金手形</td>
-                    <td>預金者に対して銀行が降り出す手形。銀行が支払人となる証券。</td>
-                </tr>
-                <tr>
-                    <td>振替貯金払出証書</td>
-                    <td>郵便振替貯金の払出が出来る証書。</td>
-                </tr>
-                <tr>
-                    <td>一覧払手形</td>
-                    <td>受取人が支払人に呈示した日が満期となる手形。</td>
-                </tr>
-                <tr>
-                    <td>国庫金支払通知書</td>
-                    <td>官公庁から税金の還付がある場合などに発行される支払通知書。</td>
-                </tr>
-            </table>
-            </article>
-        </section>
         </>
     );
 }
@@ -1556,7 +1534,7 @@ const CashGrade2 = () => {
     <Title title="Lorem Ipsum"/>
         <section>
             <article>
-                Lorem Ipsum
+                ボキ3級と同内容です。
             </article>
         </section>
         </>
@@ -1566,13 +1544,35 @@ const CashGrade2 = () => {
 const CashGrade1 = () => {
     return (
         <>
-    
-    <Title title="Lorem Ipsum"/>
-        <section>
-            <article>
-                Lorem Ipsum
-            </article>
-        </section>
+                <Title title="その他の通貨代用証券"/>
+		<section>
+		    <article>
+		    <div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
+
+		    <table border="1" cellspacing="0" className="journal">
+			<tr>
+			    <th>通貨代用証券の名前</th>
+			    <th>どんなもの？</th>
+			</tr>
+			<tr>
+			    <td>預金手形</td>
+			    <td>預金者に対して銀行が降り出す手形。銀行が支払人となる証券。</td>
+			</tr>
+			<tr>
+			    <td>振替貯金払出証書</td>
+			    <td>郵便振替貯金の払出が出来る証書。</td>
+			</tr>
+			<tr>
+			    <td>一覧払手形</td>
+			    <td>受取人が支払人に呈示した日が満期となる手形。</td>
+			</tr>
+			<tr>
+			    <td>国庫金支払通知書</td>
+			    <td>官公庁から税金の還付がある場合などに発行される支払通知書。</td>
+			</tr>
+		    </table>
+		    </article>
+		</section>
         </>
     );
 }
@@ -1601,7 +1601,7 @@ const cashGrade2 = () => {
                     <Link to="/cash-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
                     <Link to="/cash-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
-                <CashGrade3 />
+                <CashGrade2 />
             </aside>
         </main>
     );
@@ -1616,7 +1616,7 @@ const cashGrade1 = () => {
                     <Link to="/cash-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/cash-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
                 </div>
-                <CashGrade3 />
+                <CashGrade1 />
             </aside>
         </main>
     );
@@ -1676,8 +1676,8 @@ const SavingsGrade3 = () => {
                 <div>当座預金とは、小切手を管理するための口座です。</div>
                 <div>２種類の仕訳を紹介します。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1688,8 +1688,8 @@ const SavingsGrade3 = () => {
                     </tr>
                 </table>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1709,8 +1709,8 @@ const SavingsGrade3 = () => {
             <article>
                 <div>当座借越とは、当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことです。</div>
                 <div>記帳方法は2種類に分かれます。</div>
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座借越の記帳方法</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">当座借越の記帳方法</caption>
                     <tr>
                         <th>二勘定法</th>
                         <th>一勘定法</th>
@@ -1723,9 +1723,9 @@ const SavingsGrade3 = () => {
 
                 <div>仕訳を紹介します。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
-                    <caption class="question">二勘定法の場合</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
+                    <caption className="question">二勘定法の場合</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1736,8 +1736,8 @@ const SavingsGrade3 = () => {
                     </tr>
                 </table>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">一勘定法の場合</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">一勘定法の場合</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1748,9 +1748,9 @@ const SavingsGrade3 = () => {
                     </tr>
                 </table>
                 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">当座預金口座には20,000円が預け入れられていたとする。また、借越限度額は30,000円とする。買掛金の支払いのため、30,000円の小切手の振出を行った。</caption>
-                    <caption class="question">二勘定法の場合</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">当座預金口座には20,000円が預け入れられていたとする。また、借越限度額は30,000円とする。買掛金の支払いのため、30,000円の小切手の振出を行った。</caption>
+                    <caption className="question">二勘定法の場合</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1766,9 +1766,9 @@ const SavingsGrade3 = () => {
                 </table>
                 
 
-                <table border="1" cellspacing="0" class="journal">
+                <table border="1" cellspacing="0" className="journal">
                 
-                    <caption class="question">一勘定法の場合</caption>
+                    <caption className="question">一勘定法の場合</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1869,7 +1869,7 @@ const TradingsGrade3 = () => {
             <Title title="発生主義とは"/>
             <section>
                 <article>
-                <div>実際に現金が動いた日付で収支を計上することを<span class="pink">現金主義</span>と言います。</div>
+                <div>実際に現金が動いた日付で収支を計上することを<span className="pink">現金主義</span>と言います。</div>
                 <div>ただ、それだけを記録していては、今後いくらお金を受け取れるのか、いくら支払いがあるのかなどの資金繰りが出来ません。そこで、会計では原則、お金を受け取る権利（債権）が発生した日付や、お金を支払う義務（債務）が発生した日付で収支を計上します。これを<span class="red">発生主義</span>と呼びます。</div>
                 </article>
             </section>
@@ -1880,11 +1880,11 @@ const TradingsGrade3 = () => {
                 <article>
                 <div>取引先からモノを仕入れる、もしくは売る場合に後払いにすることを掛取引と言います。</div>
                 <div>発生主義で記録を行う場合、この掛取引も記録の対象になります。</div>
-                <div>仕入を行ったものの後払いにした場合、債務が生じます。これを<span class="pink">買掛金</span>（流動負債）といい、売上が上がったものの、お金の回収が後になった場合に発生する債権を<span class="red">売掛金</span>（流動資産）と言います。</div>
+                <div>仕入を行ったものの後払いにした場合、債務が生じます。これを<span className="pink">買掛金</span>（流動負債）といい、売上が上がったものの、お金の回収が後になった場合に発生する債権を<span class="red">売掛金</span>（流動資産）と言います。</div>
                 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">A社はB社に商品を100,000円販売し、代金は掛けとした。</caption>
-                    <caption class="question">A社の場合</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">A社はB社に商品を100,000円販売し、代金は掛けとした。</caption>
+                    <caption className="question">A社の場合</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1898,8 +1898,8 @@ const TradingsGrade3 = () => {
                 <div>なぜ上記のような仕訳になるかというと、まず商品を販売したものの、代金は後払いになることから、債権のみ記録を行います。債権は売掛金という名前がついていますが、これは資産に属する勘定科目になるので、資産の増加を表したいという意図から借方に計上を行います。</div>
                 <div>一方、商品を販売したので、売上の計上も同時に行います。売上高は収益に属する勘定科目になりますので、収益の増加を表したいという意図から、貸方に金額を計上します。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">B社の場合</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">B社の場合</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -1916,8 +1916,8 @@ const TradingsGrade3 = () => {
                 <div>それでは、次に売掛金・買掛金と混同しやすい勘定科目を見ていきます。</div>
                 <div>先ほど、売掛金は債権、買掛金は債務と紹介しましたが、正確には以下のような区別があります。</div>
                 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">債権の区別</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">債権の区別</caption>
                     <tr>
                         <th>債権の名前</th>
                         <th>どんな債権か</th>
@@ -1932,8 +1932,8 @@ const TradingsGrade3 = () => {
                     </tr>
                 </table>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">債務の区別</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">債務の区別</caption>
                     <tr>
                         <th>債務の名前</th>
                         <th>どんな債務か</th>
@@ -2041,8 +2041,8 @@ const PromissoryNotesGrade3 = () => {
                 <div>誰か発行したか（振出）、受け取るのは誰か、いくらの金額をやり取りするか、いつまでに支払うかなどの情報が書いてあります。</div>
                 <div>法律上、約束手形と為替手形に分類されます。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">法律上の手形の区別</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">法律上の手形の区別</caption>
                     <tr>
                         <th>法律上の手形の名前</th>
                         <th>どんな手形か</th>
@@ -2059,8 +2059,8 @@ const PromissoryNotesGrade3 = () => {
 
                 <div>一方、手形には、簿記上の分類もあります。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">簿記上の手形の区別</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">簿記上の手形の区別</caption>
                     <tr>
                         <th>簿記上の手形の名前</th>
                         <th>どんな手形か</th>
@@ -2077,16 +2077,16 @@ const PromissoryNotesGrade3 = () => {
                 </article>
             </section>
 
-            <div class="select_level">ボキ3級</div>
+            <div className="select_level">ボキ3級</div>
             <Title title="約束手形の会計処理"/>
             <section>
                 <article>
                 <div></div>
                 <div></div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">A社はB社より商品100,000円を仕入れ、代金は約束手形を振り出して支払った。</caption>
-                    <caption class="question">A社の仕訳</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">A社はB社より商品100,000円を仕入れ、代金は約束手形を振り出して支払った。</caption>
+                    <caption className="question">A社の仕訳</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -2099,8 +2099,8 @@ const PromissoryNotesGrade3 = () => {
                 <div>約束手形を振り出した場合、将来手形の代金を支払う義務が発生します。簿記上、このような義務は負債として扱います。</div>
                 <div>また、商品の仕入に際して約束手形を振り出したときに生じる義務は支払手形（しはらいてがた）勘定（負債）で処理します。</div>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">B社の仕訳</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">B社の仕訳</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -2115,9 +2115,9 @@ const PromissoryNotesGrade3 = () => {
                 <div>また、商品の販売に際して、約束手形を受け取ったときに生じるこのような権利は受取手形（うけとりてがた）勘定（資産）で処理します。</div>
 
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">A社はB社に対して、以前振り出していた約束手形100,000円の支払期日が到来したので、当座預金口座を通じて支払った。</caption>
-                    <caption class="question">A社の仕訳</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">A社はB社に対して、以前振り出していた約束手形100,000円の支払期日が到来したので、当座預金口座を通じて支払った。</caption>
+                    <caption className="question">A社の仕訳</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -2128,8 +2128,8 @@ const PromissoryNotesGrade3 = () => {
                     </tr>
                 </table>
 
-                <table border="1" cellspacing="0" class="journal">
-                    <caption class="question">B社の仕訳</caption>
+                <table border="1" cellspacing="0" className="journal">
+                    <caption className="question">B社の仕訳</caption>
                     <tr>
                         <th>借方（運用形態）</th>
                         <th>貸方（調達源泉）</th>
@@ -2149,9 +2149,9 @@ const PromissoryNotesGrade3 = () => {
             <div></div>
             <div></div>
 
-            <table border="1" cellspacing="0" class="journal">
-                <caption class="question">A社は仕入先B社に対して、10,000円を仕入れ、代金は得意先C社宛ての為替手形を振出し、C社の引き受けを得て、B社に渡した。</caption>
-                <caption class="question">A社の仕訳</caption>
+            <table border="1" cellspacing="0" className="journal">
+                <caption className="question">A社は仕入先B社に対して、10,000円を仕入れ、代金は得意先C社宛ての為替手形を振出し、C社の引き受けを得て、B社に渡した。</caption>
+                <caption className="question">A社の仕訳</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2162,8 +2162,8 @@ const PromissoryNotesGrade3 = () => {
                 </tr>
             </table>
 
-            <table border="1" cellspacing="0" class="journal">
-                <caption class="question">B社の仕訳</caption>
+            <table border="1" cellspacing="0" className="journal">
+                <caption className="question">B社の仕訳</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2174,8 +2174,8 @@ const PromissoryNotesGrade3 = () => {
                 </tr>
             </table>
 
-            <table border="1" cellspacing="0" class="journal">
-                <caption class="question">C社の仕訳</caption>
+            <table border="1" cellspacing="0" className="journal">
+                <caption className="question">C社の仕訳</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2194,9 +2194,9 @@ const PromissoryNotesGrade3 = () => {
             <div>約束手形にせよ為替手形にせよ、受け取った手形は、期日まで待って支払人からお金をもらうこともできますが、期日前に仕入代金の支払いに用いることも出来ます。これを手形の裏書といいます。手形の所持人は、手形の裏面に署名などをすることによって第三者に譲渡することができます</div>
             <div>手形を裏書譲渡する側を裏書人（または譲渡人）、譲渡される側を被裏書人（または譲受人）といいます。</div>
 	    
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">A社はB社から商品￥100を仕入れ、代金として所有している手形を裏書譲渡した。</caption>
-                <caption class="question">A社（裏書人）の仕訳</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">A社はB社から商品￥100を仕入れ、代金として所有している手形を裏書譲渡した。</caption>
+                <caption className="question">A社（裏書人）の仕訳</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2208,8 +2208,8 @@ const PromissoryNotesGrade3 = () => {
             </table>
 	<div>受取手形勘定は手形代金を受け取ることができる権利を表します。手形の裏書譲渡によってこの権利が第三者に渡るので、その金額に相当する受取手形勘定を減額します。</div>
 		
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">B社（被裏書人）の仕訳</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">B社（被裏書人）の仕訳</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2221,8 +2221,8 @@ const PromissoryNotesGrade3 = () => {
             </table>
 	<div>B社は手形代金を受け取ることができる権利を取得したわけですから、この権利を受取手形勘定の増加として処理します。</div>
 
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">B社が裏書譲渡によって受け取った手形が、以前にB社自身が振り出した手形（自己振出手形）であったことが判明した</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">B社が裏書譲渡によって受け取った手形が、以前にB社自身が振り出した手形（自己振出手形）であったことが判明した</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2244,8 +2244,8 @@ const PromissoryNotesGrade3 = () => {
 	    <div>しかし所有している手形を銀行にもっていくと、満期日前であっても一定の手数料（割引料）を支払うことで、その手形を買い取ってもらうことができます。これを手形の割引（わりびき）といいます。</div>
 	    <div>このとき発生する手数料は手形売却損勘定（営業外費用）で処理します</div>
 		
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">額面￥300の手形を取引銀行で割り引き、割引料￥10が差し引かれた残金を当座預金とした。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">額面￥300の手形を取引銀行で割り引き、割引料￥10が差し引かれた残金を当座預金とした。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2272,9 +2272,9 @@ const PromissoryNotesGrade3 = () => {
 	    <div>手形の更改に際しては旧手形（従来の支払期日の手形）と新手形（新しい支払期日の手形）を交換するので、①旧手形の減少、②新手形の増加、③利息の支払い（受け取り）という３つのことを意識して仕訳を考えてください。</div>
 	    <div></div>
 		
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">振り出した約束手形￥100,000が本日満期となったが、資金不足のため相手方の承諾を得て、1か月後支払いの新手形に書き替えた。なお、新手形の期日までの利息￥1,000は現金で支払った。</caption>
-	<caption class="question">当社（手形の支払人）の仕訳</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">振り出した約束手形￥100,000が本日満期となったが、資金不足のため相手方の承諾を得て、1か月後支払いの新手形に書き替えた。なお、新手形の期日までの利息￥1,000は現金で支払った。</caption>
+	<caption className="question">当社（手形の支払人）の仕訳</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2290,8 +2290,8 @@ const PromissoryNotesGrade3 = () => {
     	</table>
 	<div>借方の「支払手形」は旧手形（の減少）を意味しており、貸方の「支払手形」は新手形（の増加）を意味しています。借方の「支払手形」と貸方の「支払手形」は意味が異なるものなので、相殺せずに必ず両建表示するようにしてください。</div>
 	<div>なお、利息の処理方法は現金などで支払う（受取る）方法のほかに、新手形の額面金額に含める方法があります。この場合の仕訳は次のようになります。</div>
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">利息を新手形の額面金額に含める方法</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">利息を新手形の額面金額に含める方法</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2306,8 +2306,8 @@ const PromissoryNotesGrade3 = () => {
 	</tr>
     	</table>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">相手方（手形の受取人）の仕訳</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">相手方（手形の受取人）の仕訳</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2325,8 +2325,8 @@ const PromissoryNotesGrade3 = () => {
 	<div>借方の「受取手形」は新手形（の増加）を、貸方の「受取手形」は旧手形（の減少）を意味しています。借方の「受取手形」と貸方の「受取手形」は意味が異なるものなので、相殺せずに必ず両建表示するようにしてください。</div>
 	<div>なお、利息を新手形の額面金額に含める場合の仕訳は次のようになります。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">利息を新手形の額面金額に含める場合</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">利息を新手形の額面金額に含める場合</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2350,8 +2350,8 @@ const PromissoryNotesGrade3 = () => {
             <div>手形の所持人が満期日に支払い請求したにもかかわらず、支払人が支払いを拒絶して手形代金を受け取ることができなくなることを手形の不渡りといい、この手形のことを不渡手形（ふわたりてがた）といいます。</div>
 	    <div>手形が不渡りになった場合、手形の所持人は振出人（または裏書人）に対して、手形代金のほか法定利息や償還請求に要した費用（償還請求費用）を請求することができます。</div>
         	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">当社が保有している甲社振出しの約束手形￥10,000が不渡りとなり、甲社に対して償還請求を行なった。なお、このための償還請求費用￥200を現金で支払った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">当社が保有している甲社振出しの約束手形￥10,000が不渡りとなり、甲社に対して償還請求を行なった。なお、このための償還請求費用￥200を現金で支払った。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2371,8 +2371,8 @@ const PromissoryNotesGrade3 = () => {
 	<div>このとき「不渡手形」の金額には、延長分の利息や償還に要した費用などの償還請求費用を含めるということに注意してください。</div>
 	<div>不渡手形の金額＝手形代金＋償還請求費用</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">甲社が倒産し、同社に対する不渡手形￥10,200（前期発生分）が回収不能となった。なお、貸倒引当金の残高は￥3,000である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">甲社が倒産し、同社に対する不渡手形￥10,200（前期発生分）が回収不能となった。なお、貸倒引当金の残高は￥3,000である。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2388,8 +2388,8 @@ const PromissoryNotesGrade3 = () => {
     	</table>
 	<div>不渡手形が回収不能となった場合には貸倒れとして処理します。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">甲社に対する不渡手形￥10,200が期限後利息の￥800とともに当座預金に振り込まれた。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">甲社に対する不渡手形￥10,200が期限後利息の￥800とともに当座預金に振り込まれた。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2405,8 +2405,8 @@ const PromissoryNotesGrade3 = () => {
     	</table>
 	<div>不渡手形を無事回収したときは「不渡手形」を減少させ、期限後の利息は「受取利息」（営業外収益）として処理します。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">以前、乙社に裏書譲渡していた甲社振出しの約束手形￥100,000が不渡りとなったので、償還請求費用と延滞利息￥3,000とともに小切手を振り出して支払った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">以前、乙社に裏書譲渡していた甲社振出しの約束手形￥100,000が不渡りとなったので、償還請求費用と延滞利息￥3,000とともに小切手を振り出して支払った。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2422,8 +2422,8 @@ const PromissoryNotesGrade3 = () => {
     	</table>
 	<div>裏書譲渡（または割引）をした手形が不渡りとなった場合には、その手形を裏書譲渡した（割り引いた）会社に支払義務が発生します。手形の所持人から償還請求を受けた場合にはまず請求金額を手形の所持人に支払い、その後に手形の振出人に償還請求をします。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">以前、乙社に裏書譲渡していた甲社振出しの約束手形￥100,000が不渡りとなったので、償還請求費用と延滞利息￥3,000とともに小切手を振り出して支払った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">以前、乙社に裏書譲渡していた甲社振出しの約束手形￥100,000が不渡りとなったので、償還請求費用と延滞利息￥3,000とともに小切手を振り出して支払った。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2456,8 +2456,8 @@ const PromissoryNotesGrade3 = () => {
             <div>「受取手形」や「支払手形」という勘定科目は、商品を売買したときにしか用いることはできません。</div>
 	    <div>商品以外のものを売買したときに手形を使用した場合は、営業外受取手形勘定（資産）または営業外支払手形勘定（負債）を用いて処理します。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">営業用の土地￥80,000を￥100,000で売却し、代金は約束手形で受け取った。なお、当社は土地の売買を目的とした会社ではない。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">営業用の土地￥80,000を￥100,000で売却し、代金は約束手形で受け取った。なお、当社は土地の売買を目的とした会社ではない。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2473,8 +2473,8 @@ const PromissoryNotesGrade3 = () => {
     	</table>
 	<div>商品以外のものを売却して約束手形を受け取ったときは営業外受取手形勘定（資産）で処理をします。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">上記の手形が満期日となり、手形代金￥100,000を現金で受け取った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">上記の手形が満期日となり、手形代金￥100,000を現金で受け取った。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2485,8 +2485,8 @@ const PromissoryNotesGrade3 = () => {
 	</tr>
     	</table>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">営業用のパソコン￥50,000を購入し、代金は約束手形を振り出して支払った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">営業用のパソコン￥50,000を購入し、代金は約束手形を振り出して支払った。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2498,8 +2498,8 @@ const PromissoryNotesGrade3 = () => {
     	</table>
 	<div>商品以外のものを購入して約束手形を振り出したときは営業外支払手形勘定（負債）で処理をします。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-	<caption class="question">上記の手形が満期日となり、手形代金￥50,000を現金で支払った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+	<caption className="question">上記の手形が満期日となり、手形代金￥50,000を現金で支払った。</caption>
 	<tr>
 	    <th>借方（運用形態）</th>
 	    <th>貸方（調達源泉）</th>
@@ -2521,9 +2521,9 @@ const PromissoryNotesGrade3 = () => {
             <div>手形を振り出してお金を借入た場合、手形借入金（負債）という勘定科目で処理します。</div>
             <div>一方、お金を貸し付けた際に手形を受け取った場合、手形貸付金（資産）という勘定科目で処理します。</div>
             
-            <table border="1" cellspacing="0" class="journal">
-                <caption class="question">A社は仕入先B社に対して、約束手形を振り出して100,000円を現金で仕入れた。</caption>
-                <caption class="question">A社の仕訳</caption>
+            <table border="1" cellspacing="0" className="journal">
+                <caption className="question">A社は仕入先B社に対して、約束手形を振り出して100,000円を現金で仕入れた。</caption>
+                <caption className="question">A社の仕訳</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2534,8 +2534,8 @@ const PromissoryNotesGrade3 = () => {
                 </tr>
             </table>
 
-            <table border="1" cellspacing="0" class="journal">
-                <caption class="question">B社の仕訳</caption>
+            <table border="1" cellspacing="0" className="journal">
+                <caption className="question">B社の仕訳</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2640,8 +2640,8 @@ const OtherGrade3 = () => {
             <div>手形は紛失や盗難の危険があるのに対し、電子記録債権は電子データになるため、物理的な紛失や盗難のリスクを抑えることができます。</div>
 	    <div>また、手形は印紙税がかかるのに対し、電子記録債権であれば印紙の貼付が不要のため、印紙税を節約することが出来ます。</div>
 	
-	    <table border="1" cellspacing="0" class="journal">
-                <caption class="question">得意先に対する売掛金￥1,000について、電子記録債権の発生記録が行われた。</caption>
+	    <table border="1" cellspacing="0" className="journal">
+                <caption className="question">得意先に対する売掛金￥1,000について、電子記録債権の発生記録が行われた。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2654,8 +2654,8 @@ const OtherGrade3 = () => {
             <div>電子記録債権は、債権者または債務者が電子債権記録機関に発生記録の請求を行い、同機関がその記録を行うことによって発生します。債権者は電子記録債権、債務者は電子記録債務で処理します。</div>
 	    <div>売掛金が電子記録債権になったので、これを売掛金勘定から電子記録債権勘定へ振り替えます。</div>
 	
-		<table border="1" cellspacing="0" class="journal">
-                <caption class="question">電子記録債権￥1,000について、支払期日が到来し、当座預金口座に振り込まれた。</caption>
+		<table border="1" cellspacing="0" className="journal">
+                <caption className="question">電子記録債権￥1,000について、支払期日が到来し、当座預金口座に振り込まれた。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2676,8 +2676,8 @@ const OtherGrade3 = () => {
             <div>仕訳上は普通の「売掛金」と同じように考えていけば問題ありません。</div>
 	    <div></div>
 	
-	    <table border="1" cellspacing="0" class="journal">
-                <caption class="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
+	    <table border="1" cellspacing="0" className="journal">
+                <caption className="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2698,8 +2698,8 @@ const OtherGrade3 = () => {
 	    <div>お金を借りる側は手形借入金勘定（負債）、お金を貸す側は手形貸付金勘定（資産）で処理します。</div>
 	　　 <div>手形借入金勘定は将来手形のお金を支払わなければならないという義務なので負債となります。また、手形貸付金勘定は将来手形のお金を受け取れるという権利なので資産となります。</div>
 	
-	    <table border="1" cellspacing="0" class="journal">
-                <caption class="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
+	    <table border="1" cellspacing="0" className="journal">
+                <caption className="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2738,8 +2738,8 @@ const OtherGrade3 = () => {
             <article>
             <div>保険料の支払いを例にとって、費用の前払いに関する一連の処理方法を説明していきます。</div>
 	
-	 <table border="1" cellspacing="0" class="journal">
-                <caption class="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
+	 <table border="1" cellspacing="0" className="journal">
+                <caption className="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2750,8 +2750,8 @@ const OtherGrade3 = () => {
                 </tr>
             </table>
 	
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2771,8 +2771,8 @@ const OtherGrade3 = () => {
 	<div>仕訳上は「前受利息」「前受家賃」「前受地代」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「前受収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
 	<div>前払費用は一定の契約に従い、継続して役務（サービスなど）の提供を受ける場合、いまだ提供されていない役務に対し支払われた対価をいいます。前払費用は、このような役務提供契約以外の契約等による前払金とは区別しなければなりません</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2783,8 +2783,8 @@ const OtherGrade3 = () => {
                 </tr>
             </table>
 	
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">×2年3月1日に営業のための店舗を賃借した。1年分の家賃￥1,200,000はすべて×3年2月28日に後払いする契約である。なお、当期は3月31日に終了する1年間である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">×2年3月1日に営業のための店舗を賃借した。1年分の家賃￥1,200,000はすべて×3年2月28日に後払いする契約である。なお、当期は3月31日に終了する1年間である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2828,8 +2828,8 @@ const OtherGrade3 = () => {
            我が国ではサラリーマンなどの給与所得者に対する所得税や社会保険料の徴収方法として源泉徴収制度がとられています。会社が給料を支払う際に、あらかじめ所得税や社会保険料の金額を給料から差し引いておき、一定の期日までに会社が従業員の所得税等をまとめて国などに納付する制度。なお、源泉徴収された所得税のことを源泉所得税といいます。</div>
            <div>給料から差し引いた所得税や社会保険料は一時的に従業員からお金を預かっているに過ぎないので、これを従業員預り金（または預り金）勘定（負債）で処理します。</div>
 
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">給料￥1,000のうち、源泉所得税￥100及び社会保険料￥50を差し引き、残額￥850は現金で支払った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">給料￥1,000のうち、源泉所得税￥100及び社会保険料￥50を差し引き、残額￥850は現金で支払った。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2840,8 +2840,8 @@ const OtherGrade3 = () => {
                 </tr>
             </table>
 	
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">従業員から預かっている所得税を現金で納付した。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">従業員から預かっている所得税を現金で納付した。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2862,8 +2862,8 @@ const OtherGrade3 = () => {
             <div>現金等を授受したが処理すべき相手勘定が不明である場合や金額が未確定である場合、その勘定科目や金額が判明するまで仮払金（かりばらいきん）勘定（資産）または仮受金（かりうけきん）勘定（負債）を使って処理します。</div>
 	    <div>仮払金勘定や仮受金勘定はあくまでも一時的に記帳しておくための勘定科目なので、処理すべき勘定科目や金額が判明した時点で、ただちに適切な勘定へ振り替えます。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">従業員に出張旅費の概算額￥10,000を現金で手渡した。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">従業員に出張旅費の概算額￥10,000を現金で手渡した。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2876,8 +2876,8 @@ const OtherGrade3 = () => {
 	
 	<div>現金を渡した時点では実際の出張旅費がいくらになるのかまだわかりません。そこで、この金額を一時的に仮払金勘定で処理しておきます。</div>
 	
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">出張中の従業員から￥5,000の当座預金口座への振込みがあったが、その内容は不明である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">出張中の従業員から￥5,000の当座預金口座への振込みがあったが、その内容は不明である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -2986,8 +2986,8 @@ const NonCurrentAssetsGrade3 = () => {
 	    <div>他にも、固定資産を使用できる状態にするための支出額（中古建物の内装工事代や土地の整地費用など）も付随費用として取得原価に含めます。</div>
             <div>固定資産は以下の種類があります。</div>
             
-            <table border="1" cellspacing="0" class="journal">
-                <caption class="question">固定資産の分類</caption>
+            <table border="1" cellspacing="0" className="journal">
+                <caption className="question">固定資産の分類</caption>
                 <tr>
                     <th></th>
                     <th>固定資産の種類</th>
@@ -3078,8 +3078,8 @@ const NonCurrentAssetsGrade3 = () => {
             <div>有形固定資産（ゆうけいこていしさん）とは、営業活動のために長期間にわたって使用するために保有する有形の資産のことをいいます。</div>
 	    <div>減価償却累計額とはその名のとおり、取得してから期末までの減価償却費の累計額（合計額）です。なお、仕訳では「○○減価償却累計額」という勘定科目を使います（○○の部分には固定資産の名称が入ります）。</div>
 
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">土地を￥100,000で購入し、代金は手数料￥5,000とともに現金で支払った。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">土地を￥100,000で購入し、代金は手数料￥5,000とともに現金で支払った。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -3099,8 +3099,8 @@ const NonCurrentAssetsGrade3 = () => {
             <div>間接法では価値の減少分を固定資産の取得原価から直接減額しないので、固定資産の帳簿上の金額は取得原価のままということになります。</div>
 	    <div>なお、営業で使用する目的以外で購入した場合は固定資産として処理しないので注意してください。例えば、自動車販売業を営んでいる会社が「販売目的」で自動車を購入した場合は、通常の商品売買の処理（商品の仕入れ）となります。</div>
 	　　<div>1会計期間の価値の減少分は減価償却費として毎期計上されるので、減価償却累計額は取得してから当期末までの価値の減少額ということができます。</div>
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">決算につき、次の資料に基づいて建物の減価償却を行う。なお、当期は×2年3月31日を決算日とする1年間である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">決算につき、次の資料に基づいて建物の減価償却を行う。なお、当期は×2年3月31日を決算日とする1年間である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -3163,8 +3163,8 @@ const NonCurrentAssetsGrade3 = () => {
             <div>このような固定資産の簿価と売却額との差額は固定資産売却損（費用）または固定資産売却益（収益）として処理します。</div>
 	    <div>保有している固定資産が値下がりして「売却価額＜簿価」となった場合、両者の差額を固定資産売却損勘定で処理します。</div>
 
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">土地￥105,000を￥110,000で売却し、代金は当座預金に振り込まれた。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">土地￥105,000を￥110,000で売却し、代金は当座預金に振り込まれた。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -3183,8 +3183,8 @@ const NonCurrentAssetsGrade3 = () => {
             <div>「土地」のように減価償却を行わない場合、減価償却累計額がないため（価値が減少しないため）実質的な価値を表す帳簿価額（簿価）は取得原価と一致します。</div>
             <div>しかし減価償却があるケース（固定資産の価値が減少するケース）では、購入してまだ間もない新品同様の固定資産と何十年も使用してきた固定資産とではその価値（簿価）が異なるため、売却時点における固定資産の価値の減少分を考慮しなければなりません。</div>
 
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">×6年4月1日に建物（取得原価￥120,000、期首減価償却累計額￥20,000、間接法で記帳）を￥110,000で売却し、代金は当座預金口座に振り込まれた。なお、当期は×7年3月31日で終了する１年間である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">×6年4月1日に建物（取得原価￥120,000、期首減価償却累計額￥20,000、間接法で記帳）を￥110,000で売却し、代金は当座預金口座に振り込まれた。なお、当期は×7年3月31日で終了する１年間である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -3198,8 +3198,8 @@ const NonCurrentAssetsGrade3 = () => {
 	<div>固定資産を売却した場合は、その固定資産に係る減価償却累計額も同時に減額させるという点に注意してください。</div>
 	<div></div>
 
-	<table border="1" cellspacing="0" class="journal">
-                <caption class="question">×6年6月30日に建物（取得原価￥120,000、期首減価償却累計額￥20,000、間接法で記帳）を￥110,000で売却し、代金は当座預金口座に振り込まれた。建物は残存価額を取得原価の10％、耐用年数を20年とする定額法で償却している。なお、当期は×7年3月31日で終了する１年間である。</caption>
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">×6年6月30日に建物（取得原価￥120,000、期首減価償却累計額￥20,000、間接法で記帳）を￥110,000で売却し、代金は当座預金口座に振り込まれた。建物は残存価額を取得原価の10％、耐用年数を20年とする定額法で償却している。なお、当期は×7年3月31日で終了する１年間である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -3221,8 +3221,8 @@ const NonCurrentAssetsGrade3 = () => {
 	    <div>資本的支出は固定資産の取得原価に含めて処理します</div>
             <div>収益的支出は修繕費勘定（費用）で処理します。</div>
 
-		<table border="1" cellspacing="0" class="journal">
-                <caption class="question">建物の改修工事を行い、￥100,000を小切手を振り出して支払った。このうち、￥70,000は耐用年数を延長させる改良のための支出であり、残りは定期的修繕のための支出である。</caption>
+		<table border="1" cellspacing="0" className="journal">
+                <caption className="question">建物の改修工事を行い、￥100,000を小切手を振り出して支払った。このうち、￥70,000は耐用年数を延長させる改良のための支出であり、残りは定期的修繕のための支出である。</caption>
                 <tr>
                     <th>借方（運用形態）</th>
                     <th>貸方（調達源泉）</th>
@@ -4273,7 +4273,7 @@ const SideBar = () => {
                 <span className="icon"><ImMenu3 /></span>
         </header>
 
-            <div class="sidebar">
+            <div className="sidebar">
                 <h2 className="titleColor"><Link to="/">HOME</Link></h2>
         　　    <h2 className="titleColor">基礎編</h2>
                 <ul className="sideMenu">
