@@ -5,7 +5,7 @@ import SakuraTopImage from './サクラボキ.mp4';
 import YozakuraTopImage from './ヨザクラ.mp4';
 import TrialBalanceImg from './貸借対照表と損益計算書のつながり.jpg';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
-// import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link as ScrollLink, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { ImMenu3 } from "react-icons/im";
 
 
@@ -1291,8 +1291,10 @@ const Bookkeeping = () => {
                     </tr>
                 </table>
                 <br />
-	    	
+                <Element name="test1" className="element" >
                 <h1 className="intro">仕訳とは</h1>
+                </Element>
+                
 	    	<div>お金の動きに関して、その因果を記録する仕組みを<span className="underline font-color2">仕訳</span>と呼びます。</div>
 	    	<br />
             <div>先程、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くということをお伝えしましたが、左側のことを<span className="underline font-color2">借方</span>、右側のことを<span className="underline font-color2">貸方</span>と呼びます。</div>
@@ -1407,7 +1409,7 @@ const bookkeeping = () => {
                         <li class="padding-inline-start">簿記が必要な理由</li>
                         <li class="padding-inline-start">簿記とは</li>
                         <li class="padding-inline-start">複式簿記とは</li>
-                        <li class="padding-inline-start">仕訳とは</li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >仕訳とは</ScrollLink></li>
                         <li class="padding-inline-start">勘定科目とは</li>
                         <li class="padding-inline-start">貨幣的評価の公準とは</li>
                         <li class="padding-inline-start">貸借平均の原理とは</li>

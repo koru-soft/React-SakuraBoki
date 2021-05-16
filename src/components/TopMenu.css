@@ -62,13 +62,6 @@ border-right: 2px solid rgb(149, 126, 128);
     display: none;
 }
 
-.mainArticle{
-    /* color: rgb(28, 224, 28); */
-    text-align: left;
-    overflow-y: scroll;
-    padding: 5vw;
-}
-
 @media only screen and (max-width:600px) {
     .a{
         font-size: 20px;
