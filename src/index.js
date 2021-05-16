@@ -9,7 +9,6 @@ const root = document.getElementById('root');
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <TopMenu /> */}
     <MainFrame />
   </React.StrictMode>,
   root

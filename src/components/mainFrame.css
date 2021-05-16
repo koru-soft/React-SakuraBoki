@@ -4,14 +4,3 @@
     grid-template-columns: 5vw 18vw 1fr 20vw 5vw;
 }
 
-.sidebar{
-    text-align: left;
-    overflow-y: scroll;
-    padding: 3vw;
-}
-
-.mainArticle{
-    text-align: left;
-    overflow-y: scroll;
-    padding: 5vw;
-}

@@ -1,9 +1,11 @@
 import './sideMenu.css';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import Title from './title';
-import TopImage from './サクラボキ.mp4';
-import TopContent from '../pageContents/aboutTop';
+import SakuraTopImage from './サクラボキ.mp4';
+import YozakuraTopImage from './ヨザクラ.mp4';
+import TrialBalanceImg from './貸借対照表と損益計算書のつながり.jpg';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
+// import { Link as ScrollLink, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { ImMenu3 } from "react-icons/im";
 
 
@@ -11,7 +13,7 @@ import { ImMenu3 } from "react-icons/im";
 const Home = () => {
     return(
         <>
-            <video src={ TopImage } autoPlay muted playsInline className="top-image-size"></video>
+            <video src={ SakuraTopImage } autoPlay muted playsInline className="top-image-size"></video>
             {/* <img src={ TopImage } alt="サクラボキTOP画像" class="top-image-size"></img> */}
             <section className="font-color">
                 <h1 className="intro">サクラボキとは</h1>
@@ -35,155 +37,28 @@ const Home = () => {
     );
 }
 
-//ボキのシクミのコンポーネント
-const Bookkeeping = () => {
+const HomeYozakura = () => {
     return(
         <>
-            <section className="font-color">
-                <h1 className="intro">簿記が必要な理由</h1>
-                <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
-                <br />
-                <div>■　個人事業主の場合　■</div>
-                <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
-                <br />
-                <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
-                <br />
-                <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
-                    日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
+            <video src={ YozakuraTopImage } autoPlay muted playsInline className="top-image-size"></video>
+            <section className="yozakura-font-color">
+                <h1 className="yozakura-intro">ヨザクラボキとは</h1>
+                <div>サクラボキは、独学で日商簿記３級、２級、１級、そして税理士試験や公認会計士試験に向けた学習を志した全ての人を応援する無料学習サイトです。</div>
+            </section>
 
+            <section className="yozakura-font-color">
+                <h1 className="yozakura-intro">難易度選択について</h1>
+                <div>各コンテンツには「ボキ３級」「ボキ２級」「ボキ１級」といったレベル選択が出来るようになっています。</div>
                 <br />
-                <div>■　法人の場合　■</div>
-                <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
-	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+            <div>現在の級の内容を理解出来たら、より高い級のページをクリックしてみて下さい。どんどん深い話が展開されて行きます。</div>
+            </section>
+
+            <section className="yozakura-font-color">
+                <h1 className="yozakura-intro">サクラモードとヨザクラモードについて</h1>
+                <div>サクラモードでは、理論を学ぶことが出来ます。内容が理解出来るまで繰り返し読んでみて下さい。</div>
                 <br />
-                <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
-
-                <h1 className="intro">簿記とは</h1>
-                <div>１年間のお金の動き（<span className="underline font-color2">取引</span>）を、帳簿と呼ばれるものに記録することを、略して<span className="underline font-color2">簿記</span>と呼びます。</div>
-	    	    <div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
-                <div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
-
-                <h1 className="intro">複式簿記とは</h1>
-                <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼びます。</div>
-	    	<div>例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
-                <br />
-                <div>最終的に発生したもの（結果）：チョコレート</div>
-                <div>何故、その結果は発生したのか（原因）：現金100円を使ったため</div>
-                <br />
-                <div>そして、簿記ではお金の動きを記録する際、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くことにしました。例えば、以下のように記録していきます。</div>
-                <br />
-                <table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">最終的に発生したもの（結果）</th>
-                        <th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">チョコレート</td>
-                        <td className="table-size table-align">現金</td>
-                    </tr>
-                </table>
-                <br />
-	    	
-                <h1 className="intro">仕訳とは</h1>
-	    	<div>お金の動きに関して、その因果を記録する仕組みを<span className="underline font-color2">仕訳</span>と呼びます。</div>
-	    	<br />
-            <div>先程、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くということをお伝えしましたが、左側のことを<span className="underline font-color2">借方</span>、右側のことを<span className="underline font-color2">貸方</span>と呼びます。</div>
-	    	<br />
-            <div>したがって、先程の表は簿記では以下のような表記となります。</div>
-	    	<br />
-            <table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">チョコレート</td>
-                        <td className="table-size table-align">現金</td>
-                    </tr>
-                </table>
-	    	<br />
-	    	<div>借方と貸方についてですが、その名前から「何かを借りたのか？」「何かを貸したのか？」を想像してしまい、仕訳の仕組みが理解出来なくなってしまう方がいらっしゃるかもしれません。</div>
-	    	<div>借方と貸方に、借りるという意味や貸したという意味はないということを認識しておいて下さい。</div>
-	    	<br />
-            <div>背景として、簿記の仕組みは明治時代に輸入されてきました。当時、翻訳にあたったのが福沢諭吉になります。</div>
-	    	<br />
-            <div>『帳合之法』では、簿記の翻訳について、相当苦労したことが記載されております。</div>
-	    	<div>簿記自体、もともとイタリアで生まれた仕組みになるため、その翻訳作業の中で西洋の語感を日本語へ翻訳する作業が必要でした。</div>
-	    	<br />
-            <div>西洋流の言葉であった借を「出」、貸を「入」というような日本語風の言葉へ変換することも考えていましたが、当時、すでに西洋では借、貸という言葉が普及してしまっており、日本だけその言葉を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
-	    	<br />
-            <div>そこで、「日本語の語感には合わない」が、西洋で使われている言葉をそのまま流用することで文明開化を促進する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
-	    	
-	    	<h1 className="intro">勘定科目とは</h1>
-	    	<div>お金の動きを、誰もが同じように記録でき、また、誰もが帳簿を見れば同じ理解を得られるようにするためにはどうすれば良いでしょうか？</div>
-	    	<br />
-            <div>これを実現するため、お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
-            <br />
-            <div>例えば、さきほどの「チョコレート」というものは、簿記では「消耗品」や「消耗品費」という扱いになります。そのため、記録を行う時に「チョコレート」と記録はせず、「消耗品」や「消耗品費」として記録を行います。</div>
-	    	<br />
-            <div>もし、この仕組みがなければ、各自がそれぞれの実態に合わせて具体的な取引内容を記録していくことになりますが、全員がその内容をみて共通の理解が出来るかというと、そうではありません。</div>
-	    	<div>また、取引内容の説明を追加すれば理解は出来るかもしれませんが、1年間に発生したすべてのお金の動きに注釈を付けていては、管理コストが非常に高くなります。</div>
-	    	<br />
-            <div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
-	    	<br />
-	    	<table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">消耗品費</td>
-                        <td className="table-size table-align">現金</td>
-                    </tr>
-                </table>
-	    	<br />
-	    	<h1 className="intro">貨幣的評価の公準とは</h1>
-	    	<div>物の価値は何で測定すればよいでしょうか？</div>
-	    	<br />
-            <div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。特に企業の経済活動を記録するにあたって、その活動内容を貨幣によって記録することを定めたルールのことを<span className="underline font-color2">貨幣的評価の公準</span>と呼びます。</div>
-	    	<br />
-            <div>これにより、「お金を動かした」という経済活動を記録することが出来るようになるのです。</div>
-	    	<br />
-            <div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
-	    	<br />
-            <table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">消耗品費 100</td>
-                        <td className="table-size table-align">現金 100</td>
-                    </tr>
-                </table>
-                <br />
-	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
-	    	
-	    	<h1 className="intro">貸借平均の原理とは</h1>
-	    	<div>仕訳において、借方に記入された金額の合計と貸方に記入された金額の合計は一致するという原則のことを<span className="underline font-color2">貸借平均の原理</span>と呼びます。</div>
-		<br />
-	    	<div>なぜ一致するのかというと、仕訳はお金が動いたという事実を、因果という2つの側面から見たことを表すものになるため、動いた金額は変わらないからです。</div>
-	    	<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
-	    	<br />
-	    	<table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">消耗品費 10,000</td>
-                        <td className="table-size table-align">現金 100</td>
-                    </tr>
-                </table>
-	    	<div>これは、現金100円を使って10,000円のチョコレートを買ったという仕訳になります。金額が一致していないのでおかしいですね。</div>
-		<br />	    
-	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
-	    </section>
+                <div>ヨザクラモードでは、問題演習を行うことが出来ます。繰り返し問題を解くことで、本番での対応力を養いましょう！</div>
+            </section>
         </>
     );
 }
@@ -1043,7 +918,9 @@ const TrialBalance = () => {
 			<h1 className="intro">損益計算書と貸借対照表のつながりについて</h1>
 			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
 			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
-			<br />	
+			<br />
+            <img src={ TrialBalanceImg } alt="貸借対照表と損益計算書のつながり" className="img-size"></img>
+            <br />	
 			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
 		</section>
 		</>
@@ -1271,7 +1148,7 @@ const TheEndOfTheFiscalPeriod = () => {
 // リンク用コンポーネント
 const home = () => {
     return (
-        <main className="mainArticle">
+        <main className="mainArticle sakura-color">
             <aside>
                 <Home />
             </aside>
@@ -1279,13 +1156,267 @@ const home = () => {
     );
 }
 
+const homeYozakura = () => {
+    return (
+        <main className="mainArticle yozakura-color">
+            <aside>
+                <HomeYozakura />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜ボキのシクミコンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+// const BookkeepingList = () => {
+//     return(
+//         <>
+//         <h1 className="intro">簿記が必要な理由</h1>
+//                 <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
+//                 <br />
+//                 <div>■　個人事業主の場合　■</div>
+//                 <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
+//                 <br />
+//                 <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
+//                 <br />
+//                 <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
+//                     日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
+
+//                 <br />
+//                 <div>■　法人の場合　■</div>
+//                 <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
+// 	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+//                 <br />
+//                 <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
+//         </>
+//     );
+// }
+
+// class Section extends React.Component {
+                
+//     render() {
+//         return (
+//         <>
+//             <aside className="subMenu">
+//                 <ul>
+//                     <li class="table-of-contents">目次</li>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement" style={{  }}>
+//                         簿記が必要な理由
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="secondInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         簿記とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         複式簿記とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         仕訳とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         勘定科目とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         貨幣的評価の公準とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         貸借平均の原理とは
+//                     </ScrollLink>
+//                 </ul>
+//             </aside>
+    
+//         <Element className="element" id="containerElement" style={{
+//             position: 'relative',
+//             height: '200px',
+//             marginBottom: '100px'
+//         }}>
+    
+//             <Element name="firstInsideContainer" className="font-color">
+//                 <BookkeepingList />
+//             </Element>
+    
+//             <Element name="secondInsideContainer">
+//                 second element inside container
+//             </Element>
+//         </Element>
+//         </>
+//         );
+//         }
+//     };
+
+//ボキのシクミのコンポーネント
+const Bookkeeping = () => {
+    return(
+        <>
+            <section className="font-color">
+                <h1 className="intro">簿記が必要な理由</h1>
+                <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
+                <br />
+                <div>■　個人事業主の場合　■</div>
+                <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
+                <br />
+                <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
+                <br />
+                <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
+                    日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
+
+                <br />
+                <div>■　法人の場合　■</div>
+                <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
+	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+                <br />
+                <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
+
+                <h1 className="intro">簿記とは</h1>
+                <div>１年間のお金の動き（<span className="underline font-color2">取引</span>）を、帳簿と呼ばれるものに記録することを、略して<span className="underline font-color2">簿記</span>と呼びます。</div>
+	    	    <div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
+                <div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
+
+                <h1 className="intro">複式簿記とは</h1>
+                <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼びます。</div>
+	    	<div>例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
+                <br />
+                <div>最終的に発生したもの（結果）：チョコレート</div>
+                <div>何故、その結果は発生したのか（原因）：現金100円を使ったため</div>
+                <br />
+                <div>そして、簿記ではお金の動きを記録する際、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くことにしました。例えば、以下のように記録していきます。</div>
+                <br />
+                <table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">最終的に発生したもの（結果）</th>
+                        <th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">チョコレート</td>
+                        <td className="table-size table-align">現金</td>
+                    </tr>
+                </table>
+                <br />
+	    	
+                <h1 className="intro">仕訳とは</h1>
+	    	<div>お金の動きに関して、その因果を記録する仕組みを<span className="underline font-color2">仕訳</span>と呼びます。</div>
+	    	<br />
+            <div>先程、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くということをお伝えしましたが、左側のことを<span className="underline font-color2">借方</span>、右側のことを<span className="underline font-color2">貸方</span>と呼びます。</div>
+	    	<br />
+            <div>したがって、先程の表は簿記では以下のような表記となります。</div>
+	    	<br />
+            <table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">チョコレート</td>
+                        <td className="table-size table-align">現金</td>
+                    </tr>
+                </table>
+	    	<br />
+	    	<div>借方と貸方についてですが、その名前から「何かを借りたのか？」「何かを貸したのか？」を想像してしまい、仕訳の仕組みが理解出来なくなってしまう方がいらっしゃるかもしれません。</div>
+	    	<div>借方と貸方に、借りるという意味や貸したという意味はないということを認識しておいて下さい。</div>
+	    	<br />
+            <div>背景として、簿記の仕組みは明治時代に輸入されてきました。当時、翻訳にあたったのが福沢諭吉になります。</div>
+	    	<br />
+            <div>『帳合之法』では、簿記の翻訳について、相当苦労したことが記載されております。</div>
+	    	<div>簿記自体、もともとイタリアで生まれた仕組みになるため、その翻訳作業の中で西洋の語感を日本語へ翻訳する作業が必要でした。</div>
+	    	<br />
+            <div>西洋流の言葉であった借を「出」、貸を「入」というような日本語風の言葉へ変換することも考えていましたが、当時、すでに西洋では借、貸という言葉が普及してしまっており、日本だけその言葉を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
+	    	<br />
+            <div>そこで、「日本語の語感には合わない」が、西洋で使われている言葉をそのまま流用することで文明開化を促進する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
+	    	
+	    	<h1 className="intro">勘定科目とは</h1>
+	    	<div>お金の動きを、誰もが同じように記録でき、また、誰もが帳簿を見れば同じ理解を得られるようにするためにはどうすれば良いでしょうか？</div>
+	    	<br />
+            <div>これを実現するため、お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
+            <br />
+            <div>例えば、さきほどの「チョコレート」というものは、簿記では「消耗品」や「消耗品費」という扱いになります。そのため、記録を行う時に「チョコレート」と記録はせず、「消耗品」や「消耗品費」として記録を行います。</div>
+	    	<br />
+            <div>もし、この仕組みがなければ、各自がそれぞれの実態に合わせて具体的な取引内容を記録していくことになりますが、全員がその内容をみて共通の理解が出来るかというと、そうではありません。</div>
+	    	<div>また、取引内容の説明を追加すれば理解は出来るかもしれませんが、1年間に発生したすべてのお金の動きに注釈を付けていては、管理コストが非常に高くなります。</div>
+	    	<br />
+            <div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">消耗品費</td>
+                        <td className="table-size table-align">現金</td>
+                    </tr>
+                </table>
+	    	<br />
+	    	<h1 className="intro">貨幣的評価の公準とは</h1>
+	    	<div>物の価値は何で測定すればよいでしょうか？</div>
+	    	<br />
+            <div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。特に企業の経済活動を記録するにあたって、その活動内容を貨幣によって記録することを定めたルールのことを<span className="underline font-color2">貨幣的評価の公準</span>と呼びます。</div>
+	    	<br />
+            <div>これにより、「お金を動かした」という経済活動を記録することが出来るようになるのです。</div>
+	    	<br />
+            <div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
+	    	<br />
+            <table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">消耗品費 100</td>
+                        <td className="table-size table-align">現金 100</td>
+                    </tr>
+                </table>
+                <br />
+	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
+	    	
+	    	<h1 className="intro">貸借平均の原理とは</h1>
+	    	<div>仕訳において、借方に記入された金額の合計と貸方に記入された金額の合計は一致するという原則のことを<span className="underline font-color2">貸借平均の原理</span>と呼びます。</div>
+		<br />
+	    	<div>なぜ一致するのかというと、仕訳はお金が動いたという事実を、因果という2つの側面から見たことを表すものになるため、動いた金額は変わらないからです。</div>
+	    	<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">消耗品費 10,000</td>
+                        <td className="table-size table-align">現金 100</td>
+                    </tr>
+                </table>
+	    	<div>これは、現金100円を使って10,000円のチョコレートを買ったという仕訳になります。金額が一致していないのでおかしいですね。</div>
+		<br />	    
+	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
+	    </section>
+        </>
+    );
+}
+
 const bookkeeping = () => {
     return (
+        <>
         <main className="mainArticle">
             <aside>
+                {/* <Section /> */}
+                <aside className="subMenu">
+                    <ul>
+                        <li class="table-of-contents">目次</li>
+                        <li class="padding-inline-start">簿記が必要な理由</li>
+                        <li class="padding-inline-start">簿記とは</li>
+                        <li class="padding-inline-start">複式簿記とは</li>
+                        <li class="padding-inline-start">仕訳とは</li>
+                        <li class="padding-inline-start">勘定科目とは</li>
+                        <li class="padding-inline-start">貨幣的評価の公準とは</li>
+                        <li class="padding-inline-start">貸借平均の原理とは</li>
+                    </ul>
+                </aside>
                 <Bookkeeping />
             </aside>
         </main>
+        </>
     );
 }
 
@@ -4434,66 +4565,78 @@ const NotFound = () => {
 
 // サイドメニュー兼ルーティング
 const SideBar = () => {
+
+    const [mode, setMode] = useState(0); 
+
+    const changeYozakuraMode = () => {
+        setMode(mode + 1);
+    }
+
+    const changeSakuraMode = () => {
+        setMode(mode - 1);
+    }
+
+    if( mode === 0 ) {
         return (
 	<BrowserRouter>
-        <header>
-                <div className="grid1"></div>
-                <li className="a li"><Link to="/">サクラボキ</Link></li>
-                <div className="grid2"></div>
-                <li className="c li">ヨザクラモードに切り替える</li>
-                <div className="grid3"></div>
-                <span className="icon"><ImMenu3 /></span>
+        <header className="sakura-header">
+            <div className="grid1-sakura"></div>
+            <li className="topLogo-sakura li"><Link to="/">サクラボキ</Link></li>
+            <div className="grid2-sakura"></div>
+            <li className="changeYozakuraMode li" onClick={ changeYozakuraMode }>ヨザクラモードに切り替える</li>
+            <div className="grid3-sakura"></div>
+            <span className="icon"><ImMenu3 /></span>
         </header>
 
-            <div className="sidebar">
+            <div className="sidebar-sakura">
                 <h2 className="titleColor"><Link to="/">HOME</Link></h2>
         　　    <h2 className="titleColor">基礎編</h2>
-                <ul className="sideMenu">
-                    <li className="sideList"><Link to="/bookkeeping">ボキのシクミ</Link></li>
-                    <li className="sideList"><Link to="/account-grade3">勘定科目</Link></li>
-                    <li className="sideList"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
-                    <li className="sideList"><Link to="/trial-balance">試算表</Link></li>
-                    <li className="sideList"><Link to="/final-tax-return">確定申告</Link></li>
-                    <li className="sideList"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+                <ul className="sideMenu menu-sakura-color">
+                    <li className="sideList menu-sakura-color"><Link to="/bookkeeping">ボキのシクミ</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
                 </ul>
 
                 <h2 className="titleColor">計算編</h2>
                 <ul className="sideMenu">
-                    <li className="sideList"><Link to="/cash-grade3">現金</Link></li>
-                    <li className="sideList"><Link to="/savings-grade3">預金</Link></li>
-                    <li className="sideList"><Link to="/tradings-grade3">商品売買</Link></li>
-                    <li className="sideList"><Link to="/promissory-notes-grade3">手形</Link></li>
-                    <li className="sideList"><Link to="/other-grade3">その他債権債務</Link></li>
-                    <li className="sideList"><Link to="/non-current-assets-grade3">固定資産</Link></li>
-                    <li className="sideList"><Link to="/securiteis-grade3">有価証券</Link></li>
-                    <li className="sideList"><Link to="/lease-grade3">リース取引</Link></li>
-                    <li className="sideList"><Link to="/research-and-development-costs-grade3">研究開発費</Link></li>
-                    <li className="sideList"><Link to="/allowance-grade3">引当金</Link></li>
-                    <li className="sideList"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
-                    <li className="sideList"><Link to="/tax-effect-grade3">税効果会計</Link></li>
-                    <li className="sideList"><Link to="/consolidated-accounting-grade3">連結会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/other-grade3">その他債権債務</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">固定資産</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/research-and-development-costs-grade3">研究開発費</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">税効果会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/consolidated-accounting-grade3">連結会計</Link></li>
                 </ul>
 
                 <h2 className="titleColor">理論編</h2>
                 <ul className="sideMenu">
-                    <li className="sideList"><Link to="/corporate-accounting-principles">企業会計原則</Link></li>
-                    <li className="sideList"><Link to="/profit-and-loss-accounting">損益会計</Link></li>
-                    <li className="sideList"><Link to="/asset-accounting">資産会計</Link></li>
-                    <li className="sideList"><Link to="/liabilities-accounting">負債会計</Link></li>
-                    <li className="sideList"><Link to="/net-assets-accounting">純資産会計</Link></li>
-                    <li className="sideList"><Link to="/inventory-accounting">棚卸会計</Link></li>
-                    <li className="sideList"><Link to="/non-current-assets-accounting">固定資産会計</Link></li>
-                    <li className="sideList"><Link to="/lease-accounting">リース取引会計</Link></li>
-                    <li className="sideList"><Link to="/financial-statements-theory">財務諸表理論</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/corporate-accounting-principles">企業会計原則</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/profit-and-loss-accounting">損益会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/asset-accounting">資産会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/liabilities-accounting">負債会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/net-assets-accounting">純資産会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/inventory-accounting">棚卸会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/non-current-assets-accounting">固定資産会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/lease-accounting">リース取引会計</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/financial-statements-theory">財務諸表理論</Link></li>
                 </ul>
             </div>
 
-              <Switch>
+            <Switch>
                 <Route exact path="/" component={ home } />
                 <Route path="/bookkeeping" component={ bookkeeping } />
                 <Route path="/account-grade3" component={ accountGrade3 } />
-		<Route path="/account-grade2" component={ accountGrade2 } />
-		<Route path="/account-grade1" component={ accountGrade1 } />
+                <Route path="/account-grade2" component={ accountGrade2 } />
+                <Route path="/account-grade1" component={ accountGrade1 } />
                 <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
                 <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
                 <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
@@ -4501,57 +4644,177 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-		<Route path="/cash-grade2" component={ cashGrade2 } />
-		<Route path="/cash-grade1" component={ cashGrade1 } />
+		        <Route path="/cash-grade2" component={ cashGrade2 } />
+		        <Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-		<Route path="/savings-grade2" component={ savingsGrade2 } />
-		<Route path="/savings-grade1" component={ savingsGrade1 } />
+		        <Route path="/savings-grade2" component={ savingsGrade2 } />
+		        <Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
-		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
+		        <Route path="/tradings-grade2" component={ tradingsGrade2 } />
+		        <Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+		        <Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+		        <Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-		<Route path="/other-grade2" component={ otherGrade2 } />
-		<Route path="/other-grade1" component={ otherGrade1 } />
+		        <Route path="/other-grade2" component={ otherGrade2 } />
+		        <Route path="/other-grade1" component={ otherGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
-		<Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
-		<Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
-		<Route path="/securiteis-grade3" component={ securiteisGrade3 } />
-		<Route path="/securiteis-grade2" component={ securiteisGrade2 } />
-		<Route path="/securiteis-grade1" component={ securiteisGrade1 } />
-		<Route path="/lease-grade3" component={ leaseGrade3 } />
-		<Route path="/lease-grade2" component={ leaseGrade2 } />
-		<Route path="/lease-grade1" component={ leaseGrade1 } />
-		<Route path="/research-and-development-costs-grade3" component={ researchAndDevelopmentCostsGrade3 } />
-		<Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2 } />
-		<Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1 } />
-		<Route path="/allowance-grade3" component={ allowanceGrade3 } />
-		<Route path="/allowance-grade2" component={ allowanceGrade2 } />
-		<Route path="/allowance-grade1" component={ allowanceGrade1 } />
-		<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
-		<Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
-		<Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
-		<Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
-		<Route path="/tax-effect-grade2" component={ taxEffectGrade2 } />
-		<Route path="/tax-effect-grade1" component={ taxEffectGrade1 } />
-		<Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
-		<Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
-		<Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
-		<Route path="/corporate-accounting-principles" component={ corporateAccountingPrinciples } />
-		<Route path="/profit-and-loss-accounting" component={ profitAndLossAccounting } />
-		<Route path="/asset-accounting" component={ assetAccounting } />
-		<Route path="/liabilities-accounting" component={ liabilitiesAccounting } />
-		<Route path="/net-assets-accounting" component={ netAssetsAccounting } />
-		<Route path="/inventory-accounting" component={ inventoryAccounting } />
-		<Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } />
-		<Route path="/lease-accounting" component={ leaseAccounting } />
-		<Route path="/financial-statements-theory" component={ financialStatementsTheory } />
+                <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
+                <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
+                <Route path="/securiteis-grade3" component={ securiteisGrade3 } />
+                <Route path="/securiteis-grade2" component={ securiteisGrade2 } />
+                <Route path="/securiteis-grade1" component={ securiteisGrade1 } />
+                <Route path="/lease-grade3" component={ leaseGrade3 } />
+                <Route path="/lease-grade2" component={ leaseGrade2 } />
+                <Route path="/lease-grade1" component={ leaseGrade1 } />
+                <Route path="/research-and-development-costs-grade3" component={ researchAndDevelopmentCostsGrade3 } />
+                <Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2 } />
+                <Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1 } />
+                <Route path="/allowance-grade3" component={ allowanceGrade3 } />
+                <Route path="/allowance-grade2" component={ allowanceGrade2 } />
+                <Route path="/allowance-grade1" component={ allowanceGrade1 } />
+                <Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
+                <Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
+                <Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
+                <Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
+                <Route path="/tax-effect-grade2" component={ taxEffectGrade2 } />
+                <Route path="/tax-effect-grade1" component={ taxEffectGrade1 } />
+                <Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
+                <Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
+                <Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
+                <Route path="/corporate-accounting-principles" component={ corporateAccountingPrinciples } />
+                <Route path="/profit-and-loss-accounting" component={ profitAndLossAccounting } />
+                <Route path="/asset-accounting" component={ assetAccounting } />
+                <Route path="/liabilities-accounting" component={ liabilitiesAccounting } />
+                <Route path="/net-assets-accounting" component={ netAssetsAccounting } />
+                <Route path="/inventory-accounting" component={ inventoryAccounting } />
+                <Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } />
+                <Route path="/lease-accounting" component={ leaseAccounting } />
+                <Route path="/financial-statements-theory" component={ financialStatementsTheory } />
                 <Route component={ home } />{/* ←404の場合 */}
-              </Switch>
+            </Switch>
         </BrowserRouter>
-       );
+    );
+} else {
+    return(
+        <BrowserRouter>
+        <header className="yozakura-header">
+            <div className="grid1-yozakura"></div>
+            <li className="topLogo-yozakura li"><Link to="/">ヨザクラボキ</Link></li>
+            <div className="grid2-yozakura"></div>
+            <li className="changeSakuraMode li" onClick={ changeSakuraMode }>サクラモードに切り替える</li>
+            <div className="grid3-yozakura"></div>
+            <span className="icon"><ImMenu3 /></span>
+        </header>
+            <div className="grid4-yozakura"></div>
+            <div className="sidebar-yozakura">
+                <h2 className="yozakura-title-color"><Link to="/">HOME</Link></h2>
+        　　    <h2 className="yozakura-title-color">基礎編</h2>
+                <ul className="sideMenu">
+                    <li className="sideList menu-yozakura-color"><Link to="/bookkeeping">ボキのシクミ</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/account-grade3">勘定科目</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/trial-balance">試算表</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+                </ul>
+
+                <h2 className="yozakura-title-color">計算編</h2>
+                <ul className="sideMenu">
+                    <li className="sideList menu-yozakura-color"><Link to="/cash-grade3">現金</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/savings-grade3">預金</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/other-grade3">その他債権債務</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/non-current-assets-grade3">固定資産</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/lease-grade3">リース取引</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/research-and-development-costs-grade3">研究開発費</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/allowance-grade3">引当金</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/tax-effect-grade3">税効果会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/consolidated-accounting-grade3">連結会計</Link></li>
+                </ul>
+
+                <h2 className="yozakura-title-color">理論編</h2>
+                <ul className="sideMenu">
+                    <li className="sideList menu-yozakura-color"><Link to="/corporate-accounting-principles">企業会計原則</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/profit-and-loss-accounting">損益会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/asset-accounting">資産会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/liabilities-accounting">負債会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/net-assets-accounting">純資産会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/inventory-accounting">棚卸会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/non-current-assets-accounting">固定資産会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/lease-accounting">リース取引会計</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/financial-statements-theory">財務諸表理論</Link></li>
+                </ul>
+            </div>
+
+            <Switch>
+                <Route exact path="/" component={ homeYozakura } />
+                <Route path="/bookkeeping" component={ bookkeeping } />
+                <Route path="/account-grade3" component={ accountGrade3 } />
+                <Route path="/account-grade2" component={ accountGrade2 } />
+                <Route path="/account-grade1" component={ accountGrade1 } />
+                <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
+                <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
+                <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
+                <Route path="/trial-balance" component={ trialBalance } />
+                <Route path="/final-tax-return" component={ finalTaxReturn } />
+                <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
+                <Route path="/cash-grade3" component={ cashGrade3 } />
+		        <Route path="/cash-grade2" component={ cashGrade2 } />
+		        <Route path="/cash-grade1" component={ cashGrade1 } />
+                <Route path="/savings-grade3" component={ savingsGrade3 } />
+		        <Route path="/savings-grade2" component={ savingsGrade2 } />
+		        <Route path="/savings-grade1" component={ savingsGrade1 } />
+                <Route path="/tradings-grade3" component={ tradingsGrade3 } />
+		        <Route path="/tradings-grade2" component={ tradingsGrade2 } />
+		        <Route path="/tradings-grade1" component={ tradingsGrade1 } />
+                <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
+		        <Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+		        <Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+                <Route path="/other-grade3" component={ otherGrade3 } />
+		        <Route path="/other-grade2" component={ otherGrade2 } />
+		        <Route path="/other-grade1" component={ otherGrade1 } />
+                <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
+                <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
+                <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
+                <Route path="/securiteis-grade3" component={ securiteisGrade3 } />
+                <Route path="/securiteis-grade2" component={ securiteisGrade2 } />
+                <Route path="/securiteis-grade1" component={ securiteisGrade1 } />
+                <Route path="/lease-grade3" component={ leaseGrade3 } />
+                <Route path="/lease-grade2" component={ leaseGrade2 } />
+                <Route path="/lease-grade1" component={ leaseGrade1 } />
+                <Route path="/research-and-development-costs-grade3" component={ researchAndDevelopmentCostsGrade3 } />
+                <Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2 } />
+                <Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1 } />
+                <Route path="/allowance-grade3" component={ allowanceGrade3 } />
+                <Route path="/allowance-grade2" component={ allowanceGrade2 } />
+                <Route path="/allowance-grade1" component={ allowanceGrade1 } />
+                <Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
+                <Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
+                <Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
+                <Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
+                <Route path="/tax-effect-grade2" component={ taxEffectGrade2 } />
+                <Route path="/tax-effect-grade1" component={ taxEffectGrade1 } />
+                <Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
+                <Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
+                <Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
+                <Route path="/corporate-accounting-principles" component={ corporateAccountingPrinciples } />
+                <Route path="/profit-and-loss-accounting" component={ profitAndLossAccounting } />
+                <Route path="/asset-accounting" component={ assetAccounting } />
+                <Route path="/liabilities-accounting" component={ liabilitiesAccounting } />
+                <Route path="/net-assets-accounting" component={ netAssetsAccounting } />
+                <Route path="/inventory-accounting" component={ inventoryAccounting } />
+                <Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } />
+                <Route path="/lease-accounting" component={ leaseAccounting } />
+                <Route path="/financial-statements-theory" component={ financialStatementsTheory } />
+                <Route component={ home } />{/* ←404の場合 */}
+            </Switch>
+        </BrowserRouter>
+    );
+}
 }
 
 export default SideBar;
