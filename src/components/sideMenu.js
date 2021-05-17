@@ -3,7 +3,7 @@ import React, { Component, useState } from 'react';
 import Title from './title';
 import SakuraTopImage from './サクラボキ.mp4';
 import YozakuraTopImage from './ヨザクラ.mp4';
-import TrialBalanceImg from './貸借対照表と損益計算書のつながり.jpg';
+import TrialBalanceImg from './貸借対照表と損益計算書のつながり.jpg';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import { Link as ScrollLink, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { ImMenu3 } from "react-icons/im";
