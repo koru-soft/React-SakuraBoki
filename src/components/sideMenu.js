@@ -388,22 +388,59 @@ const AccountGrade3 = () => {
 				</tr>
 			</table>
 				<br />
-				<div>それでは、各分類の詳細を見ていきましょう。</div>
 
 				<Element name="accountGrade3-2" className="element" >
+					<h1 className="intro">勘定科目の定位置について</h1>
+				</Element>
+				<div>勘定科目の各分類は、以下の位置が定位置となり、この分類がそのまま貸借対照表や損益計算書を形造ります。</div>
+				<br />
+				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr></table>
+				<br />
+				<div>それぞれの勘定科目が増加した場合にはその定位置に、減少した場合には逆の位置に配置を行います。</div>
+				<div>それでは、各分類の詳細を見ていきましょう。</div>
+		
+				<Element name="accountGrade3-3" className="element" >
 					<h1 className="intro">資産とは</h1>
 				</Element>
 				<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
 				<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
 				<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
+		
+				<div>資産は定位置が借方になるので、資産が増えたら仕訳の左側に、資産が減ったら仕訳の右側に記入していきます。</div>
+		
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">借方</th>
+					<th className="table-size table-align">貸方</th>
+				    </tr>
 
-				<Element name="accountGrade3-3" className="element" >
+				    <tr>
+					<td className="table-size table-align">資産の増加</td>
+					<td className="table-size table-align">資産の減少</td>
+				    </tr>
+				</table>
+
+				<Element name="accountGrade3-4" className="element" >
 					<h1 className="intro">負債とは</h1>
 				</Element>
 				<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
 				<div>例えば、借金がこれに該当します。</div>
+		
+				<div>負債は定位置が貸方になるので、負債が増えたら仕訳の右側に、負債が減ったら仕訳の左側に記入していきます。</div>		
+		
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">借方</th>
+					<th className="table-size table-align">貸方</th>
+				    </tr>
 
-				<Element name="accountGrade3-4" className="element" >
+				    <tr>
+					<td className="table-size table-align">負債の減少</td>
+					<td className="table-size table-align">負債の増加</td>
+				    </tr>
+				</table>
+
+				<Element name="accountGrade3-5" className="element" >
 					<h1 className="intro">純資産とは</h1>
 				</Element>
 				<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます</div>
@@ -412,17 +449,58 @@ const AccountGrade3 = () => {
 				<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
 				<div>②事業活動を通して、獲得したお金</div>
 
-				<Element name="accountGrade3-5" className="element" >
+				<div>純資産は定位置が貸方になるので、純資産が増えたら仕訳の右側に、純資産が減ったら仕訳の左側に記入していきます。</div>
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">借方</th>
+					<th className="table-size table-align">貸方</th>
+				    </tr>
+
+				    <tr>
+					<td className="table-size table-align">純資産の減少</td>
+					<td className="table-size table-align">純資産の増加</td>
+				    </tr>
+				</table>		
+		
+				<Element name="accountGrade3-6" className="element" >
 					<h1 className="intro">収益とは</h1>
 				</Element>
 				<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
 				<div>例えば、売上がこれに該当します。</div>
 
-				<Element name="accountGrade3-6" className="element" >
+				<div>収益は定位置が貸方になるので、収益が増えたら仕訳の右側に、収益が減ったら仕訳の左側に記入していきます。</div>	
+		
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">借方</th>
+					<th className="table-size table-align">貸方</th>
+				    </tr>
+
+				    <tr>
+					<td className="table-size table-align">収益の減少</td>
+					<td className="table-size table-align">収益の増加</td>
+				    </tr>
+				</table>	
+		
+				<Element name="accountGrade3-7" className="element" >
 					<h1 className="intro">費用とは</h1>
 				</Element>
 				<div>事業活動で発生したお金を<span className="underline font-color2">費用</span>と呼びます</div>
 				<div>例えば、仕入がこれに該当します。</div>
+				
+				<div>費用は定位置が借方になるので、費用が増えたら仕訳の左側に、費用が減ったら仕訳の右側に記入していきます。</div>
+		
+				<table border="1" cellspacing="0">
+				    <tr>
+					<th className="table-size table-align">借方</th>
+					<th className="table-size table-align">貸方</th>
+				    </tr>
+
+				    <tr>
+					<td className="table-size table-align">費用の増加</td>
+					<td className="table-size table-align">費用の減少</td>
+				    </tr>
+				</table>
 			</section>
 		</>
 	);
@@ -546,12 +624,13 @@ const accountGrade3 = () => {
                     <ul>
                         <li className="table-of-contents">目次</li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-1" spy={true} smooth={true} duration={500} >勘定科目の分類について</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-2" spy={true} smooth={true} duration={500} >資産とは</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-3" spy={true} smooth={true} duration={500} >負債とは</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-4" spy={true} smooth={true} duration={500} >純資産とは</ScrollLink></li>
-                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-5" spy={true} smooth={true} duration={500} >収益とは</ScrollLink></li>
-	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-6" spy={true} smooth={true} duration={500} >費用とは</ScrollLink></li>
-	    	    </ul>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-2" spy={true} smooth={true} duration={500} >勘定科目の定位置について</ScrollLink></li>
+	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-3" spy={true} smooth={true} duration={500} >資産とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-4" spy={true} smooth={true} duration={500} >負債とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-5" spy={true} smooth={true} duration={500} >純資産とは</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-6" spy={true} smooth={true} duration={500} >収益とは</ScrollLink></li>
+	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade3-7" spy={true} smooth={true} duration={500} >費用とは</ScrollLink></li>
+	    	　　　</ul>
                 </aside>
                 <AccountGrade3 />
             </aside>
