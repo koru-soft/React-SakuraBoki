@@ -9,7 +9,7 @@ import { Link as ScrollLink, Element, animateScroll as scroll, scrollSpy, scroll
 import { ImMenu3 } from "react-icons/im";
 
 
-//ホーム画面のコンポーネント
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜HOME画面コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 const Home = () => {
     return(
         <>
@@ -62,6 +62,514 @@ const HomeYozakura = () => {
         </>
     );
 }
+
+const home = () => {
+    return (
+        <main className="mainArticle sakura-color">
+            <aside>
+                <Home />
+            </aside>
+        </main>
+    );
+}
+
+const homeYozakura = () => {
+    return (
+        <main className="mainArticle yozakura-color">
+            <aside>
+                <HomeYozakura />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜HOME画面コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜ボキのシクミコンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+// const BookkeepingList = () => {
+//     return(
+//         <>
+//         <h1 className="intro">簿記が必要な理由</h1>
+//                 <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
+//                 <br />
+//                 <div>■　個人事業主の場合　■</div>
+//                 <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
+//                 <br />
+//                 <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
+//                 <br />
+//                 <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
+//                     日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
+
+//                 <br />
+//                 <div>■　法人の場合　■</div>
+//                 <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
+// 	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+//                 <br />
+//                 <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
+//         </>
+//     );
+// }
+
+// class Section extends React.Component {
+                
+//     render() {
+//         return (
+//         <>
+//             <aside className="subMenu">
+//                 <ul>
+//                     <li class="table-of-contents">目次</li>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement" style={{  }}>
+//                         簿記が必要な理由
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="secondInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         簿記とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         複式簿記とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         仕訳とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         勘定科目とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         貨幣的評価の公準とは
+//                     </ScrollLink>
+//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
+//                         貸借平均の原理とは
+//                     </ScrollLink>
+//                 </ul>
+//             </aside>
+    
+//         <Element className="element" id="containerElement" style={{
+//             position: 'relative',
+//             height: '200px',
+//             marginBottom: '100px'
+//         }}>
+    
+//             <Element name="firstInsideContainer" className="font-color">
+//                 <BookkeepingList />
+//             </Element>
+    
+//             <Element name="secondInsideContainer">
+//                 second element inside container
+//             </Element>
+//         </Element>
+//         </>
+//         );
+//         }
+//     };
+
+//ボキのシクミのコンポーネント
+const Bookkeeping = () => {
+    return(
+        <>
+            <section className="font-color">
+	    	<Element name="bookkeeping1" className="element" >
+	    		<h1 className="intro">簿記が必要な理由</h1>
+	    	</Element>
+                <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
+                <br />
+                <div>■　個人事業主の場合　■</div>
+                <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
+                <br />
+                <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
+                <br />
+                <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
+                    日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
+
+                <br />
+                <div>■　法人の場合　■</div>
+                <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
+	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
+                <br />
+                <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
+
+	    	<Element name="bookkeeping2" className="element" >
+	    		<h1 className="intro">簿記とは</h1>
+	    	</Element>
+                <div>１年間のお金の動き（<span className="underline font-color2">取引</span>）を、帳簿と呼ばれるものに記録することを、略して<span className="underline font-color2">簿記</span>と呼びます。</div>
+	    	    <div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
+                <div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
+
+	    	<Element name="bookkeeping3" className="element" ></Element>
+                <h1 className="intro">複式簿記とは</h1>
+                <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼びます。</div>
+	    	<div>例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
+                <br />
+                <div>最終的に発生したもの（結果）：チョコレート</div>
+                <div>何故、その結果は発生したのか（原因）：現金100円を使ったため</div>
+                <br />
+                <div>そして、簿記ではお金の動きを記録する際、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くことにしました。例えば、以下のように記録していきます。</div>
+                <br />
+                <table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">最終的に発生したもの（結果）</th>
+                        <th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">チョコレート</td>
+                        <td className="table-size table-align">現金</td>
+                    </tr>
+                </table>
+                <br />
+	    
+                <Element name="bookkeeping4" className="element" >
+                	<h1 className="intro">仕訳とは</h1>
+                </Element>    
+	    	<div>お金の動きに関して、その因果を記録する仕組みを<span className="underline font-color2">仕訳</span>と呼びます。</div>
+	    	<br />
+            <div>先程、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くということをお伝えしましたが、左側のことを<span className="underline font-color2">借方</span>、右側のことを<span className="underline font-color2">貸方</span>と呼びます。</div>
+	    	<br />
+            <div>したがって、先程の表は簿記では以下のような表記となります。</div>
+	    	<br />
+            <table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">チョコレート</td>
+                        <td className="table-size table-align">現金</td>
+                    </tr>
+                </table>
+	    	<br />
+	    	<div>借方と貸方についてですが、その名前から「何かを借りたのか？」「何かを貸したのか？」を想像してしまい、仕訳の仕組みが理解出来なくなってしまう方がいらっしゃるかもしれません。</div>
+	    	<div>借方と貸方に、借りるという意味や貸したという意味はないということを認識しておいて下さい。</div>
+	    	<br />
+            <div>背景として、簿記の仕組みは明治時代に輸入されてきました。当時、翻訳にあたったのが福沢諭吉になります。</div>
+	    	<br />
+            <div>『帳合之法』では、簿記の翻訳について、相当苦労したことが記載されております。</div>
+	    	<div>簿記自体、もともとイタリアで生まれた仕組みになるため、その翻訳作業の中で西洋の語感を日本語へ翻訳する作業が必要でした。</div>
+	    	<br />
+            <div>西洋流の言葉であった借を「出」、貸を「入」というような日本語風の言葉へ変換することも考えていましたが、当時、すでに西洋では借、貸という言葉が普及してしまっており、日本だけその言葉を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
+	    	<br />
+            <div>そこで、「日本語の語感には合わない」が、西洋で使われている言葉をそのまま流用することで文明開化を促進する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
+	    	
+	    	<Element name="bookkeeping5" className="element" ></Element>
+	    	<h1 className="intro">勘定科目とは</h1>
+	    	<div>お金の動きを、誰もが同じように記録でき、また、誰もが帳簿を見れば同じ理解を得られるようにするためにはどうすれば良いでしょうか？</div>
+	    	<br />
+            <div>これを実現するため、お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
+            <br />
+            <div>例えば、さきほどの「チョコレート」というものは、簿記では「消耗品」や「消耗品費」という扱いになります。そのため、記録を行う時に「チョコレート」と記録はせず、「消耗品」や「消耗品費」として記録を行います。</div>
+	    	<br />
+            <div>もし、この仕組みがなければ、各自がそれぞれの実態に合わせて具体的な取引内容を記録していくことになりますが、全員がその内容をみて共通の理解が出来るかというと、そうではありません。</div>
+	    	<div>また、取引内容の説明を追加すれば理解は出来るかもしれませんが、1年間に発生したすべてのお金の動きに注釈を付けていては、管理コストが非常に高くなります。</div>
+	    	<br />
+            <div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">消耗品費</td>
+                        <td className="table-size table-align">現金</td>
+                    </tr>
+                </table>
+	    	<br />
+	    	
+	    	<Element name="bookkeeping6" className="element" >
+	    		<h1 className="intro">貨幣的評価の公準とは</h1>
+	    	</Element>
+	    	<div>物の価値は何で測定すればよいでしょうか？</div>
+	    	<br />
+            <div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。特に企業の経済活動を記録するにあたって、その活動内容を貨幣によって記録することを定めたルールのことを<span className="underline font-color2">貨幣的評価の公準</span>と呼びます。</div>
+	    	<br />
+            <div>これにより、「お金を動かした」という経済活動を記録することが出来るようになるのです。</div>
+	    	<br />
+            <div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
+	    	<br />
+            <table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">消耗品費 100</td>
+                        <td className="table-size table-align">現金 100</td>
+                    </tr>
+                </table>
+                <br />
+	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
+	    	
+	    	<Element name="bookkeeping7" className="element" >
+	    		<h1 className="intro">貸借平均の原理とは</h1>
+	    	</Element>
+	    	<div>仕訳において、借方に記入された金額の合計と貸方に記入された金額の合計は一致するという原則のことを<span className="underline font-color2">貸借平均の原理</span>と呼びます。</div>
+		<br />
+	    	<div>なぜ一致するのかというと、仕訳はお金が動いたという事実を、因果という2つの側面から見たことを表すものになるため、動いた金額は変わらないからです。</div>
+	    	<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0">
+                    <tr>
+                        <th className="table-size table-align">借方</th>
+                        <th className="table-size table-align">貸方</th>
+                    </tr>
+
+                    <tr>
+                        <td className="table-size table-align">消耗品費 10,000</td>
+                        <td className="table-size table-align">現金 100</td>
+                    </tr>
+                </table>
+	    	<div>これは、現金100円を使って10,000円のチョコレートを買ったという仕訳になります。金額が一致していないのでおかしいですね。</div>
+		<br />	    
+	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
+	    </section>
+        </>
+    );
+}
+
+const bookkeeping = () => {
+    return (
+        <>
+        <main className="mainArticle">
+            <aside>
+                <aside className="subMenu">
+                    <ul>
+                        <li class="table-of-contents">目次</li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping1" spy={true} smooth={true} duration={500} >簿記が必要な理由</ScrollLink></li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping2" spy={true} smooth={true} duration={500} >簿記とは</ScrollLink></li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping3" spy={true} smooth={true} duration={500} >複式簿記とは</ScrollLink></li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping4" spy={true} smooth={true} duration={500} >仕訳とは</ScrollLink></li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping5" spy={true} smooth={true} duration={500} >勘定科目とは</ScrollLink></li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping6" spy={true} smooth={true} duration={500} >貨幣的評価の公準とは</ScrollLink></li>
+                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping7" spy={true} smooth={true} duration={500} >貸借平均の原理とは</ScrollLink></li>
+                    </ul>
+                </aside>
+                <Bookkeeping />
+            </aside>
+        </main>
+        </>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜試算表コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+//試算表のコンポーネント
+const TrialBalance = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">試算表とは</h1>
+				<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span className="underline font-color2">試算表</span>と呼びます。</div>
+				<div>このセクションでは、貸借対照表と損益計算書を解説していきます。</div>
+				
+				<h1 className="intro">貸借対照表とは</h1>
+				<div>ある時点での財政状態を示す一覧表のことを<span className="underline font-color2">貸借対照表</span>と呼びます。</div>
+				<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
+                <br />
+				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
+				<br />
+                <div>なお、最終的に発生したもの（結果）のことを<span className="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
+				<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
+		
+				<h1 className="intro">損益計算書とは</h1>
+				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span className="underline font-color2">損益計算書</span>と呼びます。</div>
+				<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
+				<br />
+				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
+				<br />
+				<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
+				<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「収益を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
+				
+			<h1 className="intro">損益計算書と貸借対照表のつながりについて</h1>
+			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
+			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
+			<br />
+            <img src={ TrialBalanceImg } alt="貸借対照表と損益計算書のつながり" className="img-size"></img>
+            <br />	
+			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
+		</section>
+		</>
+	);
+}
+
+
+const trialBalance = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <TrialBalance />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+//勘定科目のコンポーネント
+const AccountGrade3 = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">勘定科目の分類について</h1>
+				<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
+				<div>この「共通の性質」は、大きく分けると5種類に分かれていきます。</div>
+                		<br />
+				<table border="1" cellspacing="0">
+					<tr>
+						<th className="table-size table-align">分類の名前</th>
+						<th className="table-size table-align">概要</th>
+					</tr>
+
+					<tr>
+						<td className="table-size table-align">資産</td>
+						<td className="table-size table-align">売ったらお金になるという性質をもつ財産</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">負債</td>
+						<td className="table-size table-align">いずれ引き渡す義務があるという性質をもつ財産</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">純資産</td>
+						<td className="table-size table-align">自分で用意したという性質をもつ財産</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">収益</td>
+						<td className="table-size table-align">事業活動により獲得したお金</td>
+					</tr>
+					<tr>
+						<td className="table-size table-align">費用</td>
+						<td className="table-size table-align">事業活動で発生したお金</td>
+					</tr>
+					</table>
+					<br />
+					<div>それでは、各分類の詳細を見ていきましょう。</div>
+
+					<h1 className="intro">資産とは</h1>
+					<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
+					<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
+					<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
+
+					<h1 className="intro">負債とは</h1>
+					<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
+					<div>例えば、借金がこれに該当します。</div>
+
+					<h1 className="intro">純資産とは</h1>
+					<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます</div>
+					<div>「自分で用意した」というのは、具体的には次の2つのお金を意味しています。これらは、負債のように他人から資産を得たのではなく、自身の力によって生み出した資産になります。</div>
+					<br />
+					<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
+					<div>②事業活動を通して、獲得したお金</div>
+
+					<h1 className="intro">収益とは</h1>
+					<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
+					<div>例えば、売上がこれに該当します。</div>
+
+					<h1 className="intro">費用とは</h1>
+					<div>事業活動で発生したお金を<span className="underline font-color2">費用</span>と呼びます</div>
+					<div>例えば、仕入がこれに該当します。</div>
+				</section>
+		{/* <div></div> */}
+                {/* <div className="deco1">帳簿記録のこと</div> */}
+	    {/* <span className="underline font-color2"></span> */}
+		</>
+	);
+}
+
+const AccountGrade2 = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">勘定科目の大分類、中分類、小分類とは</h1>
+				<h1 className="intro">流動資産とは</h1>
+				<h1 className="intro">固定資産とは</h1>
+				<h1 className="intro">繰延資産とは</h1>
+				<h1 className="intro">流動負債とは</h1>
+				<h1 className="intro">固定負債とは</h1>
+				<h1 className="intro">売上高とは</h1>
+				<h1 className="intro">営業外収益とは</h1>
+				<h1 className="intro">特別利益とは</h1>
+				<h1 className="intro">売上原価とは</h1>
+				<h1 className="intro">販売費及び一般管理費とは</h1>
+				<h1 className="intro">営業外費用とは</h1>
+				<h1 className="intro">特別損失とは</h1>
+				<h1 className="intro">法人税等とは</h1>
+			</section>
+		</>
+	);
+}
+
+const AccountGrade1 = () => {
+	return (
+		<>
+			<section className="font-color">
+				<h1 className="intro">財務会計の概念フレームワークとは</h1>
+				<h1 className="intro">資産とは</h1>
+				<div><span className="underline font-color2">資産とは、過去の取引または事象の結果として、報告主体が支配している経済的資源をいう</span></div>
+				<br />
+				<h1 className="intro">負債とは</h1>
+				<div><span className="underline font-color2">負債とは、過去の取引または事象の結果として、報告主体が支配している経済的資源を放棄もしくは引き渡す義務、またはその同等物をいう</span></div>
+				<br />
+				<h1 className="intro">純資産とは</h1>
+				<div><span className="underline font-color2">純資産とは、資産と負債の差額をいう。</span></div>
+				<br />
+				<h1 className="intro">収益とは</h1>
+				<div><span className="underline font-color2">収益とは、純利益または少数株主損益を増加させる項目であり、特定期間の期末までに生じた資産の増加や負債の減少に見合う額のうち、投資のリスクから解放された部分である</span></div>
+				<br />
+				<h1 className="intro">費用とは</h1>
+				<div><span className="underline font-color2">費用とは、純利益または少数株主損益を減少させる項目であり、特定期間の期末までに生じた資産の減少や負債の増加に見合う額のうち、投資のリスクから解放された部分である</span></div>
+			</section>
+		</>
+	);
+}
+
+const accountGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/account-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/account-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/account-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AccountGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const accountGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/account-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/account-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/account-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AccountGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const accountGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/account-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/account-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/account-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <AccountGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 //勘定科目一覧表のコンポーネント
 const AccountsListGrade3 = () => {
@@ -888,44 +1396,53 @@ const AccountsListGrade1 = () => {
 	);
 }
 
-//試算表のコンポーネント
-const TrialBalance = () => {
-	return (
-		<>
-			<section className="font-color">
-				<h1 className="intro">試算表とは</h1>
-				<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span className="underline font-color2">試算表</span>と呼びます。</div>
-				<div>このセクションでは、貸借対照表と損益計算書を解説していきます。</div>
-				
-				<h1 className="intro">貸借対照表とは</h1>
-				<div>ある時点での財政状態を示す一覧表のことを<span className="underline font-color2">貸借対照表</span>と呼びます。</div>
-				<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
-                <br />
-				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
-				<br />
-                <div>なお、最終的に発生したもの（結果）のことを<span className="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
-				<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
-		
-				<h1 className="intro">損益計算書とは</h1>
-				<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span className="underline font-color2">損益計算書</span>と呼びます。</div>
-				<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
-				<br />
-				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
-				<br />
-				<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
-				<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「収益を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
-				
-			<h1 className="intro">損益計算書と貸借対照表のつながりについて</h1>
-			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
-			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
-			<br />
-            <img src={ TrialBalanceImg } alt="貸借対照表と損益計算書のつながり" className="img-size"></img>
-            <br />	
-			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
-		</section>
-		</>
-	);
+
+const accountsListGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AccountsListGrade3 />
+            </aside>
+        </main>
+    );
 }
+
+const accountsListGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AccountsListGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const accountsListGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <AccountsListGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜確定申告コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 //確定申告のコンポーネント
 const FinalTaxReturn = () => {
@@ -1123,6 +1640,20 @@ const FinalTaxReturn = () => {
 	);
 }
 
+
+const finalTaxReturn = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <FinalTaxReturn />
+            </aside>
+        </main>
+    );
+}
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜決算コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
 //決算のコンポーネント
 const TheEndOfTheFiscalPeriod = () => {
 	return(
@@ -1145,513 +1676,6 @@ const TheEndOfTheFiscalPeriod = () => {
 	);
 }
 
-// リンク用コンポーネント
-const home = () => {
-    return (
-        <main className="mainArticle sakura-color">
-            <aside>
-                <Home />
-            </aside>
-        </main>
-    );
-}
-
-const homeYozakura = () => {
-    return (
-        <main className="mainArticle yozakura-color">
-            <aside>
-                <HomeYozakura />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜ボキのシクミコンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-// const BookkeepingList = () => {
-//     return(
-//         <>
-//         <h1 className="intro">簿記が必要な理由</h1>
-//                 <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
-//                 <br />
-//                 <div>■　個人事業主の場合　■</div>
-//                 <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
-//                 <br />
-//                 <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
-//                 <br />
-//                 <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
-//                     日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
-
-//                 <br />
-//                 <div>■　法人の場合　■</div>
-//                 <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
-// 	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
-//                 <br />
-//                 <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
-//         </>
-//     );
-// }
-
-// class Section extends React.Component {
-                
-//     render() {
-//         return (
-//         <>
-//             <aside className="subMenu">
-//                 <ul>
-//                     <li class="table-of-contents">目次</li>
-//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement" style={{  }}>
-//                         簿記が必要な理由
-//                     </ScrollLink>
-//                     <ScrollLink activeClass="list-item" to="secondInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
-//                         簿記とは
-//                     </ScrollLink>
-//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
-//                         複式簿記とは
-//                     </ScrollLink>
-//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
-//                         仕訳とは
-//                     </ScrollLink>
-//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
-//                         勘定科目とは
-//                     </ScrollLink>
-//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
-//                         貨幣的評価の公準とは
-//                     </ScrollLink>
-//                     <ScrollLink activeClass="list-item" to="firstInsideContainer" spy={true} smooth={true} duration={1000} containerId="containerElement">
-//                         貸借平均の原理とは
-//                     </ScrollLink>
-//                 </ul>
-//             </aside>
-    
-//         <Element className="element" id="containerElement" style={{
-//             position: 'relative',
-//             height: '200px',
-//             marginBottom: '100px'
-//         }}>
-    
-//             <Element name="firstInsideContainer" className="font-color">
-//                 <BookkeepingList />
-//             </Element>
-    
-//             <Element name="secondInsideContainer">
-//                 second element inside container
-//             </Element>
-//         </Element>
-//         </>
-//         );
-//         }
-//     };
-
-//ボキのシクミのコンポーネント
-const Bookkeeping = () => {
-    return(
-        <>
-            <section className="font-color">
-                <h1 className="intro">簿記が必要な理由</h1>
-                <div>これから簿記を学習していく前に、そもそも何故簿記は必要になるのでしょうか？という点について、考えてみましょう。</div>
-                <br />
-                <div>■　個人事業主の場合　■</div>
-                <div>フリーランスで働く人や飲食店の経営者など、独立して働く人達のことを一般的に個人事業主と呼びます。</div>
-                <br />
-                <div>日本では、儲けたお金に対して、<span className="underline font-color2">所得税</span>という税金がかかるため、なんらかの方法で１年間にいくら儲けたのか？について記録をしておかなければいけません。</div>
-                <br />
-                <div>会社員の場合、１年間にいくら儲けたかは給与明細や源泉徴収票を確認すれば問題ないですが、個人事業主の場合は、そのような資料がないことが多いため、そうはいきません。
-                    日々発生する領収書や請求書（<span className="underline font-color2">証憑</span>）を保管し、収支を何かに記録しておかないといけないのです。</div>
-
-                <br />
-                <div>■　法人の場合　■</div>
-                <div>会社は法律上、人格を与えられ法人と呼ばれます。</div>
-	    	    <div>人であるため、個人事業主同様１年間に儲けたお金から税金（<span className="underline font-color2">法人税</span>）が発生することになります。</div>
-                <br />
-                <div>また、株式会社であれば会社の業績を株主に報告する義務が発生します。これらの義務を履行するためには、なんらかの方法で１年間の収支を記録しておかなければならないのです。</div>
-
-                <h1 className="intro">簿記とは</h1>
-                <div>１年間のお金の動き（<span className="underline font-color2">取引</span>）を、帳簿と呼ばれるものに記録することを、略して<span className="underline font-color2">簿記</span>と呼びます。</div>
-	    	    <div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
-                <div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
-
-                <h1 className="intro">複式簿記とは</h1>
-                <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼びます。</div>
-	    	<div>例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
-                <br />
-                <div>最終的に発生したもの（結果）：チョコレート</div>
-                <div>何故、その結果は発生したのか（原因）：現金100円を使ったため</div>
-                <br />
-                <div>そして、簿記ではお金の動きを記録する際、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くことにしました。例えば、以下のように記録していきます。</div>
-                <br />
-                <table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">最終的に発生したもの（結果）</th>
-                        <th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">チョコレート</td>
-                        <td className="table-size table-align">現金</td>
-                    </tr>
-                </table>
-                <br />
-                <Element name="test1" className="element" >
-                <h1 className="intro">仕訳とは</h1>
-                </Element>
-                
-	    	<div>お金の動きに関して、その因果を記録する仕組みを<span className="underline font-color2">仕訳</span>と呼びます。</div>
-	    	<br />
-            <div>先程、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くということをお伝えしましたが、左側のことを<span className="underline font-color2">借方</span>、右側のことを<span className="underline font-color2">貸方</span>と呼びます。</div>
-	    	<br />
-            <div>したがって、先程の表は簿記では以下のような表記となります。</div>
-	    	<br />
-            <table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">チョコレート</td>
-                        <td className="table-size table-align">現金</td>
-                    </tr>
-                </table>
-	    	<br />
-	    	<div>借方と貸方についてですが、その名前から「何かを借りたのか？」「何かを貸したのか？」を想像してしまい、仕訳の仕組みが理解出来なくなってしまう方がいらっしゃるかもしれません。</div>
-	    	<div>借方と貸方に、借りるという意味や貸したという意味はないということを認識しておいて下さい。</div>
-	    	<br />
-            <div>背景として、簿記の仕組みは明治時代に輸入されてきました。当時、翻訳にあたったのが福沢諭吉になります。</div>
-	    	<br />
-            <div>『帳合之法』では、簿記の翻訳について、相当苦労したことが記載されております。</div>
-	    	<div>簿記自体、もともとイタリアで生まれた仕組みになるため、その翻訳作業の中で西洋の語感を日本語へ翻訳する作業が必要でした。</div>
-	    	<br />
-            <div>西洋流の言葉であった借を「出」、貸を「入」というような日本語風の言葉へ変換することも考えていましたが、当時、すでに西洋では借、貸という言葉が普及してしまっており、日本だけその言葉を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
-	    	<br />
-            <div>そこで、「日本語の語感には合わない」が、西洋で使われている言葉をそのまま流用することで文明開化を促進する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
-	    	
-	    	<h1 className="intro">勘定科目とは</h1>
-	    	<div>お金の動きを、誰もが同じように記録でき、また、誰もが帳簿を見れば同じ理解を得られるようにするためにはどうすれば良いでしょうか？</div>
-	    	<br />
-            <div>これを実現するため、お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
-            <br />
-            <div>例えば、さきほどの「チョコレート」というものは、簿記では「消耗品」や「消耗品費」という扱いになります。そのため、記録を行う時に「チョコレート」と記録はせず、「消耗品」や「消耗品費」として記録を行います。</div>
-	    	<br />
-            <div>もし、この仕組みがなければ、各自がそれぞれの実態に合わせて具体的な取引内容を記録していくことになりますが、全員がその内容をみて共通の理解が出来るかというと、そうではありません。</div>
-	    	<div>また、取引内容の説明を追加すれば理解は出来るかもしれませんが、1年間に発生したすべてのお金の動きに注釈を付けていては、管理コストが非常に高くなります。</div>
-	    	<br />
-            <div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
-	    	<br />
-	    	<table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">消耗品費</td>
-                        <td className="table-size table-align">現金</td>
-                    </tr>
-                </table>
-	    	<br />
-	    	<h1 className="intro">貨幣的評価の公準とは</h1>
-	    	<div>物の価値は何で測定すればよいでしょうか？</div>
-	    	<br />
-            <div>結論として、簿記では物の価値を貨幣によって評価し、計算を行います。特に企業の経済活動を記録するにあたって、その活動内容を貨幣によって記録することを定めたルールのことを<span className="underline font-color2">貨幣的評価の公準</span>と呼びます。</div>
-	    	<br />
-            <div>これにより、「お金を動かした」という経済活動を記録することが出来るようになるのです。</div>
-	    	<br />
-            <div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
-	    	<br />
-            <table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">消耗品費 100</td>
-                        <td className="table-size table-align">現金 100</td>
-                    </tr>
-                </table>
-                <br />
-	    	<div>なお、金額の右に単位は記載しません。数字は世界共通語ですが、貨幣単位は世界共通語ではないからです。</div>
-	    	
-	    	<h1 className="intro">貸借平均の原理とは</h1>
-	    	<div>仕訳において、借方に記入された金額の合計と貸方に記入された金額の合計は一致するという原則のことを<span className="underline font-color2">貸借平均の原理</span>と呼びます。</div>
-		<br />
-	    	<div>なぜ一致するのかというと、仕訳はお金が動いたという事実を、因果という2つの側面から見たことを表すものになるため、動いた金額は変わらないからです。</div>
-	    	<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
-	    	<br />
-	    	<table border="1" cellspacing="0">
-                    <tr>
-                        <th className="table-size table-align">借方</th>
-                        <th className="table-size table-align">貸方</th>
-                    </tr>
-
-                    <tr>
-                        <td className="table-size table-align">消耗品費 10,000</td>
-                        <td className="table-size table-align">現金 100</td>
-                    </tr>
-                </table>
-	    	<div>これは、現金100円を使って10,000円のチョコレートを買ったという仕訳になります。金額が一致していないのでおかしいですね。</div>
-		<br />	    
-	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
-	    </section>
-        </>
-    );
-}
-
-const bookkeeping = () => {
-    return (
-        <>
-        <main className="mainArticle">
-            <aside>
-                {/* <Section /> */}
-                <aside className="subMenu">
-                    <ul>
-                        <li class="table-of-contents">目次</li>
-                        <li class="padding-inline-start">簿記が必要な理由</li>
-                        <li class="padding-inline-start">簿記とは</li>
-                        <li class="padding-inline-start">複式簿記とは</li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >仕訳とは</ScrollLink></li>
-                        <li class="padding-inline-start">勘定科目とは</li>
-                        <li class="padding-inline-start">貨幣的評価の公準とは</li>
-                        <li class="padding-inline-start">貸借平均の原理とは</li>
-                    </ul>
-                </aside>
-                <Bookkeeping />
-            </aside>
-        </main>
-        </>
-    );
-}
-
-const trialBalance = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <TrialBalance />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-//勘定科目のコンポーネント
-const AccountGrade3 = () => {
-	return (
-		<>
-			<section className="font-color">
-				<h1 className="intro">勘定科目の分類について</h1>
-				<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
-				<div>この「共通の性質」は、大きく分けると5種類に分かれていきます。</div>
-                		<br />
-				<table border="1" cellspacing="0">
-					<tr>
-						<th className="table-size table-align">分類の名前</th>
-						<th className="table-size table-align">概要</th>
-					</tr>
-
-					<tr>
-						<td className="table-size table-align">資産</td>
-						<td className="table-size table-align">売ったらお金になるという性質をもつ財産</td>
-					</tr>
-					<tr>
-						<td className="table-size table-align">負債</td>
-						<td className="table-size table-align">いずれ引き渡す義務があるという性質をもつ財産</td>
-					</tr>
-					<tr>
-						<td className="table-size table-align">純資産</td>
-						<td className="table-size table-align">自分で用意したという性質をもつ財産</td>
-					</tr>
-					<tr>
-						<td className="table-size table-align">収益</td>
-						<td className="table-size table-align">事業活動により獲得したお金</td>
-					</tr>
-					<tr>
-						<td className="table-size table-align">費用</td>
-						<td className="table-size table-align">事業活動で発生したお金</td>
-					</tr>
-					</table>
-					<br />
-					<div>それでは、各分類の詳細を見ていきましょう。</div>
-
-					<h1 className="intro">資産とは</h1>
-					<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
-					<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
-					<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
-
-					<h1 className="intro">負債とは</h1>
-					<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
-					<div>例えば、借金がこれに該当します。</div>
-
-					<h1 className="intro">純資産とは</h1>
-					<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます</div>
-					<div>「自分で用意した」というのは、具体的には次の2つのお金を意味しています。これらは、負債のように他人から資産を得たのではなく、自身の力によって生み出した資産になります。</div>
-					<br />
-					<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
-					<div>②事業活動を通して、獲得したお金</div>
-
-					<h1 className="intro">収益とは</h1>
-					<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
-					<div>例えば、売上がこれに該当します。</div>
-
-					<h1 className="intro">費用とは</h1>
-					<div>事業活動で発生したお金を<span className="underline font-color2">費用</span>と呼びます</div>
-					<div>例えば、仕入がこれに該当します。</div>
-				</section>
-		{/* <div></div> */}
-                {/* <div className="deco1">帳簿記録のこと</div> */}
-	    {/* <span className="underline font-color2"></span> */}
-		</>
-	);
-}
-
-const AccountGrade2 = () => {
-	return (
-		<>
-			<section className="font-color">
-				<h1 className="intro">勘定科目の大分類、中分類、小分類とは</h1>
-				<h1 className="intro">流動資産とは</h1>
-				<h1 className="intro">固定資産とは</h1>
-				<h1 className="intro">繰延資産とは</h1>
-				<h1 className="intro">流動負債とは</h1>
-				<h1 className="intro">固定負債とは</h1>
-				<h1 className="intro">売上高とは</h1>
-				<h1 className="intro">営業外収益とは</h1>
-				<h1 className="intro">特別利益とは</h1>
-				<h1 className="intro">売上原価とは</h1>
-				<h1 className="intro">販売費及び一般管理費とは</h1>
-				<h1 className="intro">営業外費用とは</h1>
-				<h1 className="intro">特別損失とは</h1>
-				<h1 className="intro">法人税等とは</h1>
-			</section>
-		</>
-	);
-}
-
-const AccountGrade1 = () => {
-	return (
-		<>
-			<section className="font-color">
-				<h1 className="intro">財務会計の概念フレームワークとは</h1>
-				<h1 className="intro">資産とは</h1>
-				<div><span className="underline font-color2">資産とは、過去の取引または事象の結果として、報告主体が支配している経済的資源をいう</span></div>
-				<br />
-				<h1 className="intro">負債とは</h1>
-				<div><span className="underline font-color2">負債とは、過去の取引または事象の結果として、報告主体が支配している経済的資源を放棄もしくは引き渡す義務、またはその同等物をいう</span></div>
-				<br />
-				<h1 className="intro">純資産とは</h1>
-				<div><span className="underline font-color2">純資産とは、資産と負債の差額をいう。</span></div>
-				<br />
-				<h1 className="intro">収益とは</h1>
-				<div><span className="underline font-color2">収益とは、純利益または少数株主損益を増加させる項目であり、特定期間の期末までに生じた資産の増加や負債の減少に見合う額のうち、投資のリスクから解放された部分である</span></div>
-				<br />
-				<h1 className="intro">費用とは</h1>
-				<div><span className="underline font-color2">費用とは、純利益または少数株主損益を減少させる項目であり、特定期間の期末までに生じた資産の減少や負債の増加に見合う額のうち、投資のリスクから解放された部分である</span></div>
-			</section>
-		</>
-	);
-}
-
-const accountGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/account-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/account-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/account-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <AccountGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-const accountGrade2 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/account-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/account-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/account-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <AccountGrade2 />
-            </aside>
-        </main>
-    );
-}
-
-const accountGrade1 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/account-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/account-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/account-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-                </div>
-                <AccountGrade1 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const accountsListGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <AccountsListGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-const accountsListGrade2 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <AccountsListGrade2 />
-            </aside>
-        </main>
-    );
-}
-
-const accountsListGrade1 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/accounts-list-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/accounts-list-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/accounts-list-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-                </div>
-                <AccountsListGrade1 />
-            </aside>
-        </main>
-    );
-}
-
-const finalTaxReturn = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <FinalTaxReturn />
-            </aside>
-        </main>
-    );
-}
 
 const theEndOfTheFiscalPeriod = () => {
     return (
