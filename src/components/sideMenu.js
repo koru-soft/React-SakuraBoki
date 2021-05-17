@@ -2,7 +2,7 @@ import './sideMenu.css';
 import React, { Component, useState } from 'react';
 import Title from './title';
 import SakuraTopImage from './サクラボキ.mp4';
-import YozakuraTopImage from './ヨザクラ.mp4';
+import YozakuraTopImage from './ヨザクラ２.mp4';
 import TrialBalanceImg from './貸借対照表と損益計算書のつながり.jpg';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import { Link as ScrollLink, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
@@ -14,7 +14,6 @@ const Home = () => {
     return(
         <>
             <video src={ SakuraTopImage } autoPlay muted playsInline className="top-image-size"></video>
-            {/* <img src={ TopImage } alt="サクラボキTOP画像" class="top-image-size"></img> */}
             <section className="font-color">
                 <h1 className="intro">サクラボキとは</h1>
                 <div>サクラボキは、独学で日商簿記３級、２級、１級、そして税理士試験や公認会計士試験に向けた学習を志した全ての人を応援する無料学習サイトです。</div>
@@ -42,22 +41,22 @@ const HomeYozakura = () => {
         <>
             <video src={ YozakuraTopImage } autoPlay muted playsInline className="top-image-size"></video>
             <section className="yozakura-font-color">
-                <h1 className="yozakura-intro">ヨザクラボキとは</h1>
-                <div>サクラボキは、独学で日商簿記３級、２級、１級、そして税理士試験や公認会計士試験に向けた学習を志した全ての人を応援する無料学習サイトです。</div>
+                <h1 className="yozakura-intro">ヨザクラモードとは</h1>
+                <div>ヨザクラモードは、演習問題に取り組むためのモードです。</div>
+                <div>サクラモードで学んだことを実践し、試験本番までに簿記力を強化して行きましょう！</div>
             </section>
 
             <section className="yozakura-font-color">
                 <h1 className="yozakura-intro">難易度選択について</h1>
                 <div>各コンテンツには「ボキ３級」「ボキ２級」「ボキ１級」といったレベル選択が出来るようになっています。</div>
                 <br />
-            <div>現在の級の内容を理解出来たら、より高い級のページをクリックしてみて下さい。どんどん深い話が展開されて行きます。</div>
+            <div>現在の級の内容を理解出来たら、より高い級の問題にチャレンジしてみましょう。</div>
             </section>
 
             <section className="yozakura-font-color">
-                <h1 className="yozakura-intro">サクラモードとヨザクラモードについて</h1>
-                <div>サクラモードでは、理論を学ぶことが出来ます。内容が理解出来るまで繰り返し読んでみて下さい。</div>
-                <br />
-                <div>ヨザクラモードでは、問題演習を行うことが出来ます。繰り返し問題を解くことで、本番での対応力を養いましょう！</div>
+                <h1 className="yozakura-intro">電卓機能について</h1>
+                <div>ヨザクラモードでは、電卓が標準装備されています。</div>
+                <div>問題に取り組むに当たっては、メニューからcalculatorをクリックし、計算に取り組んでみましょう！</div>
             </section>
         </>
     );
@@ -4877,7 +4876,7 @@ const SideBar = () => {
         <BrowserRouter>
         <header className="yozakura-header">
             <div className="grid1-yozakura"></div>
-            <li className="topLogo-yozakura li"><Link to="/">ヨザクラボキ</Link></li>
+            <li className="topLogo-yozakura li"><Link to="/">サクラボキ</Link></li>
             <div className="grid2-yozakura"></div>
             <li className="changeSakuraMode li" onClick={ changeSakuraMode }>サクラモードに切り替える</li>
             <div className="grid3-yozakura"></div>

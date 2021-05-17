@@ -1,6 +1,6 @@
 .mainWrapper{
     display: grid;
-    grid-template-rows: 14vh 86vh;
+    grid-template-rows: 14vh 1fr;
     grid-template-columns: 5vw 18vw 1fr 20vw 5vw;
 }
 
