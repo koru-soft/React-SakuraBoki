@@ -1,12 +1,7 @@
 
-/* TopMenu.css */
-    
+/* サクラモード */
+
     .topMenu{
-    /* display: grid; */
-    /* grid-template-rows: 12vh; */
-    /* grid-template-columns: 5vw 25vw 1fr 25vw 5vw; */
-    /* background: rgb(233, 88, 132); */
-    /* background: white; */
     background: rgb(239, 195, 189);
     padding-inline-start: 0;
     margin-block-start: 0;
@@ -282,7 +277,7 @@ a:hover {
     border-radius: 5px;
 }
 
-/*　夜桜モード　*/
+/*　ヨザクラモード　*/
 
 .yozakura-header{
     display: grid;
@@ -305,7 +300,6 @@ a:hover {
     font-size: 35px;
     background: rgb(0, 25, 123);
     font-weight: bold;
-    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; */
 }
 
 .topLogo-yozakura a{
@@ -324,7 +318,6 @@ a:hover {
     font-size: 20px;
     background: rgb(0, 25, 123);
     color: rgb(21, 212, 255);
-    /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de; */
 }
 
 .yozakura-font-color{
@@ -343,7 +336,6 @@ a:hover {
     grid-row: 1;
     grid-column: 5;
     background: rgb(0, 25, 123);
-    /* box-shadow: 5px 0 5px gray; */
 }
 
 .grid4-yozakura{
@@ -381,6 +373,8 @@ a:hover {
 }
 
 
+
+/* レスポンシブ対応 */
 
 @media only screen and (max-width:1024px) {
     .select_level{
