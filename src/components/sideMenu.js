@@ -1574,12 +1574,15 @@ const FinalTaxReturn = () => {
 	return(
 		<>
 		　　　<section className="font-color">
-			<h1 className="intro">確定申告とは</h1>
+			<Element name="finalTaxReturn1" className="element" >
+				<h1 className="intro">確定申告とは</h1>
+			</Element>
 			<div>個人事業主が1年間の損益を算出し、所得税の金額を確定させることを<span className="underline font-color2">確定申告</span>と呼びます。</div>
-			
 			<div>このセクションでは、確定申告までの簡単な流れを抑えることが目的となります。</div>
 		
-			<h1 className="intro">控除とは</h1>
+			<Element name="finalTaxReturn2" className="element" >
+				<h1 className="intro">控除とは</h1>
+			</Element>
 			<div>1年間の損益は、1年間に獲得した収益から、1年間に発生した費用を引いた金額になります。</div>
 			<div>ただし、この損益に対して直接税率がかかるというものではなく、この金額からさらに各種の控除を引いた金額に対して、税率がかかってくるという仕組みです。</div>
 			<div>そもそもどうしてこのような仕組みがあるのでしょうか？次の例を見て下さい</div>
@@ -1592,7 +1595,9 @@ const FinalTaxReturn = () => {
 			<div>そこで、控除という仕組みが登場します。1年間の損益から、更に一定の金額を引くことができ、この金額に対して税率をかけることで、公平性を担保しようとしているのです。</div>
 			<div>所得税額=(1年間に獲得した収益-1年間に発生した費用-所得控除)-税額控除</div>
 	
-			<h1 className="intro">所得控除とは</h1>
+			<Element name="finalTaxReturn3" className="element" >
+				<h1 className="intro">所得控除とは</h1>
+			</Element>
 			<div>納税者の個人的事情に起因する様々な納税の不公平性を緩和するため、1年間の所得から、さらに一定の金額を差し引くことの出来る仕組みを<span className="underline font-color2">所得控除</span>と呼びます。</div>
 			<br />
 			<div>例えば、病気で療養中の男性は、一定の金額を医療費として控除することが出来ます。その結果、所得税の計算の元になる金額は400万ではなく、400万から医療費控除で認められた金額を引いた金額になるのです。</div>
@@ -1677,7 +1682,9 @@ const FinalTaxReturn = () => {
 			</tr>
 			</table>	
 		
-			<h1 className="intro">税額控除とは</h1>
+			<Element name="finalTaxReturn4" className="element" >
+				<h1 className="intro">税額控除とは</h1>
+			</Element>
 			<div>最終的に算出された所得税の金額から、さらに一定額を直接差し引くことの出来る仕組みを<span className="underline font-color2">税額控除</span>と呼びます。</div>
 			<div>2021年現在、所得控除は全部で14種類あります。</div>
 			<br />
@@ -1770,6 +1777,15 @@ const finalTaxReturn = () => {
     return (
         <main className="mainArticle">
             <aside>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="finalTaxReturn1" spy={true} smooth={true} duration={500} >確定申告とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="finalTaxReturn2" spy={true} smooth={true} duration={500} >控除とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="finalTaxReturn3" spy={true} smooth={true} duration={500} >所得控除とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="finalTaxReturn4" spy={true} smooth={true} duration={500} >税額控除とは</ScrollLink></li>
+                    </ul>
+                </aside>
                 <FinalTaxReturn />
             </aside>
         </main>
@@ -1784,18 +1800,21 @@ const TheEndOfTheFiscalPeriod = () => {
 	return(
 		<>
 			<section className="font-color">
+			<Element name="theEndOfTheFiscalPeriod1" className="element" >
 				<h1 className="intro">決算とは</h1>
-				<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span className="underline font-color2">決算</span>と呼びます。</div>
-				<br />
-                <div>損益計算書と貸借対照表を作成するところまでは個人事業主と共通しますが、株主向けの決算書と、税務署へ提出する決算書では適用する法律が変わるところに注意して下さい。</div>
-				<div></div>
+			</Element>
+			<div>企業が1年間の損益を算出し、株主への報告や法人税の金額を確定させることを<span className="underline font-color2">決算</span>と呼びます。</div>
+			<br />
+			<div>損益計算書と貸借対照表を作成するところまでは個人事業主と共通しますが、株主向けの決算書と、税務署へ提出する決算書では適用する法律が変わるところに注意して下さい。</div>
+			<div></div>
 		
+			<Element name="theEndOfTheFiscalPeriod2" className="element" >
 				<h1 className="intro">トライアングル体制とは</h1>
-				<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span className="underline font-color2">トライアングル体制</span>と呼びます。</div>
-                <br />
-                <table border="1" cellspacing="0"><tr><th className="table-size table-align">法の名称</th><th className="table-size table-align">概要</th></tr><tr><td className="table-size table-align">商法・会社法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">租税法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">金融商品取引法</td><td className="table-size table-align">Lorem Ipsum</td></tr></table>
-				<br />
-				
+			</Element>
+			<div>日本の会計制度は、その目的別に①商法・会社法、②租税法、③金融商品取引法の3つから成り立っています。これを<span className="underline font-color2">トライアングル体制</span>と呼びます。</div>
+			<br />
+			<table border="1" cellspacing="0"><tr><th className="table-size table-align">法の名称</th><th className="table-size table-align">概要</th></tr><tr><td className="table-size table-align">商法・会社法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">租税法</td><td className="table-size table-align">Lorem Ipsum</td></tr><tr><td className="table-size table-align">金融商品取引法</td><td className="table-size table-align">Lorem Ipsum</td></tr></table>
+			<br />
 			</section>
 		</>
 	);
@@ -1806,6 +1825,13 @@ const theEndOfTheFiscalPeriod = () => {
     return (
         <main className="mainArticle">
             <aside>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="theEndOfTheFiscalPeriod1" spy={true} smooth={true} duration={500} >決算とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="theEndOfTheFiscalPeriod2" spy={true} smooth={true} duration={500} >トライアングル体制とは</ScrollLink></li>
+                    </ul>
+                </aside>
                 <TheEndOfTheFiscalPeriod />
             </aside>
         </main>
