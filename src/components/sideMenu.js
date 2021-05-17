@@ -172,9 +172,9 @@ const Bookkeeping = () => {
             	<div>『帳合之法』では、簿記の翻訳について、相当苦労したことが記載されております。</div>
 	    	<div>簿記自体、もともとイタリアで生まれた仕組みになるため、その翻訳作業の中で西洋の語感を日本語へ翻訳する作業が必要でした。</div>
 	    	<br />
-            	<div>西洋流の言葉であった借を「出」、貸を「入」というような日本語風の言葉へ変換することも考えていましたが、当時、すでに西洋では借、貸という言葉が普及してしまっており、日本だけその言葉を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
+            	<div>西洋流の言葉であった借を「出」、貸を「入」というような日本語風の言葉へ変換することも考えていましたが、当時、すでに西洋では左側を借、右側を貸とする記帳方法が普及してしまっており、日本だけその記帳方法を使うことをやめてしまうと世界の潮流から外れてしまうという恐れがありました。</div>
 	    	<br />
-            	<div>そこで、「日本語の語感には合わない」が、西洋で使われている言葉をそのまま流用することで文明開化を促進する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
+            	<div>そこで、「日本語の語感には合わない」が、西洋で使われている言葉や記帳方法をそのまま流用することで文明開化を促進する、ということが行われました。これが現在も使われている借方、貸方という言葉の背景になります。</div>
 	    	
 	    	<Element name="bookkeeping5" className="element" ></Element>
 	    	<h1 className="intro">勘定科目とは</h1>
@@ -247,7 +247,18 @@ const Bookkeeping = () => {
                     </tr>
                 </table>
 	    	<div>これは、現金100円を使って10,000円のチョコレートを買ったという仕訳になります。金額が一致していないのでおかしいですね。</div>
-		<br />	    
+	    	
+	    	<Element name="bookkeeping8" className="element" >
+	    		<h1 className="intro">会計期間の公準とは</h1>
+	    	</Element>
+	    	<div>確定申告や決算では事業の活動期間を、人為的に一定期間で区切ります。この期間のことを<span className="underline font-color2">会計期間</span>と呼びます。</div>
+	    	<div>会計を進めるにあたっては、必ずこの期間の設定が必要になり、一般的には1年間で設定することが原則です。</div>
+	    	<br />
+	    	<div>この期間を設定することで、会計の連続性が担保出来るようになります。会計は突然辞めることも、突然0に戻して1から始めるということも出来ません。</div>
+	    	<div>会計が始まるときは事業がスタートする時であり、会計が終わるときは会社が事業を畳む時になるのです。</div>
+	    	<br />
+	    	<div>なお、会計期間の公準は別名、<span className="underline font-color2">継続企業の公準</span>と呼ばれます。企業は半永久的に活動を続けるという前提のことを指します。</div>
+	    	<br />
 	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
 	    </section>
         </>
@@ -261,15 +272,16 @@ const bookkeeping = () => {
             <aside>
                 <aside className="subMenu">
                     <ul>
-                        <li class="table-of-contents">目次</li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping1" spy={true} smooth={true} duration={500} >簿記が必要な理由</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping2" spy={true} smooth={true} duration={500} >簿記とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping3" spy={true} smooth={true} duration={500} >複式簿記とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping4" spy={true} smooth={true} duration={500} >仕訳とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping5" spy={true} smooth={true} duration={500} >勘定科目とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping6" spy={true} smooth={true} duration={500} >貨幣的評価の公準とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping7" spy={true} smooth={true} duration={500} >貸借平均の原理とは</ScrollLink></li>
-                    </ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping1" spy={true} smooth={true} duration={500} >簿記が必要な理由</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping2" spy={true} smooth={true} duration={500} >簿記とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping3" spy={true} smooth={true} duration={500} >複式簿記とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping4" spy={true} smooth={true} duration={500} >仕訳とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping5" spy={true} smooth={true} duration={500} >勘定科目とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping6" spy={true} smooth={true} duration={500} >貨幣的評価の公準とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping7" spy={true} smooth={true} duration={500} >貸借平均の原理とは</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="bookkeeping8" spy={true} smooth={true} duration={500} >会計期間の公準とは</ScrollLink></li>
+	    	　　　</ul>
                 </aside>
                 <Bookkeeping />
             </aside>
@@ -334,11 +346,11 @@ const trialBalance = () => {
             <aside>
 	    	<aside className="subMenu">
                     <ul>
-                        <li class="table-of-contents">目次</li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance1" spy={true} smooth={true} duration={500} >試算表とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance2" spy={true} smooth={true} duration={500} >貸借対照表とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance3" spy={true} smooth={true} duration={500} >損益計算書とは</ScrollLink></li>
-                        <li class="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance4" spy={true} smooth={true} duration={500} >損益計算書と貸借対照表のつながりについて</ScrollLink></li>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance1" spy={true} smooth={true} duration={500} >試算表とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance2" spy={true} smooth={true} duration={500} >貸借対照表とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance3" spy={true} smooth={true} duration={500} >損益計算書とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance4" spy={true} smooth={true} duration={500} >損益計算書と貸借対照表のつながりについて</ScrollLink></li>
                     </ul>
                 </aside>
                 <TrialBalance />
@@ -513,18 +525,32 @@ const AccountGrade2 = () => {
 				<Element name="accountGrade2-1" className="element" >
 					<h1 className="intro">勘定科目の大分類、中分類、小分類とは</h1>
 				</Element>
+				<div>勘定科目は大きく、資産、負債、純資産、収益、費用に分類されることを簿記3級では学びました。 それぞれの分類は、その性質によってさらにそれぞれ細かい分類に分かれていきます。</div>
 				
+				<Element name="accountGrade2-2" className="element" >
+					<h1 className="intro">正規営業循環基準と1年基準とは</h1>
+				</Element>
+				<div>一般的に、「お金を得る」という営みは「材料を仕入れる→商品を製造する→商品を販売する→現金を回収する」というサイクルを繰り返すことで実現されます。</div>
+				<div>このサイクルのことを<span className="underline font-color2">営業サイクル</span>と呼び、このサイクルの中で発生した資産か負債かどうかを元に、資産や負債を区別する基準のことを、<span className="underline font-color2">正規営業循環基準</span>と呼びます。</div>
+				<br />
+				<div>また、これとは別に発生した資産や負債が1年以内に現金化、費用化されるかどうかで資産や負債に区別する基準があり、これを<span className="underline font-color2">1年基準</span>と呼びます。</div>
+				<div>現行の会計ルールでは、まず正常営業循環基準が優先して適用され、これに該当しないものは1年基準で判定するという流れで勘定科目を分類していくことになります。</div>
+			
 				<Element name="accountGrade2-2" className="element" >
 					<h1 className="intro">流動資産とは</h1>
 				</Element>
+				<div>1年以内に現金化できる可能性のある資産のことで、「材料を仕入れる→商品を製造する→商品を販売する→現金を回収する」というサイクルの中で生じる資産や1年以内に現金に換金される資産を<span className="underline font-color2">流動資産</span>と呼びます。</div> 
+				<div>例えば、売掛金は商品を販売したものの、いまだ代金が回収されていないものに対して、その回収の権利を表します。これらは期日がくれば現金化できることから、流動資産に含まれます。</div>
 				
 				<Element name="accountGrade2-3" className="element" >
 					<h1 className="intro">固定資産とは</h1>
 				</Element>
+				<div>土地や建物、車など、長期間にわたって事業を行うために所有するもので、1年を超えて所有する資産や投資目的で長期間保有したりするような資産を固定資産と呼びます。</div>
 				
 				<Element name="accountGrade2-4" className="element" >
 					<h1 className="intro">繰延資産とは</h1>
 				</Element>
+				<div>本来費用として計上が必要な支払いが発生した際に、将来の収益に貢献するという理由で資産に計上することとなった資産を繰延資産と呼びます。</div>
 				
 				<Element name="accountGrade2-5" className="element" >
 					<h1 className="intro">流動負債とは</h1>
@@ -651,7 +677,8 @@ const accountGrade2 = () => {
                     <ul>
                         <li className="table-of-contents">目次</li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade2-1" spy={true} smooth={true} duration={500} >勘定科目の大分類、中分類、小分類について</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade2-2" spy={true} smooth={true} duration={500} >流動資産とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade2-2" spy={true} smooth={true} duration={500} >正規営業循環基準と1年基準とは</ScrollLink></li>
+	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade2-2" spy={true} smooth={true} duration={500} >流動資産とは</ScrollLink></li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade2-3" spy={true} smooth={true} duration={500} >固定資産とは</ScrollLink></li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade2-4" spy={true} smooth={true} duration={500} >繰延資産とは</ScrollLink></li>
                     	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="accountGrade2-5" spy={true} smooth={true} duration={500} >流動負債とは</ScrollLink></li>
@@ -1851,8 +1878,8 @@ const CashGrade3 = () => {
     
     <Title title="現金とは"/>
         <section>
-            <article>
-                <div>現金とは、「事業で利用するための」硬貨や紙幣の事です。</div>
+            <article className="font-color">
+                <div>現金とは、100円玉や1000円札など「事業で利用するための」硬貨や紙幣の事です。</div>
                 <div>他にも、現金に交換できる価値のあるものを<span className="underline font-color2">通貨代用証券</span>と言い、現金として扱います（後述）。</div>
                 <div>例えば、現金を使った支払いは以下のような仕訳となります。</div>
 
@@ -1906,7 +1933,7 @@ const CashGrade3 = () => {
 
         <Title title="通貨代用証券とは"/>
         <section>
-            <article>
+            <article className="font-color">
                 <div>簿記の世界では、上記の他にも、いつでも通貨に換金できる価値を持つ証券も現金として扱います。</div>
                 <div>これを「<span className="underline font-color2">通貨代用証券</span>」と言います。</div>
                 <div>代表的なものとして、以下の通貨代用証券があります。</div>
@@ -1969,7 +1996,7 @@ const CashGrade3 = () => {
 	    
         <Title title="小切手とは"/>
         <section>
-            <article>
+            <article className="font-color">
                 <div>例えば、誰かにお金をあげたいと考えます。</div>
                 <div>一番シンプルな方法は、お金を現金の形で手渡しすることです。</div>
                 <div>では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
@@ -2014,11 +2041,22 @@ const CashGrade3 = () => {
 const CashGrade2 = () => {
     return (
         <>
-    
-    <Title title="Lorem Ipsum"/>
+    <Title title="株式配当金領収証とは"/>
         <section>
-            <article>
-                ボキ3級と同内容です。
+            <article className="font-color">
+	    	<div>株式を持っていると、業績に応じて配当金をもらうことが出来ます。</div>
+	    	<div>ただし、この配当金は通貨の形で手元に送られてくるわけではなく、<span className="underline font-color2">株式配当金領収証</span>という紙の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。</div>
+	   	<div>株式配当金領収証は常に現金と交換出来る価値を持っている、すなわち通貨代用証券であることから、現金として処理を行います。</div>
+            </article>
+        </section>
+	    
+   <Title title="期限到来済公社債利札とは"/>
+        <section>
+            <article className="font-color">
+                <div>公社債を持っていると、期限に応じて利息をもらうことが出来ます。</div>
+	    	<div>ただし、この利息は通貨の形で手元に送られてくるわけではなく、<span className="underline font-color2">利札</span>という証券の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。</div>
+	    	<div>期限到来済公社債利札は常に現金と交換出来る価値を持っている、すなわち通貨代用証券であることから、現金として処理を行います。</div>
+	    	<div>逆に、期限未到来公社債利札は銀行に持っていっても現金と交換することが出来ません。そのため、期限未到来公社債利札は受け取っても仕訳はしないことが原則となっています。</div>
             </article>
         </section>
         </>
@@ -2030,7 +2068,7 @@ const CashGrade1 = () => {
         <>
                 <Title title="その他の通貨代用証券"/>
 		<section>
-		    <article>
+		    <article className="font-color">
 		    <div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
 
 		    <table border="1" cellspacing="0" className="journal">
