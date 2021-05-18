@@ -116,6 +116,12 @@ li{
     color: rgb(177, 78, 78);
 }
 
+.explanation-wrapper{
+  padding: 10px;
+  background: #ffe6da;
+  border-radius: 10px;
+}
+
 .table-of-contents{
     /* padding-inline-start: 10vw; */
     color: rgb(242, 107, 107);
@@ -166,17 +172,9 @@ a{
     background: #fff9b5;
 }
 
-/* .select_level:nth-child(1){
-    margin-left: 0;
-} */
-
 section {
     margin-bottom: 50px;
 }
-
-/* .margin_top{
-    
-} */
 
 .top-image-size {
     width: 100%;
