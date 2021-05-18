@@ -555,42 +555,62 @@ const AccountGrade2 = () => {
 				<Element name="accountGrade2-5" className="element" >
 					<h1 className="intro">流動負債とは</h1>
 				</Element>
+				<div>1年以内に返済が必要な債務を<span className="underline font-color2">流動負債</span>と呼びます。</div>
 				
 				<Element name="accountGrade2-6" className="element" >
 					<h1 className="intro">固定負債とは</h1>
 				</Element>
-				
+				<div>1年を超えて返済が必要な債務を<span className="underline font-color2">固定負債</span>と呼びます。</div>		
+		
 				<Element name="accountGrade2-7" className="element" >
 					<h1 className="intro">売上高とは</h1>
 				</Element>
-				
+				<div>企業がサービスや商品を提供することで獲得した、本業の売上金額の総額を<span className="underline font-color2">売上高</span>と呼びます。</div>
+				<div>1年間に入ってきたすべてのお金というイメージで問題ないでしょう。損益計算書の一番上に表示されます。</div>		
+		
 				<Element name="accountGrade2-8" className="element" >
 					<h1 className="intro">営業外収益とは</h1>
 				</Element>
+				<div>企業が本業以外の活動で経常的に獲得する収益のことを、<span className="underline font-color2">営業外収益</span>と呼びます。 例えば、配当金の受取や利息の受取、為替差益などがあります。</div>
 			
 				<Element name="accountGrade2-9" className="element" >
 					<h1 className="intro">特別利益とは</h1>
 				</Element>
+				<div>企業が本業以外の活動で臨時的に獲得する収益のことを、<span className="underline font-color2">特別利益</span>と呼びます。 例えば、固定資産の売却益、保険差益などがあります。</div>
 				
 				<Element name="accountGrade2-10" className="element" >
 					<h1 className="intro">売上原価とは</h1>
 				</Element>
+				<div>商品の仕入れや製造にかかった費用を<span className="underline font-color2">売上原価</span>と呼びます。</div>
+		
+				<Element name="accountGrade2-10" className="element" >
+					<h1 className="intro">売上総利益とは</h1>
+				</Element>
+				<div>売上高から売上原価を引いた金額を<span className="underline font-color2">売上総利益</span>と呼びます。</div>
+				<div>例えば、アイスクリームを40円で仕入れ、100円で販売したとします。 この時、最終的に獲得した利益が売上総利益です。 以下の計算式にて求めることが出来ます。</div>
+				<div>売上高ー売上原価＝売上総利益</div> 
+				<div>100円ー40円＝60円</div>
 				
 				<Element name="accountGrade2-11" className="element" >
 					<h1 className="intro">販売費及び一般管理費とは</h1>
 				</Element>
+				<div>商品を販売するために直接かかる費用を<span className="underline font-color2">販売費</span>と呼びます。 また、事業を行う上で管理にかかる費用を<span className="underline font-color2">一般管理費</span>と呼び、この両者の合計額を<span className="underline font-color2">販売費及び一般管理費</span>と呼びます。 一般的に経費と呼ばれます。</div>
 				
 				<Element name="accountGrade2-12" className="element" >
 					<h1 className="intro">営業外費用とは</h1>
 				</Element>
+				<div>企業が本業以外の活動で経常的に発生する費用のことを、<span className="underline font-color2">営業外費用</span>と呼びます。 例えば、利息の支払、有価証券の売却損などがあります。</div>
 				
 				<Element name="accountGrade2-13" className="element" >
 					<h1 className="intro">特別損失とは</h1>
 				</Element>
+				<div>企業が本業以外の活動で臨時的に発生した費用のことを、<span className="underline font-color2">特別損失</span>と呼びます。 例えば、固定資産の売却損、除却損、圧縮損などがあります。</div>
 				
 				<Element name="accountGrade2-14" className="element" >
 					<h1 className="intro">法人税等とは</h1>
 				</Element>
+				<div>会社の利益に応じて、課税される法人税、法人住民税、法人事業税をまとめて<span className="underline font-color2">法人税等</span>と呼びます。</div>
+		
 			</section>
 		</>
 	);
