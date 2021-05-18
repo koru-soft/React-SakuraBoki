@@ -623,6 +623,10 @@ const AccountGrade1 = () => {
 				<Element name="accountGrade1-1" className="element" >
 					<h1 className="intro">財務会計の概念フレームワークとは</h1>	
 				</Element>
+				<div>財務会計の基礎にある前提や概念を体系化したものを<span className="underline font-color2">財務会計の概念フレームワーク</span>と呼びます。</div>
+				<div>世の中には様々な取引が存在するため、中には既存の会計ルール（企業会計原則）では対応が出来ない想定外の事象が発生することがあります。</div>
+				<div>こういった場合に、発生したお金の動きをどのように解釈・処理していけばよいか、の指針を示してくれるものが概念フレームワークになります。</div>
+				<div>なお、このフレームワークは現行のIFRS（国際会計基準）の基礎ともなっている考え方です。</div>
 				
 				<Element name="accountGrade1-2" className="element" >
 					<h1 className="intro">資産とは</h1>
