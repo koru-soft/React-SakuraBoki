@@ -2191,83 +2191,80 @@ const cashGrade1 = () => {
 const SavingsGrade3 = () => {
     return (
     <>
-        
-        <Title title="預金とは"/>
-        <section>
-            <article>
-            <div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
-            <div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
-            <div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
-            <table border="1" cellspacing="0" className="journal">
-                <tr>
-                    <th>預金の名前</th>
-                    <th>どんなもの？</th>
-                </tr>
-                <tr>
-                    <td>当座預金</td>
-                    <td>銀行との当座取引契約に基づいて随時引き出せる無利息の預金</td>
-                </tr>
-                <tr>
-                    <td>普通預金</td>
-                    <td>いつでも預け入れ、払い戻しが可能な預金</td>
-                </tr>
-                <tr>
-                    <td>通知預金</td>
-                    <td>引き出す時に予め数日前頃より通知することが必要な預金</td>
-                </tr>
-                <tr>
-                    <td>定期預金</td>
-                    <td>官予め満期日を設定し、満期日までは降ろせない預金</td>
-                </tr>
-                <tr>
-                    <td>別段預金</td>
-                    <td>経過的・一時的に金融機関に預け入れた預金</td>
-                </tr>
-            </table>
+        <section className="font-color">
+		<Element name="savingsGrade3-1" className="element" >
+			<h1 className="intro">預金とは</h1>	
+		</Element>
+		<div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
+		<div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
+		<div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
+		<table border="1" cellspacing="0" className="journal">
+		<tr>
+		    <th>預金の名前</th>
+		    <th>どんなもの？</th>
+		</tr>
+		<tr>
+		    <td>当座預金</td>
+		    <td>銀行との当座取引契約に基づいて随時引き出せる無利息の預金</td>
+		</tr>
+		<tr>
+		    <td>普通預金</td>
+		    <td>いつでも預け入れ、払い戻しが可能な預金</td>
+		</tr>
+		<tr>
+		    <td>通知預金</td>
+		    <td>引き出す時に予め数日前頃より通知することが必要な預金</td>
+		</tr>
+		<tr>
+		    <td>定期預金</td>
+		    <td>官予め満期日を設定し、満期日までは降ろせない預金</td>
+		</tr>
+		<tr>
+		    <td>別段預金</td>
+		    <td>経過的・一時的に金融機関に預け入れた預金</td>
+		</tr>
+		</table>
 
-            <div>別段口座とは、例えば株式会社の設立時に払い込まれた一時的なお金がを処理する口座になります。</div>
-            </article>
-        </section>
+		<div>別段口座とは、例えば株式会社の設立時に払い込まれた一時的なお金がを処理する口座になります。</div>
+ 	</section>
+  
+	<section className="font-color">
+		<Element name="savingsGrade3-2" className="element" >
+			<h1 className="intro">当座預金の会計処理</h1>	
+		</Element>
+		<div>当座預金とは、小切手を管理するための口座です。</div>
+		<div>２種類の仕訳を紹介します。</div>
 
-        
-        <Title title="当座預金の会計処理"/>
-        <section>
-            <article>
-                <div>当座預金とは、小切手を管理するための口座です。</div>
-                <div>２種類の仕訳を紹介します。</div>
+		<table border="1" cellspacing="0" className="journal">
+		    <caption className="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
+		    <tr>
+			<th>借方（運用形態）</th>
+			<th>貸方（調達源泉）</th>
+		    </tr>
+		    <tr>
+			<td>当座預金　20,000</td>
+			<td>現金　20,000</td>
+		    </tr>
+		</table>
 
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>当座預金　20,000</td>
-                        <td>現金　20,000</td>
-                    </tr>
-                </table>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>買掛金　3,000</td>
-                        <td>当座預金　3,000</td>
-                    </tr>
-                </table>
-                
-            </article>
-        </section>
-
-        
-        <Title title="当座借越"/>
-        <section>
-            <article>
-                <div>当座借越とは、当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことです。</div>
+		<table border="1" cellspacing="0" className="journal">
+		    <caption className="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
+		    <tr>
+			<th>借方（運用形態）</th>
+			<th>貸方（調達源泉）</th>
+		    </tr>
+		    <tr>
+			<td>買掛金　3,000</td>
+			<td>当座預金　3,000</td>
+		    </tr>
+		</table>
+	</section>
+       
+	<section className="font-color">
+		<Element name="savingsGrade3-3" className="element" >
+			<h1 className="intro">当座借越の会計処理</h1>	
+		</Element>
+		<div>当座借越とは、当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことです。</div>
                 <div>記帳方法は2種類に分かれます。</div>
                 <table border="1" cellspacing="0" className="journal">
                     <caption className="question">当座借越の記帳方法</caption>
@@ -2324,9 +2321,8 @@ const SavingsGrade3 = () => {
                         <td>当座借越　10,000</td>
                     </tr>
                 </table>
-                
-
-                <table border="1" cellspacing="0" className="journal">
+	    		
+	    	<table border="1" cellspacing="0" className="journal">
                 
                     <caption className="question">一勘定法の場合</caption>
                     <tr>
@@ -2338,11 +2334,8 @@ const SavingsGrade3 = () => {
                         <td>当座　30,000</td>
                     </tr>
                 </table>
-                
-            </article>
-        </section>
-        
-    </>
+ 	</section>
+    	</>
     );
 }
 
@@ -2381,6 +2374,14 @@ const savingsGrade3 = () => {
                     <Link to="/savings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/savings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-1" spy={true} smooth={true} duration={500} >預金とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-2" spy={true} smooth={true} duration={500} >当座預金の会計処理</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-3" spy={true} smooth={true} duration={500} >当座借越の会計処理</ScrollLink></li>
+	    	    </ul>
+                </aside>
                 <SavingsGrade3 />
             </aside>
         </main>
