@@ -1,110 +1,538 @@
 
-現金
-現金とは、100円玉や1000円札など「事業で利用するための」硬貨や紙幣の事です。
-他にも、現金に交換できる価値のあるものを通貨代用証券と言い、現金として扱います（後述）。
-例えば、現金を使った支払いは以下のような仕訳となります。
 
-簿記の世界では、上記の他にも、いつでも通貨に換金できる価値を持つ証券も現金として扱います。
-これを「通貨代用証券」と言います。
-代表的なものとして、以下の通貨代用証券があります。
+〜現金〜
+小口現金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">小口現金とは</h1>	
+			</Element>
+			<div>
+  
+  一般的に、会社では盗難や紛失、横領等のリスクに対応するため、現金は手元に保管せず、振込や小切手を用いて支払いを行います。
+  しかしながら、コピー代や交通費など、日常の取引の中には必ず現金で支払いが求められるものがあることから、ある程度の現金は手元に置いておく必要があります。
+  こういった日々生じる細かい支払いに備え、予め経理担当者が支払いを担当する者（用度係）に前渡しする少額の現金を小口現金と言います。
+  
+  さて、小口現金の管理方法は2種類に分かれます。
+  各部署からの支払報告を受け、用度係に一定の見積もり金額を小口現金として前渡ししておき、その中から日常の支払いを行う仕組みを定額資金前渡法（インプレスト・システム）と呼びます。
+  一方、見積もり等は行わず、手元の現金が少なくなった場合に都度支給を行う方法を随時補給法と呼びます。
+  
+  資金管理の面から見ると、定額資金前渡法の方が資金繰りしやすいことから、前者の方が管理方法として優れているとされています。
+  
+  </div>
+ </section>
+ 
 
-株式配当金領収証と期限到来済公社債利札が２級
-
-例えば、誰かにお金をあげたいと考えます。
-一番シンプルな方法は、お金を現金の形で手渡しすることです。
-では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？
-手渡しも可能ではあるのですが、わざわざ現地まで大量の現金を抱えて持っていくのはいろいろなリスクが伴います。
-ここで登場するのが「小切手」です。以下のようなメリットがあります。
-①紙きれを発行するだけでお金を渡すことができる
-②お金を渡したい相手が銀行口座を持っていなくても関係ない
-③その他の文書類と同封して送付出来る
-
-株式配当金領収証とは
-株式を持っていると、業績に応じて配当金をもらうことが出来ます。ただし、この配当金は通貨の形で手元に送られてくるわけではなく、株式配当金領収証という紙の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。
-常に現金と交換出来る価値を持っていることから、現金として処理を行います。
-
-期限到来済公社債利札とは
-公社債を持っていると、期限に応じて利息をもらうことが出来ます。ただし、この利息は通貨の形で手元に送られてくるわけではなく、利札という券の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。
-常に現金と交換出来る価値を持っていることから、現金として処理を行います。
-
-会計期間の公準とは
-確定申告や決算では事業の活動期間を、人為的に一定期間で区切ります。この期間のことを会計期間と呼びます。
-会計を進めるにあたっては、必ずこの期間の設定が必要になり、一般的には1年間で設定することが原則です。
-
-この期間を設定することで、会計の連続性が担保出来るようになります。
-会計は突然辞めることも、突然0に戻して1から始めるということも出来ません。
-
-会計が始まるときは事業がスタートする時であり、会計が終わるときは会社が事業を畳む時になるのです。
-
-
-勘定科目の大分類、中分類、小分類とは
-勘定科目は大きく、資産、負債、純資産、収益、費用に分類されることを簿記3級では学びました。
-それぞれの分類は、その性質によってさらにそれぞれ細かい分類に分かれていきます。
-
-正規営業循環基準と1年基準とは
-一般的に、「お金を得る」という営みは「材料を仕入れる→商品を製造する→商品を販売する→現金を回収する」というサイクルを繰り返すことで実現されます。
-このサイクルのことを営業サイクルと呼び、このサイクルの中で発生した資産か負債かどうかを元に、資産や負債を区別する基準のことを、正規営業循環基準と呼びます。
-
-また、これとは別に発生した資産や負債が1年以内に現金化、費用化されるかどうかで資産や負債に区別する基準があり、これを1年基準と呼びます。
-
-現行の会計ルールでは、まず正常営業循環基準が優先して適用され、これに該当しないものは1年基準で判定するという流れで勘定科目を分類していくことになります。
-
-流動資産とは
-1年以内に現金化できる可能性のある資産のことで、「材料を仕入れる→商品を製造する→商品を販売する→現金を回収する」というサイクルの中で生じる資産や1年以内に現金に換金される資産を流動資産と呼びます。
-例えば、売掛金は商品を販売したものの、いまだ代金が回収されていないものに対して、その回収の権利を表します。これらは期日がくれば現金化できることから、流動資産に含まれます。
-
-固定資産とは
-土地や建物、車など、長期間にわたって事業を行うために所有するもので、1年を超えて所有する資産や投資目的で長期間保有したりするような資産を固定資産と呼びます。
-
-繰延資産とは
-本来費用として計上が必要な支払いが発生した際に、将来の収益に貢献するという理由で資産に計上することとなった資産を繰延資産と呼びます。
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
 
 
-流動負債とは
-1年以内に返済が必要な債務を流動負債と呼びます。
+〜商品売買〜
+発生主義について
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">発生主義とは</h1>	
+			</Element>
+			<div></div>
+ </section>
 
-固定負債とは
-1年を超えて返済が必要な債務を固定負債と呼びます。
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
 
-売上高とは
-企業がサービスや商品を提供することで獲得した、本業の売上金額の総額を売上高と呼びます。
-1年間に入ってきたすべてのお金というイメージで問題ないでしょう。損益計算書の一番上に表示されます。
-
-売上原価とは
-商品の仕入れや製造にかかった費用を売上原価と呼びます。
-
-売上総利益とは
-売上高から売上原価を引いた金額を売上総利益と呼びます。
-
-例えば、アイスクリームを40円で仕入れ、100円で販売したとします。
-この時、最終的に獲得した利益が売上総利益です。
-以下の計算式にて求めることが出来ます。
-
-売上高ー売上原価＝売上総利益
-100円ー40円＝60円
-
-営業外収益とは
-企業が本業以外の活動で経常的に獲得する収益のことを、営業外収益と呼びます。
-例えば、配当金の受取や利息の受取、為替差益などがあります。
-
-特別利益とは
-企業が本業以外の活動で臨時的に獲得する収益のことを、営業外収益と呼びます。
-例えば、固定資産の売却益、保険差益などがあります。
+三分法
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">三分法とは</h1>	
+			</Element>
+			<div></div>
+ </section>
+商品売買が発生した際、仕入、売上、繰越商品の3つの勘定科目を用いて記帳する方法を三分法と呼びます。
+記帳が簡単で
 
 
-販売費及び一般管理費とは
-商品を販売するために直接かかる費用を販売費と呼びます。
-また、事業を行う上で管理にかかる費用を一般管理費と呼び、この両者の合計額を販売費及び一般管理費と呼びます。
-一般的に経費と呼ばれます。
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
 
-営業外費用とは
-企業が本業以外の活動で経常的に発生する費用のことを、営業外費用と呼びます。
-例えば、利息の支払、有価証券の売却損などがあります。
+分記法
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">分記法とは</h1>	
+			</Element>
+			<div></div>
+ </section>
+ 商品売買が発生した際、商品、商品売買益の勘定科目を用いて記帳する方法を分記法と呼びます。
+ 
 
-特別損失とは
-企業が本業以外の活動で臨時的に発生した費用のことを、営業外費用と呼びます。
-例えば、固定資産の売却損、除却損、圧縮損などがあります。
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
 
-法人税等とは
-会社の利益に応じて、課税される法人税、法人住民税、法人事業税をまとめて法人税等と呼びます。
+クレジット売掛金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">クレジット売掛金とは</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">返金・返品の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+返金返品
+
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">発生主義とは</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+仕入諸掛り
+売上諸掛り
+これは仕入れ/売上の処理時で良さそう
+
+
+
+〜手形〜
+約束手形の振り出しと受取り
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">約束手形の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">電子記録債権の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+電子記録債権の振り出しと受取り
+
+
+〜貸付金と借入金〜
+
+手形貸付金と手形借入金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">借入金・貸付金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">手形借入金・手形貸付金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+〜その他債権債務〜
+未払金と未収入金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">未払金と未収入金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+前払金と前受金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">前払金と前受金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+仮払金と仮受金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">仮払金と仮受金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+立替金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">立替金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+預り金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">預り金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+受取商品券
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">受取商品券の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">差入保証金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+差入保証金
+
+〜引当金〜
+貸倒引当金
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">貸倒引当金の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+〜税金〜
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">法人税の会計処理</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+〜株式〜
+<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">株式の発行とは</h1>	
+			</Element>
+			<div></div>
+ </section>
+
+<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+　　　　　　　　　　<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：</div>
+					<div>なぜ発生したか（貸方）：</div>
+</div>
+
+
 
