@@ -6,7 +6,7 @@ import YozakuraTopImage from './ヨザクラ２.mp4';
 import TrialBalanceImg from './貸借対照表と損益計算書のつながり.jpg';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import { Link as ScrollLink, Element, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import { ImMenu3 } from "react-icons/im";
+import { BiFoodMenu } from "react-icons/bi";
 
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜HOME画面コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
@@ -417,7 +417,7 @@ const AccountGrade3 = () => {
 				<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
 				<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
 				<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
-		
+                <br />
 				<div>資産は定位置が借方になるので、資産が増えたら仕訳の左側に、資産が減ったら仕訳の右側に記入していきます。</div>
 		
 				<table border="1" cellspacing="0">
@@ -437,7 +437,7 @@ const AccountGrade3 = () => {
 				</Element>
 				<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
 				<div>例えば、借金がこれに該当します。</div>
-		
+                <br />
 				<div>負債は定位置が貸方になるので、負債が増えたら仕訳の右側に、負債が減ったら仕訳の左側に記入していきます。</div>		
 		
 				<table border="1" cellspacing="0">
@@ -460,7 +460,7 @@ const AccountGrade3 = () => {
 				<br />
 				<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
 				<div>②事業活動を通して、獲得したお金</div>
-
+                <br />
 				<div>純資産は定位置が貸方になるので、純資産が増えたら仕訳の右側に、純資産が減ったら仕訳の左側に記入していきます。</div>
 				<table border="1" cellspacing="0">
 				    <tr>
@@ -479,7 +479,7 @@ const AccountGrade3 = () => {
 				</Element>
 				<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
 				<div>例えば、売上がこれに該当します。</div>
-
+                <br />
 				<div>収益は定位置が貸方になるので、収益が増えたら仕訳の右側に、収益が減ったら仕訳の左側に記入していきます。</div>	
 		
 				<table border="1" cellspacing="0">
@@ -499,7 +499,7 @@ const AccountGrade3 = () => {
 				</Element>
 				<div>事業活動で発生したお金を<span className="underline font-color2">費用</span>と呼びます</div>
 				<div>例えば、仕入がこれに該当します。</div>
-				
+				<br />
 				<div>費用は定位置が借方になるので、費用が増えたら仕訳の左側に、費用が減ったら仕訳の右側に記入していきます。</div>
 		
 				<table border="1" cellspacing="0">
@@ -4785,6 +4785,10 @@ const NotFound = () => {
 // サイドメニュー兼ルーティング
 const SideBar = () => {
 
+    const test = () => {
+        
+    }
+
     const [mode, setMode] = useState(0); 
 
     const changeYozakuraMode = () => {
@@ -4804,7 +4808,7 @@ const SideBar = () => {
             <div className="grid2-sakura"></div>
             <li className="changeYozakuraMode li" onClick={ changeYozakuraMode }>ヨザクラモードに切り替える</li>
             <div className="grid3-sakura"></div>
-            <span className="icon"><ImMenu3 /></span>
+            <span className="icon-sakura" id="icon-sakura" onClick={ test }><BiFoodMenu /></span>
         </header>
 
             <div className="sidebar-sakura">
@@ -4923,7 +4927,7 @@ const SideBar = () => {
             <div className="grid2-yozakura"></div>
             <li className="changeSakuraMode li" onClick={ changeSakuraMode }>サクラモードに切り替える</li>
             <div className="grid3-yozakura"></div>
-            <span className="icon"><ImMenu3 /></span>
+            <span className="icon-yozakura"><BiFoodMenu /></span>
         </header>
             <div className="grid4-yozakura"></div>
             <div className="sidebar-yozakura">
@@ -4968,6 +4972,7 @@ const SideBar = () => {
                     <li className="sideList menu-yozakura-color"><Link to="/financial-statements-theory">財務諸表理論</Link></li>
                 </ul>
             </div>
+            <div className="grid5-yozakura"></div>
 
             <Switch>
                 <Route exact path="/" component={ homeYozakura } />

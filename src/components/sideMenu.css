@@ -73,16 +73,13 @@
         /* box-shadow: 5px 0 5px gray; */
     }
     
-    .icon{
+    .icon-sakura{
         display: none;
     }
-    
-    /* .mainArticle{
-        color: rgb(28, 224, 28);
-        text-align: left;
-        overflow-y: scroll;
-        padding: 5vw;
-    } */
+
+    .icon-yozakura{
+        display: none;
+    }
 
 /* 追加 */
 
@@ -400,6 +397,11 @@ a:hover {
         font-size: 5vw;
     }
 
+    .grid5-yozakura{
+        grid-column: 5;
+        background: rgb(46, 46, 46);
+    }
+
     .material-icons-outlined{
         content: e5d2;
         font-family: 'Material Icons';
@@ -417,9 +419,19 @@ a:hover {
         grid-template-columns: 5vw 1fr 25vw 5vw;
     }
 
-    .icon{
+    .icon-sakura{
         color: rgb(233, 88, 132);
         background: rgb(239, 195, 189); 
+        grid-column: 4;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 40px;
+    }
+
+    .icon-yozakura{
+        color: rgb(21, 212, 255);
+        background: rgb(0, 25, 123);
         grid-column: 4;
         display: flex;
         align-items: center;
