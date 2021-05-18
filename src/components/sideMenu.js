@@ -1923,8 +1923,8 @@ const CashGrade3 = () => {
 	    			<br />
 	    			<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
+	    				<div>現金100円を使ってチョコレートを買った</div>
 					<div>①因果分析</div>
-					<div>現金100円を使ってチョコレートを買った</div>
 					<div>最終的に発生したもの（借方）：チョコレート100円</div>
 					<div>なぜ発生したか（貸方）：現金100円を使ったから</div>
 					<br />
@@ -1951,8 +1951,8 @@ const CashGrade3 = () => {
 				<br />
 	    			<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
+	    				<div>普通預金口座から現金を10,000円引き出した</div>
 					<div>①因果分析</div>
-					<div>普通預金口座から現金を10,000円引き出した</div>
 					<div>最終的に発生したもの（借方）：現金10,000円</div>
 					<div>なぜ発生したか（貸方）：銀行から10,000円を下ろしたから</div>
 					<br />
@@ -2025,8 +2025,8 @@ const CashGrade3 = () => {
 	    			<br />
 	    			<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
+	    				<div>A社は、B社に対する売掛金10,000円を回収し、同社振出の小切手を受け取った</div>
 					<div>①因果分析</div>
-					<div>A社は、B社に対する売掛金10,000円を回収し、同社振出の小切手を受け取った</div>
 					<div>最終的に発生したもの（借方）：10,000円分の小切手</div>
 					<div>なぜ発生したか（貸方）：B社に対する売掛金10,000円を小切手の形で回収したから</div>
 					<br />
@@ -2086,8 +2086,8 @@ const CashGrade3 = () => {
 	    			<br />
 	    			<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
+	    				<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
 					<div>①因果分析</div>
-					<div>現金の帳簿残高が10,000円、実際の現金の残高が12,000円であった</div>
 					<div>最終的に発生したもの（借方）：現金の2,000円の残高ズレ</div>
 					<div>なぜ発生したか（貸方）：現金の帳簿残高が実際の残高と比較すると、2,000円少なかったため</div>
 					<br />
@@ -2115,8 +2115,8 @@ const CashGrade3 = () => {
 	    			<br />
 	    			<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
+	    				<div>現金過不足の調査の結果、原因が通信費1,500円の計上漏れだったと判明した</div>
 					<div>①因果分析</div>
-					<div>現金過不足の調査の結果、原因が通信費1,500円の計上漏れだったと判明した</div>
 					<div>最終的に発生したもの（借方）：通信費1,500円</div>
 					<div>なぜ発生したか（貸方）：現金の残高ズレが発生したため</div>
 					<br />
@@ -2147,8 +2147,8 @@ const CashGrade3 = () => {
 	    			<br />
 	    			<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
+	    				<div>現金過不足の調査の結果、500円分は原因が不明だった</div>
 					<div>①因果分析</div>
-					<div>現金過不足の調査の結果、500円分は原因が不明だった</div>
 					<div>最終的に発生したもの（借方）：500円の謎の支出</div>
 					<div>なぜ発生したか（貸方）：500円の現金過不足の原因が不明であったため</div>
 					<br />
@@ -2308,7 +2308,7 @@ const SavingsGrade3 = () => {
 		</Element>
 		<div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
 		<div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
-		<div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
+		<div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断するので注意しましょう。</div>
 		<table border="1" cellspacing="0" className="journal">
 		<tr>
 		    <th>預金の名前</th>
@@ -2338,37 +2338,169 @@ const SavingsGrade3 = () => {
 
 		<div>別段口座とは、例えば株式会社の設立時に払い込まれた一時的なお金がを処理する口座になります。</div>
  	</section>
+	    
+	<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">普通預金の会計処理</h1>	
+			</Element>
+			<div>普通預金契約により開設された口座を管理するための勘定科目を、<span className="underline font-color2">普通預金</span>と呼びます。</div>
+	    		<div>例えば、現金10,000円を普通預金口座に預け入れた場合、以下の仕訳になります。</div>
+	    		<table border="1" cellspacing="0" className="journal">
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>普通預金　10,000</td>
+					<td>現金　10,000</td>
+				    </tr>
+				</table>
+	    			<br />
+	    			<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+	    				<div>現金10,000円を普通預金口座に預け入れた</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：普通預金口座の10,000円の残高増加</div>
+					<div>なぜ発生したか（貸方）：現金を預け入れたため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：普通預金口座の残高増加なので、普通預金で処理</div>
+					<div>なぜ発生したか（貸方）：現金を預け入れたので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：普通預金という資産が増加しますので、借方に普通預金を計上します。</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少しますので、貸方に現金を計上します。</div>
+	    			</div>
+ 	</section>
+	    
+	<section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">定期預金の会計処理</h1>	
+			</Element>
+			<div>預け入れはいつでも出来るものの、引き出しは満期時のみ可能な預金口座を定期預金口座と呼び、これを処理する勘定科目を<span className="underline font-color2">定期預金</span>と呼びます。</div>
+	    		<div>例えば、現金10,000円を定期預金口座に預け入れた場合、以下の仕訳になります。</div>
+	    		<table border="1" cellspacing="0" className="journal">
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>定期預金　10,000</td>
+					<td>現金　10,000</td>
+				    </tr>
+				</table>
+	    			<br />
+	    			<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+	    				<div>現金10,000円を定期預金口座に預け入れた</div>
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：定期預金口座の10,000円の残高増加</div>
+					<div>なぜ発生したか（貸方）：現金を預け入れたため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：定期預金口座の残高増加なので、定期預金で処理</div>
+					<div>なぜ発生したか（貸方）：現金を預け入れたので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：定期預金という資産が増加しますので、借方に定期預金を計上します。</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少しますので、貸方に現金を計上します。</div>
+	    			</div>
+ 	</section>
   
 	<section className="font-color">
 		<Element name="savingsGrade3-2" className="element" >
 			<h1 className="intro">当座預金の会計処理</h1>	
 		</Element>
-		<div>当座預金とは、小切手を管理するための口座です。</div>
-		<div>２種類の仕訳を紹介します。</div>
-
-		<table border="1" cellspacing="0" className="journal">
-		    <caption className="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
-		    <tr>
-			<th>借方（運用形態）</th>
-			<th>貸方（調達源泉）</th>
-		    </tr>
-		    <tr>
-			<td>当座預金　20,000</td>
-			<td>現金　20,000</td>
-		    </tr>
-		</table>
-
-		<table border="1" cellspacing="0" className="journal">
-		    <caption className="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
-		    <tr>
-			<th>借方（運用形態）</th>
-			<th>貸方（調達源泉）</th>
-		    </tr>
-		    <tr>
-			<td>買掛金　3,000</td>
-			<td>当座預金　3,000</td>
-		    </tr>
-		</table>
+		<div>預金を引き出す場合に、小切手を用いる口座を当座預金口座と言い、これを処理する勘定科目を<span className="underline font-color2">当座預金</span>と呼びます。</div>
+	    	<div>例えば、小切手で支払いを行った場合、当座預金の残高が減少することになります。この時、自身が振り出した小切手のことを<span className="underline font-color2">自己振出小切手</span>と呼びます。</div>
+	    	<div>したがって、交際費10,000円を小切手を振り出して支払った場合、以下の仕訳になります。</div>
+	    		<table border="1" cellspacing="0" className="journal">
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>交際費　10,000</td>
+					<td>当座預金　10,000</td>
+				    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+				<div>■　仕訳の手順　■</div>
+				<div>交際費10,000円を小切手を振り出して支払った</div>
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：10,000円の交際費</div>
+				<div>なぜ発生したか（貸方）：10,000円の自己振出小切手を振出したため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：交際費の支払いになるので、交際費で処理</div>
+				<div>なぜ発生したか（貸方）：自己振出小切手の振出しになるので、当座預金で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：交際費という費用が増加するので、借方に交際費を配置</div>
+				<div>なぜ発生したか（貸方）：当座預金という資産が減少するので、貸方に当座預金を配置</div>
+			</div>
+	    
+	    		<div>一方、小切手を受け取った場合には「誰が」振り出した小切手を受け取ったかで処理が分かれます。</div>
+	    		<div>まず、自身が振り出した小切手がめぐりめぐって自分のところへ戻ってきた場合には、当座預金が増加したとして処理を行います</div>
+	    		<div>例えば、売掛金の回収時に、以前自分が振り出した小切手を10,000円受け取った場合、以下の仕訳になります。</div>
+	    		<table border="1" cellspacing="0" className="journal">
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>当座預金　10,000</td>
+					<td>売掛金　10,000</td>
+				    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+	    			<div>売掛金の回収時に、以前自分が振り出した小切手を10,000円受け取った</div>
+				<div>■　仕訳の手順　■</div>
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：自己振出小切手10,000円の回収</div>
+				<div>なぜ発生したか（貸方）：売掛金を回収したため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：自己振出小切手の回収になるので、当座預金で処理</div>
+				<div>なぜ発生したか（貸方）：売掛金の回収になるので、売掛金で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：小切手を管理する資産口座の残高が増加するので、借方に当座預金を配置します。</div>
+				<div>なぜ発生したか（貸方）：売掛金という資産が減少するので、貸方に売掛金を配置します。</div>
+			</div>
+	    
+	    		<div>他人が振り出した小切手のことを<span className="underline font-color2">他人振出小切手</span>と呼びます。</div>
+	    		<div>他人振出小切手は通貨代用証券になるため、現金の増加で処理を行います。</div>
+	    		<div>例えば、売掛金の回収時に、他人が振り出した小切手を10,000円受け取った場合、以下の仕訳になります。</div>
+	    		<table border="1" cellspacing="0" className="journal">
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>現金　10,000</td>
+					<td>売掛金　10,000</td>
+				    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+				<div>■　仕訳の手順　■</div>
+				<div>売掛金の回収時に、他人が振り出した小切手を10,000円受け取った</div>
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：他人振出小切手10,000円の回収</div>
+				<div>なぜ発生したか（貸方）：売掛金を回収したため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：他人振出小切手という通貨代用証券の増加になるので、現金で処理</div>
+				<div>なぜ発生したか（貸方）：売掛金の回収になるので、売掛金で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：通貨代用証券という資産が増加するので、借方に現金を配置します。</div>
+				<div>なぜ発生したか（貸方）：売掛金という資産が減少するので、貸方に売掛金を配置します。</div>
+			</div>
+	    		
 	</section>
        
 	<section className="font-color">
