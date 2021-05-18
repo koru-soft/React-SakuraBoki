@@ -1894,204 +1894,202 @@ const theEndOfTheFiscalPeriod = () => {
 //現金のコンポーネント
 const CashGrade3 = () => {
     return (
-        <>
-    
-    <Title title="現金とは"/>
-        <section>
-            <article className="font-color">
-                <div>現金とは、100円玉や1000円札など「事業で利用するための」硬貨や紙幣の事です。</div>
-                <div>他にも、現金に交換できる価値のあるものを<span className="underline font-color2">通貨代用証券</span>と言い、現金として扱います（後述）。</div>
-                <div>例えば、現金を使った支払いは以下のような仕訳となります。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">現金100円で、チョコレートを買った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>消耗品費（＝チョコレート）　100</td>
-                        <td>現金　100</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を使った場合、資産の減少を表現したいという意図から、貸方に計上されます。</div>
-                <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">普通預金口座から現金を10,000円引き出した。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>現金　10,000</td>
-                        <td>普通預金　10,000</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を引き出した場合、資産の増加を表現したいという意図から、借方に現金を計上します。</div>
-                <div>一方、普通預金口座も資産の勘定科目として扱うのですが、現金を引き出した場合、普通預金口座という資産の減少を表現したいという意図から、貸方に普通預金を計上します。</div>
-                <div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">個人事業主がプライベートの現金100円で、コーラを買った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>消耗品費（＝コーラ）　100</td>
-                        <td>事業主借　100</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上のような仕訳になるかというと、そもそも「現金」という勘定科目は「事業で利用するための」現金を表します。確定申告や決算は、事業で発生した収支が記録の対象となりますので、プライベート利用分の現金は明確に分ける必要があります。</div>
-                <div>もし、プライベートの現金で事業用の支払をしてしまった場合、上記のように事業主勘定科目を使って調整が必要となります。</div>
-            </article>
-        </section>
-
-        <Title title="通貨代用証券とは"/>
-        <section>
-            <article className="font-color">
-                <div>簿記の世界では、上記の他にも、いつでも通貨に換金できる価値を持つ証券も現金として扱います。</div>
-                <div>これを「<span className="underline font-color2">通貨代用証券</span>」と言います。</div>
-                <div>代表的なものとして、以下の通貨代用証券があります。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <tr>
-                        <th>通貨代用証券の名前</th>
-                        <th>どんなもの？</th>
-                    </tr>
-                    <tr>
-                        <td>他人振出小切手</td>
-                        <td>他人から受け取った小切手です。銀行に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>送金小切手</td>
-                        <td>銀行が振出してくれる小切手です。銀行に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>郵便為替証書</td>
-                        <td>郵便局が振出してくれる証書です。郵便局に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>株式配当金領収証</td>
-                        <td>株式会社が発行する配当金の支払通知書です。銀行に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                    <tr>
-                        <td>期限到来済公社債利札</td>
-                        <td>支払期限が到来している利札です。所定の金融機関に持っていくと現金に換金出来ます。</td>
-                    </tr>
-                </table>
-
-                <div>それでは、いくつか仕訳を紹介します。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">株式配当金領収証を10,000円受け取った。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>現金　10,000</td>
-                        <td>受取配当金　10,000</td>
-                    </tr>
-                </table>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">手元にあった公社債利札5,000円に関して、支払期限が到来した。</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>現金　5,000</td>
-                        <td>有価証券利息　5,000</td>
-                    </tr>
-                </table>
-
-            </article>
-        </section>
+        	<>
+    			<section className="font-color">
+				<Element name="cashGrade3-1" className="element" >
+					<h1 className="intro">現金とは</h1>	
+				</Element>
+	    			<div>現金とは、100円玉や1000円札など「事業で利用するための」硬貨や紙幣の事です。</div>
+				<div>他にも、現金に交換できる価値のあるものを<span className="underline font-color2">通貨代用証券</span>と言い、現金として扱います（後述）。</div>
+	    			<div>例えば、現金を使った支払いは以下のような仕訳となります。</div>
 	    
-        <Title title="小切手とは"/>
-        <section>
-            <article className="font-color">
-                <div>例えば、誰かにお金をあげたいと考えます。</div>
-                <div>一番シンプルな方法は、お金を現金の形で手渡しすることです。</div>
-                <div>では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
-                <div>手渡しも可能ではあるのですが、わざわざ現地まで大量の現金を抱えて持っていくのはいろいろなリスクが伴います。</div>
-                <div>ここで登場するのが「<span className="pink">小切手</span>」です。以下のようなメリットがあります。</div>
-                <div>①紙きれを発行するだけでお金を渡すことができる</div>
-                <div>②お金を渡したい相手が銀行口座を持っていなくても関係ない</div>
-                <div>③その他の文書類と同封して送付出来る</div>
+	    			<table border="1" cellspacing="0">
+				    <caption className="question">現金100円で、チョコレートを買った。</caption>
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>消耗品費（＝チョコレート）　100</td>
+					<td>現金　100</td>
+				    </tr>
+				</table>
+	    			<div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を使った場合、資産の減少を表現したいという意図から、貸方に計上されます。</div>
+                		<div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
+	    
+				<table border="1" cellspacing="0" className="journal">
+				    <caption className="question">普通預金口座から現金を10,000円引き出した。</caption>
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>現金　10,000</td>
+					<td>普通預金　10,000</td>
+				    </tr>
+				</table>
 
-                <table border="1" cellspacing="0" className="journal">
-                <tr>
-                    <th>簿記で扱う小切手の種類</th>
-                    <th>どんなもの？</th>
-                </tr>
-                <tr>
-                    <td>未渡小切手</td>
-                    <td>支払のために振り出したが、まだ相手方に引き渡されず手許にある小切手</td>
-                </tr>
-                <tr>
-                    <td>他人振出小切手</td>
-                    <td>郵便振替貯金の払出が出来る証書。</td>
-                </tr>
-                <tr>
-                    <td>不渡小切手</td>
-                    <td>支払資金の不足などの原因で、銀行に支払を拒絶された小切手</td>
-                </tr>
-                <tr>
-                    <td>先日付小切手</td>
-                    <td>実際の振出日よりも先の日付を振出日として記載した小切手</td>
-                </tr>
-                <tr>
-                    <td>自己振出小切手</td>
-                    <td>自分が振り出した小切手</td>
-                </tr>
-            </table>
-            </article>
-        </section>
+				<div>なぜ上のような仕訳になるかというと、現金は資産の勘定科目として扱うため、現金を引き出した場合、資産の増加を表現したいという意図から、借方に現金を計上します。</div>
+				<div>一方、普通預金口座も資産の勘定科目として扱うのですが、現金を引き出した場合、普通預金口座という資産の減少を表現したいという意図から、貸方に普通預金を計上します。</div>
+				<div>また、仕訳を組んだ時点で「事業で利用するための」現金であることに注意して下さい。</div>
+
+				<table border="1" cellspacing="0" className="journal">
+				    <caption className="question">個人事業主がプライベートの現金100円で、コーラを買った。</caption>
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>消耗品費（＝コーラ）　100</td>
+					<td>事業主借　100</td>
+				    </tr>
+				</table>
+
+				<div>なぜ上のような仕訳になるかというと、そもそも「現金」という勘定科目は「事業で利用するための」現金を表します。確定申告や決算は、事業で発生した収支が記録の対象となりますので、プライベート利用分の現金は明確に分ける必要があります。</div>
+				<div>もし、プライベートの現金で事業用の支払をしてしまった場合、上記のように事業主勘定科目を使って調整が必要となります。</div>
+	    		</section>
+	    
+	    		<section className="font-color">
+				<Element name="cashGrade3-2" className="element" >
+					<h1 className="intro">通貨代用証券とは</h1>	
+				</Element>
+	    			 <div>簿記の世界では、上記の他にも、いつでも通貨に換金できる価値を持つ証券も現金として扱います。</div>
+				<div>これを「<span className="underline font-color2">通貨代用証券</span>」と言います。</div>
+				<div>代表的なものとして、以下の通貨代用証券があります。</div>
+
+				<table border="1" cellspacing="0" className="journal">
+				    <tr>
+					<th>通貨代用証券の名前</th>
+					<th>どんなもの？</th>
+				    </tr>
+				    <tr>
+					<td>他人振出小切手</td>
+					<td>他人から受け取った小切手です。銀行に持っていくと現金に換金出来ます。</td>
+				    </tr>
+				    <tr>
+					<td>送金小切手</td>
+					<td>銀行が振出してくれる小切手です。銀行に持っていくと現金に換金出来ます。</td>
+				    </tr>
+				    <tr>
+					<td>郵便為替証書</td>
+					<td>郵便局が振出してくれる証書です。郵便局に持っていくと現金に換金出来ます。</td>
+				    </tr>
+				    <tr>
+					<td>株式配当金領収証</td>
+					<td>株式会社が発行する配当金の支払通知書です。銀行に持っていくと現金に換金出来ます。</td>
+				    </tr>
+				    <tr>
+					<td>期限到来済公社債利札</td>
+					<td>支払期限が到来している利札です。所定の金融機関に持っていくと現金に換金出来ます。</td>
+				    </tr>
+				</table>
+
+				<div>それでは、いくつか仕訳を紹介します。</div>
+
+				<table border="1" cellspacing="0" className="journal">
+				    <caption className="question">株式配当金領収証を10,000円受け取った。</caption>
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>現金　10,000</td>
+					<td>受取配当金　10,000</td>
+				    </tr>
+				</table>
+
+				<table border="1" cellspacing="0" className="journal">
+				    <caption className="question">手元にあった公社債利札5,000円に関して、支払期限が到来した。</caption>
+				    <tr>
+					<th>借方（運用形態）</th>
+					<th>貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td>現金　5,000</td>
+					<td>有価証券利息　5,000</td>
+				    </tr>
+				</table>
+	    		</section>
+	    
+	    		<section className="font-color">
+				<Element name="cashGrade3-3" className="element" >
+					<h1 className="intro">小切手とは</h1>	
+				</Element>
+	    			<div>例えば、誰かにお金をあげたいと考えます。</div>
+				<div>一番シンプルな方法は、お金を現金の形で手渡しすることです。</div>
+				<div>では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
+				<div>手渡しも可能ではあるのですが、わざわざ現地まで大量の現金を抱えて持っていくのはいろいろなリスクが伴います。</div>
+				<div>ここで登場するのが「<span className="pink">小切手</span>」です。以下のようなメリットがあります。</div>
+				<div>①紙きれを発行するだけでお金を渡すことができる</div>
+				<div>②お金を渡したい相手が銀行口座を持っていなくても関係ない</div>
+				<div>③その他の文書類と同封して送付出来る</div>
+
+				<table border="1" cellspacing="0" className="journal">
+				<tr>
+				    <th>簿記で扱う小切手の種類</th>
+				    <th>どんなもの？</th>
+				</tr>
+				<tr>
+				    <td>未渡小切手</td>
+				    <td>支払のために振り出したが、まだ相手方に引き渡されず手許にある小切手</td>
+				</tr>
+				<tr>
+				    <td>他人振出小切手</td>
+				    <td>郵便振替貯金の払出が出来る証書。</td>
+				</tr>
+				<tr>
+				    <td>不渡小切手</td>
+				    <td>支払資金の不足などの原因で、銀行に支払を拒絶された小切手</td>
+				</tr>
+				<tr>
+				    <td>先日付小切手</td>
+				    <td>実際の振出日よりも先の日付を振出日として記載した小切手</td>
+				</tr>
+				<tr>
+				    <td>自己振出小切手</td>
+				    <td>自分が振り出した小切手</td>
+				</tr>
+			    </table>
+	    		</section>
         </>
     );
 }
 
 const CashGrade2 = () => {
     return (
-        <>
-    <Title title="株式配当金領収証とは"/>
-        <section>
-            <article className="font-color">
-	    	<div>株式を持っていると、業績に応じて配当金をもらうことが出来ます。</div>
-	    	<div>ただし、この配当金は通貨の形で手元に送られてくるわけではなく、<span className="underline font-color2">株式配当金領収証</span>という紙の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。</div>
-	   	<div>株式配当金領収証は常に現金と交換出来る価値を持っている、すなわち通貨代用証券であることから、現金として処理を行います。</div>
-            </article>
-        </section>
+		<>
+		    <section className="font-color">
+			<Element name="cashGrade2-1" className="element" >
+				<h1 className="intro">株式配当金領収証とは</h1>	
+			</Element>
+			<div>株式を持っていると、業績に応じて配当金をもらうことが出来ます。</div>
+			<div>ただし、この配当金は通貨の形で手元に送られてくるわけではなく、<span className="underline font-color2">株式配当金領収証</span>という紙の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。</div>
+			<div>株式配当金領収証は常に現金と交換出来る価値を持っている、すなわち通貨代用証券であることから、現金として処理を行います。</div>
+		    </section>
 	    
-   <Title title="期限到来済公社債利札とは"/>
-        <section>
-            <article className="font-color">
-                <div>公社債を持っていると、期限に応じて利息をもらうことが出来ます。</div>
-	    	<div>ただし、この利息は通貨の形で手元に送られてくるわけではなく、<span className="underline font-color2">利札</span>という証券の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。</div>
-	    	<div>期限到来済公社債利札は常に現金と交換出来る価値を持っている、すなわち通貨代用証券であることから、現金として処理を行います。</div>
-	    	<div>逆に、期限未到来公社債利札は銀行に持っていっても現金と交換することが出来ません。そのため、期限未到来公社債利札は受け取っても仕訳はしないことが原則となっています。</div>
-            </article>
-        </section>
-        </>
+	    	    <section className="font-color">
+			<Element name="cashGrade2-2" className="element" >
+				<h1 className="intro">期限到来済公社債利札とは</h1>	
+			</Element>
+			<div>公社債を持っていると、期限に応じて利息をもらうことが出来ます。</div>
+			<div>ただし、この利息は通貨の形で手元に送られてくるわけではなく、<span className="underline font-color2">利札</span>という証券の形で送られてきて、これを銀行で換金することで通貨と交換出来る性質を持っています。</div>
+			<div>期限到来済公社債利札は常に現金と交換出来る価値を持っている、すなわち通貨代用証券であることから、現金として処理を行います。</div>
+			<div>逆に、期限未到来公社債利札は銀行に持っていっても現金と交換することが出来ません。そのため、期限未到来公社債利札は受け取っても仕訳はしないことが原則となっています。</div>
+		    </section>
+        	</>
     );
 }
 
 const CashGrade1 = () => {
     return (
         <>
-                <Title title="その他の通貨代用証券"/>
-		<section>
-		    <article className="font-color">
-		    <div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
+		<section className="font-color">
+			<Element name="cashGrade1-1" className="element" >
+				<h1 className="intro">その他の通貨代用証券について</h1>	
+			</Element>
+			<div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
 
-		    <table border="1" cellspacing="0" className="journal">
+		    	<table border="1" cellspacing="0" className="journal">
 			<tr>
 			    <th>通貨代用証券の名前</th>
 			    <th>どんなもの？</th>
@@ -2112,8 +2110,7 @@ const CashGrade1 = () => {
 			    <td>国庫金支払通知書</td>
 			    <td>官公庁から税金の還付がある場合などに発行される支払通知書。</td>
 			</tr>
-		    </table>
-		    </article>
+		    	</table>
 		</section>
         </>
     );
@@ -2128,6 +2125,14 @@ const cashGrade3 = () => {
                     <Link to="/cash-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/cash-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-1" spy={true} smooth={true} duration={500} >現金とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-2" spy={true} smooth={true} duration={500} >通貨代用証券とは</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-3" spy={true} smooth={true} duration={500} >小切とは</ScrollLink></li>
+	    	    </ul>
+                </aside>
                 <CashGrade3 />
             </aside>
         </main>
@@ -2143,6 +2148,13 @@ const cashGrade2 = () => {
                     <Link to="/cash-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
                     <Link to="/cash-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade2-1" spy={true} smooth={true} duration={500} >株式配当金領収証とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade2-2" spy={true} smooth={true} duration={500} >期限到来済公社債利札とは</ScrollLink></li>
+	    	    </ul>
+                </aside>
                 <CashGrade2 />
             </aside>
         </main>
@@ -2158,6 +2170,12 @@ const cashGrade1 = () => {
                     <Link to="/cash-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/cash-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
                 </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade1-1" spy={true} smooth={true} duration={500} >その他の通貨代用証券について</ScrollLink></li>
+	    	    </ul>
+                </aside>
                 <CashGrade1 />
             </aside>
         </main>
