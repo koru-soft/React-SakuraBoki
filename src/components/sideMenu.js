@@ -246,6 +246,7 @@ const Bookkeeping = () => {
                         <td className="table-size table-align">現金 100</td>
                     </tr>
                 </table>
+	    	<br />
 	    	<div>これは、現金100円を使って10,000円のチョコレートを買ったという仕訳になります。金額が一致していないのでおかしいですね。</div>
 	    	
 	    	<Element name="bookkeeping8" className="element" >
@@ -417,9 +418,9 @@ const AccountGrade3 = () => {
 				<div>売ったらお金になるという性質をもった財産のことを<span className="underline font-color2">資産</span>と呼びます</div>
 				<div>ほとんどのものは売ったらお金になりますので、資産と言えるでしょう。</div>
 				<div>例えば、現金はそのままで資産になりますし、株式なども売ればお金になるので資産です。</div>
-                <br />
+                		<br />
 				<div>資産は定位置が借方になるので、資産が増えたら仕訳の左側に、資産が減ったら仕訳の右側に記入していきます。</div>
-		
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
@@ -437,9 +438,9 @@ const AccountGrade3 = () => {
 				</Element>
 				<div>業務で使うお金のうち、返済の必要性をもった財産を<span className="underline font-color2">負債</span>と呼びます</div>
 				<div>例えば、借金がこれに該当します。</div>
-                <br />
+                		<br />
 				<div>負債は定位置が貸方になるので、負債が増えたら仕訳の右側に、負債が減ったら仕訳の左側に記入していきます。</div>		
-		
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
@@ -460,8 +461,9 @@ const AccountGrade3 = () => {
 				<br />
 				<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
 				<div>②事業活動を通して、獲得したお金</div>
-                <br />
+                		<br />
 				<div>純資産は定位置が貸方になるので、純資産が増えたら仕訳の右側に、純資産が減ったら仕訳の左側に記入していきます。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
@@ -479,9 +481,9 @@ const AccountGrade3 = () => {
 				</Element>
 				<div>事業活動により獲得したお金を<span className="underline font-color2">収益</span>と呼びます</div>
 				<div>例えば、売上がこれに該当します。</div>
-                <br />
+                		<br />
 				<div>収益は定位置が貸方になるので、収益が増えたら仕訳の右側に、収益が減ったら仕訳の左側に記入していきます。</div>	
-		
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
@@ -501,7 +503,7 @@ const AccountGrade3 = () => {
 				<div>例えば、仕入がこれに該当します。</div>
 				<br />
 				<div>費用は定位置が借方になるので、費用が増えたら仕訳の左側に、費用が減ったら仕訳の右側に記入していきます。</div>
-		
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
@@ -1923,8 +1925,10 @@ const CashGrade3 = () => {
                     <br />
 	    			<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
+	    				<br />
+	    				<div>現金100円を使ってチョコレートを買った</div>
+	    				<br />
 					<div>①因果分析</div>
-					<div>現金100円を使ってチョコレートを買った</div>
 					<div>最終的に発生したもの（借方）：チョコレート100円</div>
 					<div>なぜ発生したか（貸方）：現金100円を使ったから</div>
 					<br />
