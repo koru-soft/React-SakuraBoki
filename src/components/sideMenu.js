@@ -130,7 +130,7 @@ const Bookkeeping = () => {
                 <br />
                 <div>そして、簿記ではお金の動きを記録する際、「最終的に発生したもの（結果）」は左側に、「何故、その結果は発生したのか（原因）」は右側に書くことにしました。例えば、以下のように記録していきます。</div>
                 <br />
-                <table border="1" cellspacing="0">
+                <table border="1" cellspacing="0" className="table-color">
                     <tr>
                         <th className="table-size table-align">最終的に発生したもの（結果）</th>
                         <th className="table-size table-align">何故、その結果は発生したのか（原因）</th>
@@ -152,7 +152,7 @@ const Bookkeeping = () => {
 	    	<br />
             	<div>したがって、先程の表は簿記では以下のような表記となります。</div>
 	    	<br />
-            	<table border="1" cellspacing="0">
+            	<table border="1" cellspacing="0" className="table-color">
                     <tr>
                         <th className="table-size table-align">借方</th>
                         <th className="table-size table-align">貸方</th>
@@ -189,7 +189,7 @@ const Bookkeeping = () => {
 	    	<br />
             	<div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
 	    	<br />
-	    	<table border="1" cellspacing="0">
+	    	<table border="1" cellspacing="0" className="table-color">
                     <tr>
                         <th className="table-size table-align">借方</th>
                         <th className="table-size table-align">貸方</th>
@@ -213,7 +213,7 @@ const Bookkeeping = () => {
 	    	<br />
             	<div>仕訳では、勘定科目の右側に金額を記載します。これで仕訳の完成です！</div>
 	    	<br />
-            	<table border="1" cellspacing="0">
+            	<table border="1" cellspacing="0" className="table-color">
                     <tr>
                         <th className="table-size table-align">借方</th>
                         <th className="table-size table-align">貸方</th>
@@ -235,7 +235,7 @@ const Bookkeeping = () => {
 	    	<div>なぜ一致するのかというと、仕訳はお金が動いたという事実を、因果という2つの側面から見たことを表すものになるため、動いた金額は変わらないからです。</div>
 	    	<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
 	    	<br />
-	    	<table border="1" cellspacing="0">
+	    	<table border="1" cellspacing="0" className="table-color">
                     <tr>
                         <th className="table-size table-align">借方</th>
                         <th className="table-size table-align">貸方</th>
@@ -309,7 +309,7 @@ const TrialBalance = () => {
 			<div>ある時点での財政状態を示す一覧表のことを<span className="underline font-color2">貸借対照表</span>と呼びます。</div>
 			<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
 			<br />
-			<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
+			<table border="1" cellspacing="0" className="table-color"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
 			<br />
 			<div>なお、最終的に発生したもの（結果）のことを<span className="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
 			<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
@@ -320,7 +320,7 @@ const TrialBalance = () => {
 			<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span className="underline font-color2">損益計算書</span>と呼びます。</div>
 			<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
 			<br />
-			<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
+			<table border="1" cellspacing="0" className="table-color"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
 			<br />
 			<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
 			<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「収益を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
@@ -372,31 +372,31 @@ const AccountGrade3 = () => {
 			<div>お金の動きのうち、共通の性質のみを抜き出してわかりやすく記録するために生まれた分類項目の総称を<span className="underline font-color2">勘定科目</span>と呼びます。</div>
 			<div>この「共通の性質」は、大きく分けると5種類に分かれていきます。</div>
 			<br />
-			<table border="1" cellspacing="0">
+			<table border="1" cellspacing="0" className="table-color">
 				<tr>
-					<th className="table-size table-align">分類の名前</th>
-					<th className="table-size table-align">概要</th>
+					<th className="table-size-30 table-align">分類の名前</th>
+					<th className="table-align">概要</th>
 				</tr>
 
 				<tr>
-					<td className="table-size table-align">資産</td>
-					<td className="table-size table-align">売ったらお金になるという性質をもつ財産</td>
+					<td className="table-align">資産</td>
+					<td className="table-align">売ったらお金になるという性質をもつ財産</td>
 				</tr>
 				<tr>
-					<td className="table-size table-align">負債</td>
-					<td className="table-size table-align">いずれ引き渡す義務があるという性質をもつ財産</td>
+					<td className="table-align">負債</td>
+					<td className="table-align">いずれ引き渡す義務があるという性質をもつ財産</td>
 				</tr>
 				<tr>
-					<td className="table-size table-align">純資産</td>
-					<td className="table-size table-align">自分で用意したという性質をもつ財産</td>
+					<td className="table-align">純資産</td>
+					<td className="table-align">自分で用意したという性質をもつ財産</td>
 				</tr>
 				<tr>
-					<td className="table-size table-align">収益</td>
-					<td className="table-size table-align">事業活動により獲得したお金</td>
+					<td className="table-align">収益</td>
+					<td className="table-align">事業活動により獲得したお金</td>
 				</tr>
 				<tr>
-					<td className="table-size table-align">費用</td>
-					<td className="table-size table-align">事業活動で発生したお金</td>
+					<td className="table-align">費用</td>
+					<td className="table-align">事業活動で発生したお金</td>
 				</tr>
 			</table>
 				<br />
@@ -406,7 +406,7 @@ const AccountGrade3 = () => {
 				</Element>
 				<div>勘定科目の各分類は、以下の位置が定位置となり、この分類がそのまま貸借対照表や損益計算書を形造ります。</div>
 				<br />
-				<table border="1" cellspacing="0"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr></table>
+				<table border="1" cellspacing="0" className="table-color"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr></table>
 				<br />
 				<div>それぞれの勘定科目が増加した場合にはその定位置に、減少した場合には逆の位置に配置を行います。</div>
 				<div>それでは、各分類の詳細を見ていきましょう。</div>
@@ -420,7 +420,7 @@ const AccountGrade3 = () => {
                 <br />
 				<div>資産は定位置が借方になるので、資産が増えたら仕訳の左側に、資産が減ったら仕訳の右側に記入していきます。</div>
 		
-				<table border="1" cellspacing="0">
+				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
 					<th className="table-size table-align">貸方</th>
@@ -440,7 +440,7 @@ const AccountGrade3 = () => {
                 <br />
 				<div>負債は定位置が貸方になるので、負債が増えたら仕訳の右側に、負債が減ったら仕訳の左側に記入していきます。</div>		
 		
-				<table border="1" cellspacing="0">
+				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
 					<th className="table-size table-align">貸方</th>
@@ -462,7 +462,7 @@ const AccountGrade3 = () => {
 				<div>②事業活動を通して、獲得したお金</div>
                 <br />
 				<div>純資産は定位置が貸方になるので、純資産が増えたら仕訳の右側に、純資産が減ったら仕訳の左側に記入していきます。</div>
-				<table border="1" cellspacing="0">
+				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
 					<th className="table-size table-align">貸方</th>
@@ -482,7 +482,7 @@ const AccountGrade3 = () => {
                 <br />
 				<div>収益は定位置が貸方になるので、収益が増えたら仕訳の右側に、収益が減ったら仕訳の左側に記入していきます。</div>	
 		
-				<table border="1" cellspacing="0">
+				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
 					<th className="table-size table-align">貸方</th>
@@ -502,7 +502,7 @@ const AccountGrade3 = () => {
 				<br />
 				<div>費用は定位置が借方になるので、費用が増えたら仕訳の左側に、費用が減ったら仕訳の右側に記入していきます。</div>
 		
-				<table border="1" cellspacing="0">
+				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-size table-align">借方</th>
 					<th className="table-size table-align">貸方</th>
@@ -756,7 +756,7 @@ const AccountsListGrade3 = () => {
 	return(
 		<>
 			<section className="font-color">
-			<table border="1" cellspacing="0">
+			<table border="1" cellspacing="0" className="table-color">
 				<tr>
 					<th className="table-size-15 table-align">大分類</th>
 					<th className="table-size-15 table-align">中分類</th>
@@ -991,7 +991,7 @@ const AccountsListGrade2 = () => {
 	return(
 		<>
 			<section className="font-color">
-			<table border="1" cellspacing="0">
+			<table border="1" cellspacing="0" className="table-color">
 				<tr>
 					<th className="table-size-15 table-align">大分類</th>
 					<th className="table-size-15 table-align">小分類</th>
@@ -1555,7 +1555,7 @@ const AccountsListGrade1 = () => {
 	return(
 		<>
 			<section className="font-color">
-			<table border="1" cellspacing="0">
+			<table border="1" cellspacing="0" className="table-color">
 				<tr>
 					<th className="table-size table-align">大分類</th>
 					<th className="table-size table-align">小分類</th>
@@ -1658,7 +1658,7 @@ const FinalTaxReturn = () => {
 			<div>例えば、病気で療養中の男性は、一定の金額を医療費として控除することが出来ます。その結果、所得税の計算の元になる金額は400万ではなく、400万から医療費控除で認められた金額を引いた金額になるのです。</div>
 			<div>2021年現在、所得控除は全部で14種類あります。</div>
 			<br />
-			<table border="1" cellspacing="0">
+			<table border="1" cellspacing="0" className="table-color">
 			    <tr>
 				<th className="table-size table-align">所得控除の種類</th>
 				<th className="table-size table-align">目的</th>
@@ -1743,7 +1743,7 @@ const FinalTaxReturn = () => {
 			<div>最終的に算出された所得税の金額から、さらに一定額を直接差し引くことの出来る仕組みを<span className="underline font-color2">税額控除</span>と呼びます。</div>
 			<div>2021年現在、所得控除は全部で14種類あります。</div>
 			<br />
-			<table border="1" cellspacing="0">
+			<table border="1" cellspacing="0" className="table-color">
 			    <tr>
 				<th className="table-size table-align">所得控除の種類</th>
 				<th className="table-size table-align">目的</th>
@@ -2199,27 +2199,27 @@ const CashGrade1 = () => {
 				<h1 className="intro">その他の通貨代用証券について</h1>	
 			</Element>
 			<div>簿記１級以上の試験では、様々な通貨代用証券が登場します。</div>
-
-		    	<table border="1" cellspacing="0" className="journal">
+            <br />
+		    	<table border="1" cellspacing="0" className="table-color">
 			<tr>
-			    <th>通貨代用証券の名前</th>
-			    <th>どんなもの？</th>
+			    <th className="table-size-30 table-align">通貨代用証券の名前</th>
+			    <th className="table-align">どんなもの？</th>
 			</tr>
 			<tr>
-			    <td>預金手形</td>
-			    <td>預金者に対して銀行が降り出す手形。銀行が支払人となる証券。</td>
+			    <td className="table-align">預金手形</td>
+			    <td className="table-align">預金者に対して銀行が降り出す手形。銀行が支払人となる証券。</td>
 			</tr>
 			<tr>
-			    <td>振替貯金払出証書</td>
-			    <td>郵便振替貯金の払出が出来る証書。</td>
+			    <td className="table-align">振替貯金払出証書</td>
+			    <td className="table-align">郵便振替貯金の払出が出来る証書。</td>
 			</tr>
 			<tr>
-			    <td>一覧払手形</td>
-			    <td>受取人が支払人に呈示した日が満期となる手形。</td>
+			    <td className="table-align">一覧払手形</td>
+			    <td className="table-align">受取人が支払人に呈示した日が満期となる手形。</td>
 			</tr>
 			<tr>
-			    <td>国庫金支払通知書</td>
-			    <td>官公庁から税金の還付がある場合などに発行される支払通知書。</td>
+			    <td className="table-align">国庫金支払通知書</td>
+			    <td className="table-align">官公庁から税金の還付がある場合などに発行される支払通知書。</td>
 			</tr>
 		    	</table>
 		</section>
@@ -2310,33 +2310,34 @@ const SavingsGrade3 = () => {
 		<div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
 		<div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
 		<div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
-		<table border="1" cellspacing="0" className="journal">
+		<br />
+        <table border="1" cellspacing="0" className="table-color">
 		<tr>
-		    <th>預金の名前</th>
-		    <th>どんなもの？</th>
+		    <th className="table-size-30 table-align">預金の名前</th>
+		    <th className="table-align">どんなもの？</th>
 		</tr>
 		<tr>
-		    <td>当座預金</td>
-		    <td>銀行との当座取引契約に基づいて随時引き出せる無利息の預金</td>
+		    <td className="table-align">当座預金</td>
+		    <td className="table-align">銀行との当座取引契約に基づいて随時引き出せる無利息の預金</td>
 		</tr>
 		<tr>
-		    <td>普通預金</td>
-		    <td>いつでも預け入れ、払い戻しが可能な預金</td>
+		    <td className="table-align">普通預金</td>
+		    <td className="table-align">いつでも預け入れ、払い戻しが可能な預金</td>
 		</tr>
 		<tr>
-		    <td>通知預金</td>
-		    <td>引き出す時に予め数日前頃より通知することが必要な預金</td>
+		    <td className="table-align">通知預金</td>
+		    <td className="table-align">引き出す時に予め数日前頃より通知することが必要な預金</td>
 		</tr>
 		<tr>
-		    <td>定期預金</td>
-		    <td>官予め満期日を設定し、満期日までは降ろせない預金</td>
+		    <td className="table-align">定期預金</td>
+		    <td className="table-align">官予め満期日を設定し、満期日までは降ろせない預金</td>
 		</tr>
 		<tr>
-		    <td>別段預金</td>
-		    <td>経過的・一時的に金融機関に預け入れた預金</td>
+		    <td className="table-align">別段預金</td>
+		    <td className="table-align">経過的・一時的に金融機関に預け入れた預金</td>
 		</tr>
 		</table>
-
+        <br />
 		<div>別段口座とは、例えば株式会社の設立時に払い込まれた一時的なお金がを処理する口座になります。</div>
  	</section>
   
@@ -2347,27 +2348,27 @@ const SavingsGrade3 = () => {
 		<div>当座預金とは、小切手を管理するための口座です。</div>
 		<div>２種類の仕訳を紹介します。</div>
 
-		<table border="1" cellspacing="0" className="journal">
+		<table border="1" cellspacing="0" className="table-color">
 		    <caption className="question">当座預金口座を開設し、現金20,000円を預けた。</caption>
 		    <tr>
-			<th>借方（運用形態）</th>
-			<th>貸方（調達源泉）</th>
+			<th className="table-size table-align">借方（運用形態）</th>
+			<th className="table-size table-align">貸方（調達源泉）</th>
 		    </tr>
 		    <tr>
-			<td>当座預金　20,000</td>
-			<td>現金　20,000</td>
+			<td className="table-size table-align">当座預金　20,000</td>
+			<td className="table-size table-align">現金　20,000</td>
 		    </tr>
 		</table>
 
-		<table border="1" cellspacing="0" className="journal">
+		<table border="1" cellspacing="0" className="table-color">
 		    <caption className="question">買掛金3,000円を、小切手を振り出して支払った。</caption>
 		    <tr>
-			<th>借方（運用形態）</th>
-			<th>貸方（調達源泉）</th>
+			<th className="table-size table-align">借方（運用形態）</th>
+			<th className="table-size table-align">貸方（調達源泉）</th>
 		    </tr>
 		    <tr>
-			<td>買掛金　3,000</td>
-			<td>当座預金　3,000</td>
+			<td className="table-size table-align">買掛金　3,000</td>
+			<td className="table-size table-align">当座預金　3,000</td>
 		    </tr>
 		</table>
 	</section>
@@ -2378,7 +2379,7 @@ const SavingsGrade3 = () => {
 		</Element>
 		<div>当座借越とは、当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことです。</div>
                 <div>記帳方法は2種類に分かれます。</div>
-                <table border="1" cellspacing="0" className="journal">
+                <table border="1" cellspacing="0" className="table-color">
                     <caption className="question">当座借越の記帳方法</caption>
                     <tr>
                         <th>二勘定法</th>
@@ -2405,7 +2406,7 @@ const SavingsGrade3 = () => {
                     </tr>
                 </table>
 
-                <table border="1" cellspacing="0" className="journal">
+                <table border="1" cellspacing="0" className="table-color">
                     <caption className="question">一勘定法の場合</caption>
                     <tr>
                         <th>借方（運用形態）</th>
@@ -2417,7 +2418,7 @@ const SavingsGrade3 = () => {
                     </tr>
                 </table>
                 
-                <table border="1" cellspacing="0" className="journal">
+                <table border="1" cellspacing="0" className="table-color">
                     <caption className="question">当座預金口座には20,000円が預け入れられていたとする。また、借越限度額は30,000円とする。買掛金の支払いのため、30,000円の小切手の振出を行った。</caption>
                     <caption className="question">二勘定法の場合</caption>
                     <tr>
@@ -2434,7 +2435,7 @@ const SavingsGrade3 = () => {
                     </tr>
                 </table>
 	    		
-	    	<table border="1" cellspacing="0" className="journal">
+	    	<table border="1" cellspacing="0" className="table-color">
                 
                     <caption className="question">一勘定法の場合</caption>
                     <tr>
