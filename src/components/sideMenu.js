@@ -2067,7 +2067,7 @@ const CashGrade3 = () => {
 	    		</section>
 	    
 	    		<section className="font-color">
-				<Element name="cashGrade3-3" className="element" >
+				<Element name="cashGrade3-4" className="element" >
 					<h1 className="intro">現金の残高ズレについて</h1>	
 				</Element>
 	    			<div>帳簿上の現金の残高と、実際の現金の残高が異なってしまう現象を現金の残高ズレと呼びます。</div>
@@ -2256,8 +2256,8 @@ const cashGrade3 = () => {
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-1" spy={true} smooth={true} duration={500} >現金とは</ScrollLink></li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-2" spy={true} smooth={true} duration={500} >通貨代用証券とは</ScrollLink></li>
                     	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-3" spy={true} smooth={true} duration={500} >小切とは</ScrollLink></li>
-	    	    	    <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-3" spy={true} smooth={true} duration={500} >現金の残高ズレについて</ScrollLink></li>
-	    	　　    </ul>
+	    	    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-4" spy={true} smooth={true} duration={500} >現金の残高ズレについて</ScrollLink></li>
+	    	　　 </ul>
                 </aside>
                 <CashGrade3 />
             </aside>
@@ -2356,7 +2356,7 @@ const SavingsGrade3 = () => {
  	</section>
   
 	<section className="font-color">
-			<Element name="cashGrade2-1" className="element" >
+			<Element name="savingsGrade3-2" className="element" >
 				<h1 className="intro">普通預金の会計処理</h1>	
 			</Element>
 			<div>普通預金契約により開設された口座を管理するための勘定科目を、<span className="underline font-color2">普通預金</span>と呼びます。</div>
@@ -2393,7 +2393,7 @@ const SavingsGrade3 = () => {
  	</section>
 
 	<section className="font-color">
-		<Element name="cashGrade2-1" className="element" >
+		<Element name="savingsGrade3-3" className="element" >
 			<h1 className="intro">定期預金の会計処理</h1>	
 		</Element>
 		<div>預け入れはいつでも出来るものの、引き出しは満期時のみ可能な預金口座を定期預金口座と呼び、これを処理する勘定科目を<span className="underline font-color2">定期預金</span>と呼びます。</div>
@@ -2430,7 +2430,7 @@ const SavingsGrade3 = () => {
  	</section>
        
 	<section className="font-color">
-		<Element name="savingsGrade3-2" className="element" >
+		<Element name="savingsGrade3-4" className="element" >
 			<h1 className="intro">当座預金の会計処理</h1>	
 		</Element>
 		<div>預金を引き出す場合に、小切手を用いる口座を当座預金口座と言い、これを処理する勘定科目を<span className="underline font-color2">当座預金</span>と呼びます。</div>
@@ -2534,7 +2534,7 @@ const SavingsGrade3 = () => {
 	    </section>
 	    
 	    <section className="font-color">
-		<Element name="savingsGrade3-3" className="element" >
+		<Element name="savingsGrade3-5" className="element" >
 			<h1 className="intro">当座借越の会計処理</h1>	
 		</Element>
 		<div>当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことを<span className="underline font-color2">当座借越</span>と呼びます</div>
@@ -2649,8 +2649,10 @@ const savingsGrade3 = () => {
                     <ul>
                         <li className="table-of-contents">目次</li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-1" spy={true} smooth={true} duration={500} >預金とは</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-2" spy={true} smooth={true} duration={500} >当座預金の会計処理</ScrollLink></li>
-                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-3" spy={true} smooth={true} duration={500} >当座借越の会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-2" spy={true} smooth={true} duration={500} >普通預金の会計処理</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-3" spy={true} smooth={true} duration={500} >定期預金の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-4" spy={true} smooth={true} duration={500} >当座預金の会計処理</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-5" spy={true} smooth={true} duration={500} >当座借越の会計処理</ScrollLink></li>	    	    
 	    	    </ul>
                 </aside>
                 <SavingsGrade3 />
