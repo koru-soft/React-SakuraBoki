@@ -168,12 +168,12 @@
 				<h1 className="intro">クレジット売掛金とは</h1>	
 			</Element>
 			<div></div>
-代金の支払いがクレジットカードで行われた場合、実際の入金は後日になります。
-	
-	
-	
-	
+代金の支払いがクレジットカードで行われた場合、実際の入金は後日になります。	
+ そのため、発生主義で記帳する場合には、売上の計上日と入金日に差が出ることとなります。
+こういった、クレジット払いによる後日お金をうけとれる権利のことをクレジット売掛金と呼びます。
  </section>
+ 
+ 
 
 <div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
@@ -214,6 +214,7 @@
 					<div>なぜ発生したか（貸方）：</div>
 </div>
 返金返品
+勘定科目は全く同じで、貸借のみ逆にした仕訳を逆仕訳（反対仕訳）と呼び、この逆仕訳による相殺の処理を行うことで返金・返品の記帳が可能です。
 
 <section className="font-color">
 			<Element name="cashGrade2-1" className="element" >
@@ -251,6 +252,8 @@
 			</Element>
 			<div></div>
  </section>
+
+
 
 <div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
