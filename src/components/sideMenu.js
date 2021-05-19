@@ -2068,6 +2068,21 @@ const CashGrade3 = () => {
 	    
 	    		<section className="font-color">
 				<Element name="cashGrade3-4" className="element" >
+					<h1 className="intro">小口現金とは</h1>	
+				</Element>
+	    			<div>一般的に、会社では盗難や紛失、横領等のリスクに対応するため、現金は手元に保管せず、振込や小切手を用いて支払いを行います。</div>
+	    			<div>しかしながら、コピー代や交通費など、日常の取引の中には必ず現金で支払いが求められるものがあることから、ある程度の現金は手元に置いておく必要があります。</div> 
+	    			<div>こういった日々生じる細かい支払いに備え、予め経理担当者が支払いを担当する者（用度係）に前渡しする少額の現金を<span className="underline font-color2">小口現金</span>と言います。</div>
+	    			<br />
+	    			<div>さて、小口現金の管理方法は2種類に分かれます。 各部署からの支払報告を受け、用度係に一定の見積もり金額を小口現金として前渡ししておき、その中から日常の支払いを行う仕組みを<span className="underline font-color2">定額資金前渡法（インプレスト・システム）</span>と呼びます。</div>
+	    			<div>一方、見積もり等は行わず、手元の現金が少なくなった場合に都度支給を行う方法を<span className="underline font-color2">随時補給法</span>と呼びます。</div>
+	    			<br />
+	    			<div>資金管理の面から見ると、定額資金前渡法の方が資金繰りしやすいことから、前者の方が管理方法として優れているとされています。</div>
+				<br />
+	    		</section>
+	    
+	    		<section className="font-color">
+				<Element name="cashGrade3-5" className="element" >
 					<h1 className="intro">現金の残高ズレについて</h1>	
 				</Element>
 	    			<div>帳簿上の現金の残高と、実際の現金の残高が異なってしまう現象を現金の残高ズレと呼びます。</div>
@@ -2142,7 +2157,7 @@ const CashGrade3 = () => {
 					<div>なぜ発生したか（貸方）：すでに借方に計上されていた現金過不足と相殺するため、貸方に現金過不足を計上します。</div>
 	    			</div>
 	    			<br />
-	    			<div>次に、現金過不足の調査の結果、500円分は原因が不明だったとします。</div>
+	    			<div>現金過不足の調査の結果、500円分は原因が不明だったとします。</div>
 	    			<div>現金化不足は原因が判明するまでの一時的な勘定科目なので、その原因が不明であってもいつまでも帳簿上に残しておくことは出来ません。</div>
 	    			<div>そこで、決算日においても原因がわからない現金過不足に関しては、雑収入や雑損失に振替えます。</div>
 	    			<div>このように期中に一時的に計上した勘定科目に対して、決算時にその整理を行うための仕訳を、<span className="underline font-color2">決算整理仕訳</span>と呼びます。</div>
@@ -2255,8 +2270,9 @@ const cashGrade3 = () => {
                         <li className="table-of-contents">目次</li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-1" spy={true} smooth={true} duration={500} >現金とは</ScrollLink></li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-2" spy={true} smooth={true} duration={500} >通貨代用証券とは</ScrollLink></li>
-                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-3" spy={true} smooth={true} duration={500} >小切とは</ScrollLink></li>
-	    	    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-4" spy={true} smooth={true} duration={500} >現金の残高ズレについて</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-3" spy={true} smooth={true} duration={500} >小切手とは</ScrollLink></li>
+	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-4" spy={true} smooth={true} duration={500} >小口現金とは</ScrollLink></li>
+	    	    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-5" spy={true} smooth={true} duration={500} >現金の残高ズレについて</ScrollLink></li>
 	    	　　 </ul>
                 </aside>
                 <CashGrade3 />
