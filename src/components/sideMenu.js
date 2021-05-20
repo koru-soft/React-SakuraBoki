@@ -2380,12 +2380,12 @@ const SavingsGrade3 = () => {
 	    		<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 				    <tr>
-					<th>借方（運用形態）</th>
-					<th>貸方（調達源泉）</th>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td>普通預金　10,000</td>
-					<td>現金　10,000</td>
+					<td className="table-align">普通預金　10,000</td>
+					<td className="table-align">現金　10,000</td>
 				    </tr>
 				</table>
 			<br />
@@ -2417,12 +2417,12 @@ const SavingsGrade3 = () => {
 	    	<br />
 		<table border="1" cellspacing="0" className="table-color">
 			    <tr>
-				<th>借方（運用形態）</th>
-				<th>貸方（調達源泉）</th>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
 			    </tr>
 			    <tr>
-				<td>定期預金　10,000</td>
-				<td>現金　10,000</td>
+				<td className="table-align">定期預金　10,000</td>
+				<td className="table-align">現金　10,000</td>
 			    </tr>
 			</table>
 			<br />
@@ -2455,12 +2455,12 @@ const SavingsGrade3 = () => {
 	    		<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 				    <tr>
-					<th>借方（運用形態）</th>
-					<th>貸方（調達源泉）</th>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td>交際費　10,000</td>
-					<td>当座預金　10,000</td>
+					<td className="table-align">交際費　10,000</td>
+					<td className="table-align">当座預金　10,000</td>
 				    </tr>
 			</table>
 			<br />
@@ -2481,19 +2481,19 @@ const SavingsGrade3 = () => {
 				<div>最終的に発生したもの（借方）：交際費という費用が増加するので、借方に交際費を配置</div>
 				<div>なぜ発生したか（貸方）：当座預金という資産が減少するので、貸方に当座預金を配置</div>
 			</div>
-
+			<br />
 	    		<div>一方、小切手を受け取った場合には「誰が」振り出した小切手を受け取ったかで処理が分かれます。</div>
 	    		<div>まず、自身が振り出した小切手がめぐりめぐって自分のところへ戻ってきた場合には、当座預金が増加したとして処理を行います</div>
 	    		<div>例えば、売掛金の回収時に、以前自分が振り出した小切手を10,000円受け取った場合、以下の仕訳になります。</div>
 	    		<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 				    <tr>
-					<th>借方（運用形態）</th>
-					<th>貸方（調達源泉）</th>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td>当座預金　10,000</td>
-					<td>売掛金　10,000</td>
+					<td className="table-align">当座預金　10,000</td>
+					<td className="table-align">売掛金　10,000</td>
 				    </tr>
 			</table>
 			<br />
@@ -2514,19 +2514,19 @@ const SavingsGrade3 = () => {
 				<div>最終的に発生したもの（借方）：小切手を管理する資産口座の残高が増加するので、借方に当座預金を配置します。</div>
 				<div>なぜ発生したか（貸方）：売掛金という資産が減少するので、貸方に売掛金を配置します。</div>
 			</div>
-
+			<br />
 	    		<div>他人が振り出した小切手のことを<span className="underline font-color2">他人振出小切手</span>と呼びます。</div>
 	    		<div>他人振出小切手は通貨代用証券になるため、現金の増加で処理を行います。</div>
 	    		<div>例えば、売掛金の回収時に、他人が振り出した小切手を10,000円受け取った場合、以下の仕訳になります。</div>
 	    		<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 				    <tr>
-					<th>借方（運用形態）</th>
-					<th>貸方（調達源泉）</th>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td>現金　10,000</td>
-					<td>売掛金　10,000</td>
+					<td className="table-align">現金　10,000</td>
+					<td className="table-align">売掛金　10,000</td>
 				    </tr>
 			</table>
 			<br />
@@ -2559,16 +2559,16 @@ const SavingsGrade3 = () => {
 		<br />
 	    	<table border="1" cellspacing="0" className="table-color">
 				    <tr>
-					<th>借方（運用形態）</th>
-					<th>貸方（調達源泉）</th>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td>買掛金　15,000</td>
-					<td>当座預金　10,000</td>
+					<td className="table-align">買掛金　15,000</td>
+					<td className="table-align">当座預金　10,000</td>
 				    </tr>
 	    			    <tr>
 					<td></td>
-					<td>当座借越　5,000</td>
+					<td className="table-align">当座借越　5,000</td>
 				    </tr>
 		</table>
 		<br />
@@ -2588,19 +2588,20 @@ const SavingsGrade3 = () => {
 			<div>③勘定科目の配置</div>
 			<div>最終的に発生したもの（借方）：買掛金という負債の支払いになるので、借方に配置し、負債を減少させます。</div>
 			<div>なぜ発生したか（貸方）：当座預金残高10,000円が減るので、貸方に当座預金を配置します。また、オーバー分を銀行からの負債で対応するので、当座借越を貸方に配置します。</div>
-	</div>
+		</div>
+		<br />
 		<div>最後に、期首日の時点で行う再振替仕訳について言及します。</div>
 		<div>当座借越は決算時に銀行への負債として計上しますが、翌期の期首日時点にて、再び当座預金残高へ残高を戻します。</div>
 		<div>あくまで当座借越としての管理は決算時のみになるのです。</div>
 	    	<br />
 		<table border="1" cellspacing="0" className="table-color">
 			    <tr>
-				<th>借方（運用形態）</th>
-				<th>貸方（調達源泉）</th>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
 			    </tr>
 			    <tr>
-				<td>当座借越　5,000</td>
-				<td>当座預金　5,000</td>
+				<td className="table-align">当座借越　5,000</td>
+				<td className="table-align">当座預金　5,000</td>
 			    </tr>
 		</table>
 		<br />
@@ -2716,15 +2717,64 @@ const TradingsGrade3 = () => {
     return (
         <>
             
-            <Title title="発生主義とは"/>
-            <section>
-                <article>
-                <div>実際に現金が動いた日付で収支を計上することを<span className="pink">現金主義</span>と言います。</div>
-                <div>ただ、それだけを記録していては、今後いくらお金を受け取れるのか、いくら支払いがあるのかなどの資金繰りが出来ません。そこで、会計では原則、お金を受け取る権利（債権）が発生した日付や、お金を支払う義務（債務）が発生した日付で収支を計上します。これを<span class="red">発生主義</span>と呼びます。</div>
-                </article>
-            </section>
+            <section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">発生主義とは</h1>	
+				</Element>
+				<div>請求書を4月に発行し、入金が5月に発生した場合、売上は4月に計上すべきでしょうか？ それとも5月に計上すべきでしょうか？</div>
+				<br />
+				<div>実際に現金が動いた日付で収支を計上することを<span className="underline font-color2">現金主義</span>と言います。</div>
+				<div>この考え方に基づく会計処理を方針とする場合、売上の計上日は5月になります。</div>
+				<br />
+				<div>しかしながら、実際の現金残高の増減のみを記録していては、今後いくらお金を受け取れるのか、いくら支払いがあるのかなどの予定等がわからず、資金繰りが出来ません。</div>
+				<br />
+				<div>そこで、会計では原則、お金を受け取る権利（債権）が発生した日付や、お金を支払う義務（債務）が発生した日付で収支を計上します。これを<span className="underline font-color2">発生主義</span>と呼びます。</div>
+				<div>この考え方に基づく会計処理を方針とするならば、売上の計上日は4月になります。</div>
+		
+			</section>
 
-            
+			<section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">掛取引とは</h1>	
+				</Element>
+				<div>取引の代金をその場で精算せず、後日精算する取引のことを<span className="underline font-color2">掛取引</span>といいます。</div>
+				<br />
+				<div>例えば、請求書を4月に発行し、入金が5月になるというケースでは、本来、4月の請求書発行のタイミングで入金も同時に行われるはずです。</div>
+				<div>しかしながら、商取引が発達していくにつれ、信用を媒介に取引を行うという慣行が出来ました。そのため、現行の商取引では入金のタイミングを遅らせることが出来ます。</div>
+				<br />
+				<div>今では当たり前になっているこのような慣行も、物々交換の時代にはあまり考えられない取引でした。</div>
+				<div>このような商慣行の発達に対応すべく、複式簿記が誕生していきます。</div>
+				<br />
+				<div>なお、仕入を行ったものの後払いにした場合、「あとでお金を払わなければいけない」という債務が生じます。これを<span className="underline font-color2">買掛金</span>といいます。 </div>
+				<br />
+				<div>一方、売上が上がったものの、お金の回収が後になった場合、「あとでお金を受けとることが出来る」という債権が生じます。これを<span className="underline font-color2">売掛金</span>と言います。</div>
+			</section>
+
+			{/* <section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">預金とは</h1>	
+				</Element>
+		
+			</section> 
+			<div></div>
+			<br />
+			<span className="underline font-color2"></span>
+			*/}
+
+			<section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">三分法とは</h1>	
+				</Element>
+
+				<div>商品売買が発生した際、仕入、売上、繰越商品の3つの勘定科目を用いて記帳する方法を<span className="underline font-color2">三分法</span>と呼びます。</div>
+				<br />
+				<div>記帳が簡単なため、スーパーなど大量の商品の仕入や売上を管理する必要がある事業では、この記帳方法が一般的です。</div>
+				<div>ただし、決算整理をしないといくらで商品を仕入れたのかという原価が把握出来ないため、利益の把握がしにくいというデメリットがあります。</div>
+				<br />
+				<div>もう1つの商品売買の記帳方法に分記法がありますが、試験において重要性が高いのは三分法で、特別な指示がない限り三分法による記帳が前提となります。</div>
+		
+			</section> 
+
             <Title title="売掛金・買掛金とは"/>
             <section>
                 <article>
@@ -5301,7 +5351,6 @@ const SideBar = () => {
                 </ul>
             </div>
             <div className="grid5-yozakura"></div>
-            <homeYozakura /> 
 
             <Switch>
                 <Route exact path="/" component={ homeYozakura } />
