@@ -5191,35 +5191,108 @@ const SideBar = () => {
 
             <div className="sidebar-sakura">
                 <h2 className="titleColor"><Link to="/">HOME</Link></h2>
-        　　    <h2 className="titleColor">基礎編</h2>
+        　　    <h2 className="titleColor">簿記の基本原理と各種実務</h2>
                 <ul className="sideMenu menu-sakura-color">
-                    <li className="sideList menu-sakura-color"><Link to="/bookkeeping">ボキのシクミ</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な勘定科目</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
                 </ul>
 
-                <h2 className="titleColor">計算編</h2>
+                <h2 className="titleColor">諸取引の処理</h2>
                 <ul className="sideMenu">
-                    <li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/other-grade3">その他債権債務</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">固定資産</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/research-and-development-costs-grade3">研究開発費</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">税効果会計</Link></li>
-                    <li className="sideList menu-sakura-color"><Link to="/consolidated-accounting-grade3">連結会計</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">債権の譲渡</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">債務の保証</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">特殊商品売買</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">様々な財又はサービスの顧客への移転</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">金融商品取引</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">有形固定資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">無形固定資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">固定資産の減損</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">投資その他の資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">繰延資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">資産除去債務</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">収益と費用</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">税金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">税効果会計</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">未決算</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/research-and-development-costs-grade3">会計上の変更および誤謬の訂正</Link></li>
                 </ul>
 
-                <h2 className="titleColor">理論編</h2>
-                <ul className="sideMenu">
+                <h2 className="titleColor">決算</h2>
+		<ul className="sideMenu menu-sakura-color">
+			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">試算表の作成</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/account-grade3">精算表</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">決算整理</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/trial-balance">決算整理後残高試算表</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">収益と費用の損益勘定への振替</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">純損益の繰越利益剰余金勘定への振替</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">その他有価証券評価差額金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">帳簿の締切</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">損益計算書と貸借貸借対照表の作成</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">財務諸表の区分表示</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">株主資本等変動計算書</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">財務諸表の注記・注記表</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">附属明細表</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">キャッシュ・フロー計算書</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">中間財務諸表（四半期・半期）</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">臨時決算</Link></li>
+                </ul>
+	
+		<h2 className="titleColor">株式会社会計</h2>
+		<ul className="sideMenu menu-sakura-color">
+			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">資本金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/account-grade3">資本剰余金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">利益剰余金<Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/trial-balance">剰余金の配当</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">自己株式・自己新株予約権</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">会社の合併</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">株式交換・株式移転</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">事業分離等・清算</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">社債</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">新株予約権・ストックオプション</Link></li>
+		</ul>
+	
+		<h2 className="titleColor">本支店会計</h2>
+		<ul className="sideMenu menu-sakura-color">
+                    <li className="sideList menu-sakura-color"><Link to="/bookkeeping">本支店会計の意義・目的</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/account-grade3">本支店間取引の処理</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">在外支店財務諸表項目の換算</Link></li>
+                    <li className="sideList menu-sakura-color"><Link to="/trial-balance">本支店会計における決算手続</Link></li>
+                </ul>
+	
+		<h2 className="titleColor">連結会計</h2>
+		<ul className="sideMenu menu-sakura-color">
+			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">資本連結</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/account-grade3">被支配株主持分</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">のれん</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/trial-balance">連結会社間取引の処理</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">未実現損益の消去</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">持分法</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">連結会計上の税効果会計</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">在外子会社等の財務諸表項目の換算</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">個別財務諸表の修正</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">包括利益、その他の包括利益</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">連結精算表、連結財務諸表の表示</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">セグメント</Link></li>
+			
+                </ul>
+	
+		<h2 className="titleColor">会計基準および企業会計に関する法令</h2>
+		<ul className="sideMenu">
                     <li className="sideList menu-sakura-color"><Link to="/corporate-accounting-principles">企業会計原則</Link></li>
                     <li className="sideList menu-sakura-color"><Link to="/profit-and-loss-accounting">損益会計</Link></li>
                     <li className="sideList menu-sakura-color"><Link to="/asset-accounting">資産会計</Link></li>
@@ -5245,20 +5318,20 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-		        <Route path="/cash-grade2" component={ cashGrade2 } />
-		        <Route path="/cash-grade1" component={ cashGrade1 } />
+		<Route path="/cash-grade2" component={ cashGrade2 } />
+		<Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-		        <Route path="/savings-grade2" component={ savingsGrade2 } />
-		        <Route path="/savings-grade1" component={ savingsGrade1 } />
+		<Route path="/savings-grade2" component={ savingsGrade2 } />
+		<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-		        <Route path="/tradings-grade2" component={ tradingsGrade2 } />
-		        <Route path="/tradings-grade1" component={ tradingsGrade1 } />
+		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
+		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-		        <Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-		        <Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-		        <Route path="/other-grade2" component={ otherGrade2 } />
-		        <Route path="/other-grade1" component={ otherGrade1 } />
+		<Route path="/other-grade2" component={ otherGrade2 } />
+		<Route path="/other-grade1" component={ otherGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
@@ -5365,20 +5438,20 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-		        <Route path="/cash-grade2" component={ cashGrade2 } />
-		        <Route path="/cash-grade1" component={ cashGrade1 } />
+		<Route path="/cash-grade2" component={ cashGrade2 } />
+		<Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-		        <Route path="/savings-grade2" component={ savingsGrade2 } />
-		        <Route path="/savings-grade1" component={ savingsGrade1 } />
+		<Route path="/savings-grade2" component={ savingsGrade2 } />
+		<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-		        <Route path="/tradings-grade2" component={ tradingsGrade2 } />
-		        <Route path="/tradings-grade1" component={ tradingsGrade1 } />
+		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
+		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-		        <Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-		        <Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-		        <Route path="/other-grade2" component={ otherGrade2 } />
-		        <Route path="/other-grade1" component={ otherGrade1 } />
+		<Route path="/other-grade2" component={ otherGrade2 } />
+		<Route path="/other-grade1" component={ otherGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
