@@ -3014,6 +3014,83 @@ const TradingsGrade3 = () => {
 					</div>
 	    			</Element>
 			</section>
+	    
+	    		<section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">分記法とは</h1>	
+				</Element>
+
+				<div>商品売買が発生した際、商品、商品売買益の勘定科目を用いて記帳する方法を <span className="underline font-color2">分記法</span>と呼びます。</div>
+				<br />
+				<div>原価部分を商品、販売時の利益と原価部分との差額を商品売買益として処理するので、都度原価の算出が必要となり手間がかかる分、利益の把握が容易な記帳方法です。</div>
+				<div>不動産の販売事業など、少量かつ高額な商品の仕入や売上を管理する必要がある事業で用いられることがあります。</div>
+	    			<br />
+				<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払ったとした場合、以下の仕訳となります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">商品　10,000</td>
+							<td className="table-align">現金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>販売用の商品を10,000円仕入れ、代金は現金で払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：商品10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金10,000円を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：商品の購入の支払いになるので、商品で処理</div>
+					<div>なぜ発生したか（貸方）：現金で支払ったので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：商品という資産が増加するので、借方に商品を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>一方、商品を販売している側は売上があがります。例えば10,000円で仕入れた商品を15,000円で販売し、代金は現金で受け取ったという場合、以下の仕訳となります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">現金　15,000</td>
+							<td className="table-align">商品　10,000</td>
+						    </tr>
+	    						<tr>
+							<td className="table-align"></td>
+							<td className="table-align">商品売買益　5,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>10,000円で仕入れた商品を15,000円で販売し、代金は現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金15,000円の増加</div>
+					<div>なぜ発生したか（貸方）：商品10,000円分を販売したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の増加になるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：商品という資産の減少になるので、商品で処理。また、仕入分と販売時の差額は収益になるので、商品売買益で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産の増加になるため、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：商品という資産が減少するので、貸方に商品を商品を配置。また、商品売買益という収益が増加するので、貸方に商品売買益を配置</div>
+				</div>
+			</section>
         </>
     );
 }
