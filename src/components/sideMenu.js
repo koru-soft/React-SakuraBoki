@@ -2716,40 +2716,6 @@ const savingsGrade1 = () => {
 const TradingsGrade3 = () => {
     return (
         <>
-            
-            <section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
-					<h1 className="intro">発生主義とは</h1>	
-				</Element>
-				<div>請求書を4月に発行し、入金が5月に発生した場合、売上は4月に計上すべきでしょうか？ それとも5月に計上すべきでしょうか？</div>
-				<br />
-				<div>実際に現金が動いた日付で収支を計上することを<span className="underline font-color2">現金主義</span>と言います。</div>
-				<div>この考え方に基づく会計処理を方針とする場合、売上の計上日は5月になります。</div>
-				<br />
-				<div>しかしながら、実際の現金残高の増減のみを記録していては、今後いくらお金を受け取れるのか、いくら支払いがあるのかなどの予定等がわからず、資金繰りが出来ません。</div>
-				<br />
-				<div>そこで、会計では原則、お金を受け取る権利（債権）が発生した日付や、お金を支払う義務（債務）が発生した日付で収支を計上します。これを<span className="underline font-color2">発生主義</span>と呼びます。</div>
-				<div>この考え方に基づく会計処理を方針とするならば、売上の計上日は4月になります。</div>
-		
-			</section>
-
-			<section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
-					<h1 className="intro">掛取引とは</h1>	
-				</Element>
-				<div>取引の代金をその場で精算せず、後日精算する取引のことを<span className="underline font-color2">掛取引</span>といいます。</div>
-				<br />
-				<div>例えば、請求書を4月に発行し、入金が5月になるというケースでは、本来、4月の請求書発行のタイミングで入金も同時に行われるはずです。</div>
-				<div>しかしながら、商取引が発達していくにつれ、信用を媒介に取引を行うという慣行が出来ました。そのため、現行の商取引では入金のタイミングを遅らせることが出来ます。</div>
-				<br />
-				<div>今では当たり前になっているこのような慣行も、物々交換の時代にはあまり考えられない取引でした。</div>
-				<div>このような商慣行の発達に対応すべく、複式簿記が誕生していきます。</div>
-				<br />
-				<div>なお、仕入を行ったものの後払いにした場合、「あとでお金を払わなければいけない」という債務が生じます。これを<span className="underline font-color2">買掛金</span>といいます。 </div>
-				<br />
-				<div>一方、売上が上がったものの、お金の回収が後になった場合、「あとでお金を受けとることが出来る」という債権が生じます。これを<span className="underline font-color2">売掛金</span>と言います。</div>
-			</section>
-
 			{/* <section className="font-color">
 				<Element name="savingsGrade3-1" className="element" >
 					<h1 className="intro">預金とは</h1>	
@@ -2772,47 +2738,227 @@ const TradingsGrade3 = () => {
 				<div>ただし、決算整理をしないといくらで商品を仕入れたのかという原価が把握出来ないため、利益の把握がしにくいというデメリットがあります。</div>
 				<br />
 				<div>もう1つの商品売買の記帳方法に分記法がありますが、試験において重要性が高いのは三分法で、特別な指示がない限り三分法による記帳が前提となります。</div>
+				<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払ったとした場合、以下の仕訳となります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">仕入　10,000</td>
+							<td className="table-align">現金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>販売用の商品を10,000円仕入れ、代金は現金で払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：仕入10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金10,000円を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：仕入の支払いになるので、支払で処理</div>
+					<div>なぜ発生したか（貸方）：現金で支払ったので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：仕入という費用が増加するので、借方に仕入を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>一方、商品を販売している側は売上があがります。例えば商品10,000円を販売したため売上が上がり、代金は現金で受け取ったという場合、以下の仕訳となります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">現金　10,000</td>
+							<td className="table-align">売上　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>商品10,000円を販売したため売上が上がり、代金は現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金10,000円の増加</div>
+					<div>なぜ発生したか（貸方）：売上が10,000円分上がったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の増加になるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：売上の増加になるため、売上で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産の増加になるため、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：売上という収益の増加になるため、貸方に売上を配置</div>
+				</div>
+			</section>
+			
+	    		<section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">発生主義とは</h1>	
+				</Element>
+				<div>請求書を4月に発行し、入金が5月に発生した場合、売上は4月に計上すべきでしょうか？ それとも5月に計上すべきでしょうか？</div>
+				<br />
+				<div>実際に現金が動いた日付で収支を計上することを<span className="underline font-color2">現金主義</span>と言います。</div>
+				<div>この考え方に基づく会計処理を方針とする場合、売上の計上日は5月になります。</div>
+				<br />
+				<div>しかしながら、実際の現金残高の増減のみを記録していては、今後いくらお金を受け取れるのか、いくら支払いがあるのかなどの予定等がわからず、資金繰りが出来ません。</div>
+				<br />
+				<div>そこで、会計では原則、お金を受け取る権利（債権）が発生した日付や、お金を支払う義務（債務）が発生した日付で収支を計上します。これを<span className="underline font-color2">発生主義</span>と呼びます。</div>
+				<div>この考え方に基づく会計処理を方針とするならば、売上の計上日は4月になります。</div>
+			</section>
+
+			<section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">掛取引とは</h1>	
+				</Element>
+				<div>取引の代金をその場で精算せず、後日精算する取引のことを<span className="underline font-color2">掛取引</span>といいます。</div>
+				<br />
+				<div>例えば、請求書を4月に発行し、入金が5月になるというケースでは、本来、4月の請求書発行のタイミングで入金も同時に行われるはずです。</div>
+				<div>しかしながら、商取引が発達していくにつれ、信用を媒介に取引を行うという慣行が出来ました。そのため、現行の商取引では入金のタイミングを遅らせることが出来ます。</div>
+				<br />
+				<div>今では当たり前になっているこのような慣行も、物々交換の時代にはあまり考えられない取引でした。</div>
+				<div>このような商慣行の発達に対応すべく、複式簿記が誕生していきます。</div>
+				<br />
+				<div>なお、仕入を行ったものの後払いにした場合、「あとでお金を払わなければいけない」という債務が生じます。これを<span className="underline font-color2">買掛金</span>といいます。 </div>
+				<br />
+				<div>一方、売上が上がったものの、お金の回収が後になった場合、「あとでお金を受けとることが出来る」という債権が生じます。これを<span className="underline font-color2">売掛金</span>と言います。</div>
+				<br />
+	    			<div>例えば販売用の商品を10,000円仕入れ、代金は掛けとした場合、以下の仕訳となります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">仕入　10,000</td>
+							<td className="table-align">買掛金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>販売用の商品を10,000円仕入れ、代金は掛けとした</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：仕入10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：あとで10,000円を支払わなければならないという義務</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：仕入の支払いになるので、支払で処理</div>
+					<div>なぜ発生したか（貸方）：掛けでの支払いとしたので、買掛金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：仕入という費用が増加するので、借方に仕入を配置</div>
+					<div>なぜ発生したか（貸方）：買掛金という負債が増加するので、貸方に買掛金を配置</div>
+				</div>
+				<br />
+	    			<div>なお、買掛金は借金のようなものになるので、後日お金を支払わなければなりません。さきほどの例にて現金で支払いをした場合、以下の仕訳になります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">買掛金　10,000</td>
+							<td className="table-align">現金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+	    			<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>買掛金10,000円を現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：買掛金10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金10,000円で支払ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：買掛金の支払いになるので、買掛金で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：買掛金という負債が減少するので、借方に買掛金を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+	    			<br />
+	    			<div>続いて、掛けで商品を販売した場合の仕訳を見ていきましょう。商品10,000円を販売したため売上が上がり、代金は掛けとした場合、以下の仕訳となります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">売掛金　10,000</td>
+							<td className="table-align">売上　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>商品10,000円を販売したため売上が上がり、代金は掛けとした</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：あとで10,000円分受け取れる権利</div>
+					<div>なぜ発生したか（貸方）：10,000円の売上が上がったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：商品売買による債権が発生したので、売掛金で処理</div>
+					<div>なぜ発生したか（貸方）：商品売買による売上が発生したので、売上で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：売掛金という資産が増加するので、借方に売掛金を配置</div>
+					<div>なぜ発生したか（貸方）：売上という収益が増加するので、貸方に売上を配置</div>
+				</div>
+				<br />
+	    			<div>なお、売掛金はあとでお金をうけとれる権利になるので、後日権利を使ってお金を受け取ることが出来ます。さきほどの例にて現金でお金を受け取った場合、以下の仕訳になります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">現金　10,000</td>
+							<td className="table-align">売掛金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+	    			<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>売掛金10,000円を現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金10,000円の受取り</div>
+					<div>なぜ発生したか（貸方）：10,000円分のお金をうけとれる権利を行使したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の受取りになるので、現金で処理</div>
+					<div>なぜ発生したか（貸方）：お金をうけとれる権利の行使になすので、売掛金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：売掛金という資産が減少するので、貸方に売掛金を配置</div>
+				</div>
+	    		</section>
 		
-			</section> 
 
-            <Title title="売掛金・買掛金とは"/>
-            <section>
-                <article>
-                <div>取引先からモノを仕入れる、もしくは売る場合に後払いにすることを掛取引と言います。</div>
-                <div>発生主義で記録を行う場合、この掛取引も記録の対象になります。</div>
-                <div>仕入を行ったものの後払いにした場合、債務が生じます。これを<span className="pink">買掛金</span>（流動負債）といい、売上が上がったものの、お金の回収が後になった場合に発生する債権を<span class="red">売掛金</span>（流動資産）と言います。</div>
-                
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">A社はB社に商品を100,000円販売し、代金は掛けとした。</caption>
-                    <caption className="question">A社の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>売掛金　100,000</td>
-                        <td>売上高　100,000</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上記のような仕訳になるかというと、まず商品を販売したものの、代金は後払いになることから、債権のみ記録を行います。債権は売掛金という名前がついていますが、これは資産に属する勘定科目になるので、資産の増加を表したいという意図から借方に計上を行います。</div>
-                <div>一方、商品を販売したので、売上の計上も同時に行います。売上高は収益に属する勘定科目になりますので、収益の増加を表したいという意図から、貸方に金額を計上します。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">B社の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>仕入高　100,000</td>
-                        <td>買掛金　100,000</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上記のような仕訳になるかというと、まず商品を購入したものの、代金は後払いになることから、債務のみ記録を行います。債務は買掛金という名前がついていますが、これは負債に属する勘定科目になるので、負債の増加を表したいという意図から貸方に計上を行います。</div>
-                <div>一方、商品を購入したので、仕入の計上も同時に行います。仕入高は費用に属する勘定科目になりますので、費用の増加を表したいという意図から、借方に金額を計上します。</div>
-                
+            
                 <div>それでは、次に売掛金・買掛金と混同しやすい勘定科目を見ていきます。</div>
                 <div>先ほど、売掛金は債権、買掛金は債務と紹介しましたが、正確には以下のような区別があります。</div>
                 
