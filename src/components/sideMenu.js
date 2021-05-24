@@ -2391,9 +2391,9 @@ const SavingsGrade3 = () => {
 			<br />
 			<div className="explanation-wrapper">
 				<div>■　仕訳の手順　■</div>
-	    			<br />
+	    		<br />
 				<div>現金10,000円を普通預金口座に預け入れた</div>
-	    			<br />
+	    		<br />
 				<div>①因果分析</div>
 				<div>最終的に発生したもの（借方）：普通預金口座の10,000円の残高増加</div>
 				<div>なぜ発生したか（貸方）：現金を預け入れたため</div>
@@ -2414,7 +2414,7 @@ const SavingsGrade3 = () => {
 		</Element>
 		<div>預け入れはいつでも出来るものの、引き出しは満期時のみ可能な預金口座を定期預金口座と呼び、これを処理する勘定科目を<span className="underline font-color2">定期預金</span>と呼びます。</div>
 		<div>例えば、現金10,000円を定期預金口座に預け入れた場合、以下の仕訳になります。</div>
-	    	<br />
+	    <br />
 		<table border="1" cellspacing="0" className="table-color">
 			    <tr>
 				<th className="table-align">借方（運用形態）</th>
@@ -5258,7 +5258,7 @@ const SideBar = () => {
 		<ul className="sideMenu menu-sakura-color">
 			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">資本金</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/account-grade3">資本剰余金</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">利益剰余金<Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">利益剰余金</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/trial-balance">剰余金の配当</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">自己株式・自己新株予約権</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">会社の合併</Link></li>
