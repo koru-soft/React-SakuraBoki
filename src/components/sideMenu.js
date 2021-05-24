@@ -362,11 +362,11 @@ const KindOfAccount = () => {
 				    </tr>
 				    <tr>
 						<td className="table-size table-align">現金過不足</td>
-						<td className="table-size table-align">現金の帳簿残高と実残高に差があるものの、原因が不明な場合に、一時的に処理するために利用します。</td>
+						<td className="table-padding-1">現金の帳簿残高と実残高に差があるものの、原因が不明な場合に、一時的に処理するために利用します。</td>
 				    </tr>
 					<tr>
 						<td className="table-size table-align">火災未決算</td>
-						<td className="table-size table-align">火災保険の保険料の金額が確定するまでの期間、一時的に処理するために利用します。</td>
+						<td className="table-padding-1">火災保険の保険料の金額が確定するまでの期間、一時的に処理するために利用します。</td>
 				    </tr>
 				</table>
 				<br />
@@ -2023,9 +2023,11 @@ const CashGrade3 = () => {
 					<h1 className="intro">現金とは</h1>	
 				</Element>
 	    			<div><span className="underline font-color2">現金</span>とは、100円玉や1000円札など「事業で利用するための」硬貨や紙幣の事です。</div>
-	    			<div>簿記の3級試験で問われることはないですが、特に実務では「プライベート」の現金と混同してしまわないよう注意して下さい。</div>
-	    			<div>確定申告や決算は「事業で利用するための」現金が計上対象となります。そのため、ここでいう現金は（事業用）現金のこととなります。</div>
-	    			<div>この区別を明確にしておかないと、後に現金の残高ズレという問題を引き起こすこととなります。</div>
+	    			<br />
+					<div>簿記の3級試験で問われることはないですが、特に実務では「プライベート」の現金と混同してしまわないよう注意して下さい。</div>
+	    			<br />
+					<div>確定申告や決算は「事業で利用するための」現金が計上対象となります。そのため、ここでいう現金は（事業用）現金のこととなります。</div>
+					<div>この区別を明確にしておかないと、後に現金の残高ズレという問題を引き起こすこととなります。</div>
 	    			<br />
 	    			<div>例えば、現金100円を使ってチョコレートを買ったという支払いは以下のような仕訳となります。</div>
 	    			<br />
@@ -2121,15 +2123,15 @@ const CashGrade3 = () => {
 				    </tr>
 				    <tr>
 					<td className="table-size-30 table-align">他人振出小切手</td>
-					<td className="table-size-70 table-align">他人から受け取った小切手です。銀行に持っていくと現金に換金出来ることから、現金として扱います。</td>
+					<td className="table-size-70 table-padding-1">他人から受け取った小切手です。銀行に持っていくと現金に換金出来ることから、現金として扱います。</td>
 				    </tr>
 				    <tr>
 					<td className="table-size-30 table-align">送金小切手</td>
-					<td className="table-size-70 table-align">銀行が送金手段として振出してくれる小切手です。銀行に持っていくと現金に換金出来ることから、現金として扱います。</td>
+					<td className="table-size-70 table-padding-1">銀行が送金手段として振出してくれる小切手です。銀行に持っていくと現金に換金出来ることから、現金として扱います。</td>
 				    </tr>
 				    <tr>
 					<td className="table-size-30 table-align">郵便為替証書</td>
-					<td className="table-size-70 table-align">郵便局が送金手段として振出してくれる証書です。郵便局に持っていくと現金に換金出来ることから、現金として扱います。</td>
+					<td className="table-size-70 table-padding-1">郵便局が送金手段として振出してくれる証書です。郵便局に持っていくと現金に換金出来ることから、現金として扱います。</td>
 				    </tr>
 				</table>
 				<br />
@@ -2457,7 +2459,8 @@ const SavingsGrade3 = () => {
 		<div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
 		<br />
 		<div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
-		<div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
+		<br />
+		<div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断しますので注意して下さい。</div>
 		<br />
         <table border="1" cellspacing="0" className="table-color">
 		<tr>
@@ -2485,8 +2488,6 @@ const SavingsGrade3 = () => {
 		    <td className="table-align">経過的・一時的に金融機関に預け入れた預金</td>
 		</tr>
 		</table>
-        	<br />
-		<div>別段口座とは、例えば株式会社の設立時に払い込まれた一時的なお金がを処理する口座になります。</div>
  	</section>
   
 	<section className="font-color">
@@ -2568,7 +2569,8 @@ const SavingsGrade3 = () => {
 			<h1 className="intro">当座預金の会計処理</h1>	
 		</Element>
 		<div>預金を引き出す場合に、小切手を用いる口座を当座預金口座と言い、これを処理する勘定科目を<span className="underline font-color2">当座預金</span>と呼びます。</div>
-	    	<div>例えば、小切手で支払いを行った場合、当座預金の残高が減少することになります。この時、自身が振り出した小切手のことを<span className="underline font-color2">自己振出小切手</span>と呼びます。</div>
+	    	<br />
+			<div>例えば、小切手で支払いを行った場合、当座預金の残高が減少することになります。この時、自身が振り出した小切手のことを<span className="underline font-color2">自己振出小切手</span>と呼びます。</div>
 	    	<div>したがって、交際費10,000円を小切手を振り出して支払った場合、以下の仕訳になります。</div>
 	    		<br />
 	    		<table border="1" cellspacing="0" className="table-color">
@@ -2671,24 +2673,25 @@ const SavingsGrade3 = () => {
 		<Element name="savingsGrade3-5" className="element" >
 			<h1 className="intro">当座借越の会計処理</h1>	
 		</Element>
-		<div>当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことを<span className="underline font-color2">当座借越</span>と呼びます</div>
-	    	<div>例えば、当座預金残高が10,000円しかなかったものの、15,000円の買掛金の支払いを小切手で行ったとします。</div>
-	    	<div>口座にお金が入っていないので、支払いは出来ないはずですが、予め当座借越契約を結んでおけばオーバーした分は銀行側が支払ってくれるのです。今回は10,000円で設定をしましょう。</div>
+		<div>当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことを<span className="underline font-color2">当座借越</span>と呼びます。</div>
+	    <br />
+		<div>例えば、当座預金残高が10,000円しかなかったものの、15,000円の買掛金の支払いを小切手で行ったとします。</div>
+		<div>口座にお金が入っていないので、支払いは出来ないはずですが、予め当座借越契約を結んでおけばオーバーした分は銀行側が支払ってくれるのです。今回は10,000円で設定をしましょう。</div>
 		<br />
 	    	<table border="1" cellspacing="0" className="table-color">
-				    <tr>
+				<tr>
 					<th className="table-align">借方（運用形態）</th>
 					<th className="table-align">貸方（調達源泉）</th>
-				    </tr>
-				    <tr>
-					<td className="table-align">買掛金　15,000</td>
+				</tr>
+				<tr>
+					<td className="table-align" rowspan="2">買掛金　15,000</td>
 					<td className="table-align">当座預金　10,000</td>
-				    </tr>
-	    			    <tr>
-					<td></td>
+				</tr>
+				<tr>
+					
 					<td className="table-align">当座借越　5,000</td>
-				    </tr>
-		</table>
+				</tr>
+			</table>
 		<br />
 		<div className="explanation-wrapper">
 			<div>■　仕訳の手順　■</div>
@@ -2786,11 +2789,11 @@ const savingsGrade3 = () => {
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-1" spy={true} smooth={true} duration={500} >預金とは</ScrollLink></li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-2" spy={true} smooth={true} duration={500} >普通預金の会計処理</ScrollLink></li>
                     	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-3" spy={true} smooth={true} duration={500} >定期預金の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-4" spy={true} smooth={true} duration={500} >当座預金の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-4" spy={true} smooth={true} duration={500} >当座預金の会計処理</ScrollLink></li>
                     	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-5" spy={true} smooth={true} duration={500} >当座借越の会計処理</ScrollLink></li>	    	    
 	    	    </ul>
-                </aside>
-                <SavingsGrade3 />
+            </aside>
+            <SavingsGrade3 />
             </aside>
         </main>
     );
@@ -2835,7 +2838,7 @@ const TradingsGrade3 = () => {
     return (
         <>
 			<section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
+				<Element name="tradings-grade3-1" className="element" >
 					<h1 className="intro">三分法とは</h1>	
 				</Element>
 
@@ -2845,9 +2848,11 @@ const TradingsGrade3 = () => {
 				<div>ただし、決算整理をしないといくらで商品を仕入れたのかという原価が把握出来ないため、利益の把握がしにくいというデメリットがあります。</div>
 				<br />
 				<div>もう1つの商品売買の記帳方法に分記法がありますが、試験において重要性が高いのは三分法で、特別な指示がない限り三分法による記帳が前提となります。</div>
-	    			<div>なお、仕入の際にかかった運賃などの費用を<span className="underline font-color2">仕入諸掛り</span>と呼び、一般的には仕入に含めて計上を行います。</div>
+	    		<br />
+				<div>なお、仕入の際にかかった運賃などの費用を<span className="underline font-color2">仕入諸掛り</span>と呼び、一般的には仕入に含めて計上を行います。</div>
 				<div>一方、売上が上がり商品を発送することになった際の費用を<span className="underline font-color2">売上諸掛り</span>と呼びますが、こちらは<span className="underline font-color2">発送費</span>という費用勘定科目で処理を行います。</div>
-	    			<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払った。ただし、運賃が別途200円発生したという場合、以下の仕訳となります。</div>
+	    		<br />
+				<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払った。ただし、運賃が別途200円発生したという場合、以下の仕訳となります。</div>
 				<br />
 				<table border="1" cellspacing="0" className="table-color">
 						    <tr>
@@ -2915,7 +2920,7 @@ const TradingsGrade3 = () => {
 			</section>
 			
 	    		<section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
+				<Element name="tradings-grade3-2" className="element" >
 					<h1 className="intro">発生主義とは</h1>	
 				</Element>
 				<div>請求書を4月に発行し、入金が5月に発生した場合、売上は4月に計上すべきでしょうか？ それとも5月に計上すべきでしょうか？</div>
@@ -2930,7 +2935,7 @@ const TradingsGrade3 = () => {
 			</section>
 
 			<section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
+				<Element name="tradings-grade3-3" className="element" >
 					<h1 className="intro">掛取引とは</h1>	
 				</Element>
 				<div>取引の代金をその場で精算せず、後日精算する取引のことを<span className="underline font-color2">掛取引</span>といいます。</div>
@@ -2979,14 +2984,14 @@ const TradingsGrade3 = () => {
 	    			<div>なお、買掛金は借金のようなものになるので、後日お金を支払わなければなりません。さきほどの例にて現金で支払いをした場合、以下の仕訳になります。</div>
 	    			<br />
 				<table border="1" cellspacing="0" className="table-color">
-						    <tr>
-							<th className="table-align">借方（運用形態）</th>
-							<th className="table-align">貸方（調達源泉）</th>
-						    </tr>
-						    <tr>
-							<td className="table-align">買掛金　10,000</td>
-							<td className="table-align">現金　10,000</td>
-						    </tr>
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">買掛金　10,000</td>
+						<td className="table-align">現金　10,000</td>
+					</tr>
 				</table>
 				<br />
 	    			<div className="explanation-wrapper">
@@ -3010,14 +3015,14 @@ const TradingsGrade3 = () => {
 	    			<div>続いて、掛けで商品を販売した場合の仕訳を見ていきましょう。商品10,000円を販売したため売上が上がり、代金は掛けとした場合、以下の仕訳となります。</div>
 	    			<br />
 				<table border="1" cellspacing="0" className="table-color">
-						    <tr>
-							<th className="table-align">借方（運用形態）</th>
-							<th className="table-align">貸方（調達源泉）</th>
-						    </tr>
-						    <tr>
-							<td className="table-align">売掛金　10,000</td>
-							<td className="table-align">売上　10,000</td>
-						    </tr>
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">売掛金　10,000</td>
+						<td className="table-align">売上　10,000</td>
+					</tr>
 				</table>
 				<br />
 				<div className="explanation-wrapper">
@@ -3071,10 +3076,11 @@ const TradingsGrade3 = () => {
 	    		</section>
 	    
 	    		<section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
+				<Element name="tradings-grade3-4" className="element" >
 					<h1 className="intro">混同しやすい債権・債務</h1>
 	    				<div>それでは、次に売掛金・買掛金と混同しやすい勘定科目を見ていきます。</div>
-                			<div>先ほど、売掛金はあとでお金を受取れる権利（債権）、買掛金はあとでお金を支払わなければならない義務（債務）と紹介しましたが、正確には「主たる営業活動で生じた債権かどうか」によって、以下のような区別があります。</div>
+                		<br />
+						<div>先ほど、売掛金はあとでお金を受取れる権利（債権）、買掛金はあとでお金を支払わなければならない義務（債務）と紹介しましたが、正確には「主たる営業活動で生じた債権かどうか」によって、以下のような区別があります。</div>
 					<br />
 					<table border="1" cellspacing="0" className="table-color">
 						<tr>
@@ -3140,15 +3146,16 @@ const TradingsGrade3 = () => {
 			</section>
 	    
 	    		<section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
+				<Element name="tradings-grade3-5" className="element" >
 					<h1 className="intro">分記法とは</h1>	
 				</Element>
 
 				<div>商品売買が発生した際、商品、商品売買益の勘定科目を用いて記帳する方法を <span className="underline font-color2">分記法</span>と呼びます。</div>
 				<br />
 				<div>原価部分を商品、販売時の利益と原価部分との差額を商品売買益として処理するので、都度原価の算出が必要となり手間がかかる分、利益の把握が容易な記帳方法です。</div>
+				<br />
 				<div>不動産の販売事業など、少量かつ高額な商品の仕入や売上を管理する必要がある事業で用いられることがあります。</div>
-	    			<br />
+	    		<br />
 				<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払ったとした場合、以下の仕訳となります。</div>
 				<br />
 				<table border="1" cellspacing="0" className="table-color">
@@ -3183,18 +3190,17 @@ const TradingsGrade3 = () => {
 				<div>一方、商品を販売している側は売上があがります。例えば10,000円で仕入れた商品を15,000円で販売し、代金は現金で受け取ったという場合、以下の仕訳となります。</div>
 				<br />
 				<table border="1" cellspacing="0" className="table-color">
-						    <tr>
-							<th className="table-align">借方（運用形態）</th>
-							<th className="table-align">貸方（調達源泉）</th>
-						    </tr>
-						    <tr>
-							<td className="table-align">現金　15,000</td>
-							<td className="table-align">商品　10,000</td>
-						    </tr>
-	    						<tr>
-							<td className="table-align"></td>
-							<td className="table-align">商品売買益　5,000</td>
-						    </tr>
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align" rowspan="2">現金　15,000</td>
+						<td className="table-align">商品　10,000</td>
+					</tr>
+					<tr>
+						<td className="table-align">商品売買益　5,000</td>
+					</tr>
 				</table>
 				<br />
 				<div className="explanation-wrapper">
@@ -3250,11 +3256,21 @@ const tradingsGrade3 = () => {
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <TradingsGrade3 />
+				<Link to="/tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+            </div>
+			<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-1" spy={true} smooth={true} duration={500} >三分法とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-2" spy={true} smooth={true} duration={500} >発生主義とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-3" spy={true} smooth={true} duration={500} >掛取引とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-4" spy={true} smooth={true} duration={500} >混同しやすい債権・債務</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-5" spy={true} smooth={true} duration={500} >分記法とは</ScrollLink></li>	    	    
+	    	    </ul>
+            </aside>
+            <TradingsGrade3 />
             </aside>
         </main>
     );
@@ -3300,25 +3316,27 @@ const PromissoryNotesGrade3 = () => {
     return (
         <>
 		<section className="font-color">
-			<Element name="savingsGrade3-1" className="element" >
+			<Element name="promissory-notes-grade3-1" className="element" >
 				<h1 className="intro">手形とは</h1>	
 			</Element>
-	    		<div>手形とは、記載された金額を記載された期日までに支払うことを約束した書類です。</div>
+	    	<div><span className="underline font-color2">手形</span>とは、記載された金額を記載された期日までに支払うことを約束した書類です。</div>
+			<br />
 			<div>誰か発行したか（振出）、受け取るのは誰か、いくらの金額をやり取りするか、いつまでに支払うかなどの情報が書いてあり、商品売買の代金のやり取りで用いられます。</div>
+			<br />
 			<div>法律上、約束手形と為替手形に分類されますが、簿記3級では約束手形が範囲とされています。</div>
-	    		<br />
+	    	<br />
 			<table border="1" cellspacing="0" className="table-color">
 				<tr>
-					<th className="table-align">法律上の手形の名前</th>
+					<th className="table-align table-size-30">法律上の手形の名前</th>
 					<th className="table-align">手形の概要</th>
 				</tr>
 				<tr>
 					<td className="table-align">約束手形</td>
-					<td className="table-align">一定の日に一定の場所で一定の金額を支払うために取り交わされる証書のこと。手形を振出す人と受取る人の2名が登場する手形。</td>
+					<td className="table-padding-1">一定の日に一定の場所で一定の金額を支払うために取り交わされる証書のこと。手形を振出す人と受取る人の2名が登場する手形。</td>
 				</tr>
 				<tr>
 					<td className="table-align">為替手形</td>
-					<td className="table-align">手形を振出す人と、手形に書かれている金額を支払う人、受取る人の3名が登場する手形。取引先の異なる売掛金と買掛金を同時に相殺するために用いる。</td>
+					<td className="table-padding-1">手形を振出す人と、手形に書かれている金額を支払う人、受取る人の3名が登場する手形。取引先の異なる売掛金と買掛金を同時に相殺するために用いる。</td>
 				</tr>
 			</table>
 			<br />
@@ -3326,26 +3344,27 @@ const PromissoryNotesGrade3 = () => {
 	    		<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 				<tr>
-					<th className="table-align">会計上の手形の名前</th>
+					<th className="table-align table-size-30">会計上の手形の名前</th>
 					<th className="table-align">手形の概要</th>
 				</tr>
 				<tr>
 					<td className="table-align">受取手形</td>
-					<td className="table-align">手形に書かれている金額をもらうことができる権利のこと。換金すればお金がもらえるので資産。</td>
+					<td className="table-padding-1">手形に書かれている金額をもらうことができる権利のこと。換金すればお金がもらえるので資産。</td>
 				</tr>
 				<tr>
 					<td className="table-align">支払手形</td>
-					<td className="table-align">手形に書かれている金額を支払わなければならない義務のこと。お金を支払わなければならないので負債。</td>
+					<td className="table-padding-1">手形に書かれている金額を支払わなければならない義務のこと。お金を支払わなければならないので負債。</td>
 				</tr>
 			</table>
 			<br />
 		</section>
 	    
 	    	<section className="font-color">
-			<Element name="savingsGrade3-1" className="element" >
+			<Element name="promissory-notes-grade3-2" className="element" >
 				<h1 className="intro">約束手形の会計処理</h1>	
 			</Element>
-	    		<div>指定された日付に、指定した金額を支払うことを約束した証書のことを約束手形と呼びます。</div>
+	    	<div>指定された日付に、指定した金額を支払うことを約束した証書のことを<span className="underline font-color2">約束手形</span>と呼びます。</div>
+			<br />
 			<div>例えば販売用の商品を10,000円仕入れ、代金は約束手形を振り出して渡したという場合、以下の仕訳となります。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
@@ -3360,56 +3379,57 @@ const PromissoryNotesGrade3 = () => {
 			</table>
 			<br />
 			<div className="explanation-wrapper">
-						<div>■　仕訳の手順　■</div>
-						<br />
-						<div>販売用の商品を10,000円仕入れ、代金は約束手形を振り出して渡した</div>
-						<br />
-						<div>①因果分析</div>
-						<div>最終的に発生したもの（借方）：販売用商品10,000円の支払い</div>
-						<div>なぜ発生したか（貸方）：手形の振り出しにより支払った</div>
-						<br />
-						<div>②勘定科目の割当</div>
-						<div>最終的に発生したもの（借方）：販売用商品の支払いになるので、仕入で処理</div>
-						<div>なぜ発生したか（貸方）：手形の振り出しにより支払ったので、支払手形で処理</div>
-						<br />
-						<div>③勘定科目の配置</div>
-						<div>最終的に発生したもの（借方）：仕入という費用が増加するので、借方に仕入を配置</div>
-						<div>なぜ発生したか（貸方）：支払手形という負債が増加するので、貸方に支払手形を配置</div>
+				<div>■　仕訳の手順　■</div>
+				<br />
+				<div>販売用の商品を10,000円仕入れ、代金は約束手形を振り出して渡した</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：販売用商品10,000円の支払い</div>
+				<div>なぜ発生したか（貸方）：手形の振り出しにより支払った</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：販売用商品の支払いになるので、仕入で処理</div>
+				<div>なぜ発生したか（貸方）：手形の振り出しにより支払ったので、支払手形で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：仕入という費用が増加するので、借方に仕入を配置</div>
+				<div>なぜ発生したか（貸方）：支払手形という負債が増加するので、貸方に支払手形を配置</div>
 			</div>
-	    		<div>一方、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
+			<br />
+	    	<div>一方、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
-					    <tr>
-						<th className="table-align">借方（運用形態）</th>
-						<th className="table-align">貸方（調達源泉）</th>
-					    </tr>
-					    <tr>
-						<td className="table-align">受取手形　10,000</td>
-						<td className="table-align">売上　10,000</td>
-					    </tr>
+				<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+				</tr>
+				<tr>
+				<td className="table-align">受取手形　10,000</td>
+				<td className="table-align">売上　10,000</td>
+				</tr>
 			</table>
 			<br />
 			<div className="explanation-wrapper">
-						<div>■　仕訳の手順　■</div>
-						<br />
-						<div>商品10,000円を販売し、代金を約束手形で受取った</div>
-						<br />
-						<div>①因果分析</div>
-						<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
-						<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
-						<br />
-						<div>②勘定科目の割当</div>
-						<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
-						<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
-						<br />
-						<div>③勘定科目の配置</div>
-						<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
-						<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
+				<div>■　仕訳の手順　■</div>
+				<br />
+				<div>商品10,000円を販売し、代金を約束手形で受取った</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
+				<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
+				<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
+				<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
 			</div>
 		</section>
 	    
 	    	<section className="font-color">
-			<Element name="savingsGrade3-1" className="element" >
+			<Element name="promissory-notes-grade3-3" className="element" >
 				<h1 className="intro">電子記録債権・電子記録債務の会計処理</h1>	
 			</Element>
 			<div>電子債権記録機関に必要事項を電子記録することで発生する債権、債務を<span className="underline font-color2">電子記録債権</span>または<span className="underline font-color2">電子記録債務</span>といいます。</div>
@@ -3450,7 +3470,7 @@ const PromissoryNotesGrade3 = () => {
 	    	</section>
 	    	
 	    	<section className="font-color">
-			<Element name="savingsGrade3-1" className="element" >
+			<Element name="promissory-notes-grade3-4" className="element" >
 				<h1 className="intro">手形借入金・手形貸付金とは</h1>	
 			</Element>
 			<div>お金を貸し借りした場合、一般的にはその証拠として借用証書というものを受け渡ししますが、借用証書の代わりに約束手形をやり取りする場合があります。</div>
@@ -3460,32 +3480,32 @@ const PromissoryNotesGrade3 = () => {
 			<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
-					    <tr>
-						<th className="table-align">借方（運用形態）</th>
-						<th className="table-align">貸方（調達源泉）</th>
-					    </tr>
-					    <tr>
-						<td className="table-align">受取手形　10,000</td>
-						<td className="table-align">売上　10,000</td>
-					    </tr>
+				<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+				</tr>
+				<tr>
+				<td className="table-align">受取手形　10,000</td>
+				<td className="table-align">売上　10,000</td>
+				</tr>
 			</table>
 			<br />
 			<div className="explanation-wrapper">
-						<div>■　仕訳の手順　■</div>
-						<br />
-						<div>商品10,000円を販売し、代金を約束手形で受取った</div>
-						<br />
-						<div>①因果分析</div>
-						<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
-						<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
-						<br />
-						<div>②勘定科目の割当</div>
-						<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
-						<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
-						<br />
-						<div>③勘定科目の配置</div>
-						<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
-						<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
+				<div>■　仕訳の手順　■</div>
+				<br />
+				<div>商品10,000円を販売し、代金を約束手形で受取った</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
+				<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
+				<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
+				<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
 			</div>
 	    	</section>
 	    
@@ -3987,10 +4007,19 @@ const promissoryNotesGrade3 = () => {
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/promissory-notes-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/promissory-notes-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/promissory-notes-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
+				<Link to="/promissory-notes-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/promissory-notes-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/promissory-notes-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+			<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-1" spy={true} smooth={true} duration={500} >手形とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-2" spy={true} smooth={true} duration={500} >約束手形の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-3" spy={true} smooth={true} duration={500} >電子記録債権・電子記録債務の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-4" spy={true} smooth={true} duration={500} >手形借入金・手形貸付金とは</ScrollLink></li>
+	    	    </ul>
+            </aside>
                 <PromissoryNotesGrade3 />
             </aside>
         </main>
@@ -4049,11 +4078,96 @@ const OtherGrade3 = () => {
     return (
         <>
 		<section className="font-color">
-			<Element name="savingsGrade3-1" className="element" >
+			<Element name="other-grade3-1" className="element" >
 				<h1 className="intro">貸付金・借入金の会計処理</h1>	
 			</Element>
-			<div>信用を媒介に、資金を貸し付けたものを貸付金、資金を借り入れた場合を借入金と呼びます。</div>
-	    		<div>1年基準にて以下のように勘定科目を判断します。</div>
+			<div>信用を媒介に、資金を貸し付けたものを<span className="underline font-color2">貸付金</span>、資金を借り入れた場合を<span className="underline font-color2">借入金</span>と呼びます。</div>
+	    	<div>1年基準にて以下のように勘定科目を判断します。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+				<tr>
+					<th className="table-align table-size-30">貸付金の名前</th>
+					<th className="table-align">概要</th>
+				</tr>
+				<tr>
+					<td className="table-align">短期貸付金</td>
+					<td className="table-padding-1 table-align">1年以内に回収期限が発生する貸付金</td>
+				</tr>
+				<tr>
+					<td className="table-align">長期貸付金</td>
+					<td className="table-padding-1 table-align">1年を超えて回収期限が発生する貸付金</td>
+				</tr>
+			</table>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+				<tr>
+					<th className="table-align table-size-30">借入金の名前</th>
+					<th className="table-align">概要</th>
+				</tr>
+				<tr>
+					<td className="table-align">短期借入金</td>
+					<td className="table-padding-1 table-align">1年以内に返済期限が発生する借入金</td>
+				</tr>
+				<tr>
+					<td className="table-align">長期借入金</td>
+					<td className="table-padding-1 table-align">1年を超えて返済期限が発生する借入金</td>
+				</tr>
+			</table>
+
+		</section>
+
+		<section className="font-color">
+			<Element name="other-grade3-2" className="element" >
+				<h1 className="intro">未収入金（未収金）・未払金の会計処理</h1>	
+			</Element>
+	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+			<br />
+			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
+		</section>
+
+		<section className="font-color">
+			<Element name="other-grade3-3" className="element" >
+				<h1 className="intro">前払金（前渡金）・前受金の会計処理</h1>	
+			</Element>
+	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+			<br />
+			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
+		</section>
+
+		<section className="font-color">
+			<Element name="other-grade3-4" className="element" >
+				<h1 className="intro">仮払金・仮受金の会計処理</h1>	
+			</Element>
+	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+			<br />
+			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
+		</section>
+
+		<section className="font-color">
+			<Element name="other-grade3-5" className="element" >
+				<h1 className="intro">立替金・預り金の会計処理</h1>	
+			</Element>
+	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+			<br />
+			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
+		</section>
+
+		<section className="font-color">
+			<Element name="other-grade3-6" className="element" >
+				<h1 className="intro">受取商品券の会計処理</h1>	
+			</Element>
+	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+			<br />
+			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
+		</section>
+
+		<section className="font-color">
+			<Element name="other-grade3-7" className="element" >
+				<h1 className="intro">差入保証金の会計処理</h1>	
+			</Element>
+	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+			<br />
+			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
 		</section>
 	    
 	<Title title="未収入金（未収金）・未払金とは"/>
@@ -4304,10 +4418,22 @@ const otherGrade3 = () => {
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/other-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/other-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/other-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
+				<Link to="/other-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/other-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/other-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+			<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-1" spy={true} smooth={true} duration={500} >貸付金・借入金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-2" spy={true} smooth={true} duration={500} >未収入金（未収金）・未払金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-3" spy={true} smooth={true} duration={500} >前払金（前渡金）・前受金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-4" spy={true} smooth={true} duration={500} >仮払金・仮受金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-5" spy={true} smooth={true} duration={500} >立替金・預り金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-6" spy={true} smooth={true} duration={500} >受取商品券の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-7" spy={true} smooth={true} duration={500} >差入保証金の会計処理</ScrollLink></li>
+				</ul>
+            </aside>
                 <OtherGrade3 />
             </aside>
         </main>
@@ -5687,9 +5813,9 @@ const SideBar = () => {
 			<li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">債権の譲渡</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/assignment-of-accounts-receivable-grade3">債権の譲渡</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">債務の保証</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">特殊商品売買</Link></li>
