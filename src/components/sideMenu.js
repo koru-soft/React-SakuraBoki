@@ -291,6 +291,120 @@ const bookkeeping = () => {
     );
 }
 
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目の種類コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const KindOfAccount = () => {
+	return(
+		<>
+			<section className="font-color">
+	    	<Element name="kind-of-account1" className="element" >
+	    		<h1 className="intro">簿記の五要素に該当する勘定科目</h1>
+	    	</Element>
+                <div>勘定科目は原則、資産、負債、純資産、収益、費用のうち、いずれかの性質に属します。</div>
+				<div>このような考え方を<span className="underline font-color2">簿記の五要素</span>と呼び、これらの五要素に分類された勘定科目は、それぞれ貸借対照表と損益計算書を形作ります。</div>
+				<br />
+				<div>しかし、全ての勘定科目がこの五要素に分類されるとは限りません。</div>
+				<div>以下、この五要素以外の性質にて分類される勘定科目となります。</div>
+			<Element name="kind-of-account2" className="element" >
+				<h1 className="intro">評価勘定</h1>
+	    	</Element>
+                <div>特定の資産、負債、純資産をマイナスにするための勘定科目を<span className="underline font-color2">評価勘定</span>と呼びます。</div>
+				<div>代表的な評価勘定として、以下の勘定科目があります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+				    <tr>
+						<th className="table-size table-align">評価勘定名</th>
+						<th className="table-size table-align">概要</th>
+				    </tr>
+				    <tr>
+						<td className="table-size table-align">貸倒引当金</td>
+						<td className="table-size table-align">売掛金のマイナスを表す</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">減価償却累計額</td>
+						<td className="table-size table-align">固定資産のマイナスを表す</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">引出金</td>
+						<td className="table-size table-align">資本金のマイナスを表す</td>
+				    </tr>
+				</table>
+				<br />
+			
+			<Element name="kind-of-account3" className="element" >
+				<h1 className="intro">混合勘定</h1>
+			</Element>
+				<div>資産・負債の性質と収益・費用の性質を合わせ持つ勘定科目を<span className="underline font-color2">混合勘定</span>と呼びます。</div>
+				<br />
+				<div>例えば、固定資産の勘定科目は、その支払った金額が資産としての価値を持つ一方、費用としての性質も持っています。</div>
+				<div>そこで、減価償却という方法で、「資産の性質」と「費用の性質」を分解するのです。</div>
+				<br />
+				<div>なお、資産の性質を先に計上しても、費用の性質を先に計上しても、最終的に計上される金額は同じとなります。</div>
+				<br />
+				<div>このような考え方に基づき、混合勘定の仕訳では<span className="underline font-color2">資産処理法</span>と<span className="underline font-color2">費用処理法</span>の2種類に大きく分かれていきます。</div>
+			<Element name="kind-of-account4" className="element" >
+				<h1 className="intro">対照勘定</h1>
+			</Element>
+				<div>2種類の勘定科目がペアの関係となっており、同じ金額で同時に発生し同時に消滅する勘定科目を<span className="underline font-color2">対照勘定</span>と言います。</div>
+				<div>簿記上の取引ではないけれど記録しておきたい事柄を記録するために利用します。</div>
+
+			<Element name="kind-of-account5" className="element" >
+				<h1 className="intro">未決算勘定</h1>
+			</Element>
+				<div>適切に処理するための勘定科目や金額が決まっていないときに一時的に使う勘定科目を<span className="underline font-color2">未決算勘定</span>と言います。</div>
+				<div>これらの勘定科目は一時的に計上されるもののため、最終的な確定申告や決算書の中には表示されません。</div>
+				<div>代表的な勘定科目に以下のものがあります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+				    <tr>
+						<th className="table-size table-align">未決算勘定</th>
+						<th className="table-size table-align">概要</th>
+				    </tr>
+				    <tr>
+						<td className="table-size table-align">現金過不足</td>
+						<td className="table-size table-align">現金の帳簿残高と実残高に差があるものの、原因が不明な場合に、一時的に処理するために利用します。</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">火災未決算</td>
+						<td className="table-size table-align">火災保険の保険料の金額が確定するまでの期間、一時的に処理するために利用します。</td>
+				    </tr>
+				</table>
+				<br />
+			<Element name="kind-of-account6" className="element" >
+				<h1 className="intro">決算勘定</h1>
+			</Element>
+				<div>決算のときに帳簿を締切るために設定される勘定を<span className="underline font-color2">決算勘定</span>と言います</div>
+				<div>例えば、損益という勘定科目がこれに該当します。</div>
+		</section>
+		</>
+	);
+}
+
+<div></div>
+
+const kindOfAccount = () => {
+    return (
+        <>
+        <main className="mainArticle">
+            <aside>
+                <aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="kind-of-account1" spy={true} smooth={true} duration={500} >簿記の五要素に該当する勘定科目</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="kind-of-account2" spy={true} smooth={true} duration={500} >評価勘定</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="kind-of-account3" spy={true} smooth={true} duration={500} >混合勘定</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="kind-of-account4" spy={true} smooth={true} duration={500} >対照勘定</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="kind-of-account5" spy={true} smooth={true} duration={500} >未決算勘定</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="kind-of-account6" spy={true} smooth={true} duration={500} >決算勘定</ScrollLink></li>
+	    	　　　</ul>
+                </aside>
+                <KindOfAccount />
+            </aside>
+        </main>
+        </>
+    );
+}
+
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜試算表コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 //試算表のコンポーネント
@@ -334,7 +448,10 @@ const TrialBalance = () => {
 			<br />
 			    <img src={ TrialBalanceImg } alt="貸借対照表と損益計算書のつながり" className="img-size"></img>
 			    <br />	
-			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
+			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。</div>
+			<br />
+			<div>損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
+			<div>公認会計士試験の財務会計分野にて、出題されることのある論点となります。</div>
 		</section>
 		</>
 	);
@@ -2338,6 +2455,7 @@ const SavingsGrade3 = () => {
 			<h1 className="intro">預金とは</h1>	
 		</Element>
 		<div>預金は銀行口座に預け入れた現金を処理するための勘定科目です。口座種別ごとに勘定科目が変わります。</div>
+		<br />
 		<div>原則、1年基準で分類を行い、1年以内に満期が到来する預金は流動資産、1年を超えて満期の到来する預金は固定資産として処理します。</div>
 		<div>ただし、口座に預け入れた日から満期日まで1年以内かという考え方ではなく、決算日から満期日までが1年以内か否かで判断します。</div>
 		<br />
@@ -5554,7 +5672,7 @@ const SideBar = () => {
                 <ul className="sideMenu menu-sakura-color">
 			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な勘定科目</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
@@ -5672,6 +5790,7 @@ const SideBar = () => {
                 <Route path="/account-grade3" component={ accountGrade3 } />
                 <Route path="/account-grade2" component={ accountGrade2 } />
                 <Route path="/account-grade1" component={ accountGrade1 } />
+				<Route path="/kind-of-account" component={ kindOfAccount } />
                 <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
                 <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
                 <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
