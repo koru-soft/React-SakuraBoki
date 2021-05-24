@@ -4134,7 +4134,7 @@ const OtherGrade3 = () => {
     );
 }
 
-<Title title="クレジット売掛金とは"/>
+{/* <Title title="クレジット売掛金とは"/>
         <section>
             <article>
             <div>クレジットカードによって商品を売り上げた場合、あとで信販会社から代金を受け取れる権利が発生します。この権利はクレジット売掛金勘定 で処理します。</div>
@@ -4153,7 +4153,7 @@ const OtherGrade3 = () => {
                 </tr>
             </table>
             </article>
-        </section>
+        </section> */}
 
 const OtherGrade2 = () => {
     return (
@@ -5550,7 +5550,7 @@ const SideBar = () => {
 
             <div className="sidebar-sakura">
                 <h2 className="titleColor"><Link to="/">HOME</Link></h2>
-        　　    <h2 className="titleColor">簿記の基本原理と各種実務</h2>
+        　　    <h2 className="titleColor">基本原理</h2>
                 <ul className="sideMenu menu-sakura-color">
 			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目</Link></li>
