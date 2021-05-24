@@ -2716,8 +2716,87 @@ const savingsGrade1 = () => {
 const TradingsGrade3 = () => {
     return (
         <>
-            
-            <section className="font-color">
+			<section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">三分法とは</h1>	
+				</Element>
+
+				<div>商品売買が発生した際、仕入、売上、繰越商品の3つの勘定科目を用いて記帳する方法を<span className="underline font-color2">三分法</span>と呼びます。</div>
+				<br />
+				<div>記帳が簡単なため、スーパーなど大量の商品の仕入や売上を管理する必要がある事業では、この記帳方法が一般的です。</div>
+				<div>ただし、決算整理をしないといくらで商品を仕入れたのかという原価が把握出来ないため、利益の把握がしにくいというデメリットがあります。</div>
+				<br />
+				<div>もう1つの商品売買の記帳方法に分記法がありますが、試験において重要性が高いのは三分法で、特別な指示がない限り三分法による記帳が前提となります。</div>
+	    			<div>なお、仕入の際にかかった運賃などの費用を<span className="underline font-color2">仕入諸掛り</span>と呼び、一般的には仕入に含めて計上を行います。</div>
+				<div>一方、売上が上がり商品を発送することになった際の費用を<span className="underline font-color2">売上諸掛り</span>と呼びますが、こちらは<span className="underline font-color2">発送費</span>という費用勘定科目で処理を行います。</div>
+	    			<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払った。ただし、運賃が別途200円発生したという場合、以下の仕訳となります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">仕入　10,200</td>
+							<td className="table-align">現金　10,200</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>販売用の商品を10,000円仕入れ、代金は現金で払った。ただし、運賃が別途200円発生した</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：仕入10,000円の支払いおよび、運賃200円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金10,200円を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：仕入の支払いになるので、支払で処理。また運賃は仕入諸掛りになるため、仕入に含めて処理。</div>
+					<div>なぜ発生したか（貸方）：現金で支払ったので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：仕入という費用が増加するので、借方に仕入を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>一方、商品を販売している側は売上があがります。例えば商品10,000円を販売したため売上が上がり、代金は現金で受け取った。ただし、運賃が200円発生したため、現金で支払った。という場合、以下の仕訳となります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金　9,800</td>
+						<td className="table-align">売上　10,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align">発送費　200</td>
+						<td className="table-align"></td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>商品10,000円を販売したため売上が上がり、代金は現金で受け取った。ただし、運賃が200円発生した。</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金10,000円の増加と発送費200円の発生</div>
+					<div>なぜ発生したか（貸方）：売上が10,000円分上がったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の増加になるため、現金で処理、一方運賃に関しては、運送費用になるので発送費で処理</div>
+					<div>なぜ発生したか（貸方）：売上の増加になるため、売上で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産の増加になるため、借方に現金を配置。一方、発送費用については費用の増加になるので借方に発送費を配置</div>
+					<div>なぜ発生したか（貸方）：売上という収益の増加になるため、貸方に売上を配置</div>
+				</div>
+			</section>
+			
+	    		<section className="font-color">
 				<Element name="savingsGrade3-1" className="element" >
 					<h1 className="intro">発生主義とは</h1>	
 				</Element>
@@ -2730,7 +2809,6 @@ const TradingsGrade3 = () => {
 				<br />
 				<div>そこで、会計では原則、お金を受け取る権利（債権）が発生した日付や、お金を支払う義務（債務）が発生した日付で収支を計上します。これを<span className="underline font-color2">発生主義</span>と呼びます。</div>
 				<div>この考え方に基づく会計処理を方針とするならば、売上の計上日は4月になります。</div>
-		
 			</section>
 
 			<section className="font-color">
@@ -2748,107 +2826,277 @@ const TradingsGrade3 = () => {
 				<div>なお、仕入を行ったものの後払いにした場合、「あとでお金を払わなければいけない」という債務が生じます。これを<span className="underline font-color2">買掛金</span>といいます。 </div>
 				<br />
 				<div>一方、売上が上がったものの、お金の回収が後になった場合、「あとでお金を受けとることが出来る」という債権が生じます。これを<span className="underline font-color2">売掛金</span>と言います。</div>
+				<br />
+	    			<div>例えば販売用の商品を10,000円仕入れ、代金は掛けとした場合、以下の仕訳となります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">仕入　10,000</td>
+							<td className="table-align">買掛金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>販売用の商品を10,000円仕入れ、代金は掛けとした</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：仕入10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：あとで10,000円を支払わなければならないという義務</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：仕入の支払いになるので、支払で処理</div>
+					<div>なぜ発生したか（貸方）：掛けでの支払いとしたので、買掛金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：仕入という費用が増加するので、借方に仕入を配置</div>
+					<div>なぜ発生したか（貸方）：買掛金という負債が増加するので、貸方に買掛金を配置</div>
+				</div>
+				<br />
+	    			<div>なお、買掛金は借金のようなものになるので、後日お金を支払わなければなりません。さきほどの例にて現金で支払いをした場合、以下の仕訳になります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">買掛金　10,000</td>
+							<td className="table-align">現金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+	    			<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>買掛金10,000円を現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：あとでお金を支払わなければならないという義務（買掛金）10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金10,000円で支払ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：買掛金の支払いになるので、買掛金で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：買掛金という負債が減少するので、借方に買掛金を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+	    			<br />
+	    			<div>続いて、掛けで商品を販売した場合の仕訳を見ていきましょう。商品10,000円を販売したため売上が上がり、代金は掛けとした場合、以下の仕訳となります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">売掛金　10,000</td>
+							<td className="table-align">売上　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>商品10,000円を販売したため売上が上がり、代金は掛けとした</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：あとで10,000円分受け取れる権利</div>
+					<div>なぜ発生したか（貸方）：10,000円の売上が上がったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：商品売買による債権が発生したので、売掛金で処理</div>
+					<div>なぜ発生したか（貸方）：商品売買による売上が発生したので、売上で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：売掛金という資産が増加するので、借方に売掛金を配置</div>
+					<div>なぜ発生したか（貸方）：売上という収益が増加するので、貸方に売上を配置</div>
+				</div>
+				<br />
+	    			<div>なお、売掛金はあとでお金をうけとれる権利になるので、後日権利を使ってお金を受け取ることが出来ます。さきほどの例にて現金でお金を受け取った場合、以下の仕訳になります。</div>
+	    			<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">現金　10,000</td>
+							<td className="table-align">売掛金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+	    			<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>売掛金10,000円を現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金10,000円の受取り</div>
+					<div>なぜ発生したか（貸方）：10,000円分のお金をうけとれる権利を行使したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の受取りになるので、現金で処理</div>
+					<div>なぜ発生したか（貸方）：お金をうけとれる権利の行使になすので、売掛金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：売掛金という資産が減少するので、貸方に売掛金を配置</div>
+				</div>
+	    		</section>
+	    
+	    		<section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">混同しやすい債権・債務</h1>
+	    				<div>それでは、次に売掛金・買掛金と混同しやすい勘定科目を見ていきます。</div>
+                			<div>先ほど、売掛金はあとでお金を受取れる権利（債権）、買掛金はあとでお金を支払わなければならない義務（債務）と紹介しましたが、正確には「主たる営業活動で生じた債権かどうか」によって、以下のような区別があります。</div>
+					<br />
+					<table border="1" cellspacing="0" className="table-color">
+						<tr>
+							<th className="table-align">混同しやすい債権</th>
+							<th className="table-align">債権の概要</th>
+						</tr>
+						<tr>
+							<td className="table-align">売掛金</td>
+							<td className="table-align">取引先との間の通常の営業取引によって生じた未収金</td>
+						</tr>
+	    					<tr>
+							<td className="table-align">未収入金</td>
+							<td className="table-align">通常の営業取引以外の取引によって生じた未収金</td>
+						</tr>
+					</table>
+					<br />
+	    				<table border="1" cellspacing="0" className="table-color">
+						<tr>
+							<th className="table-align">混同しやすい債務</th>
+							<th className="table-align">債務の概要</th>
+						</tr>
+						<tr>
+							<td className="table-align">買掛金</td>
+							<td className="table-align">取引先との間の通常の営業取引によって生じた未払金</td>
+						</tr>
+	    					<tr>
+							<td className="table-align">未払金</td>
+							<td className="table-align">通常の営業取引以外の取引によって生じた未払金</td>
+						</tr>
+					</table>
+					<br />
+	    				<div>例えば、販売業を営んでいる事業者が掛で売上を上げた場合、売掛金という債権が発生します。</div>
+	    				<div>しかしながら、例えば不要になったコピー機を100,000円で売りに出し、後払いで決済が発生した場合、メインとしている事業からの売上とは異なるため、売掛金ではなく未収入金として処理を行います。</div>
+	   				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">未収入金　100,000</td>
+							<td className="table-align">工具器具備品　100,000</td>
+						    </tr>
+					</table>
+					<br />
+					<div className="explanation-wrapper">
+						<div>■　仕訳の手順　■</div>
+						<br />
+						<div>不要になったコピー機を100,000円で売りに出し、後払いで決済が発生した</div>
+						<br />
+						<div>①因果分析</div>
+						<div>最終的に発生したもの（借方）：あとで100,000円分受け取れる権利</div>
+						<div>なぜ発生したか（貸方）：100,000円のコピー機を販売したため</div>
+						<br />
+						<div>②勘定科目の割当</div>
+						<div>最終的に発生したもの（借方）：メイン以外の事業による債権が発生したので、未収入金で処理</div>
+						<div>なぜ発生したか（貸方）：コピー機の販売になるため、工具器具備品で処理</div>
+						<br />
+						<div>③勘定科目の配置</div>
+						<div>最終的に発生したもの（借方）：未収入金という資産が増加するので、借方に未収入金を配置</div>
+						<div>なぜ発生したか（貸方）：工具器具備品という資産が減少するので、貸方に工具器具備品を配置</div>
+					</div>
+	    			</Element>
 			</section>
-
-			{/* <section className="font-color">
+	    
+	    		<section className="font-color">
 				<Element name="savingsGrade3-1" className="element" >
-					<h1 className="intro">預金とは</h1>	
-				</Element>
-		
-			</section> 
-			<div></div>
-			<br />
-			<span className="underline font-color2"></span>
-			*/}
-
-			<section className="font-color">
-				<Element name="savingsGrade3-1" className="element" >
-					<h1 className="intro">三分法とは</h1>	
+					<h1 className="intro">分記法とは</h1>	
 				</Element>
 
-				<div>商品売買が発生した際、仕入、売上、繰越商品の3つの勘定科目を用いて記帳する方法を<span className="underline font-color2">三分法</span>と呼びます。</div>
+				<div>商品売買が発生した際、商品、商品売買益の勘定科目を用いて記帳する方法を <span className="underline font-color2">分記法</span>と呼びます。</div>
 				<br />
-				<div>記帳が簡単なため、スーパーなど大量の商品の仕入や売上を管理する必要がある事業では、この記帳方法が一般的です。</div>
-				<div>ただし、決算整理をしないといくらで商品を仕入れたのかという原価が把握出来ないため、利益の把握がしにくいというデメリットがあります。</div>
+				<div>原価部分を商品、販売時の利益と原価部分との差額を商品売買益として処理するので、都度原価の算出が必要となり手間がかかる分、利益の把握が容易な記帳方法です。</div>
+				<div>不動産の販売事業など、少量かつ高額な商品の仕入や売上を管理する必要がある事業で用いられることがあります。</div>
+	    			<br />
+				<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払ったとした場合、以下の仕訳となります。</div>
 				<br />
-				<div>もう1つの商品売買の記帳方法に分記法がありますが、試験において重要性が高いのは三分法で、特別な指示がない限り三分法による記帳が前提となります。</div>
-		
-			</section> 
-
-            <Title title="売掛金・買掛金とは"/>
-            <section>
-                <article>
-                <div>取引先からモノを仕入れる、もしくは売る場合に後払いにすることを掛取引と言います。</div>
-                <div>発生主義で記録を行う場合、この掛取引も記録の対象になります。</div>
-                <div>仕入を行ったものの後払いにした場合、債務が生じます。これを<span className="pink">買掛金</span>（流動負債）といい、売上が上がったものの、お金の回収が後になった場合に発生する債権を<span class="red">売掛金</span>（流動資産）と言います。</div>
-                
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">A社はB社に商品を100,000円販売し、代金は掛けとした。</caption>
-                    <caption className="question">A社の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>売掛金　100,000</td>
-                        <td>売上高　100,000</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上記のような仕訳になるかというと、まず商品を販売したものの、代金は後払いになることから、債権のみ記録を行います。債権は売掛金という名前がついていますが、これは資産に属する勘定科目になるので、資産の増加を表したいという意図から借方に計上を行います。</div>
-                <div>一方、商品を販売したので、売上の計上も同時に行います。売上高は収益に属する勘定科目になりますので、収益の増加を表したいという意図から、貸方に金額を計上します。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">B社の場合</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>仕入高　100,000</td>
-                        <td>買掛金　100,000</td>
-                    </tr>
-                </table>
-
-                <div>なぜ上記のような仕訳になるかというと、まず商品を購入したものの、代金は後払いになることから、債務のみ記録を行います。債務は買掛金という名前がついていますが、これは負債に属する勘定科目になるので、負債の増加を表したいという意図から貸方に計上を行います。</div>
-                <div>一方、商品を購入したので、仕入の計上も同時に行います。仕入高は費用に属する勘定科目になりますので、費用の増加を表したいという意図から、借方に金額を計上します。</div>
-                
-                <div>それでは、次に売掛金・買掛金と混同しやすい勘定科目を見ていきます。</div>
-                <div>先ほど、売掛金は債権、買掛金は債務と紹介しましたが、正確には以下のような区別があります。</div>
-                
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">債権の区別</caption>
-                    <tr>
-                        <th>債権の名前</th>
-                        <th>どんな債権か</th>
-                    </tr>
-                    <tr>
-                        <td>売掛金</td>
-                        <td>取引先との間の通常の営業取引によって生じた未収金</td>
-                    </tr>
-                    <tr>
-                        <td>未収入金</td>
-                        <td>通常の営業取引以外の取引によって生じた未収金</td>
-                    </tr>
-                </table>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">債務の区別</caption>
-                    <tr>
-                        <th>債務の名前</th>
-                        <th>どんな債務か</th>
-                    </tr>
-                    <tr>
-                        <td>買掛金</td>
-                        <td>取引先との間の通常の営業取引によって生じた未払金</td>
-                    </tr>
-                    <tr>
-                        <td>未払金</td>
-                        <td>通常の営業取引以外の取引によって生じた未払金</td>
-                    </tr>
-                </table>
-                </article>
-            </section>
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">商品　10,000</td>
+							<td className="table-align">現金　10,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>販売用の商品を10,000円仕入れ、代金は現金で払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：商品10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金10,000円を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：商品の購入の支払いになるので、商品で処理</div>
+					<div>なぜ発生したか（貸方）：現金で支払ったので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：商品という資産が増加するので、借方に商品を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>一方、商品を販売している側は売上があがります。例えば10,000円で仕入れた商品を15,000円で販売し、代金は現金で受け取ったという場合、以下の仕訳となります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+						    <tr>
+							<th className="table-align">借方（運用形態）</th>
+							<th className="table-align">貸方（調達源泉）</th>
+						    </tr>
+						    <tr>
+							<td className="table-align">現金　15,000</td>
+							<td className="table-align">商品　10,000</td>
+						    </tr>
+	    						<tr>
+							<td className="table-align"></td>
+							<td className="table-align">商品売買益　5,000</td>
+						    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>10,000円で仕入れた商品を15,000円で販売し、代金は現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金15,000円の増加</div>
+					<div>なぜ発生したか（貸方）：商品10,000円分を販売したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の増加になるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：商品という資産の減少になるので、商品で処理。また、仕入分と販売時の差額は収益になるので、商品売買益で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産の増加になるため、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：商品という資産が減少するので、貸方に商品を商品を配置。また、商品売買益という収益が増加するので、貸方に商品売買益を配置</div>
+				</div>
+			</section>
         </>
     );
 }
@@ -2933,115 +3181,253 @@ const tradingsGrade1 = () => {
 const PromissoryNotesGrade3 = () => {
     return (
         <>
-            
-            <Title title="手形とは"/>
-            <section>
-                <article>
-                <div>手形とは、商品売買の代金のやり取りで用いられる紙きれのことです。</div>
-                <div>誰か発行したか（振出）、受け取るのは誰か、いくらの金額をやり取りするか、いつまでに支払うかなどの情報が書いてあります。</div>
-                <div>法律上、約束手形と為替手形に分類されます。</div>
+		<section className="font-color">
+			<Element name="savingsGrade3-1" className="element" >
+				<h1 className="intro">手形とは</h1>	
+			</Element>
+	    		<div>手形とは、記載された金額を記載された期日までに支払うことを約束した書類です。</div>
+			<div>誰か発行したか（振出）、受け取るのは誰か、いくらの金額をやり取りするか、いつまでに支払うかなどの情報が書いてあり、商品売買の代金のやり取りで用いられます。</div>
+			<div>法律上、約束手形と為替手形に分類されますが、簿記3級では約束手形が範囲とされています。</div>
+	    		<br />
+			<table border="1" cellspacing="0" className="table-color">
+				<tr>
+					<th className="table-align">法律上の手形の名前</th>
+					<th className="table-align">手形の概要</th>
+				</tr>
+				<tr>
+					<td className="table-align">約束手形</td>
+					<td className="table-align">一定の日に一定の場所で一定の金額を支払うために取り交わされる証書のこと。手形を振出す人と受取る人の2名が登場する手形。</td>
+				</tr>
+				<tr>
+					<td className="table-align">為替手形</td>
+					<td className="table-align">手形を振出す人と、手形に書かれている金額を支払う人、受取る人の3名が登場する手形。取引先の異なる売掛金と買掛金を同時に相殺するために用いる。</td>
+				</tr>
+			</table>
+			<br />
+	    		<div>一方、手形には、簿記上の分類もあります。</div>
+	    		<br />
+	    		<table border="1" cellspacing="0" className="table-color">
+				<tr>
+					<th className="table-align">会計上の手形の名前</th>
+					<th className="table-align">手形の概要</th>
+				</tr>
+				<tr>
+					<td className="table-align">受取手形</td>
+					<td className="table-align">手形に書かれている金額をもらうことができる権利のこと。換金すればお金がもらえるので資産。</td>
+				</tr>
+				<tr>
+					<td className="table-align">支払手形</td>
+					<td className="table-align">手形に書かれている金額を支払わなければならない義務のこと。お金を支払わなければならないので負債。</td>
+				</tr>
+			</table>
+			<br />
+		</section>
+	    
+	    	<section className="font-color">
+			<Element name="savingsGrade3-1" className="element" >
+				<h1 className="intro">約束手形の会計処理</h1>	
+			</Element>
+	    		<div>指定された日付に、指定した金額を支払うことを約束した証書のことを約束手形と呼びます。</div>
+			<div>例えば販売用の商品を10,000円仕入れ、代金は約束手形を振り出して渡したという場合、以下の仕訳となります。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">仕入　10,000</td>
+						<td className="table-align">支払手形　10,000</td>
+					    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+						<div>■　仕訳の手順　■</div>
+						<br />
+						<div>販売用の商品を10,000円仕入れ、代金は約束手形を振り出して渡した</div>
+						<br />
+						<div>①因果分析</div>
+						<div>最終的に発生したもの（借方）：販売用商品10,000円の支払い</div>
+						<div>なぜ発生したか（貸方）：手形の振り出しにより支払った</div>
+						<br />
+						<div>②勘定科目の割当</div>
+						<div>最終的に発生したもの（借方）：販売用商品の支払いになるので、仕入で処理</div>
+						<div>なぜ発生したか（貸方）：手形の振り出しにより支払ったので、支払手形で処理</div>
+						<br />
+						<div>③勘定科目の配置</div>
+						<div>最終的に発生したもの（借方）：仕入という費用が増加するので、借方に仕入を配置</div>
+						<div>なぜ発生したか（貸方）：支払手形という負債が増加するので、貸方に支払手形を配置</div>
+			</div>
+	    		<div>一方、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">受取手形　10,000</td>
+						<td className="table-align">売上　10,000</td>
+					    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+						<div>■　仕訳の手順　■</div>
+						<br />
+						<div>商品10,000円を販売し、代金を約束手形で受取った</div>
+						<br />
+						<div>①因果分析</div>
+						<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
+						<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
+						<br />
+						<div>②勘定科目の割当</div>
+						<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
+						<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
+						<br />
+						<div>③勘定科目の配置</div>
+						<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
+						<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
+			</div>
+		</section>
+	    
+	    	<section className="font-color">
+			<Element name="savingsGrade3-1" className="element" >
+				<h1 className="intro">電子記録債権・電子記録債務の会計処理</h1>	
+			</Element>
+			<div>電子債権記録機関に必要事項を電子記録することで発生する債権、債務を<span className="underline font-color2">電子記録債権</span>または<span className="underline font-color2">電子記録債務</span>といいます。</div>
+			<div>手形は紛失や盗難の危険があるのに対し、電子記録債権（または債務）は電子データになるため、物理的な紛失や盗難のリスクを抑えることができます。</div>
+			<div>また、手形は印紙税がかかるのに対し、電子記録債権（または債務）であれば印紙の貼付が不要のため、印紙税を節約することが出来ます。</div>
+	    		<br />
+	    		<div>電子記録債権（または債務）は手形の代替手段として機能することが想定されているため、会計処理は手形のルールに準じて処理することとなっています。</div>
+	    		<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">受取手形　10,000</td>
+						<td className="table-align">売上　10,000</td>
+					    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+						<div>■　仕訳の手順　■</div>
+						<br />
+						<div>商品10,000円を販売し、代金を約束手形で受取った</div>
+						<br />
+						<div>①因果分析</div>
+						<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
+						<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
+						<br />
+						<div>②勘定科目の割当</div>
+						<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
+						<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
+						<br />
+						<div>③勘定科目の配置</div>
+						<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
+						<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
+			</div>
+	    	</section>
+	    	
+	    	<section className="font-color">
+			<Element name="savingsGrade3-1" className="element" >
+				<h1 className="intro">手形借入金・手形貸付金とは</h1>	
+			</Element>
+			<div>お金を貸し借りした場合、一般的にはその証拠として借用証書というものを受け渡ししますが、借用証書の代わりに約束手形をやり取りする場合があります。</div>
+			<div>借用証書の代わりに約束手形を振り出してお金を貸し借りすることを手形借入れもしくは手形貸付けといいます。</div>
+			<div>お金を借りる側は手形借入金勘定（負債）、お金を貸す側は手形貸付金勘定（資産）で処理します。</div>
+			<div>手形借入金勘定は将来手形のお金を支払わなければならないという義務なので負債となります。また、手形貸付金勘定は将来手形のお金を受け取れるという権利なので資産となります。</div>
+			<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">受取手形　10,000</td>
+						<td className="table-align">売上　10,000</td>
+					    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+						<div>■　仕訳の手順　■</div>
+						<br />
+						<div>商品10,000円を販売し、代金を約束手形で受取った</div>
+						<br />
+						<div>①因果分析</div>
+						<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
+						<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
+						<br />
+						<div>②勘定科目の割当</div>
+						<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
+						<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
+						<br />
+						<div>③勘定科目の配置</div>
+						<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
+						<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
+			</div>
+	    	</section>
+	    
+	    <Title title=""/>
+		<section>
+		    <article>
+		    <div>電子債権記録機関に必要事項を電子記録することで発生する債権を電子記録債権といいます。</div>
+		    <div>手形は紛失や盗難の危険があるのに対し、電子記録債権は電子データになるため、物理的な紛失や盗難のリスクを抑えることができます。</div>
+		    <div>また、手形は印紙税がかかるのに対し、電子記録債権であれば印紙の貼付が不要のため、印紙税を節約することが出来ます。</div>
 
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">法律上の手形の区別</caption>
-                    <tr>
-                        <th>法律上の手形の名前</th>
-                        <th>どんな手形か</th>
-                    </tr>
-                    <tr>
-                        <td>約束手形</td>
-                        <td>一定の日に一定の場所で一定の金額を支払うために取り交わされる証書のこと。手形を振出す人と受取る人の2名が登場する手形。</td>
-                    </tr>
-                    <tr>
-                        <td>為替手形</td>
-                        <td>手形を振出す人と、手形に書かれている金額を支払う人、受取る人の3名が登場する手形。取引先の異なる売掛金と買掛金を同時に相殺するために用いる。</td>
-                    </tr>
-                </table>
+		    <table border="1" cellspacing="0" className="journal">
+			<caption className="question">得意先に対する売掛金￥1,000について、電子記録債権の発生記録が行われた。</caption>
+			<tr>
+			    <th>借方（運用形態）</th>
+			    <th>貸方（調達源泉）</th>
+			</tr>
+			<tr>
+			    <td>電子記録債権　1,000</td>
+			    <td>売掛金　1,000</td>
+			</tr>
+		    </table>
+		    <div>電子記録債権は、債権者または債務者が電子債権記録機関に発生記録の請求を行い、同機関がその記録を行うことによって発生します。債権者は電子記録債権、債務者は電子記録債務で処理します。</div>
+		    <div>売掛金が電子記録債権になったので、これを売掛金勘定から電子記録債権勘定へ振り替えます。</div>
 
-                <div>一方、手形には、簿記上の分類もあります。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">簿記上の手形の区別</caption>
-                    <tr>
-                        <th>簿記上の手形の名前</th>
-                        <th>どんな手形か</th>
-                    </tr>
-                    <tr>
-                        <td>受取手形</td>
-                        <td>手形に書かれている金額をもらうことができる権利のこと。換金すればお金がもらえるので資産。</td>
-                    </tr>
-                    <tr>
-                        <td>支払手形</td>
-                        <td>手形に書かれている金額を支払わなければならない義務のこと。お金を支払わなければならないので負債。</td>
-                    </tr>
-                </table>
-                </article>
-            </section>
-
-            <div className="select_level">ボキ3級</div>
-            <Title title="約束手形の会計処理"/>
-            <section>
-                <article>
-                <div></div>
-                <div></div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">A社はB社より商品100,000円を仕入れ、代金は約束手形を振り出して支払った。</caption>
-                    <caption className="question">A社の仕訳</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>仕入高　100,000</td>
-                        <td>支払手形　100,000</td>
-                    </tr>
-                </table>
-                <div>約束手形を振り出した場合、将来手形の代金を支払う義務が発生します。簿記上、このような義務は負債として扱います。</div>
-                <div>また、商品の仕入に際して約束手形を振り出したときに生じる義務は支払手形（しはらいてがた）勘定（負債）で処理します。</div>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">B社の仕訳</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>受取手形　100,000</td>
-                        <td>売上高　100,000</td>
-                    </tr>
-                </table>
-        
-                <div>約束手形を受け取った場合、将来手形の代金を受け取る権利が発生します。簿記上、このような権利は資産として扱います。</div>
-                <div>また、商品の販売に際して、約束手形を受け取ったときに生じるこのような権利は受取手形（うけとりてがた）勘定（資産）で処理します。</div>
-
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">A社はB社に対して、以前振り出していた約束手形100,000円の支払期日が到来したので、当座預金口座を通じて支払った。</caption>
-                    <caption className="question">A社の仕訳</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>支払手形　100,000</td>
-                        <td>当座預金　100,000</td>
-                    </tr>
-                </table>
-
-                <table border="1" cellspacing="0" className="journal">
-                    <caption className="question">B社の仕訳</caption>
-                    <tr>
-                        <th>借方（運用形態）</th>
-                        <th>貸方（調達源泉）</th>
-                    </tr>
-                    <tr>
-                        <td>当座預金　100,000</td>
-                        <td>受取手形　100,000</td>
-                    </tr>
-                </table>
-        　　<div>受取手形の代金を受け取ることによって、手形代金を受け取る権利が消滅するので受取手形勘定を減少させます。</div>
+			<table border="1" cellspacing="0" className="journal">
+			<caption className="question">電子記録債権￥1,000について、支払期日が到来し、当座預金口座に振り込まれた。</caption>
+			<tr>
+			    <th>借方（運用形態）</th>
+			    <th>貸方（調達源泉）</th>
+			</tr>
+			<tr>
+			    <td>当座預金　1,000</td>
+			    <td>電子記録債権　1,000</td>
+			</tr>
+		    </table>
+			<div>債務者が債権者に支払いを行い、電子債権記録機関がその記録を行うことによって、電子記録債権（債務）は消滅します。</div>
+		    </article>
+        	</section>
+	    
+	    <Title title="手形借入金・手形貸付金とは"/>
+        <section>
+            <article>
+            <div>お金を貸し借りした場合、一般的にはその証拠として借用証書というものを受け渡ししますが、借用証書の代わりに約束手形をやり取りする場合があります。</div>
+            <div>借用証書の代わりに約束手形を振り出してお金を貸し借りすることを手形借入れもしくは手形貸付けといいます。</div>
+	    <div>お金を借りる側は手形借入金勘定（負債）、お金を貸す側は手形貸付金勘定（資産）で処理します。</div>
+	　　 <div>手形借入金勘定は将来手形のお金を支払わなければならないという義務なので負債となります。また、手形貸付金勘定は将来手形のお金を受け取れるという権利なので資産となります。</div>
+	
+	    <table border="1" cellspacing="0" className="journal">
+                <caption className="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
+                <tr>
+                    <th>借方（運用形態）</th>
+                    <th>貸方（調達源泉）</th>
+                </tr>
+                <tr>
+                    <td>クレジット売掛金　1,000</td>
+                    <td>売上高　1,000</td>
+                </tr>
+            </table>
             </article>
-            </section>
+        </section>
 
             <Title title="為替手形の会計処理"/>
         <section>
@@ -3529,90 +3915,30 @@ const promissoryNotesGrade1 = () => {
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜その他債権債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
+{/* <section className="font-color">
+				<Element name="savingsGrade3-1" className="element" >
+					<h1 className="intro">預金とは</h1>	
+				</Element>
+		
+			</section> 
+			<div></div>
+			<br />
+			<span className="underline font-color2"></span>
+			*/}
+
 //その他債権債務のコンポーネント
 const OtherGrade3 = () => {
     return (
         <>
-            <Title title="電子記録債権とは"/>
-        <section>
-            <article>
-            <div>電子債権記録機関に必要事項を電子記録することで発生する債権を電子記録債権といいます。</div>
-            <div>手形は紛失や盗難の危険があるのに対し、電子記録債権は電子データになるため、物理的な紛失や盗難のリスクを抑えることができます。</div>
-	    <div>また、手形は印紙税がかかるのに対し、電子記録債権であれば印紙の貼付が不要のため、印紙税を節約することが出来ます。</div>
-	
-	    <table border="1" cellspacing="0" className="journal">
-                <caption className="question">得意先に対する売掛金￥1,000について、電子記録債権の発生記録が行われた。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td>電子記録債権　1,000</td>
-                    <td>売掛金　1,000</td>
-                </tr>
-            </table>
-            <div>電子記録債権は、債権者または債務者が電子債権記録機関に発生記録の請求を行い、同機関がその記録を行うことによって発生します。債権者は電子記録債権、債務者は電子記録債務で処理します。</div>
-	    <div>売掛金が電子記録債権になったので、これを売掛金勘定から電子記録債権勘定へ振り替えます。</div>
-	
-		<table border="1" cellspacing="0" className="journal">
-                <caption className="question">電子記録債権￥1,000について、支払期日が到来し、当座預金口座に振り込まれた。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td>当座預金　1,000</td>
-                    <td>電子記録債権　1,000</td>
-                </tr>
-            </table>
-		<div>債務者が債権者に支払いを行い、電子債権記録機関がその記録を行うことによって、電子記録債権（債務）は消滅します。</div>
-            </article>
-        </section>
-	
-	<Title title="クレジット売掛金とは"/>
-        <section>
-            <article>
-            <div>クレジットカードによって商品を売り上げた場合、あとで信販会社から代金を受け取れる権利が発生します。この権利はクレジット売掛金勘定 で処理します。</div>
-            <div>仕訳上は普通の「売掛金」と同じように考えていけば問題ありません。</div>
-	    <div></div>
-	
-	    <table border="1" cellspacing="0" className="journal">
-                <caption className="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td>クレジット売掛金　1,000</td>
-                    <td>売上高　1,000</td>
-                </tr>
-            </table>
-            </article>
-        </section>
-
-        <Title title="手形借入金・手形貸付金とは"/>
-        <section>
-            <article>
-            <div>お金を貸し借りした場合、一般的にはその証拠として借用証書というものを受け渡ししますが、借用証書の代わりに約束手形をやり取りする場合があります。</div>
-            <div>借用証書の代わりに約束手形を振り出してお金を貸し借りすることを手形借入れもしくは手形貸付けといいます。</div>
-	    <div>お金を借りる側は手形借入金勘定（負債）、お金を貸す側は手形貸付金勘定（資産）で処理します。</div>
-	　　 <div>手形借入金勘定は将来手形のお金を支払わなければならないという義務なので負債となります。また、手形貸付金勘定は将来手形のお金を受け取れるという権利なので資産となります。</div>
-	
-	    <table border="1" cellspacing="0" className="journal">
-                <caption className="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td>クレジット売掛金　1,000</td>
-                    <td>売上高　1,000</td>
-                </tr>
-            </table>
-            </article>
-        </section>
-
-        <Title title="未収入金（未収金）・未払金とは"/>
+		<section className="font-color">
+			<Element name="savingsGrade3-1" className="element" >
+				<h1 className="intro">貸付金・借入金の会計処理</h1>	
+			</Element>
+			<div>信用を媒介に、資金を貸し付けたものを貸付金、資金を借り入れた場合を借入金と呼びます。</div>
+	    		<div>1年基準にて以下のように勘定科目を判断します。</div>
+		</section>
+	    
+	<Title title="未収入金（未収金）・未払金とは"/>
         <section>
             <article>
             <div>「売掛金」「買掛金」は商品以外のもの（例えば営業で使用する目的の固定資産など）を売買したときには使えません。</div>
@@ -3621,8 +3947,8 @@ const OtherGrade3 = () => {
 	    <div>また、商品以外のものを後払いで買った場合は未払金勘定で処理します。「未払金」は将来お金を払わなければならないという義務なので負債となります。</div>
             </article>
         </section>
-
-        <Title title="前払金（前渡金）・前受金とは"/>
+	    
+	<Title title="前払金（前渡金）・前受金とは"/>
         <section>
             <article>
 		    <div>先に商品の受け渡しを行い、代金の支払いや受取りは後日に行う場合は「売掛金」や「買掛金」で処理します。</div>
@@ -3630,6 +3956,43 @@ const OtherGrade3 = () => {
 		    <div>そして後日、商品の受け渡しを行ったときに「仕入」や「売上」を計上します</div>
 		    <div>商品を受け取る前にその代金を支払った場合は前払金（まえばらいきん）勘定で処理します。前払金勘定は将来商品を受け取ることができるという権利なので資産となります。</div>
 		    <div>また、商品を引き渡す前にその代金を受け取った場合は前受金（まえうけきん）勘定で処理します。前受金勘定は将来商品を引き渡さなければならないという義務なので負債となります。</div>
+            </article>
+        </section>
+	    
+	<Title title="立替金・預り金とは"/>
+        <section>
+            <article>
+            <div>給料の前払い等として、会社が一時的に立て替えて支払った場合には、従業員立替金（または立替金）勘定（資産）で処理します。</div>
+	    <div>（従業員）立替金勘定は資産（貸借対照表の借方項目）なので、増加すれば借方、減少すれば貸方に記入します。</div>
+            <div>従業員預り金の処理方法
+           我が国ではサラリーマンなどの給与所得者に対する所得税や社会保険料の徴収方法として源泉徴収制度がとられています。会社が給料を支払う際に、あらかじめ所得税や社会保険料の金額を給料から差し引いておき、一定の期日までに会社が従業員の所得税等をまとめて国などに納付する制度。なお、源泉徴収された所得税のことを源泉所得税といいます。</div>
+           <div>給料から差し引いた所得税や社会保険料は一時的に従業員からお金を預かっているに過ぎないので、これを従業員預り金（または預り金）勘定（負債）で処理します。</div>
+
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">給料￥1,000のうち、源泉所得税￥100及び社会保険料￥50を差し引き、残額￥850は現金で支払った。</caption>
+                <tr>
+                    <th>借方（運用形態）</th>
+                    <th>貸方（調達源泉）</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+	
+	<table border="1" cellspacing="0" className="journal">
+                <caption className="question">従業員から預かっている所得税を現金で納付した。</caption>
+                <tr>
+                    <th>借方（運用形態）</th>
+                    <th>貸方（調達源泉）</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+	
+	<div>健康保険や雇用保険などの社会保険は従業員個人と会社（雇用主）の両方が折半で負担します。従業員負担分はすでに源泉徴収している従業員預り金勘定を取り崩し、会社負担分は法定福利費勘定で処理します。</div>
             </article>
         </section>
 
@@ -3700,63 +4063,8 @@ const OtherGrade3 = () => {
 	    <div>そこで決算において、当期に属する費用を見越して計上するための処理を行います。この見越計上した費用（当期に属する支払家賃）は未払家賃勘定を使って処理します。未払家賃勘定は費用の後払いなので負債となります。仕訳上は「未払家賃」「未払利息」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未払費用」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
             </article>
         </section>
-
-        <Title title="前受収益・未収収益とは"/>
-        <section>
-            <article>
-            <div>続いて収益の未収について説明していきますが、基本的な考え方は費用の未払いと同じなので、さらっと見ていくことにします。費用の未払いの一連の処理方法をしっかりと理解してから続きを読んでください。次期に受け取る利息のうち、当期に属する部分を未収利息勘定を使って見越計上します。未収利息勘定は収益の未収なので資産となります。仕訳上は「未収利息」「未収家賃」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未収収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
-            <div></div>
-	    <div></div>
-	 
-            </article>
-        </section>
-
-        <Title title="貸付金・借入金とは"/>
-        <section>
-            <article>
-            <div></div>
-            <div></div>
-            </article>
-        </section>
-
-        <Title title="立替金・預り金とは"/>
-        <section>
-            <article>
-            <div>給料の前払い等として、会社が一時的に立て替えて支払った場合には、従業員立替金（または立替金）勘定（資産）で処理します。</div>
-	    <div>（従業員）立替金勘定は資産（貸借対照表の借方項目）なので、増加すれば借方、減少すれば貸方に記入します。</div>
-            <div>従業員預り金の処理方法
-           我が国ではサラリーマンなどの給与所得者に対する所得税や社会保険料の徴収方法として源泉徴収制度がとられています。会社が給料を支払う際に、あらかじめ所得税や社会保険料の金額を給料から差し引いておき、一定の期日までに会社が従業員の所得税等をまとめて国などに納付する制度。なお、源泉徴収された所得税のことを源泉所得税といいます。</div>
-           <div>給料から差し引いた所得税や社会保険料は一時的に従業員からお金を預かっているに過ぎないので、これを従業員預り金（または預り金）勘定（負債）で処理します。</div>
-
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">給料￥1,000のうち、源泉所得税￥100及び社会保険料￥50を差し引き、残額￥850は現金で支払った。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">従業員から預かっている所得税を現金で納付した。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<div>健康保険や雇用保険などの社会保険は従業員個人と会社（雇用主）の両方が折半で負担します。従業員負担分はすでに源泉徴収している従業員預り金勘定を取り崩し、会社負担分は法定福利費勘定で処理します。</div>
-            </article>
-        </section>
-
-        <Title title="仮払金・仮受金とは"/>
+	    
+	<Title title="仮払金・仮受金とは"/>
         <section>
             <article>
             <div>現金等を授受したが処理すべき相手勘定が不明である場合や金額が未確定である場合、その勘定科目や金額が判明するまで仮払金（かりばらいきん）勘定（資産）または仮受金（かりうけきん）勘定（負債）を使って処理します。</div>
@@ -3792,9 +4100,60 @@ const OtherGrade3 = () => {
             <div></div>
             </article>
         </section>
+	    
+	<Title title="受取商品券とは"/>
+        <section>
+            <article>
+            <div>続いて収益の未収について説明していきますが、基本的な考え方は費用の未払いと同じなので、さらっと見ていくことにします。費用の未払いの一連の処理方法をしっかりと理解してから続きを読んでください。次期に受け取る利息のうち、当期に属する部分を未収利息勘定を使って見越計上します。未収利息勘定は収益の未収なので資産となります。仕訳上は「未収利息」「未収家賃」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未収収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
+            <div></div>
+	    <div></div>
+	 
+            </article>
+        </section>
+	    
+	<Title title="差入保証金とは"/>
+        <section>
+            <article>
+            <div>続いて収益の未収について説明していきますが、基本的な考え方は費用の未払いと同じなので、さらっと見ていくことにします。費用の未払いの一連の処理方法をしっかりと理解してから続きを読んでください。次期に受け取る利息のうち、当期に属する部分を未収利息勘定を使って見越計上します。未収利息勘定は収益の未収なので資産となります。仕訳上は「未収利息」「未収家賃」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未収収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
+            <div></div>
+	    <div></div>
+	 
+            </article>
+        </section>
+
+        <Title title="前受収益・未収収益とは"/>
+        <section>
+            <article>
+            <div>続いて収益の未収について説明していきますが、基本的な考え方は費用の未払いと同じなので、さらっと見ていくことにします。費用の未払いの一連の処理方法をしっかりと理解してから続きを読んでください。次期に受け取る利息のうち、当期に属する部分を未収利息勘定を使って見越計上します。未収利息勘定は収益の未収なので資産となります。仕訳上は「未収利息」「未収家賃」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未収収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
+            <div></div>
+	    <div></div>
+	 
+            </article>
+        </section>
         </>
     );
 }
+
+<Title title="クレジット売掛金とは"/>
+        <section>
+            <article>
+            <div>クレジットカードによって商品を売り上げた場合、あとで信販会社から代金を受け取れる権利が発生します。この権利はクレジット売掛金勘定 で処理します。</div>
+            <div>仕訳上は普通の「売掛金」と同じように考えていけば問題ありません。</div>
+	    <div></div>
+	
+	    <table border="1" cellspacing="0" className="journal">
+                <caption className="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
+                <tr>
+                    <th>借方（運用形態）</th>
+                    <th>貸方（調達源泉）</th>
+                </tr>
+                <tr>
+                    <td>クレジット売掛金　1,000</td>
+                    <td>売上高　1,000</td>
+                </tr>
+            </table>
+            </article>
+        </section>
 
 const OtherGrade2 = () => {
     return (
