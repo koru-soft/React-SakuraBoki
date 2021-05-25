@@ -4250,17 +4250,144 @@ const OtherGrade3 = () => {
 					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
 					<div>なぜ発生したか（貸方）：前受金という負債が増加するので、貸方に前受金を配置</div>
 			</div>
-	    
 	    	</section>
 
 		<section className="font-color">
 			<Element name="other-grade3-4" className="element" >
 				<h1 className="intro">仮払金・仮受金の会計処理</h1>	
 			</Element>
-	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+	    		<div>何らかの支払いが発生したものの、その支払いの概要がわからない場合、その概要が判明するまでの間に一時的に計上するための未決算勘定科目を<span className="underline font-color2">仮払金</span>と呼びます。</div>
 			<br />
-			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
-		</section>
+			<div>一方、何らかのお金の受取りが発生したものの、その受取の概要がわからない場合、その概要が判明するまでの間に一時的に計上するための未決算勘定科目を<span className="underline font-color2">仮受金</span>と呼びます。</div>
+			<br />
+	    		<div>どちらの支払いに関しても、その原因が判明した場合に、振替の仕訳を作成します。</div>
+	    		<br />
+	    		<div>例えば、10,000円の現金支払いが発生していたものの、その原因がわからない場合、以下の仕訳が成立します</div>
+				<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">仮払金　10,000</td>
+						<td className="table-align">現金　10,000</td>
+					    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>10,000円の現金支払いが発生していたものの、その原因がわからない</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：使途不明の10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金10,000円を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：使途不明の支払いになるため、一時的に仮払金で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるため、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：仮払金という資産が増加するので、借方に仮払金を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+			</div>
+	    		<div>調査を行ったところ、10,000円のうち7,000円が交通費の支払い、また3,000円は原因不明のまま決算を迎えた場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">旅費交通費　7,000</td>
+						<td className="table-align">仮払金　10,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align">雑損失　3,000</td>
+						<td className="table-align"></td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>調査を行ったところ、10,000円のうち7,000円が交通費の支払い、また3,000円は原因不明のまま決算を迎えた</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：交通費7,000円の支払い、使途不明の支払い3,000円</div>
+					<div>なぜ発生したか（貸方）：仮払金10,000円を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：交通費の支払いになるため、旅費交通費で処理。また、使途不明の支払分に関しては、雑損失で処理</div>
+					<div>なぜ発生したか（貸方）：仮払金にて計上した金額の振替となるため、仮払金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：旅費交通費、雑損失という費用が増加するので、借方に旅費交通費、雑損失を配置</div>
+					<div>なぜ発生したか（貸方）：仮払金という資産が減少するので、貸方に仮払金を配置</div>
+				</div>
+	    			<br />
+	    			<div>次に仮受金の仕訳を見ていきます。例えば、10,000円の現金受取りが発生していたものの、その原因がわからない場合、以下の仕訳が成立します</div>
+				<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">現金　10,000</td>
+						<td className="table-align">仮受金　10,000</td>
+					    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>10,000円の現金受取りが発生していたものの、その原因がわからない</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：10,000円の現金の受取り</div>
+					<div>なぜ発生したか（貸方）：原因不明</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金での受取りになるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：原因不明のため、一時的に仮受金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：仮受金という負債が増加するので、貸方に仮受金を配置</div>
+			</div>
+	    		<div>調査を行ったところ、10,000円のうち7,000円が売掛金の回収分、また3,000円は原因不明のまま決算を迎えた場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">仮受金　10,000</td>
+						<td className="table-align">売掛金　7,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align"></td>
+						<td className="table-align">雑収入　3,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>調査を行ったところ、10,000円のうち7,000円が売掛金の回収分、また3,000円は原因不明のまま決算を迎えた</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：原因不明の現金の受取り10,000円</div>
+					<div>なぜ発生したか（貸方）：売掛金7,000円の回収、原因不明の現金受取り3,000円</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：仮受金にて計上した金額の振替となるため、仮受金で処理</div>
+					<div>なぜ発生したか（貸方）：売掛金の回収となるため、売掛金で処理。また、原因不明の受取分に関しては、雑収入で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：仮受金という負債が減少するので、借方に仮受金を配置</div>
+					<div>なぜ発生したか（貸方）：売掛金という資産が減少するため、貸方に売掛金を配置。また、雑収入という収益が増加するため、貸方に雑収入を配置。</div>
+				</div>
+	    	</section>
 
 		<section className="font-color">
 			<Element name="other-grade3-5" className="element" >
