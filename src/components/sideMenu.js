@@ -4082,7 +4082,7 @@ const OtherGrade3 = () => {
 				<h1 className="intro">貸付金・借入金の会計処理</h1>	
 			</Element>
 			<div>信用を媒介に、資金を貸し付けたものを<span className="underline font-color2">貸付金</span>、資金を借り入れた場合を<span className="underline font-color2">借入金</span>と呼びます。</div>
-	    	<div>1年基準にて以下のように勘定科目を判断します。</div>
+	    		<div>1年基準にて以下のように勘定科目を判断します。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
 				<tr>
@@ -4113,7 +4113,6 @@ const OtherGrade3 = () => {
 					<td className="table-padding-1 table-align">1年を超えて返済期限が発生する借入金</td>
 				</tr>
 			</table>
-
 		</section>
 
 		<section className="font-color">
@@ -4537,212 +4536,81 @@ const OtherGrade3 = () => {
 			<Element name="other-grade3-7" className="element" >
 				<h1 className="intro">受取商品券の会計処理</h1>	
 			</Element>
-	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+	    		<div>商品を売上げた際に、お客様から商品券によって支払いが発生した場合、これを<span className="underline font-color2">受取商品券</span>として処理します。</div>
 			<br />
-			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
-		</section>
+			<div>受け取った商品券はその商品券を発行した会社に持っていくことで、換金が可能なため、「あとでお金をもらうことの出来る権利」として考え、資産に属します。</div>
+			<br />
+	    		<div>例えば、商品100,000円を売上げ、代金を商品券で受け取った場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">受取商品券　100,000</td>
+						<td className="table-align">売上　100,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>商品100,000円を売上げ、代金を商品券で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：商品券100,000円の受取り</div>
+					<div>なぜ発生したか（貸方）：売上が100,000円上がったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：商品券の受取りとなるため、受取商品券で処理</div>
+					<div>なぜ発生したか（貸方）：売上が上がったことが理由となるため、売上で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：受取商品券という資産が増加するので、借方に受取商品券を配置</div>
+					<div>なぜ発生したか（貸方）：売上という収益が増加するので、貸方に売上を配置</div>
+				</div>
+	    			<br />
+	    	</section>
 
 		<section className="font-color">
 			<Element name="other-grade3-8" className="element" >
 				<h1 className="intro">差入保証金の会計処理</h1>	
 			</Element>
-	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+	    		<div>賃貸契約の際に発生する敷金など、契約の履行を担保するために差し入れる現金のことを<span className="underline font-color2">差入保証金</span>と呼びます。</div>
 			<br />
-			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
+			<div>原則、契約終了時に全額返還されるものの、何か問題が発生した場合には、一部が差し引かれて返還される場合があります。</div>
+	    		<br />
+	    		<div>例えば、賃貸契約の保証金として50,000円を普通預金口座から支払ったという場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">差入保証金　50,000</td>
+						<td className="table-align">普通預金　50,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>賃貸契約の保証金として50,000円を普通預金口座から支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：保証金50,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：普通預金口座から50,000円を支出したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：保証金の支払いとなるため、差入保証金（もしくは敷金など）で処理</div>
+					<div>なぜ発生したか（貸方）：普通預金口座での支払いとなるため、普通預金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：保証金という資産が増加するので、借方に保証金を配置</div>
+					<div>なぜ発生したか（貸方）：普通預金という資産が減少するので、貸方に普通預金を配置。</div>
+				</div>
+	    			<br />
 		</section>
-	    
-	<Title title="未収入金（未収金）・未払金とは"/>
-        <section>
-            <article>
-            <div>「売掛金」「買掛金」は商品以外のもの（例えば営業で使用する目的の固定資産など）を売買したときには使えません。</div>
-	    <div>商品以外のものを後払いで売買したときは未収入金（みしゅうにゅうきん）勘定および未払金（みばらいきん）勘定を使って処理します。</div>
-	    <div>商品以外のものを後払いで売った場合は未収入金勘定で処理します。「未収入金」は将来お金を受け取れる（払ってもらえる）という権利なので資産となります。</div>
-	    <div>また、商品以外のものを後払いで買った場合は未払金勘定で処理します。「未払金」は将来お金を払わなければならないという義務なので負債となります。</div>
-            </article>
-        </section>
-	    
-	<Title title="前払金（前渡金）・前受金とは"/>
-        <section>
-            <article>
-		    <div>先に商品の受け渡しを行い、代金の支払いや受取りは後日に行う場合は「売掛金」や「買掛金」で処理します。</div>
-		    <div>それとは逆に、先に代金の支払いや受取りを行い、後日に商品の受け渡しを行う場合は前払金勘定および前受金勘定で処理をします。</div>
-		    <div>そして後日、商品の受け渡しを行ったときに「仕入」や「売上」を計上します</div>
-		    <div>商品を受け取る前にその代金を支払った場合は前払金（まえばらいきん）勘定で処理します。前払金勘定は将来商品を受け取ることができるという権利なので資産となります。</div>
-		    <div>また、商品を引き渡す前にその代金を受け取った場合は前受金（まえうけきん）勘定で処理します。前受金勘定は将来商品を引き渡さなければならないという義務なので負債となります。</div>
-            </article>
-        </section>
-	    
-	<Title title="立替金・預り金とは"/>
-        <section>
-            <article>
-            <div>給料の前払い等として、会社が一時的に立て替えて支払った場合には、従業員立替金（または立替金）勘定（資産）で処理します。</div>
-	    <div>（従業員）立替金勘定は資産（貸借対照表の借方項目）なので、増加すれば借方、減少すれば貸方に記入します。</div>
-            <div>従業員預り金の処理方法
-           我が国ではサラリーマンなどの給与所得者に対する所得税や社会保険料の徴収方法として源泉徴収制度がとられています。会社が給料を支払う際に、あらかじめ所得税や社会保険料の金額を給料から差し引いておき、一定の期日までに会社が従業員の所得税等をまとめて国などに納付する制度。なお、源泉徴収された所得税のことを源泉所得税といいます。</div>
-           <div>給料から差し引いた所得税や社会保険料は一時的に従業員からお金を預かっているに過ぎないので、これを従業員預り金（または預り金）勘定（負債）で処理します。</div>
-
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">給料￥1,000のうち、源泉所得税￥100及び社会保険料￥50を差し引き、残額￥850は現金で支払った。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">従業員から預かっている所得税を現金で納付した。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<div>健康保険や雇用保険などの社会保険は従業員個人と会社（雇用主）の両方が折半で負担します。従業員負担分はすでに源泉徴収している従業員預り金勘定を取り崩し、会社負担分は法定福利費勘定で処理します。</div>
-            </article>
-        </section>
-
-        <Title title="前払費用・未払費用とは"/>
-        <section>
-            <article>
-            <div>保険料の支払いを例にとって、費用の前払いに関する一連の処理方法を説明していきます。</div>
-	
-	 <table border="1" cellspacing="0" className="journal">
-                <caption className="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<div>当期の費用となるのは支払った金額のうち当期に属する部分のみです。そこで決算において、当期に属さない部分を次期へ繰り延べるための処理を行います。この金額は月割で計算をします。</div>
-	<div>支払った金額がそのまますべて当期の費用となるわけではないということに注意しましょう。</div>
-	<div>この繰り延べた費用（次期に属する支払保険料）は前払保険料勘定を使って処理します。前払保険料勘定は費用の前払いなので資産となります。</div>
-	<div>仕訳上は「前払保険料」「前払家賃」「前払利息」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「前払費用」とします。</div>
-	<div>利息は時の経過によって発生するものと考えられるため、翌期に属する部分を当期に受け取った場合は繰り延べ処理が必要となります。</div>
-	<div>具体的には、利息を前受けしたときは当期に属さない部分を前受利息勘定を使って次期へ繰り延べます。前受利息勘定は収益の前受けなので負債となります。</div>
-	<div>仕訳上は「前受利息」「前受家賃」「前受地代」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「前受収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
-	<div>前払費用は一定の契約に従い、継続して役務（サービスなど）の提供を受ける場合、いまだ提供されていない役務に対し支払われた対価をいいます。前払費用は、このような役務提供契約以外の契約等による前払金とは区別しなければなりません</div>
-	
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">×2年3月1日に向こう1年分の保険料￥120,000を現金で支払った。なお、当期は3月31日に終了する1年間である。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">×2年3月1日に営業のための店舗を賃借した。1年分の家賃￥1,200,000はすべて×3年2月28日に後払いする契約である。なお、当期は3月31日に終了する1年間である。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-
-            <div>店舗を借りただけでは簿記上の取引とはなりませんので仕訳は必要ありません。</div>
-	    <div>1年分の家賃はすべて次期（×3年2月28日）に後払いするので、当期の支払額はゼロです。しかし、当期においてこの店舗を1か月間（×2年3月1日～×2年3月31日）利用しているわけですから、この1か月分の家賃を月割で当期の費用として計上しなければなりません。</div>
-	    <div>そこで決算において、当期に属する費用を見越して計上するための処理を行います。この見越計上した費用（当期に属する支払家賃）は未払家賃勘定を使って処理します。未払家賃勘定は費用の後払いなので負債となります。仕訳上は「未払家賃」「未払利息」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未払費用」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
-            </article>
-        </section>
-	    
-	<Title title="仮払金・仮受金とは"/>
-        <section>
-            <article>
-            <div>現金等を授受したが処理すべき相手勘定が不明である場合や金額が未確定である場合、その勘定科目や金額が判明するまで仮払金（かりばらいきん）勘定（資産）または仮受金（かりうけきん）勘定（負債）を使って処理します。</div>
-	    <div>仮払金勘定や仮受金勘定はあくまでも一時的に記帳しておくための勘定科目なので、処理すべき勘定科目や金額が判明した時点で、ただちに適切な勘定へ振り替えます。</div>
-	
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">従業員に出張旅費の概算額￥10,000を現金で手渡した。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<div>現金を渡した時点では実際の出張旅費がいくらになるのかまだわかりません。そこで、この金額を一時的に仮払金勘定で処理しておきます。</div>
-	
-	<table border="1" cellspacing="0" className="journal">
-                <caption className="question">出張中の従業員から￥5,000の当座預金口座への振込みがあったが、その内容は不明である。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-	
-	<div>当座預金口座へ振り込まれた時点では内容が不明なので、どの勘定科目で処理すべきかわかりません。そこで、この金額を一時的に仮受金勘定（負債）で処理しておきます。</div>
-            <div></div>
-            </article>
-        </section>
-	    
-	<Title title="受取商品券とは"/>
-        <section>
-            <article>
-            <div>続いて収益の未収について説明していきますが、基本的な考え方は費用の未払いと同じなので、さらっと見ていくことにします。費用の未払いの一連の処理方法をしっかりと理解してから続きを読んでください。次期に受け取る利息のうち、当期に属する部分を未収利息勘定を使って見越計上します。未収利息勘定は収益の未収なので資産となります。仕訳上は「未収利息」「未収家賃」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未収収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
-            <div></div>
-	    <div></div>
-	 
-            </article>
-        </section>
-	    
-	<Title title="差入保証金とは"/>
-        <section>
-            <article>
-            <div>続いて収益の未収について説明していきますが、基本的な考え方は費用の未払いと同じなので、さらっと見ていくことにします。費用の未払いの一連の処理方法をしっかりと理解してから続きを読んでください。次期に受け取る利息のうち、当期に属する部分を未収利息勘定を使って見越計上します。未収利息勘定は収益の未収なので資産となります。仕訳上は「未収利息」「未収家賃」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未収収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
-            <div></div>
-	    <div></div>
-	 
-            </article>
-        </section>
-
-        <Title title="前受収益・未収収益とは"/>
-        <section>
-            <article>
-            <div>続いて収益の未収について説明していきますが、基本的な考え方は費用の未払いと同じなので、さらっと見ていくことにします。費用の未払いの一連の処理方法をしっかりと理解してから続きを読んでください。次期に受け取る利息のうち、当期に属する部分を未収利息勘定を使って見越計上します。未収利息勘定は収益の未収なので資産となります。仕訳上は「未収利息」「未収家賃」などの具体的な名称を使いますが、貸借対照表に表示する場合は、すべてまとめて「未収収益」とします（ただし問題によっては仕訳上の科目を使う場合もあります）。</div>
-            <div></div>
-	    <div></div>
-	 
-            </article>
-        </section>
         </>
     );
 }
@@ -4861,10 +4729,111 @@ const otherGrade1 = () => {
 const NonCurrentAssetsGrade3 = () => {
     return (
         <>
+	    <section className="font-color">
+			<Element name="other-grade3-1" className="element" >
+				<h1 className="intro">固定資産とは</h1>	
+			</Element>
+			<div>建物や車など、1年以上利用することを目的として取得する資産を<span className="underline font-color2">固定資産</span>と言います。</div>
+	    		<div>固定資産は大きく分けると以下のように3種類に分かれていきます。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+				<tr>
+					<th className="table-align table-size-30">固定資産の種類</th>
+					<th className="table-align">概要</th>
+				</tr>
+				<tr>
+					<td className="table-align">有形固定資産</td>
+					<td className="table-padding-1 table-align">形のある固定資産</td>
+				</tr>
+				<tr>
+					<td className="table-align">無形固定資産</td>
+					<td className="table-padding-1 table-align">形のない固定資産</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">投資その他の資産</td>
+					<td className="table-padding-1 table-align">有形固定資産、無形固定資産以外の固定資産のこと</td>
+				</tr>
+			</table>
+			<br />
+		</section>
+	    
+	    	<section className="font-color">
+			<Element name="other-grade3-1" className="element" >
+				<h1 className="intro">減価償却とは</h1>	
+			</Element>
+	    		<div>1年間の収益は、1年間の売上から1年間の費用を引いた残りの金額として計算されます。</div>
+	    		<br />
+	    		<div>しかしながら、固定資産の購入は資産の増加として会計処理されるため、その支払い額がそのままでは費用とならないという問題が発生します。</div>
+	    		<div>例えば、1億円の建物を購入したものの、そのままでは費用処理されないため、1年間の収益は建物の購入額を引かない金額で算出されます。</div>
+			<div>そこで、会計ではこの費用化の問題に関して、「使った分に応じて一部の金額を費用化していく」という方法を採用しました。</div>
+	    		<br />
+	    		<div>この価値の減少分を表現する方法のことを<span className="underline font-color2">減価償却</span>と呼びます。</div>
+	    		<br />
+	    		<div>減価償却は固定資産費用化の表現方法になるため、「いかに使った分を計測するか」という観点より、様々な種類が考案されてきました。</div>
+			<br />
+	    		<div>簿記の3級では定額法のみが範囲となります。</div>
+	    		<br />
+			<table border="1" cellspacing="0" className="table-color">
+				<tr>
+					<th className="table-align table-size-30">減価償却の種類</th>
+					<th className="table-align">概要</th>
+				</tr>
+				<tr>
+					<td className="table-align">定額法</td>
+					<td className="table-padding-1 table-align">平成19年4月1日以降に取得された固定資産について、耐用年数に応じて、一定額を償却する方法</td>
+				</tr>
+				<tr>
+					<td className="table-align">旧定額法</td>
+					<td className="table-padding-1 table-align">平成19年3月31日以前に取得された固定資産について、耐用年数に応じて一定額を償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">定率法</td>
+					<td className="table-padding-1 table-align">平成19年4月1日以降に取得された固定資産について、耐用年数に応じて、未償却残高に一定の償却率を乗じて償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">旧定率法</td>
+					<td className="table-padding-1 table-align">平成19年3月31日以前に取得された固定資産について、耐用年数に応じて、期首帳簿価額に一定の償却率を乗じて償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">級数法</td>
+					<td className="table-padding-1 table-align">耐用年数にわたって級数的に減価償却費を計上する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">生産高比例法</td>
+					<td className="table-padding-1 table-align">固定資産の利用度に応じて費用化する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">均等償却</td>
+					<td className="table-padding-1 table-align">償却月数に応じて、毎年度均等の金額で償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">任意償却</td>
+					<td className="table-padding-1 table-align">任意の金額で償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">一括償却</td>
+					<td className="table-padding-1 table-align">3年間で全額を償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">少額償却</td>
+					<td className="table-padding-1 table-align">中小事業者等が、30万未満の減価償却資産を取得した年度に全額を償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">即時償却</td>
+					<td className="table-padding-1 table-align">取得価額が30万未満の減価償却資産について、取得した年度に全額償却する方法</td>
+				</tr>
+	    			<tr>
+					<td className="table-align">償却なし</td>
+					<td className="table-padding-1 table-align">土地、電話加入権など価値の減少のない固定資産を取得した場合の処理方法</td>
+				</tr>
+			</table>
+			<br />
+		</section>
+	    	
             <Title title="固定資産とは"/>
         <section>
             <article>
-            <div>建物や車など、1年以上利用することを目的として取得する資産を固定資産と言います。</div>
+            <div></div>
             <div>固定資産を購入した際に発生する手数料などの費用を付随費用と言い、原則は固定資産の取得原価に加えます。</div>
 	    <div>取得原価＝購入代価（固定資産の本体価格）＋付随費用</div>
 	    <div>固定資産の購入に際して、手数料や運送費、据付費などの付随費用が発生する場合があります。これらの付随費用は固定資産の取得原価に含めて処理します。</div>
