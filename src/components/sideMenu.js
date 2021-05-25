@@ -3114,7 +3114,8 @@ const TradingsGrade3 = () => {
 					<br />
 	    				<div>例えば、販売業を営んでいる事業者が掛で売上を上げた場合、売掛金という債権が発生します。</div>
 	    				<div>しかしながら、例えば不要になったコピー機を100,000円で売りに出し、後払いで決済が発生した場合、メインとしている事業からの売上とは異なるため、売掛金ではなく未収入金として処理を行います。</div>
-	   				<table border="1" cellspacing="0" className="table-color">
+						<br />
+					<table border="1" cellspacing="0" className="table-color">
 						    <tr>
 							<th className="table-align">借方（運用形態）</th>
 							<th className="table-align">貸方（調達源泉）</th>
@@ -3433,11 +3434,14 @@ const PromissoryNotesGrade3 = () => {
 				<h1 className="intro">電子記録債権・電子記録債務の会計処理</h1>	
 			</Element>
 			<div>電子債権記録機関に必要事項を電子記録することで発生する債権、債務を<span className="underline font-color2">電子記録債権</span>または<span className="underline font-color2">電子記録債務</span>といいます。</div>
+			<br />
 			<div>手形は紛失や盗難の危険があるのに対し、電子記録債権（または債務）は電子データになるため、物理的な紛失や盗難のリスクを抑えることができます。</div>
+			<br />
 			<div>また、手形は印紙税がかかるのに対し、電子記録債権（または債務）であれば印紙の貼付が不要のため、印紙税を節約することが出来ます。</div>
-	    		<br />
-	    		<div>電子記録債権（または債務）は手形の代替手段として機能することが想定されているため、会計処理は手形のルールに準じて処理することとなっています。</div>
-	    		<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
+			<br />
+			<div>電子記録債権（または債務）は手形の代替手段として機能することが想定されているため、会計処理は手形のルールに準じて処理することとなっています。</div>
+			<br />
+			<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
 					    <tr>
@@ -3516,9 +3520,6 @@ const PromissoryNotesGrade2 = () => {
     return (
         <>
             <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		<Title title=""/>
 		<section>
 		    <article>
 		    <div>電子債権記録機関に必要事項を電子記録することで発生する債権を電子記録債権といいます。</div>
@@ -4119,7 +4120,8 @@ const OtherGrade3 = () => {
 			<br />
 			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
 			<br />
-	    		<div>例えば、普段は八百屋を事業として営んでいる方が、不要になった物置を300,000円で売却し、代金は後払いとなった場合、以下の仕訳が成立します。</div>
+			<div>例えば、普段は八百屋を事業として営んでいる方が、不要になった物置を300,000円で売却し、代金は後払いとなった場合、以下の仕訳が成立します。</div>
+			<br />
 			<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 					<th className="table-align">借方（運用形態）</th>
@@ -4147,8 +4149,10 @@ const OtherGrade3 = () => {
 				<div>③勘定科目の配置</div>
 				<div>最終的に発生したもの（借方）：未収入金という資産が増加するので、借方に未収入金を配置</div>
 				<div>なぜ発生したか（貸方）：建物（もしくは附属設備）という資産が減少するので、貸方に建物（もしくは附属設備）を配置</div>
-			</div>
+				</div>
+				<br />
 	    		<div>逆に、普段は不動産とは関わりのない事業を営んでいる方が、不要になった倉庫を300,000円で購入し、代金は後払いとした場合、以下の仕訳が成立します。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					    <tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4188,6 +4192,7 @@ const OtherGrade3 = () => {
 			<br />
 			<div>一方、サービスや商品の提供前に、代金の一部を受け取った場合、その受取額を<span className="underline font-color2">前受金</span>と呼びます。</div>
 			<div>例えば、10,000円の商品を予約注文し、一部代金として500円を現金で前払いした場合、以下の仕訳が成立します</div>
+			<br />
 				<table border="1" cellspacing="0" className="table-color">
 					    <tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4216,7 +4221,9 @@ const OtherGrade3 = () => {
 					<div>最終的に発生したもの（借方）：前払金という資産が増加するので、借方に前払金を配置</div>
 					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
 			</div>
+				<br />
 	    		<div>一方、10,000円の商品を予約注文され、一部代金として500円を現金で前受けした場合、以下の仕訳が成立します</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					    <tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4258,6 +4265,7 @@ const OtherGrade3 = () => {
 	    		<div>どちらの支払いに関しても、その原因が判明した場合に、振替の仕訳を作成します。</div>
 	    		<br />
 	    		<div>例えば、10,000円の現金支払いが発生していたものの、その原因がわからない場合、以下の仕訳が成立します</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					    <tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4286,7 +4294,9 @@ const OtherGrade3 = () => {
 					<div>最終的に発生したもの（借方）：仮払金という資産が増加するので、借方に仮払金を配置</div>
 					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
 			</div>
+			<br />
 	    		<div>調査を行ったところ、10,000円のうち7,000円が交通費の支払い、また3,000円は原因不明のまま決算を迎えた場合、以下の仕訳となります。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4321,6 +4331,7 @@ const OtherGrade3 = () => {
 				</div>
 	    			<br />
 	    			<div>次に仮受金の仕訳を見ていきます。例えば、10,000円の現金受取りが発生していたものの、その原因がわからない場合、以下の仕訳が成立します</div>
+					<br />
 				<table border="1" cellspacing="0" className="table-color">
 					    <tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4349,7 +4360,9 @@ const OtherGrade3 = () => {
 					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
 					<div>なぜ発生したか（貸方）：仮受金という負債が増加するので、貸方に仮受金を配置</div>
 			</div>
+			<br />
 	    		<div>調査を行ったところ、10,000円のうち7,000円が売掛金の回収分、また3,000円は原因不明のまま決算を迎えた場合、以下の仕訳となります。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4393,6 +4406,7 @@ const OtherGrade3 = () => {
 			<div>立替えた支払いに関しては、後でお金を返してもらうことが出来る権利として扱うことから、資産に属します。</div>
 	    		<br />
 	    		<div>取引先が負担すべき交通費400円を、現金にて立替えて支払った場合、以下の仕訳となります。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4423,6 +4437,7 @@ const OtherGrade3 = () => {
 				</div>
 	    			<br />
 	    			<div>後日、立替えた支払いを現金で受け取ったという場合、以下の仕訳となります。</div>
+					<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4464,6 +4479,7 @@ const OtherGrade3 = () => {
 	    		<div>このような制度を<span className="underline font-color2">源泉徴収</span>と呼びますが、このような場合に預り金の仕訳が発生します。</div>
 	   		<br />
 	    		<div>例えば、給料180,000円のうち、所得税の金額10,000円を控除して現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4498,6 +4514,7 @@ const OtherGrade3 = () => {
 				</div>
 	    			<br />
 	    			<div>後日、預かった源泉徴収10,000円分に関して、現金にて税務署に納税したという場合、以下の仕訳となります。</div>
+					<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4537,6 +4554,7 @@ const OtherGrade3 = () => {
 			<div>受け取った商品券はその商品券を発行した会社に持っていくことで、換金が可能なため、「あとでお金をもらうことの出来る権利」として考え、資産に属します。</div>
 			<br />
 	    		<div>例えば、商品100,000円を売上げ、代金を商品券で受け取った場合、以下の仕訳となります。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4577,6 +4595,7 @@ const OtherGrade3 = () => {
 			<div>原則、契約終了時に全額返還されるものの、何か問題が発生した場合には、一部が差し引かれて返還される場合があります。</div>
 	    		<br />
 	    		<div>例えば、賃貸契約の保証金として50,000円を普通預金口座から支払ったという場合、以下の仕訳となります。</div>
+				<br />
 				<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
@@ -4743,6 +4762,48 @@ const assignmentOfAccountsReceivableGrade3 = () => {
     );
 }
 
+const assignmentOfAccountsReceivableGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/assignment-of-accounts-receivable-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="assignment-of-accounts-receivable-grade3-1" spy={true} smooth={true} duration={500} >クレジット売掛金の会計処理</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <AssignmentOfAccountsReceivableGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const assignmentOfAccountsReceivableGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/assignment-of-accounts-receivable-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="assignment-of-accounts-receivable-grade3-1" spy={true} smooth={true} duration={500} >クレジット売掛金の会計処理</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <AssignmentOfAccountsReceivableGrade3 />
+            </aside>
+        </main>
+    );
+}
+
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債権の譲渡コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
@@ -4805,51 +4866,51 @@ const NonCurrentAssetsGrade3 = () => {
 				</tr>
 				<tr>
 					<td className="table-align">定額法</td>
-					<td className="table-padding-1 table-align">平成19年4月1日以降に取得された固定資産について、耐用年数に応じて、一定額を償却する方法</td>
+					<td className="table-padding-1">平成19年4月1日以降に取得された固定資産について、耐用年数に応じて、一定額を償却する方法</td>
 				</tr>
 				<tr>
 					<td className="table-align">旧定額法</td>
-					<td className="table-padding-1 table-align">平成19年3月31日以前に取得された固定資産について、耐用年数に応じて一定額を償却する方法</td>
+					<td className="table-padding-1">平成19年3月31日以前に取得された固定資産について、耐用年数に応じて一定額を償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">定率法</td>
-					<td className="table-padding-1 table-align">平成19年4月1日以降に取得された固定資産について、耐用年数に応じて、未償却残高に一定の償却率を乗じて償却する方法</td>
+					<td className="table-padding-1">平成19年4月1日以降に取得された固定資産について、耐用年数に応じて、未償却残高に一定の償却率を乗じて償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">旧定率法</td>
-					<td className="table-padding-1 table-align">平成19年3月31日以前に取得された固定資産について、耐用年数に応じて、期首帳簿価額に一定の償却率を乗じて償却する方法</td>
+					<td className="table-padding-1">平成19年3月31日以前に取得された固定資産について、耐用年数に応じて、期首帳簿価額に一定の償却率を乗じて償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">級数法</td>
-					<td className="table-padding-1 table-align">耐用年数にわたって級数的に減価償却費を計上する方法</td>
+					<td className="table-padding-1">耐用年数にわたって級数的に減価償却費を計上する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">生産高比例法</td>
-					<td className="table-padding-1 table-align">固定資産の利用度に応じて費用化する方法</td>
+					<td className="table-padding-1">固定資産の利用度に応じて費用化する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">均等償却</td>
-					<td className="table-padding-1 table-align">償却月数に応じて、毎年度均等の金額で償却する方法</td>
+					<td className="table-padding-1">償却月数に応じて、毎年度均等の金額で償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">任意償却</td>
-					<td className="table-padding-1 table-align">任意の金額で償却する方法</td>
+					<td className="table-padding-1">任意の金額で償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">一括償却</td>
-					<td className="table-padding-1 table-align">3年間で全額を償却する方法</td>
+					<td className="table-padding-1">3年間で全額を償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">少額償却</td>
-					<td className="table-padding-1 table-align">中小事業者等が、30万未満の減価償却資産を取得した年度に全額を償却する方法</td>
+					<td className="table-padding-1">中小事業者等が、30万未満の減価償却資産を取得した年度に全額を償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">即時償却</td>
-					<td className="table-padding-1 table-align">取得価額が30万未満の減価償却資産について、取得した年度に全額償却する方法</td>
+					<td className="table-padding-1">取得価額が30万未満の減価償却資産について、取得した年度に全額償却する方法</td>
 				</tr>
 	    			<tr>
 					<td className="table-align">償却なし</td>
-					<td className="table-padding-1 table-align">土地、電話加入権など価値の減少のない固定資産を取得した場合の処理方法</td>
+					<td className="table-padding-1">土地、電話加入権など価値の減少のない固定資産を取得した場合の処理方法</td>
 				</tr>
 			</table>
 			<br />
@@ -4860,14 +4921,14 @@ const NonCurrentAssetsGrade3 = () => {
 				<h1 className="intro">定額法とは</h1>	
 			</Element>
 	    		<div>固定資産をどれだけの年数利用可能かどうか、という指標のことを<span className="underline font-color2">耐用年数</span>と呼び、この耐用年数に応じて一定額を減価償却する方法を<span className="underline font-color2">定額法</span>と呼びます。</div>
-			<br />
+				<br />
 	    		<div>背景として、会計の重要な原則の1つに、<span className="underline font-color2">費用収益対応の原則</span>という考え方があります。</div>
 	    		<br />
-	    		<div>適切な期間損益を算出する際、収益と費用を対応づけるための考え方ですが、固定資産は使った年数に応じて収益を生むため、「収益を生む年数に応じて同時に費用化していこう」と考えました。</div>
-			<div>この考え方が定額法につながっていきます。</div>
+	    		<div>適切な期間損益を算出する際、収益と費用を対応づけるための考え方ですが、固定資産は使った年数に応じて収益を生むため、「収益を生む年数に応じて一部の金額を費用化していこう」と考えました。</div>
+				<div>この考え方が定額法につながっていきます。</div>
 	    		<br />
 	    		<div>それでは定額法の仕訳を見ていきます。</div>
-	    		<div>固定資産の勘定科目から、直接減価償却費を差し引く方法を<span className="underline font-color2">直接法</span>、また、固定資産の資産としての金額を直接減らすのではなく、新たに減価償却累計額という勘定科目を用いて、価値の減少分を記録する方法を<span className="underline font-color2">間接法</span>と呼び、簿記3級では間接法が範囲となります。</div>
+	    		<div>固定資産の勘定科目から直接、減価償却費を差し引く方法を<span className="underline font-color2">直接法</span>、また、固定資産の資産としての金額を直接減らすのではなく、新たに<span className="underline font-color2">減価償却累計額</span>という勘定科目を用いて、価値の減少分を記録する方法を<span className="underline font-color2">間接法</span>と呼び、簿記3級では間接法が範囲となります。</div>
 	    		<br />
 	    		<div>例えば、200,000円のパソコン（耐用年数4年）を現金で購入し、定額法（間接法）を採用した場合の仕訳は以下の通りとなります。</div>
 	    		<br />
@@ -4967,8 +5028,7 @@ const NonCurrentAssetsGrade3 = () => {
 					<div>最終的に発生したもの（借方）：6,000円分、建物の資産としての価値が増額するため、借方に建物を計上します。また、4,000円分、修繕費という費用が増加するため、借方に修繕費を計上します。</div>
 					<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置します</div>
 				</div>
-	    			<br />
-			<br />
+	    		<br />
 		</section>
         </>
     );
@@ -5314,18 +5374,17 @@ const nonCurrentAssetsGrade3 = () => {
         <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
-                    <Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
+				<Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
 	    	<aside className="subMenu">
-                    <ul>
-                        <li className="table-of-contents">目次</li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >固定資産とは</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
-                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-5" spy={true} smooth={true} duration={500} >現金の残高ズレについて</ScrollLink></li>
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >固定資産とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
 	    	　　 </ul>
                 </aside>
                 <NonCurrentAssetsGrade3 />
@@ -5338,12 +5397,12 @@ const nonCurrentAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <NonCurrentAssetsGrade2 />
+				<div className="level_change_wrapper">
+					<Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+					<Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+					<Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+				</div>
+				<NonCurrentAssetsGrade2 />
             </aside>
         </main>
     );
@@ -5353,11 +5412,11 @@ const nonCurrentAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-                </div>
+				<div className="level_change_wrapper">
+					<Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+					<Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+					<Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+				</div>
                 <NonCurrentAssetsGrade1 />
             </aside>
         </main>
@@ -5639,18 +5698,101 @@ const researchAndDevelopmentCostsGrade1 = () => {
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜研究開発費コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債務の保証コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const FinancialGuaranteeGrade3 = () => {
+    return (
+        <>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
+            <section>
+                <article>
+             		
+                </article>
+            </section>
+        </>
+    );
+}
+
+
+const financialGuaranteeGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+            <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const financialGuaranteeGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const financialGuaranteeGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債務の保証コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const AllowanceGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
+            <section className="font-color">
+				<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+					<h1 className="intro">貸倒引当金の会計処理</h1>	
+				</Element>
+				<div>取引先が倒産し、売掛金が回収出来なくなったことを<span className="underline font-color2">貸倒れ</span>と呼びます。</div>
+			</section>
         </>
     );
 }
@@ -5727,6 +5869,124 @@ const allowanceGrade1 = () => {
 }
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜特殊商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const SpecialTradingsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const SpecialTradingsGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const SpecialTradingsGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const specialTradingsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <SpecialTradingsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const specialTradingsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+			</aside>
+			<SpecialTradingsGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const specialTradingsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+			</aside>
+			<SpecialTradingsGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜特殊商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 
 
@@ -6294,48 +6554,49 @@ const SideBar = () => {
 
             <div className="sidebar-sakura">
                 <h2 className="titleColor"><Link to="/">HOME</Link></h2>
-        　　    <h2 className="titleColor">基本原理</h2>
+        		<h2 className="titleColor">基本原理</h2>
                 <ul className="sideMenu menu-sakura-color">
-			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
-			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/}
-			<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
-			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
-			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
-			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
+					{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/}
+					<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
+					{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
+					{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
+					<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
                 </ul>
 
                 <h2 className="titleColor">諸取引の処理</h2>
                 <ul className="sideMenu">
-			<li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/assignment-of-accounts-receivable-grade3">債権の譲渡</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">債務の保証</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">特殊商品売買</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">様々な財又はサービスの顧客への移転</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">金融商品取引</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">有形固定資産</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">無形固定資産</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">固定資産の減損</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">投資その他の資産</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">繰延資産</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">資産除去債務</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">収益と費用</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">税金</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">税効果会計</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">未決算</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/research-and-development-costs-grade3">会計上の変更および誤謬の訂正</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/assignment-of-accounts-receivable-grade3">債権の譲渡</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/financial-guarantee-grade3">債務の保証</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/special-tradings-grade3">特殊商品売買</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/various-service-transfer-grade3">様々な財又はサービスの顧客への移転</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/financial-instrument-grade3">金融商品取引</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">有形固定資産</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/intangible-assets-grade3">無形固定資産</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/book-impairment-grade3">固定資産の減損</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/investments-and-other-assets-grade3">投資その他の資産</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/deferred-assets-grade3">繰延資産</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/asset-retirement-obligations-grade3">資産除去債務</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/profit-and-loss-grade3">収益と費用</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/tax-grade3">税金</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/accounting-for-income-taxes-grade3">税効果会計</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/unbalanced-account-grade3">未決算</Link></li>
+					<li className="sideList menu-sakura-color"><Link to="/accounting-changes-and-correction-of-errors-grade3">会計上の変更および誤謬の訂正</Link></li>
                 </ul>
+			</div>
 
 	{/*<h2 className="titleColor">決算</h2>
 		<ul className="sideMenu menu-sakura-color">
@@ -6417,7 +6678,7 @@ const SideBar = () => {
                 <Route path="/account-grade3" component={ accountGrade3 } />
                 <Route path="/account-grade2" component={ accountGrade2 } />
                 <Route path="/account-grade1" component={ accountGrade1 } />
-		<Route path="/kind-of-account" component={ kindOfAccount } />
+				<Route path="/kind-of-account" component={ kindOfAccount } />
                 <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
                 <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
                 <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
@@ -6425,23 +6686,23 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-		<Route path="/cash-grade2" component={ cashGrade2 } />
-		<Route path="/cash-grade1" component={ cashGrade1 } />
+				<Route path="/cash-grade2" component={ cashGrade2 } />
+				<Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-		<Route path="/savings-grade2" component={ savingsGrade2 } />
-		<Route path="/savings-grade1" component={ savingsGrade1 } />
+				<Route path="/savings-grade2" component={ savingsGrade2 } />
+				<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
-		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
+				<Route path="/tradings-grade2" component={ tradingsGrade2 } />
+				<Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+				<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+				<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-		<Route path="/other-grade2" component={ otherGrade2 } />
-		<Route path="/other-grade1" component={ otherGrade1 } />
-		<Route path="/assignment-of-accounts-receivable-grade3" component={ assignmentOfAccountsReceivableGrade3 } />
-		<Route path="/assignment-of-accounts-receivable-grade2" component={ assignmentOfAccountsReceivableGrade2 } />
-		<Route path="/assignment-of-accounts-receivable-grade1" component={ assignmentOfAccountsReceivableGrade1 } />
+				<Route path="/other-grade2" component={ otherGrade2 } />
+				<Route path="/other-grade1" component={ otherGrade1 } />
+				<Route path="/assignment-of-accounts-receivable-grade3" component={ assignmentOfAccountsReceivableGrade3 } />
+				<Route path="/assignment-of-accounts-receivable-grade2" component={ assignmentOfAccountsReceivableGrade2 } />
+				<Route path="/assignment-of-accounts-receivable-grade1" component={ assignmentOfAccountsReceivableGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
@@ -6454,10 +6715,16 @@ const SideBar = () => {
                 <Route path="/research-and-development-costs-grade3" component={ researchAndDevelopmentCostsGrade3 } />
                 <Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2 } />
                 <Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1 } />
-                <Route path="/allowance-grade3" component={ allowanceGrade3 } />
+                <Route path="/financial-guarantee-grade3" component={ financialGuaranteeGrade3 } />
+				<Route path="/financial-guarantee-grade2" component={ financialGuaranteeGrade2 } />
+				<Route path="/financial-guarantee-grade1" component={ financialGuaranteeGrade1 } />
+				<Route path="/allowance-grade3" component={ allowanceGrade3 } />
                 <Route path="/allowance-grade2" component={ allowanceGrade2 } />
                 <Route path="/allowance-grade1" component={ allowanceGrade1 } />
-                <Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
+                <Route path="/special-tradings-grade3" component={ specialTradingsGrade3 } />
+				<Route path="/special-tradings-grade2" component={ specialTradingsGrade2 } />
+				<Route path="/special-tradings-grade1" component={ specialTradingsGrade1 } />
+				<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
                 <Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
                 <Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
                 <Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
@@ -6548,20 +6815,20 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-		<Route path="/cash-grade2" component={ cashGrade2 } />
-		<Route path="/cash-grade1" component={ cashGrade1 } />
+				<Route path="/cash-grade2" component={ cashGrade2 } />
+				<Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-		<Route path="/savings-grade2" component={ savingsGrade2 } />
-		<Route path="/savings-grade1" component={ savingsGrade1 } />
+				<Route path="/savings-grade2" component={ savingsGrade2 } />
+				<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
-		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
+				<Route path="/tradings-grade2" component={ tradingsGrade2 } />
+				<Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+				<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+				<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-		<Route path="/other-grade2" component={ otherGrade2 } />
-		<Route path="/other-grade1" component={ otherGrade1 } />
+				<Route path="/other-grade2" component={ otherGrade2 } />
+				<Route path="/other-grade1" component={ otherGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
