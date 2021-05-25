@@ -3508,8 +3508,17 @@ const PromissoryNotesGrade3 = () => {
 				<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
 			</div>
 	    	</section>
-	    
-	    <Title title=""/>
+        </>
+    );
+}
+
+const PromissoryNotesGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		<Title title=""/>
 		<section>
 		    <article>
 		    <div>電子債権記録機関に必要事項を電子記録することで発生する債権を電子記録債権といいます。</div>
@@ -3975,19 +3984,6 @@ const PromissoryNotesGrade3 = () => {
     );
 }
 
-const PromissoryNotesGrade2 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
 const PromissoryNotesGrade1 = () => {
     return (
         <>
@@ -4018,8 +4014,8 @@ const promissoryNotesGrade3 = () => {
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-2" spy={true} smooth={true} duration={500} >約束手形の会計処理</ScrollLink></li>
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-3" spy={true} smooth={true} duration={500} >電子記録債権・電子記録債務の会計処理</ScrollLink></li>
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-4" spy={true} smooth={true} duration={500} >手形借入金・手形貸付金とは</ScrollLink></li>
-	    	    </ul>
-            </aside>
+	    	    		</ul>
+            		</aside>
                 <PromissoryNotesGrade3 />
             </aside>
         </main>
@@ -4730,7 +4726,7 @@ const NonCurrentAssetsGrade3 = () => {
     return (
         <>
 	    	<section className="font-color">
-			<Element name="other-grade3-1" className="element" >
+			<Element name="non-current-assets-grade3-1" className="element" >
 				<h1 className="intro">固定資産とは</h1>	
 			</Element>
 			<div>建物や車など、1年以上利用することを目的として取得する資産を<span className="underline font-color2">固定資産</span>と言い、一般的には10万円以上の支払いをした場合に固定資産として処理が必要となります。</div>
@@ -4758,7 +4754,7 @@ const NonCurrentAssetsGrade3 = () => {
 		</section>
 	    
 	    	<section className="font-color">
-			<Element name="other-grade3-1" className="element" >
+			<Element name="non-current-assets-grade3-2" className="element" >
 				<h1 className="intro">減価償却とは</h1>	
 			</Element>
 	    		<div>1年間の収益は、1年間の売上から1年間の費用を引いた残りの金額として計算されます。</div>
@@ -4832,71 +4828,131 @@ const NonCurrentAssetsGrade3 = () => {
 		</section>
 	    
 	    	<section className="font-color">
-			<Element name="other-grade3-1" className="element" >
+			<Element name="non-current-assets-grade3-3" className="element" >
 				<h1 className="intro">定額法とは</h1>	
 			</Element>
 	    		<div>固定資産をどれだけの年数利用可能かどうか、という指標のことを<span className="underline font-color2">耐用年数</span>と呼び、この耐用年数に応じて一定額を減価償却する方法を<span className="underline font-color2">定額法</span>と呼びます。</div>
 			<br />
-	    		<div>会計の重要な原則の1つに、<span className="underline font-color2">費用収益対応の原則</span>という考え方があります。</div>
+	    		<div>背景として、会計の重要な原則の1つに、<span className="underline font-color2">費用収益対応の原則</span>という考え方があります。</div>
 	    		<br />
 	    		<div>適切な期間損益を算出する際、収益と費用を対応づけるための考え方ですが、固定資産は使った年数に応じて収益を生むため、「収益を生む年数に応じて同時に費用化していこう」と考えました。</div>
 			<div>この考え方が定額法につながっていきます。</div>
 	    		<br />
 	    		<div>それでは定額法の仕訳を見ていきます。</div>
-	    		<div>例えば、200,000円のパソコン（耐用年数4年）を現金で購入し、定額法を採用した場合の仕訳は以下の通りとなります。</div>
+	    		<div>固定資産の勘定科目から、直接減価償却費を差し引く方法を<span className="underline font-color2">直接法</span>、また、固定資産の資産としての金額を直接減らすのではなく、新たに減価償却累計額という勘定科目を用いて、価値の減少分を記録する方法を<span className="underline font-color2">間接法</span>と呼び、簿記3級では間接法が範囲となります。</div>
 	    		<br />
+	    		<div>例えば、200,000円のパソコン（耐用年数4年）を現金で購入し、定額法（間接法）を採用した場合の仕訳は以下の通りとなります。</div>
+	    		<br />
+	    		<table border="1" cellspacing="0" className="table-color">
+				<tr>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
+				</tr>
+				<tr>
+					<td className="table-align">工具器具備品　200,000</td>
+					<td className="table-align">現金　200,000</td>
+				</tr>
+				<tr>
+					<td className="table-align">減価償却費　50,000</td>
+					<td className="table-align">減価償却累計額　50,000</td>
+				</tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+				<div>■　仕訳の手順　■</div>
+				<br />
+				<div>200,000円のパソコン（耐用年数4年）を現金で購入し、定額法（間接法）を採用した</div>
+				<br />
+				<div>１.パソコンの資産としての計上</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：200,000万のパソコン</div>
+				<div>なぜ発生したか（貸方）：現金にて支払いを行ったため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：20万円を超えるパソコンの支払いとなるため、工具器具備品で処理</div>
+				<div>なぜ発生したか（貸方）：現金での支払いとなるため、現金で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：工具器具備品という資産が増加するため、借方に工具器具備品を配置</div>
+				<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置</div>
+				<br />
+				<div>２.パソコンの減価償却</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：パソコンは耐用年数4年の設定となっているため、4年間は利用している分価値を生み続けます。そこで、1年間にいくら費用化出来るかを計算すると、200,000円/4年=50,000円となることから、50,000円の減価償却費が発生します</div>
+				<div>なぜ発生したか（貸方）：工具器具備品200,000円のうち、50,000円が価値減少分として計上されます</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：固定資産の費用計上分となるため、減価償却費で処理</div>
+				<div>なぜ発生したか（貸方）：パソコンの価値減少分となり、かつ間接法であることから減価償却累計額で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：減価償却費という費用が増加するため、借方に減価償却費を配置</div>
+				<div>なぜ発生したか（貸方）：間接法のため、固定資産のマイナスの評価勘定である減価償却累計額を貸方に配置</div>
+			</div>
+			<br />
+		</section>
+	    
+	    	<section className="font-color">
+			<Element name="non-current-assets-grade3-4" className="element" >
+				<h1 className="intro">資本的支出・収益的支出とは</h1>	
+			</Element>
+	    		<div>固定資産は購入後もメンテンナンス費用など、様々な費用が発生するという性質を持っています。</div>
+			<div>このような支払いのうち、リフォームや耐用年数を上げる工事のような、固定資産そのものの価値を上げる支払いのことを<span className="underline font-color2">資本的支出</span>と呼びます。</div>
+	    		<br />
+	    		<div>一方、割れた窓ガラスの修理代など、マイナスになった建物の価値を0に戻すような支払いのことを<span className="underline font-color2">収益的支出</span>と呼びます。</div>
+	    		<div>資本的支出の場合、その支出額は新たに固定資産勘定科目にて仕訳を行うことで、固定資産の取得原価に加算する形を取ります。</div>
+	    		<div>一方、収益的支出の場合、その支出額は<span className="underline font-color2">修繕費</span>として処理を行います。</div>
+			<br />
+	    		<div>例えば、建物の工事代金10,000円を現金で支払った。ただし、6,000円分が新たに設備を追加するための費用、残り4,000円分が水道の修理費用であったという場合、以下の仕訳となります。</div>
+			<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 					<tr>
 						<th className="table-align">借方（運用形態）</th>
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">工具器具備品　200,000</td>
-						<td className="table-align">現金　200,000</td>
+						<td className="table-align">建物　6,000</td>
+						<td className="table-align">現金　10,000</td>
 					</tr>
 	    				<tr>
-						<td className="table-align">減価償却費　50,000</td>
-						<td className="table-align">工具器具備品　50,000</td>
+						<td className="table-align">修繕費　4,000</td>
+						<td className="table-align"></td>
 					</tr>
 				</table>
 				<br />
 				<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
 					<br />
-	    				<div>200,000円のパソコン（耐用年数4年）を現金で購入し、定額法を採用した</div>
-	    				<br />
-	    				<div>１.パソコンの資産としての計上</div>
+					<div>建物の工事代金10,000円を現金で支払った。ただし、6,000円分が新たに設備を追加するための費用、残り4,000円分が水道の修理費用であった</div>
 					<br />
 					<div>①因果分析</div>
-					<div>最終的に発生したもの（借方）：200,000万のパソコン</div>
-					<div>なぜ発生したか（貸方）：現金にて支払いを行ったため</div>
+					<div>最終的に発生したもの（借方）：6,000円の設備追加費用と4,000円の修理費用</div>
+					<div>なぜ発生したか（貸方）：現金10,000円を使ったため</div>
 					<br />
 					<div>②勘定科目の割当</div>
-					<div>最終的に発生したもの（借方）：10万円を超えるパソコンの支払いとなるため、工具器具備品で処理</div>
-					<div>なぜ発生したか（貸方）：現金での支払いとなるため、現金で処理</div>
+					<div>最終的に発生したもの（借方）：設備追加費用分は建物の価値自体を増額する支払いになることから、資本的支出に該当します。よって、建物として処理をします。一方、修理費用については収益的支出に該当することから、、修繕費として処理します。</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになることから、現金で処理します</div>
 					<br />
 					<div>③勘定科目の配置</div>
-					<div>最終的に発生したもの（借方）：工具器具備品という資産が増加するため、借方に工具器具備品を配置</div>
-					<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置</div>
-	    				<br />
-	    				<div>２.パソコンの減価償却</div>
-					<br />
-					<div>①因果分析</div>
-					<div>最終的に発生したもの（借方）：パソコンは耐用年数4年の設定となっているため、4年間は利用している分価値を生み続けます。そこで、1年間にいくら費用化出来るかを計算すると、200,000円/4年=50,000円となることから、50,000円の減価償却費が発生します</div>
-					<div>なぜ発生したか（貸方）：工具器具備品200,000円のうち、50,000円が価値減少分として計上されます</div>
-					<br />
-					<div>②勘定科目の割当</div>
-					<div>最終的に発生したもの（借方）：固定資産の費用計上分となるため、減価償却費で処理</div>
-					<div>なぜ発生したか（貸方）：パソコンの価値減少分となるため、工具器具備品で処理</div>
-					<br />
-					<div>③勘定科目の配置</div>
-					<div>最終的に発生したもの（借方）：減価償却費という費用が増加するため、借方に減価償却費を配置</div>
-					<div>なぜ発生したか（貸方）：工具器具備品という資産が減少するため、貸方に工具器具備品を配置</div>
+					<div>最終的に発生したもの（借方）：6,000円分、建物の資産としての価値が増額するため、借方に建物を計上します。また、4,000円分、修繕費という費用が増加するため、借方に修繕費を計上します。</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置します</div>
 				</div>
+	    			<br />
 			<br />
 		</section>
-	    	
-            <Title title="固定資産とは"/>
+        </>
+    );
+}
+
+const NonCurrentAssetsGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		<Title title="固定資産とは"/>
         <section>
             <article>
             <div></div>
@@ -5206,17 +5262,6 @@ const NonCurrentAssetsGrade3 = () => {
             <div></div>
             </article>
         </section>
-        </>
-    );
-}
-
-const NonCurrentAssetsGrade2 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
                 </article>
             </section>
         </>
@@ -5245,6 +5290,16 @@ const nonCurrentAssetsGrade3 = () => {
                     <Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >固定資産とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-5" spy={true} smooth={true} duration={500} >現金の残高ズレについて</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
                 <NonCurrentAssetsGrade3 />
             </aside>
         </main>
