@@ -6272,10 +6272,10 @@ const SideBar = () => {
 			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>
+			/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/
 			<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>
+			/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/
+			/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/
 			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
                 </ul>
@@ -6309,7 +6309,7 @@ const SideBar = () => {
 			<li className="sideList menu-sakura-color"><Link to="/research-and-development-costs-grade3">会計上の変更および誤謬の訂正</Link></li>
                 </ul>
 
-                <h2 className="titleColor">決算</h2>
+                /*<h2 className="titleColor">決算</h2>
 		<ul className="sideMenu menu-sakura-color">
 			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">試算表の作成</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/account-grade3">精算表</Link></li>
@@ -6381,6 +6381,7 @@ const SideBar = () => {
                     <li className="sideList menu-sakura-color"><Link to="/financial-statements-theory">財務諸表理論</Link></li>
                 </ul>
             </div>
+	    */
 
             <Switch>
                 <Route exact path="/" component={ home } />
