@@ -4611,27 +4611,6 @@ const OtherGrade3 = () => {
     );
 }
 
-{/* <Title title="クレジット売掛金とは"/>
-        <section>
-            <article>
-            <div>クレジットカードによって商品を売り上げた場合、あとで信販会社から代金を受け取れる権利が発生します。この権利はクレジット売掛金勘定 で処理します。</div>
-            <div>仕訳上は普通の「売掛金」と同じように考えていけば問題ありません。</div>
-	    <div></div>
-	
-	    <table border="1" cellspacing="0" className="journal">
-                <caption className="question">商品￥1,000をクレジット払いの条件で販売した。</caption>
-                <tr>
-                    <th>借方（運用形態）</th>
-                    <th>貸方（調達源泉）</th>
-                </tr>
-                <tr>
-                    <td>クレジット売掛金　1,000</td>
-                    <td>売上高　1,000</td>
-                </tr>
-            </table>
-            </article>
-        </section> */}
-
 const OtherGrade2 = () => {
     return (
         <>
@@ -4717,6 +4696,55 @@ const otherGrade1 = () => {
 }
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜その他債権債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債権の譲渡コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AssignmentOfAccountsReceivableGrade3 = () => {
+    return (
+        <>
+            <section className="font-color">
+		<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+			<h1 className="intro">クレジット売掛金の会計処理</h1>	
+		</Element>
+		<div>商品を販売し、お客様からクレジットカードによる支払いが発生した場合、クレジットカード会社に対してお金を請求する権利を得ることが出来ます。</div>
+	    	<div>このような権利のことを<span className="underline font-color2">クレジット売掛金</span>と呼びます。</div>
+		<br />
+		<div>ただし、通常の売掛金と処理は同じになりますので、売上の仕訳を立てる際に、クレジット売掛金という勘定科目を利用して仕訳すれば問題ございません。</div>
+		<br />
+		<div>最近ではネットショップと呼ばれるサービスが普及してきていますが、ネットショップでの売上は基本的にクレジットカードでの支払いになります。</div>
+	    	<div>そのため、ネットショップで事業を運営している事業者などはよく利用する勘定科目となります。</div>
+	    	<br />
+		</section>
+        </>
+    );
+}
+
+
+const assignmentOfAccountsReceivableGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/assignment-of-accounts-receivable-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/assignment-of-accounts-receivable-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/assignment-of-accounts-receivable-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="assignment-of-accounts-receivable-grade3-1" spy={true} smooth={true} duration={500} >クレジット売掛金の会計処理</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <AssignmentOfAccountsReceivableGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債権の譲渡コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 
 
@@ -6269,13 +6297,13 @@ const SideBar = () => {
         　　    <h2 className="titleColor">基本原理</h2>
                 <ul className="sideMenu menu-sakura-color">
 			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
-			/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/
+			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/}
 			<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
-			/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/
-			/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/
+			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
+			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
 			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
                 </ul>
@@ -6309,7 +6337,7 @@ const SideBar = () => {
 			<li className="sideList menu-sakura-color"><Link to="/research-and-development-costs-grade3">会計上の変更および誤謬の訂正</Link></li>
                 </ul>
 
-                /*<h2 className="titleColor">決算</h2>
+	{/*<h2 className="titleColor">決算</h2>
 		<ul className="sideMenu menu-sakura-color">
 			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">試算表の作成</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/account-grade3">精算表</Link></li>
@@ -6381,7 +6409,7 @@ const SideBar = () => {
                     <li className="sideList menu-sakura-color"><Link to="/financial-statements-theory">財務諸表理論</Link></li>
                 </ul>
             </div>
-	    */
+	    */}
 
             <Switch>
                 <Route exact path="/" component={ home } />
@@ -6389,7 +6417,7 @@ const SideBar = () => {
                 <Route path="/account-grade3" component={ accountGrade3 } />
                 <Route path="/account-grade2" component={ accountGrade2 } />
                 <Route path="/account-grade1" component={ accountGrade1 } />
-				<Route path="/kind-of-account" component={ kindOfAccount } />
+		<Route path="/kind-of-account" component={ kindOfAccount } />
                 <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
                 <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
                 <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
@@ -6411,6 +6439,9 @@ const SideBar = () => {
                 <Route path="/other-grade3" component={ otherGrade3 } />
 		<Route path="/other-grade2" component={ otherGrade2 } />
 		<Route path="/other-grade1" component={ otherGrade1 } />
+		<Route path="/assignment-of-accounts-receivable-grade3" component={ assignmentOfAccountsReceivableGrade3 } />
+		<Route path="/assignment-of-accounts-receivable-grade2" component={ assignmentOfAccountsReceivableGrade2 } />
+		<Route path="/assignment-of-accounts-receivable-grade1" component={ assignmentOfAccountsReceivableGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
