@@ -4729,11 +4729,11 @@ const otherGrade1 = () => {
 const NonCurrentAssetsGrade3 = () => {
     return (
         <>
-	    <section className="font-color">
+	    	<section className="font-color">
 			<Element name="other-grade3-1" className="element" >
 				<h1 className="intro">固定資産とは</h1>	
 			</Element>
-			<div>建物や車など、1年以上利用することを目的として取得する資産を<span className="underline font-color2">固定資産</span>と言います。</div>
+			<div>建物や車など、1年以上利用することを目的として取得する資産を<span className="underline font-color2">固定資産</span>と言い、一般的には10万円以上の支払いをした場合に固定資産として処理が必要となります。</div>
 	    		<div>固定資産は大きく分けると以下のように3種類に分かれていきます。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
@@ -4763,15 +4763,16 @@ const NonCurrentAssetsGrade3 = () => {
 			</Element>
 	    		<div>1年間の収益は、1年間の売上から1年間の費用を引いた残りの金額として計算されます。</div>
 	    		<br />
-	    		<div>しかしながら、固定資産の購入は資産の増加として会計処理されるため、その支払い額がそのままでは費用とならないという問題が発生します。</div>
+	    		<div>しかしながら、固定資産の購入は資産の増加として会計処理されるため、そのままでは支払額が費用とならないという問題が発生します。</div>
 	    		<div>例えば、1億円の建物を購入したものの、そのままでは費用処理されないため、1年間の収益は建物の購入額を引かない金額で算出されます。</div>
+	    		<br />
 			<div>そこで、会計ではこの費用化の問題に関して、「使った分に応じて一部の金額を費用化していく」という方法を採用しました。</div>
 	    		<br />
 	    		<div>この価値の減少分を表現する方法のことを<span className="underline font-color2">減価償却</span>と呼びます。</div>
 	    		<br />
-	    		<div>減価償却は固定資産費用化の表現方法になるため、「いかに使った分を計測するか」という観点より、様々な種類が考案されてきました。</div>
+	    		<div>減価償却は固定資産費用化をいかに表現するかをテーマとしているため、「いかに使った分を計測するか」という観点より、様々な種類が考案されてきました。</div>
 			<br />
-	    		<div>簿記の3級では定額法のみが範囲となります。</div>
+	    		<div>以下の表がその方法の種類となりますが、このうち簿記の3級では定額法のみが範囲となります。</div>
 	    		<br />
 			<table border="1" cellspacing="0" className="table-color">
 				<tr>
@@ -4827,6 +4828,71 @@ const NonCurrentAssetsGrade3 = () => {
 					<td className="table-padding-1 table-align">土地、電話加入権など価値の減少のない固定資産を取得した場合の処理方法</td>
 				</tr>
 			</table>
+			<br />
+		</section>
+	    
+	    	<section className="font-color">
+			<Element name="other-grade3-1" className="element" >
+				<h1 className="intro">定額法とは</h1>	
+			</Element>
+	    		<div>固定資産をどれだけの年数利用可能かどうか、という指標のことを<span className="underline font-color2">耐用年数</span>と呼び、この耐用年数に応じて一定額を減価償却する方法を<span className="underline font-color2">定額法</span>と呼びます。</div>
+			<br />
+	    		<div>会計の重要な原則の1つに、<span className="underline font-color2">費用収益対応の原則</span>という考え方があります。</div>
+	    		<br />
+	    		<div>適切な期間損益を算出する際、収益と費用を対応づけるための考え方ですが、固定資産は使った年数に応じて収益を生むため、「収益を生む年数に応じて同時に費用化していこう」と考えました。</div>
+			<div>この考え方が定額法につながっていきます。</div>
+	    		<br />
+	    		<div>それでは定額法の仕訳を見ていきます。</div>
+	    		<div>例えば、200,000円のパソコン（耐用年数4年）を現金で購入し、定額法を採用した場合の仕訳は以下の通りとなります。</div>
+	    		<br />
+	    		<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">工具器具備品　200,000</td>
+						<td className="table-align">現金　200,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align">減価償却費　50,000</td>
+						<td className="table-align">工具器具備品　50,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+	    				<div>200,000円のパソコン（耐用年数4年）を現金で購入し、定額法を採用した</div>
+	    				<br />
+	    				<div>１.パソコンの資産としての計上</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：200,000万のパソコン</div>
+					<div>なぜ発生したか（貸方）：現金にて支払いを行ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：10万円を超えるパソコンの支払いとなるため、工具器具備品で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いとなるため、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：工具器具備品という資産が増加するため、借方に工具器具備品を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置</div>
+	    				<br />
+	    				<div>２.パソコンの減価償却</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：パソコンは耐用年数4年の設定となっているため、4年間は利用している分価値を生み続けます。そこで、1年間にいくら費用化出来るかを計算すると、200,000円/4年=50,000円となることから、50,000円の減価償却費が発生します</div>
+					<div>なぜ発生したか（貸方）：工具器具備品200,000円のうち、50,000円が価値減少分として計上されます</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：固定資産の費用計上分となるため、減価償却費で処理</div>
+					<div>なぜ発生したか（貸方）：パソコンの価値減少分となるため、工具器具備品で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：減価償却費という費用が増加するため、借方に減価償却費を配置</div>
+					<div>なぜ発生したか（貸方）：工具器具備品という資産が減少するため、貸方に工具器具備品を配置</div>
+				</div>
 			<br />
 		</section>
 	    	
