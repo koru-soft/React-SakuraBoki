@@ -4391,15 +4391,150 @@ const OtherGrade3 = () => {
 
 		<section className="font-color">
 			<Element name="other-grade3-5" className="element" >
-				<h1 className="intro">立替金・預り金の会計処理</h1>	
+				<h1 className="intro">立替金の会計処理</h1>	
 			</Element>
-	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+	    		<div>本来取引先が負担すべき費用を、別の会社が一時的に立て替えて支払う場合があります。このような支払いを処理する勘定科目を<span className="underline font-color2">立替金</span>と呼びます。</div>
 			<br />
-			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
+			<div>立替えた支払いに関しては、後でお金を返してもらうことが出来る権利として扱うことから、資産に属します。</div>
+	    		<br />
+	    		<div>取引先が負担すべき交通費400円を、現金にて立替えて支払った場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">立替金　400</td>
+						<td className="table-align">現金　400</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>取引先が負担すべき交通費400円を、現金にて立替えて支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：あとでお金を返してもらえる権利400円</div>
+					<div>なぜ発生したか（貸方）：現金400円で支払いを行ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：立替払いの支払いとなるため、立替金で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いとなるため、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：立替金という資産が増加するので、借方に立替金を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置。</div>
+				</div>
+	    			<br />
+	    			<div>後日、立替えた支払いを現金で受け取ったという場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金　400</td>
+						<td className="table-align">立替金　400</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>後日、立替えた支払いを現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金400円の受取り</div>
+					<div>なぜ発生したか（貸方）：立替金というあとでお金を受取る権利を行使したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金での受取りになるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：立替えた分の振替となるため、立替金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：立替金という資産が減少するので、貸方に立替金を配置。</div>
+				</div>
+		</section>
+	    
+	    	<section className="font-color">
+			<Element name="other-grade3-6" className="element" >
+				<h1 className="intro">預り金の会計処理</h1>	
+			</Element>
+	    		<div>従業員が負担すべきお金に関して、会社が一時的に預かった場合、これを<span className="underline font-color2">預り金</span>と呼びます。</div>
+			<br />
+			<div>例えば、会社員は所得税の支払いに関して、会社が毎月の給料から一部の金額を事前に預かり税務署に納めているため、会社員自身が税務署に行って納税を行うことはあまりありません。</div>
+	    		<br />
+	    		<div>このような制度を<span className="underline font-color2">源泉徴収</span>と呼びますが、このような場合に預り金の仕訳が発生します。</div>
+	   		<br />
+	    		<div>例えば、給料180,000円のうち、所得税の金額10,000円を控除して現金で支払ったという場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">給料手当　180,000</td>
+						<td className="table-align">現金  170,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align"></td>
+						<td className="table-align">預り金  10,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>給料180,000円のうち、所得税の金額10,000円を控除して現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：給料180,000円（総支給額）</div>
+					<div>なぜ発生したか（貸方）：現金170,000円の支払い（手取り額）、所得税分の預り10,000円分（源泉徴収分）</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：給料の支払いとなるため、給料手当で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いとなるため、現金で処理。また、所得税の預り分に関しては、預り金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：給料手当という費用が増加するので、借方に給料手当を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置。また、預り金という負債が増加するので、貸方に預り金を配置</div>
+				</div>
+	    			<br />
+	    			<div>後日、預かった源泉徴収10,000円分に関して、現金にて税務署に納税したという場合、以下の仕訳となります。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">預り金　10,000</td>
+						<td className="table-align">現金　10,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>預かった源泉徴収10,000円分に関して、現金にて税務署に納税した</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：預り金10,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：現金にて支払いを行ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：源泉徴収した金額の支払いとなるため、預り金で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いとなるため、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：預り金という負債が減少するため、預り金を借方に配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置</div>
+				</div>
 		</section>
 
 		<section className="font-color">
-			<Element name="other-grade3-6" className="element" >
+			<Element name="other-grade3-7" className="element" >
 				<h1 className="intro">受取商品券の会計処理</h1>	
 			</Element>
 	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
@@ -4408,7 +4543,7 @@ const OtherGrade3 = () => {
 		</section>
 
 		<section className="font-color">
-			<Element name="other-grade3-7" className="element" >
+			<Element name="other-grade3-8" className="element" >
 				<h1 className="intro">差入保証金の会計処理</h1>	
 			</Element>
 	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
@@ -4675,9 +4810,10 @@ const otherGrade3 = () => {
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-2" spy={true} smooth={true} duration={500} >未収入金（未収金）・未払金の会計処理</ScrollLink></li>
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-3" spy={true} smooth={true} duration={500} >前払金（前渡金）・前受金の会計処理</ScrollLink></li>
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-4" spy={true} smooth={true} duration={500} >仮払金・仮受金の会計処理</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-5" spy={true} smooth={true} duration={500} >立替金・預り金の会計処理</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-6" spy={true} smooth={true} duration={500} >受取商品券の会計処理</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-7" spy={true} smooth={true} duration={500} >差入保証金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-5" spy={true} smooth={true} duration={500} >立替金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-6" spy={true} smooth={true} duration={500} >預り金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-7" spy={true} smooth={true} duration={500} >受取商品券の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-8" spy={true} smooth={true} duration={500} >差入保証金の会計処理</ScrollLink></li>
 				</ul>
             </aside>
                 <OtherGrade3 />
