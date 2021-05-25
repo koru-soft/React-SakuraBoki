@@ -4120,19 +4120,138 @@ const OtherGrade3 = () => {
 			<Element name="other-grade3-2" className="element" >
 				<h1 className="intro">未収入金（未収金）・未払金の会計処理</h1>	
 			</Element>
-	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+	    		<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
 			<br />
 			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
-		</section>
+			<br />
+	    		<div>例えば、普段は八百屋を事業として営んでいる方が、不要になった物置を300,000円で売却し、代金は後払いとなった場合、以下の仕訳が成立します。</div>
+			<table border="1" cellspacing="0" className="table-color">
+				    <tr>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td className="table-align">未収入金　300,000</td>
+					<td className="table-align">建物　300,000</td>
+				    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+				<div>■　仕訳の手順　■</div>
+				<br />
+				<div>普段は八百屋を事業として営んでいる方が、不要になった物置を300,000円で売却し、代金は後払いとなった</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：あとで300,000円分受け取れる権利</div>
+				<div>なぜ発生したか（貸方）：300,000円の倉庫を販売したため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：メイン以外の事業による債権が発生したので、未収入金で処理</div>
+				<div>なぜ発生したか（貸方）：物置の販売になるため、建物（もしくは附属設備）で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：未収入金という資産が増加するので、借方に未収入金を配置</div>
+				<div>なぜ発生したか（貸方）：建物（もしくは附属設備）という資産が減少するので、貸方に建物（もしくは附属設備）を配置</div>
+			</div>
+	    		<div>逆に、普段は不動産とは関わりのない事業を営んでいる方が、不要になった倉庫を300,000円で購入し、代金は後払いとした場合、以下の仕訳が成立します。</div>
+				<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">建物　300,000</td>
+						<td className="table-align">未払金　300,000</td>
+					    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>普段は不動産とは関わりのない事業を営んでいる方が、不要になった倉庫を300,000円で購入し、代金は後払いとした</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：300,000円の価値を持つ倉庫</div>
+					<div>なぜ発生したか（貸方）：あとで300,000円を支払わなければならないという義務</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：倉庫の購入になるため、建物（もしくは附属設備）で処理</div>
+					<div>なぜ発生したか（貸方）：メイン以外の事業による債務が発生したので、未払金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：建物（もしくは附属設備）という資産が減少するので、借方に建物（もしくは附属設備）を配置</div>
+					<div>なぜ発生したか（貸方）：未払金という負債が増加するので、貸方に未払金を配置</div>
+			</div>
+	    
+	    	</section>
 
 		<section className="font-color">
 			<Element name="other-grade3-3" className="element" >
 				<h1 className="intro">前払金（前渡金）・前受金の会計処理</h1>	
 			</Element>
-	    	<div>通常の営業取引以外の取引によって生じた「あとでお金を受け取れる」という権利のことを<span className="underline font-color2">未収入金（未収金）</span>と呼びます。</div>
+	    		<div>商品の代金の一部を前払いした支払いのことを、<span className="underline font-color2">前払金</span>と呼びます。</div>
 			<br />
-			<div>一方、通常の営業取引以外の取引によって生じた「あとでお金を支払わなければならない」という債務のことを<span className="underline font-color2">未払金</span>と呼びます。</div>
-		</section>
+			<div>一方、サービスや商品の提供前に、代金の一部を受け取った場合、その受取額を<span className="underline font-color2">前受金</span>と呼びます。</div>
+			<div>例えば、10,000円の商品を予約注文し、一部代金として500円を現金で前払いした場合、以下の仕訳が成立します</div>
+				<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">前払金　500</td>
+						<td className="table-align">現金　500</td>
+					    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>10,000円の商品を予約注文し、一部代金として500円を現金で前払いした</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：商品を受け取る前の前払分の支払い</div>
+					<div>なぜ発生したか（貸方）：現金500円を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：商品提供前の支払いになるため、前払金で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるため、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：前払金という資産が増加するので、借方に前払金を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+			</div>
+	    		<div>一方、10,000円の商品を予約注文され、一部代金として500円を現金で前受けした場合、以下の仕訳が成立します</div>
+				<table border="1" cellspacing="0" className="table-color">
+					    <tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					    </tr>
+					    <tr>
+						<td className="table-align">現金　500</td>
+						<td className="table-align">前受金　500</td>
+					    </tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>10,000円の商品を予約注文され、一部代金として500円を現金で前受けした</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金500円</div>
+					<div>なぜ発生したか（貸方）：商品を提供する前に、一部金額である500円を前受けしたため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の受取になるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：商品提供前のお金の受取になるため、前受金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：前受金という負債が増加するので、貸方に前受金を配置</div>
+			</div>
+	    
+	    	</section>
 
 		<section className="font-color">
 			<Element name="other-grade3-4" className="element" >
