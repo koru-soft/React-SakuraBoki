@@ -4991,7 +4991,7 @@ const financialGuaranteeGrade1 = () => {
 const SpecialTradingsGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -5109,7 +5109,7 @@ const specialTradingsGrade1 = () => {
 const VariousServiceTransferGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -5158,7 +5158,7 @@ const variousServiceTransferGrade1 = () => {
 const FinancialInstrumentGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -5207,7 +5207,7 @@ const financialInstrumentGrade1 = () => {
 const SecuriteisGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -5916,7 +5916,7 @@ const nonCurrentAssetsGrade1 = () => {
 const IntangibleAssetsGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -5965,7 +5965,7 @@ const intangibleAssetsGrade1 = () => {
 const BookImpairmentGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -6014,7 +6014,7 @@ const bookImpairmentGrade1 = () => {
 const InvestmentsAndOtherAssetsGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -6063,7 +6063,7 @@ const investmentsAndOtherAssetsGrade1 = () => {
 const DeferredAssetsGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -6114,7 +6114,7 @@ const deferredAssetsGrade1 = () => {
 const LeaseGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -6204,7 +6204,7 @@ const leaseGrade1 = () => {
 const ForeignCurrencyGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -6294,7 +6294,7 @@ const foreignCurrencyGrade1 = () => {
 const AssetRetirementObligationsGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -6421,7 +6421,7 @@ const taxGrade1 = () => {
 const TaxEffectGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
@@ -6560,7 +6560,7 @@ const unbalancedAccountGrade1 = () => {
 const AccountingChangesAndCorrectionOfErrorsGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
             <section>
                 <article>
              		Lorem Ipusum
