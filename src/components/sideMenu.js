@@ -7269,8 +7269,8 @@ const SideBar = () => {
                     <li className="sideList menu-yozakura-color"><Link to="/account-grade3">勘定科目</Link></li>
                     <li className="sideList menu-yozakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
                     <li className="sideList menu-yozakura-color"><Link to="/trial-balance">試算表</Link></li>
-                    <li className="sideList menu-yozakura-color"><Link to="/final-tax-return">確定申告</Link></li>
-                    <li className="sideList menu-yozakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+		    {/*<li className="sideList menu-yozakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+                    <li className="sideList menu-yozakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>*/}
                 </ul>
 
                 <h2 className="yozakura-title-color">計算編</h2>
