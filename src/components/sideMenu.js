@@ -7173,7 +7173,7 @@ const SideBar = () => {
             <div className="grid1-sakura"></div>
             <li className="topLogo-sakura li"><Link to="/">サクラボキ</Link></li>
             <div className="grid2-sakura"></div>
-            <li className="changeYozakuraMode li" onClick={ changeYozakuraMode }>{/*ヨザクラモードに切り替える*/}</li>
+            <li className="changeYozakuraMode li" {/*onClick={ changeYozakuraMode }*/}>ヨザクラモードに切り替える（開発中）</li>
             <div className="grid3-sakura"></div>
             <span className="icon-sakura" id="icon-sakura" onClick={ test }><BiFoodMenu /></span>
         </header>
