@@ -405,79 +405,7 @@ const kindOfAccount = () => {
     );
 }
 
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜試算表コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-//試算表のコンポーネント
-const TrialBalance = () => {
-	return (
-		<>
-			<section className="font-color">
-			<Element name="trialBalance1" className="element" >
-				<h1 className="intro">試算表とは</h1>
-			</Element>
-			<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span className="underline font-color2">試算表</span>と呼びます。</div>
-			<div>このセクションでは、貸借対照表と損益計算書を解説していきます。</div>
-				
-			<Element name="trialBalance2" className="element" >
-				<h1 className="intro">貸借対照表とは</h1>
-			</Element>
-			<div>ある時点での財政状態を示す一覧表のことを<span className="underline font-color2">貸借対照表</span>と呼びます。</div>
-			<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
-			<br />
-			<table border="1" cellspacing="0" className="table-color"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
-			<br />
-			<div>なお、最終的に発生したもの（結果）のことを<span className="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
-			<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
-
-			<Element name="trialBalance3" className="element" >
-				<h1 className="intro">損益計算書とは</h1>
-			</Element>
-			<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span className="underline font-color2">損益計算書</span>と呼びます。</div>
-			<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
-			<br />
-			<table border="1" cellspacing="0" className="table-color"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
-			<br />
-			<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
-			<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「収益を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
-
-			<Element name="trialBalance4" className="element" >
-				<h1 className="intro">損益計算書と貸借対照表のつながりについて</h1>
-			</Element>
-			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
-			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
-			<br />
-			    <img src={ TrialBalanceImg } alt="貸借対照表と損益計算書のつながり" className="img-size"></img>
-			    <br />	
-			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。</div>
-			<br />
-			<div>損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
-			<div>公認会計士試験の財務会計分野にて、出題されることのある論点となります。</div>
-		</section>
-		</>
-	);
-}
-
-
-const trialBalance = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<aside className="subMenu">
-                    <ul>
-                        <li className="table-of-contents">目次</li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance1" spy={true} smooth={true} duration={500} >試算表とは</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance2" spy={true} smooth={true} duration={500} >貸借対照表とは</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance3" spy={true} smooth={true} duration={500} >損益計算書とは</ScrollLink></li>
-                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance4" spy={true} smooth={true} duration={500} >損益計算書と貸借対照表のつながりについて</ScrollLink></li>
-                    </ul>
-                </aside>
-                <TrialBalance />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目の種類コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 //勘定科目のコンポーネント
 const AccountGrade3 = () => {
@@ -868,7 +796,7 @@ const accountGrade1 = () => {
     );
 }
 
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜勘定科目一覧表コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 //勘定科目一覧表のコンポーネント
 const AccountsListGrade3 = () => {
@@ -1740,6 +1668,80 @@ const accountsListGrade1 = () => {
         </main>
     );
 }
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜試算表コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+//試算表のコンポーネント
+const TrialBalance = () => {
+	return (
+		<>
+			<section className="font-color">
+			<Element name="trialBalance1" className="element" >
+				<h1 className="intro">試算表とは</h1>
+			</Element>
+			<div>損益計算書や貸借対照表など、確定申告や決算の際に必要な集計表を<span className="underline font-color2">試算表</span>と呼びます。</div>
+			<div>このセクションでは、貸借対照表と損益計算書を解説していきます。</div>
+				
+			<Element name="trialBalance2" className="element" >
+				<h1 className="intro">貸借対照表とは</h1>
+			</Element>
+			<div>ある時点での財政状態を示す一覧表のことを<span className="underline font-color2">貸借対照表</span>と呼びます。</div>
+			<div>勘定科目の分類のうち、「資産」「負債」「純資産」に該当する勘定科目がこの表に集計されます。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align" rowspan="2">資産<br />（売ったらお金になるもの）</td><td className="table-size table-align">負債<br />（他人から借りた）</td></tr><tr><td className="table-size table-align">純資産<br />（自分で用意した）</td></tr></table>
+			<br />
+			<div>なお、最終的に発生したもの（結果）のことを<span className="underline font-color2">運用形態</span>、何故、その結果は発生したのか（原因）ということを<span class="underline font-color2">調達源泉</span>と呼びます。</div>
+			<div>つまり、手元にある財産を左側、その財産をどのように入手したのか？ということを右側に書くということを認識していれば問題ないでしょう。</div>
+
+			<Element name="trialBalance3" className="element" >
+				<h1 className="intro">損益計算書とは</h1>
+			</Element>
+			<div>1年間において、収益と費用がいくら発生したのかを明らかにし、最終的にいくらの利益または損失がでているのかを把握するための表を<span className="underline font-color2">損益計算書</span>と呼びます。</div>
+			<div>勘定科目の分類のうち、「収益」「費用」に該当する勘定科目がこの表に集計されます。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color"><tr><th className="table-size table-align">最終的に発生したもの（結果）</th><th className="table-size table-align">何故、その結果は発生したのか（原因）</th></tr><tr><td className="table-size table-align">費用<br />（事業活動で発生したお金）</td><td className="table-size table-align">収益<br />（事業活動により獲得したお金）</td></tr><tr><td className="table-size table-align">利益<br />（収益が費用よりも多かった場合）</td><td className="table-size table-align">損失<br />（収益が費用よりも少なかった場合）</td></tr></table>
+			<br />
+			<div>収益や費用は因果関係を考えることが難しいかもしれません。</div>
+			<div>まず、初めに費用が発生します。なぜその費用が発生したかというと、「収益を獲得した」という事業活動の結果があったからと考えると良いかと思います。</div>
+
+			<Element name="trialBalance4" className="element" >
+				<h1 className="intro">損益計算書と貸借対照表のつながりについて</h1>
+			</Element>
+			<div>純資産は①事業を開始する際に、仕事で使うと決めた自分のお金、そして②事業活動を通して、獲得したお金の合計額になります。</div>
+			<div>したがって、損益計算書で計算した「利益」「損失」が、貸借対照表の純資産の項目に金額として合算されていきます。</div>
+			<br />
+			    <img src={ TrialBalanceImg } alt="貸借対照表と損益計算書のつながり" className="img-size"></img>
+			    <br />	
+			<div>学習が進むと、この接続が完全に一致しない例に遭遇するかもしれません。</div>
+			<br />
+			<div>損益計算書で計算された損益と、貸借対照表における純資産の増減額が完全一致する関係を<span className="underline font-color2">クリーン・サープラス関係</span>と呼びます。</div>
+			<div>公認会計士試験の財務会計分野にて、出題されることのある論点となります。</div>
+		</section>
+		</>
+	);
+}
+
+
+const trialBalance = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance1" spy={true} smooth={true} duration={500} >試算表とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance2" spy={true} smooth={true} duration={500} >貸借対照表とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance3" spy={true} smooth={true} duration={500} >損益計算書とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="trialBalance4" spy={true} smooth={true} duration={500} >損益計算書と貸借対照表のつながりについて</ScrollLink></li>
+                    </ul>
+                </aside>
+                <TrialBalance />
+            </aside>
+        </main>
+    );
+}
+
+
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜確定申告コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
@@ -4809,7 +4811,489 @@ const assignmentOfAccountsReceivableGrade1 = () => {
 
 
 
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AllowanceGrade3 = () => {
+    return (
+        <>
+            <section className="font-color">
+				<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+					<h1 className="intro">貸倒引当金の会計処理</h1>	
+				</Element>
+				<div>取引先が倒産し、売掛金が回収出来なくなったことを<span className="underline font-color2">貸倒れ</span>と呼びます。</div>
+			</section>
+        </>
+    );
+}
+
+const AllowanceGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const AllowanceGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const allowanceGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const allowanceGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const allowanceGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債務の保証コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const FinancialGuaranteeGrade3 = () => {
+    return (
+        <>
+            <Title title="本論点はボキ３級では出題範囲外になります。"/>
+            <section>
+                <article>
+             		
+                </article>
+            </section>
+        </>
+    );
+}
+
+
+const financialGuaranteeGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+            <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const financialGuaranteeGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const financialGuaranteeGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債務の保証コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜特殊商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const SpecialTradingsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const SpecialTradingsGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const SpecialTradingsGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const specialTradingsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <SpecialTradingsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const specialTradingsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+			</aside>
+			<SpecialTradingsGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const specialTradingsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+			</aside>
+			<SpecialTradingsGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜特殊商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜様々な財又はサービスの顧客への移転コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const VariousServiceTransferGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const variousServiceTransferGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <VariousServiceTransferGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const variousServiceTransferGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <VariousServiceTransferGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const variousServiceTransferGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <VariousServiceTransferGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜様々な財又はサービスの顧客への移転コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜金融商品コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const FinancialInstrumentGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const financialInstrumentGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <FinancialInstrumentGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const financialInstrumentGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <FinancialInstrumentGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const financialInstrumentGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <FinancialInstrumentGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜金融商品コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜有価証券コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const SecuriteisGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const SecuriteisGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const SecuriteisGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+
+const securiteisGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <SecuriteisGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const securiteisGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <SecuriteisGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const securiteisGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <SecuriteisGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜有価証券コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜有形固定資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const NonCurrentAssetsGrade3 = () => {
     return (
@@ -5427,9 +5911,9 @@ const nonCurrentAssetsGrade1 = () => {
 
 
 
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜有価証券コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜無形固定資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
-const SecuriteisGrade3 = () => {
+const IntangibleAssetsGrade3 = () => {
     return (
         <>
             <Title title="Lorem Ipusum"/>
@@ -5442,7 +5926,43 @@ const SecuriteisGrade3 = () => {
     );
 }
 
-const SecuriteisGrade2 = () => {
+const intangibleAssetsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <IntangibleAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const intangibleAssetsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <IntangibleAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const intangibleAssetsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <IntangibleAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜無形固定資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産の減損コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const BookImpairmentGrade3 = () => {
     return (
         <>
             <Title title="Lorem Ipusum"/>
@@ -5455,7 +5975,43 @@ const SecuriteisGrade2 = () => {
     );
 }
 
-const SecuriteisGrade1 = () => {
+const bookImpairmentGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <BookImpairmentGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const bookImpairmentGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <BookImpairmentGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const bookImpairmentGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <BookImpairmentGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産の減損コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜投資その他の資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const InvestmentsAndOtherAssetsGrade3 = () => {
     return (
         <>
             <Title title="Lorem Ipusum"/>
@@ -5468,53 +6024,88 @@ const SecuriteisGrade1 = () => {
     );
 }
 
-
-const securiteisGrade3 = () => {
+const investmentsAndOtherAssetsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <SecuriteisGrade3 />
+                <InvestmentsAndOtherAssetsGrade3 />
             </aside>
         </main>
     );
 }
 
-const securiteisGrade2 = () => {
-    return (
+const investmentsAndOtherAssetsGrade2 = () => {
+    return 
         <main className="mainArticle">
             <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <SecuriteisGrade2 />
+                <InvestmentsAndOtherAssetsGrade3 />
             </aside>
         </main>
     );
 }
 
-const securiteisGrade1 = () => {
+const investmentsAndOtherAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-                </div>
-                <SecuriteisGrade1 />
+                <InvestmentsAndOtherAssetsGrade3 />
             </aside>
         </main>
     );
 }
 
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜有価証券コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜投資その他の資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜繰延資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const DeferredAssetsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const deferredAssetsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <DeferredAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const deferredAssetsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <DeferredAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const deferredAssetsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <DeferredAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜繰延資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
 
 
 
@@ -5608,388 +6199,6 @@ const leaseGrade1 = () => {
 
 
 
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜研究開発費コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const ResearchAndDevelopmentCostsGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const ResearchAndDevelopmentCostsGrade2 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const ResearchAndDevelopmentCostsGrade1 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-
-const researchAndDevelopmentCostsGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <ResearchAndDevelopmentCostsGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-const researchAndDevelopmentCostsGrade2 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <ResearchAndDevelopmentCostsGrade2 />
-            </aside>
-        </main>
-    );
-}
-
-const researchAndDevelopmentCostsGrade1 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-                </div>
-                <ResearchAndDevelopmentCostsGrade1 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜研究開発費コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債務の保証コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const FinancialGuaranteeGrade3 = () => {
-    return (
-        <>
-            <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		
-                </article>
-            </section>
-        </>
-    );
-}
-
-
-const financialGuaranteeGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-			</div>
-            <FinancialGuaranteeGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-const financialGuaranteeGrade2 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-			</div>
-	    	<aside className="subMenu">
-				<ul>
-					<li className="table-of-contents">目次</li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	　　 </ul>
-                </aside>
-                <FinancialGuaranteeGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-const financialGuaranteeGrade1 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-			</div>
-	    	<aside className="subMenu">
-				<ul>
-					<li className="table-of-contents">目次</li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	　　 </ul>
-                </aside>
-                <FinancialGuaranteeGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜債務の保証コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const AllowanceGrade3 = () => {
-    return (
-        <>
-            <section className="font-color">
-				<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
-					<h1 className="intro">貸倒引当金の会計処理</h1>	
-				</Element>
-				<div>取引先が倒産し、売掛金が回収出来なくなったことを<span className="underline font-color2">貸倒れ</span>と呼びます。</div>
-			</section>
-        </>
-    );
-}
-
-const AllowanceGrade2 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const AllowanceGrade1 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const allowanceGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <AllowanceGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-const allowanceGrade2 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-                </div>
-                <AllowanceGrade2 />
-            </aside>
-        </main>
-    );
-}
-
-const allowanceGrade1 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-                </div>
-                <AllowanceGrade1 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜引当金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜特殊商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const SpecialTradingsGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const SpecialTradingsGrade2 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const SpecialTradingsGrade1 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const specialTradingsGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-			</div>
-	    	<aside className="subMenu">
-				<ul>
-					<li className="table-of-contents">目次</li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	　　 </ul>
-                </aside>
-                <SpecialTradingsGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-const specialTradingsGrade2 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
-				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-			</div>
-	    	<aside className="subMenu">
-				<ul>
-					<li className="table-of-contents">目次</li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	　　 </ul>
-			</aside>
-			<SpecialTradingsGrade2 />
-            </aside>
-        </main>
-    );
-}
-
-const specialTradingsGrade1 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-	    	<div className="level_change_wrapper">
-				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
-				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
-			</div>
-	    	<aside className="subMenu">
-				<ul>
-					<li className="table-of-contents">目次</li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	　　 </ul>
-			</aside>
-			<SpecialTradingsGrade1 />
-            </aside>
-        </main>
-    );
-}
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜特殊商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜外貨建取引コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const ForeignCurrencyGrade3 = () => {
@@ -6080,6 +6289,133 @@ const foreignCurrencyGrade1 = () => {
 
 
 
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産除去債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AssetRetirementObligationsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const assetRetirementObligationsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AssetRetirementObligationsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const assetRetirementObligationsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AssetRetirementObligationsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const assetRetirementObligationsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AssetRetirementObligationsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産除去債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜収益と費用コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const ProfitAndLossGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const profitAndLossGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <ProfitAndLossGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜収益と費用コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const TaxGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const taxGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <LeaseAccounting />
+            </aside>
+        </main>
+    );
+}
+
+const taxGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <LeaseAccounting />
+            </aside>
+        </main>
+    );
+}
+
+const taxGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <LeaseAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税効果会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const TaxEffectGrade3 = () => {
@@ -6167,6 +6503,195 @@ const taxEffectGrade1 = () => {
 }
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税効果会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜未決算コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const UnbalancedAccountGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const unbalancedAccountGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <UnbalancedAccountGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const unbalancedAccountGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <UnbalancedAccountGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const unbalancedAccountGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <UnbalancedAccountGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜未決算コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜会計上の変更および誤謬の訂正コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AccountingChangesAndCorrectionOfErrorsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const accountingChangesAndCorrectionOfErrorsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AccountingChangesAndCorrectionOfErrorsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const accountingChangesAndCorrectionOfErrorsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AccountingChangesAndCorrectionOfErrorsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const accountingChangesAndCorrectionOfErrorsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AccountingChangesAndCorrectionOfErrorsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜会計上の変更および誤謬の訂正コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜研究開発費コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const ResearchAndDevelopmentCostsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ResearchAndDevelopmentCostsGrade2 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const ResearchAndDevelopmentCostsGrade1 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+
+const researchAndDevelopmentCostsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ResearchAndDevelopmentCostsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const researchAndDevelopmentCostsGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ResearchAndDevelopmentCostsGrade2 />
+            </aside>
+        </main>
+    );
+}
+
+const researchAndDevelopmentCostsGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/research-and-development-costs-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/research-and-development-costs-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/research-and-development-costs-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <ResearchAndDevelopmentCostsGrade1 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜研究開発費コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 
 
@@ -6431,325 +6956,6 @@ const inventoryAccounting = () => {
 }
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜棚卸会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const NonCurrentAssetsAccounting = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const nonCurrentAssetsAccounting = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <NonCurrentAssetsAccounting />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜リース取引会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const LeaseAccounting = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const leaseAccounting = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <LeaseAccounting />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜リース取引会計コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜様々な財又はサービスの顧客への移転コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const VariousServiceTransferGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const variousServiceTransferGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <VariousServiceTransferGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜様々な財又はサービスの顧客への移転コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産の減損コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const BookImpairmentGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const bookImpairmentGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <BookImpairmentGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産の減損コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜投資その他の資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const InvestmentsAndOtherAssetsGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const investmentsAndOtherAssetsGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <InvestmentsAndOtherAssetsGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜投資その他の資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜繰延資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const DeferredAssetsGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const deferredAssetsGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <DeferredAssetsGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜繰延資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産除去債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const AssetRetirementObligationsGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const assetRetirementObligationsGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <AssetRetirementObligationsGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産除去債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜収益と費用コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const ProfitAndLossGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const profitAndLossGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <ProfitAndLossGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜収益と費用コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const TaxGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const taxGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <LeaseAccounting />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜未決算コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const UnbalancedAccountGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const unbalancedAccountGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <UnbalancedAccountGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜未決算コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜会計上の変更および誤謬の訂正コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
-const AccountingChangesAndCorrectionOfErrorsGrade3 = () => {
-    return (
-        <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
-        </>
-    );
-}
-
-const accountingChangesAndCorrectionOfErrorsGrade3 = () => {
-    return (
-        <main className="mainArticle">
-            <aside>
-                <AccountingChangesAndCorrectionOfErrorsGrade3 />
-            </aside>
-        </main>
-    );
-}
-
-/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜会計上の変更および誤謬の訂正コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
-
 
 
 
