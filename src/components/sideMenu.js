@@ -864,217 +864,217 @@ const AccountsListGrade3 = () => {
 					<td className="table-align" rowspan="20">資産</td>
 					<td className="table-align">流動資産</td>
 					<td className="table-align">現金</td>
-					<td className="table-align">紙幣や硬貨などのお金、郵便小為替</td>
+					<td className="table-padding-1">紙幣や硬貨などのお金、郵便小為替</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">小口現金</td>
-					<td className="table-size table-align">少額の支払いのための現金</td>
+					<td className="table-size table-padding-1">少額の支払いのための現金</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">当座預金</td>
-					<td className="table-size table-align">銀行に預け入れ当座預金</td>
+					<td className="table-size table-padding-1">銀行に預け入れ当座預金</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">普通預金</td>
-					<td className="table-size table-align">いつでも自由に入出金が可能な銀行預金のこと</td>
+					<td className="table-size table-padding-1">いつでも自由に入出金が可能な銀行預金のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">売掛金</td>
-					<td className="table-size table-align">得意先に掛け売りしたときの代金を請求する権利</td>
+					<td className="table-size table-padding-1">得意先に掛け売りしたときの代金を請求する権利</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">商品</td>
-					<td className="table-size table-align">在庫商品</td>
+					<td className="table-size table-padding-1">在庫商品</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">貯蔵品</td>
-					<td className="table-size table-align">まとめて購入した封筒、便せん、パンフレットなどの消耗品などで期末に未使用のもの</td>
+					<td className="table-size table-padding-1">まとめて購入した封筒、便せん、パンフレットなどの消耗品などで期末に未使用のもの</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">前払費用</td>
-					<td className="table-size table-align">家賃、保守料、会費、損害保険料などの支払金額のうち、翌年以降にかかる前払部分</td>
+					<td className="table-size table-padding-1">家賃、保守料、会費、損害保険料などの支払金額のうち、翌年以降にかかる前払部分</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">前払金</td>
-					<td className="table-size table-align">商品の仕入や諸経費の前渡金、手付金</td>
+					<td className="table-size table-padding-1">商品の仕入や諸経費の前渡金、手付金</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">短期貸付金</td>
-					<td className="table-size table-align">貸付金で1年以内に返済の予定されているもの</td>
+					<td className="table-size table-padding-1">貸付金で1年以内に返済の予定されているもの</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">立替金</td>
-					<td className="table-size table-align">一時的に立て替えた金額</td>
+					<td className="table-size table-padding-1">一時的に立て替えた金額</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">受取手形</td>
-					<td className="table-size table-align">通常の営業取引において対価として受け取った約束手形や為替手形などの手形債権のこと</td>
+					<td className="table-size table-padding-1">通常の営業取引において対価として受け取った約束手形や為替手形などの手形債権のこと</td>
 				</tr>
 				
 				<tr>
 					<td className="table-size table-align">流動資産</td>
 					<td className="table-size table-align">仮払金</td>
-					<td className="table-size table-align">現金等の支出はあったが相手勘定科目が確定していない場合または相手勘定科目は確定しているが金額が確定していない場合に一時的に処理しておく勘定科目。後日、勘定科目や金額が確定した段階で振替処理をする</td>
+					<td className="table-size table-padding-1">現金等の支出はあったが相手勘定科目が確定していない場合または相手勘定科目は確定しているが金額が確定していない場合に一時的に処理しておく勘定科目。後日、勘定科目や金額が確定した段階で振替処理をする</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">固定資産</td>
 					<td className="table-size table-align">建物</td>
-					<td className="table-size table-align">店舗、事務所、工場、倉庫、車庫、社宅など、事業活動に供するために所有する建物のこと</td>
+					<td className="table-size table-padding-1">店舗、事務所、工場、倉庫、車庫、社宅など、事業活動に供するために所有する建物のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">固定資産</td>
 					<td className="table-size table-align">土地</td>
-					<td className="table-size table-align">事業活動に供するために所有する敷地をいい、事務所・店舗・工場・社宅などの敷地のほか、資材置場、駐車場、運動場などの土地を含むもの</td>
+					<td className="table-size table-padding-1">事業活動に供するために所有する敷地をいい、事務所・店舗・工場・社宅などの敷地のほか、資材置場、駐車場、運動場などの土地を含むもの</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">固定資産</td>
 					<td className="table-size table-align">車両運搬具</td>
-					<td className="table-size table-align">事業活動に供するために所有するもので、鉄道車両、乗用車、トラック、バス、オートバイ、フォークリフト、クレーン車、トロッコなどの陸上運搬具のこと</td>
+					<td className="table-size table-padding-1">事業活動に供するために所有するもので、鉄道車両、乗用車、トラック、バス、オートバイ、フォークリフト、クレーン車、トロッコなどの陸上運搬具のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">固定資産</td>
 					<td className="table-size table-align">工具器具備品</td>
-					<td className="table-size table-align">事業活動に供するために所有するもので、工作用具、応接セット、机、イス、コピー機、ファックス、電話設備、キャビネット、エアコン、冷蔵庫、パソコン、観賞用の植物、自動販売機、書画、こっとうなどのこと</td>
+					<td className="table-size table-padding-1">事業活動に供するために所有するもので、工作用具、応接セット、机、イス、コピー機、ファックス、電話設備、キャビネット、エアコン、冷蔵庫、パソコン、観賞用の植物、自動販売機、書画、こっとうなどのこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">固定資産</td>
 					<td className="table-size table-align">ソフトウェア</td>
-					<td className="table-size table-align">10万円以上のパソコンソフト</td>
+					<td className="table-size table-padding-1">10万円以上のパソコンソフト</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">固定資産</td>
 					<td className="table-size table-align">長期前払費用</td>
-					<td className="table-size table-align">家賃、保守料、会費、損害保険料などの支払金額のうち、1年以上を超えた前払部分</td>
+					<td className="table-size table-padding-1">家賃、保守料、会費、損害保険料などの支払金額のうち、1年以上を超えた前払部分</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">繰延資産</td>
 					<td className="table-size table-align">開業費</td>
-					<td className="table-size table-align">個人事業主の場合、開業の準備にかかった費用。法人の場合、会社設立後（設立登記手続終了後）から営業を開始するまでの期間に支払った諸費用</td>
+					<td className="table-size table-padding-1">個人事業主の場合、開業の準備にかかった費用。法人の場合、会社設立後（設立登記手続終了後）から営業を開始するまでの期間に支払った諸費用</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="7">負債</td>
 					<td className="table-size table-align">流動負債</td>
 					<td className="table-size table-align">買掛金</td>
-					<td className="table-size table-align">商品や原材料の仕入れなどの営業取引に基づいて発生した、まだ支払いされていない債務のこと</td>
+					<td className="table-size table-padding-1">商品や原材料の仕入れなどの営業取引に基づいて発生した、まだ支払いされていない債務のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動負債</td>
 					<td className="table-size table-align">クレジットカード</td>
-					<td className="table-size table-align">後から銀行口座より引き落としが発生する未払金扱いの勘定科目</td>
+					<td className="table-size table-padding-1">後から銀行口座より引き落としが発生する未払金扱いの勘定科目</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動負債</td>
 					<td className="table-size table-align">支払手形</td>
-					<td className="table-size table-align">通常の営業取引において債務の支払いのために生じた約束手形や為替手形などの手形債務のこと</td>
+					<td className="table-size table-padding-1">通常の営業取引において債務の支払いのために生じた約束手形や為替手形などの手形債務のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動負債</td>
 					<td className="table-size table-align">未払金</td>
-					<td className="table-size table-align">本来の営業活動以外の場合において債務が確定していて未払いのもの</td>
+					<td className="table-size table-padding-1">本来の営業活動以外の場合において債務が確定していて未払いのもの</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動負債</td>
 					<td className="table-size table-align">未払費用</td>
-					<td className="table-size table-align">一定の契約に基づき継続して役務の提供を受ける場合に、すでに提供された役務に対して未だその対価の支払が終わらないもの</td>
+					<td className="table-size table-padding-1">一定の契約に基づき継続して役務の提供を受ける場合に、すでに提供された役務に対して未だその対価の支払が終わらないもの</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動負債</td>
 					<td className="table-size table-align">前受金</td>
-					<td className="table-size table-align">商品や製品などの売上を行った場合に代金の一部または全部を前もって受け取ったとき、その前受けした金額を管理するための勘定科目</td>
+					<td className="table-size table-padding-1">商品や製品などの売上を行った場合に代金の一部または全部を前もって受け取ったとき、その前受けした金額を管理するための勘定科目</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">流動負債</td>
 					<td className="table-size table-align">仮受金</td>
-					<td className="table-size table-align">現金等の受入れはあったが相手勘定科目が確定していない場合や相手勘定科目は確定しているが金額が未確定の場合に一時的に処理しておく勘定科目。後日、勘定科目や金額が確定した段階で振替処理をする</td>
+					<td className="table-size table-padding-1">現金等の受入れはあったが相手勘定科目が確定していない場合や相手勘定科目は確定しているが金額が未確定の場合に一時的に処理しておく勘定科目。後日、勘定科目や金額が確定した段階で振替処理をする</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="2">純資産</td>
 					<td className="table-size table-align">純資産</td>
 					<td className="table-size table-align">資本金</td>
-					<td className="table-size table-align">株主などの出資者から出資してもらった金額のうち法律で定めたもの</td>
+					<td className="table-size table-padding-1">株主などの出資者から出資してもらった金額のうち法律で定めたもの</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">純資産</td>
 					<td className="table-size table-align">元入金</td>
-					<td className="table-size table-align">個人事業主における元手のこと</td>
+					<td className="table-size table-padding-1">個人事業主における元手のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="3">収益</td>
 					<td className="table-size table-align">売上高</td>
 					<td className="table-size table-align">売上高</td>
-					<td className="table-size table-align">商品や製品の販売、サービスの提供など、企業の主たる営業活動によって獲得した収益のこと</td>
+					<td className="table-size table-padding-1">商品や製品の販売、サービスの提供など、企業の主たる営業活動によって獲得した収益のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">営業外収益</td>
 					<td className="table-size table-align">受取利息</td>
-					<td className="table-size table-align">預貯金、国債･地方債・社債などの有価証券、貸付金などから得る利子</td>
+					<td className="table-size table-padding-1">預貯金、国債･地方債・社債などの有価証券、貸付金などから得る利子</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">営業外収益</td>
 					<td className="table-size table-align">雑収入</td>
-					<td className="table-size table-align">営業外収益のうち、科目的にも金額的にも重要性の乏しいものについて処理するための勘定科目</td>
+					<td className="table-size table-padding-1">営業外収益のうち、科目的にも金額的にも重要性の乏しいものについて処理するための勘定科目</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="10">費用</td>
 					<td className="table-size table-align">売上原価</td>
 					<td className="table-size table-align">仕入高</td>
-					<td className="table-size table-align">販売目的の商品を仕入れるのに要した購入費用のこと</td>
+					<td className="table-size table-padding-1">販売目的の商品を仕入れるのに要した購入費用のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">消耗品費</td>
-					<td className="table-size table-align">事務用消耗品や工具器具備品、車両運搬具等で、取得価額が10万円未満または使用可能期間が1年未満のものを消費することによって発生する費用のこと</td>
+					<td className="table-size table-padding-1">事務用消耗品や工具器具備品、車両運搬具等で、取得価額が10万円未満または使用可能期間が1年未満のものを消費することによって発生する費用のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">交際費</td>
-					<td className="table-size table-align">取引先や営業先とのお付き合いを円滑に行うために飲食店で接待する費用や、お中元やお歳暮、お土産などの贈答品等の購入のために支出した費用</td>
+					<td className="table-size table-padding-1">取引先や営業先とのお付き合いを円滑に行うために飲食店で接待する費用や、お中元やお歳暮、お土産などの贈答品等の購入のために支出した費用</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">通信費</td>
-					<td className="table-size table-align">電話代、はがき代、郵便切手代、郵便小包や宅配便などの配送料金、ファックス代、インターネット関連代、freeeなどのクラウドソフト利用料、有料放送の視聴料など、通信のために要した費用を処理する勘定科目</td>
+					<td className="table-size table-padding-1">電話代、はがき代、郵便切手代、郵便小包や宅配便などの配送料金、ファックス代、インターネット関連代、freeeなどのクラウドソフト利用料、有料放送の視聴料など、通信のために要した費用を処理する勘定科目</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">水道光熱費</td>
-					<td className="table-size table-align">水道代、電気代、ガス代、燃料代などの費用のこと</td>
+					<td className="table-size table-padding-1">水道代、電気代、ガス代、燃料代などの費用のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">車両費</td>
-					<td className="table-size table-align">ガソリン代、高速料金、洗車、車検、修理代金、自動車保険料等、車に関する支払いを仕訳するための勘定科目</td>
+					<td className="table-size table-padding-1">ガソリン代、高速料金、洗車、車検、修理代金、自動車保険料等、車に関する支払いを仕訳するための勘定科目</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">法定福利費</td>
-					<td className="table-size table-align">企業（事業主）が社会保険料として負担する役員・従業員の福利厚生のために納付することが法律で義務づけられている費用を処理する勘定科目</td>
+					<td className="table-size table-padding-1">企業（事業主）が社会保険料として負担する役員・従業員の福利厚生のために納付することが法律で義務づけられている費用を処理する勘定科目</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">減価償却費</td>
-					<td className="table-size table-align">固定資産の取得価額を耐用年数の各期間に費用として配分したもの</td>
+					<td className="table-size table-padding-1">固定資産の取得価額を耐用年数の各期間に費用として配分したもの</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">給料手当</td>
-					<td className="table-size table-align">社員に対して、毎月支払う給料のこと</td>
+					<td className="table-size table-padding-1">社員に対して、毎月支払う給料のこと</td>
 				</tr>
 				<tr>
 					<td className="table-size table-align">販売費及び一般管理費</td>
 					<td className="table-size table-align">支払手数料</td>
-					<td className="table-size table-align">銀行の振込手数料、売買契約の仲介者に対して支払う手数料等を表す勘定科目</td>
+					<td className="table-size table-padding-1">銀行の振込手数料、売買契約の仲介者に対して支払う手数料等を表す勘定科目</td>
 				</tr>
                 	</table>
 		</section>
@@ -1098,547 +1098,547 @@ const AccountsListGrade2 = () => {
 					<td className="table-size table-align" rowspan="30">資産</td>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">売買目的有価証券</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 		
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">満期保有目的債権</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">子会社株式</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">関連会社株式</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">その他有価証券</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">不渡手形</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">電子記録債権</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">繰越商品</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">建設仮勘定</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">貯蔵品</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">火災未決算</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">営業外受取手形</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">のれん</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">諸資産</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">ソフトウェア</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">ソフトウェア仮勘定</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">前払保険料</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">長期前払保険料</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">リース資産</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">別段預金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">仮払消費税</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">仮払法人税等</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">未収還付消費税</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">繰延税金資産</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">支店</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">特許権</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">クレジット売掛金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">仕掛品</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">創立費</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">開業費</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="19">負債</td>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">電子記録債務</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>	
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">修繕引当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">特別修繕引当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">商品保証引当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">退職給付引当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">売上割戻引当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">賞与引当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">返品調整引当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">保証債務</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">営業外支払手形</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">諸負債</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">リース債務</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">未払リース料</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">未払配当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">未払法人税等</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">仮受消費税</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">未払消費税</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">繰延税金負債</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">本店</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="9">純資産</td>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">資本金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">資本準備金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">株式申込証拠金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">利益準備金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">別途積立金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">非支配株主持分</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">新築積立金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">繰越利益剰余金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">その他有価証券評価差額金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="16">収益</td>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">受取配当金</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">有価証券利息</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">受取利息</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">有価証券売却益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">有価証券評価益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">子会社株式売却益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">関連会社売却益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">保険差益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">役務収益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">仕入割引</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">売上割戻</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">国庫補助金受贈益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">工事負担金受贈益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">為替差益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">雑益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">非支配株主に帰属する当期純利益</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align" rowspan="34">費用</td>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">有価証券売却損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">有価証券評価損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">子会社株式売却損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">関連会社株式売却損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">手形売却損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">債権売却損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">電子記録債権売却損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">修繕引当金繰入</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">商品保証引当金繰入</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">退職給付費用</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">売上割戻引当金繰入</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">賞与引当金繰入</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">賞与</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">返品調整引当金繰入</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">火災損失</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">売上原価</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">役務原価</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">売上割引</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">仕入割戻</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">棚卸減耗損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">商品評価損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">固定資産圧縮損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">固定資産除却損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">固定資産廃棄損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">修繕費</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">のれん償却</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">特許権償却</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">研究開発費</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">ソフトウェア償却</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">支払リース料</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">株式交付費</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">追徴法人税等</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">為替差損</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">非支配株主に帰属する当期純損失</td>
-					<td className="table-size table-align"></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
                 	</table>
 		</section>
