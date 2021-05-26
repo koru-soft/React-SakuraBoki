@@ -6492,6 +6492,267 @@ const leaseAccounting = () => {
 
 
 
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜様々な財又はサービスの顧客への移転コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const VariousServiceTransferGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const variousServiceTransferGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <VariousServiceTransferGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜様々な財又はサービスの顧客への移転コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産の減損コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const BookImpairmentGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const bookImpairmentGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <BookImpairmentGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜固定資産の減損コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜投資その他の資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const InvestmentsAndOtherAssetsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const investmentsAndOtherAssetsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <InvestmentsAndOtherAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜投資その他の資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜繰延資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const DeferredAssetsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const deferredAssetsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <DeferredAssetsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜繰延資産コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産除去債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AssetRetirementObligationsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const assetRetirementObligationsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AssetRetirementObligationsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜資産除去債務コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜収益と費用コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const ProfitAndLossGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const profitAndLossGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <ProfitAndLossGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜収益と費用コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const TaxGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const taxGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <LeaseAccounting />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜未決算コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const UnbalancedAccountGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const unbalancedAccountGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <UnbalancedAccountGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜未決算コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜会計上の変更および誤謬の訂正コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+const AccountingChangesAndCorrectionOfErrorsGrade3 = () => {
+    return (
+        <>
+            <Title title="Lorem Ipusum"/>
+            <section>
+                <article>
+             		Lorem Ipusum
+                </article>
+            </section>
+        </>
+    );
+}
+
+const accountingChangesAndCorrectionOfErrorsGrade3 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+                <AccountingChangesAndCorrectionOfErrorsGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+/* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜会計上の変更および誤謬の訂正コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
+
+
+
+
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜財務諸表理論コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const FinancialStatementsTheory = () => {
@@ -6552,51 +6813,51 @@ const SideBar = () => {
             <span className="icon-sakura" id="icon-sakura" onClick={ test }><BiFoodMenu /></span>
         </header>
 
-            <div className="sidebar-sakura">
+	<div className="sidebar-sakura">
                 <h2 className="titleColor"><Link to="/">HOME</Link></h2>
         		<h2 className="titleColor">基本原理</h2>
                 <ul className="sideMenu menu-sakura-color">
-					<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
-					{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/}
-					<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
-					{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
-					{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
-					<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
+			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/}
+			<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
+			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
+			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
+			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
                 </ul>
 
                 <h2 className="titleColor">諸取引の処理</h2>
                 <ul className="sideMenu">
-					<li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/assignment-of-accounts-receivable-grade3">債権の譲渡</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/financial-guarantee-grade3">債務の保証</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/special-tradings-grade3">特殊商品売買</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/various-service-transfer-grade3">様々な財又はサービスの顧客への移転</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/financial-instrument-grade3">金融商品取引</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">有形固定資産</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/intangible-assets-grade3">無形固定資産</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/book-impairment-grade3">固定資産の減損</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/investments-and-other-assets-grade3">投資その他の資産</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/deferred-assets-grade3">繰延資産</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/asset-retirement-obligations-grade3">資産除去債務</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/profit-and-loss-grade3">収益と費用</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/tax-grade3">税金</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/accounting-for-income-taxes-grade3">税効果会計</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/unbalanced-account-grade3">未決算</Link></li>
-					<li className="sideList menu-sakura-color"><Link to="/accounting-changes-and-correction-of-errors-grade3">会計上の変更および誤謬の訂正</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/assignment-of-accounts-receivable-grade3">債権の譲渡</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/financial-guarantee-grade3">債務の保証</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/special-tradings-grade3">特殊商品売買</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/various-service-transfer-grade3">様々な財又はサービスの顧客への移転</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/financial-instrument-grade3">金融商品取引</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">有形固定資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/intangible-assets-grade3">無形固定資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/book-impairment-grade3">固定資産の減損</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/investments-and-other-assets-grade3">投資その他の資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/deferred-assets-grade3">繰延資産</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/asset-retirement-obligations-grade3">資産除去債務</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/profit-and-loss-grade3">収益と費用</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/tax-grade3">税金</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounting-for-income-taxes-grade3">税効果会計</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/unbalanced-account-grade3">未決算</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/accounting-changes-and-correction-of-errors-grade3">会計上の変更および誤謬の訂正</Link></li>
                 </ul>
-			</div>
+	</div>
 
 	{/*<h2 className="titleColor">決算</h2>
 		<ul className="sideMenu menu-sakura-color">
@@ -6678,7 +6939,7 @@ const SideBar = () => {
                 <Route path="/account-grade3" component={ accountGrade3 } />
                 <Route path="/account-grade2" component={ accountGrade2 } />
                 <Route path="/account-grade1" component={ accountGrade1 } />
-				<Route path="/kind-of-account" component={ kindOfAccount } />
+		<Route path="/kind-of-account" component={ kindOfAccount } />
                 <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
                 <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
                 <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
@@ -6686,23 +6947,23 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-				<Route path="/cash-grade2" component={ cashGrade2 } />
-				<Route path="/cash-grade1" component={ cashGrade1 } />
+		<Route path="/cash-grade2" component={ cashGrade2 } />
+		<Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-				<Route path="/savings-grade2" component={ savingsGrade2 } />
-				<Route path="/savings-grade1" component={ savingsGrade1 } />
+		<Route path="/savings-grade2" component={ savingsGrade2 } />
+		<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-				<Route path="/tradings-grade2" component={ tradingsGrade2 } />
-				<Route path="/tradings-grade1" component={ tradingsGrade1 } />
+		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
+		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-				<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-				<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-				<Route path="/other-grade2" component={ otherGrade2 } />
-				<Route path="/other-grade1" component={ otherGrade1 } />
-				<Route path="/assignment-of-accounts-receivable-grade3" component={ assignmentOfAccountsReceivableGrade3 } />
-				<Route path="/assignment-of-accounts-receivable-grade2" component={ assignmentOfAccountsReceivableGrade2 } />
-				<Route path="/assignment-of-accounts-receivable-grade1" component={ assignmentOfAccountsReceivableGrade1 } />
+		<Route path="/other-grade2" component={ otherGrade2 } />
+		<Route path="/other-grade1" component={ otherGrade1 } />
+		<Route path="/assignment-of-accounts-receivable-grade3" component={ assignmentOfAccountsReceivableGrade3 } />
+		<Route path="/assignment-of-accounts-receivable-grade2" component={ assignmentOfAccountsReceivableGrade2 } />
+		<Route path="/assignment-of-accounts-receivable-grade1" component={ assignmentOfAccountsReceivableGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
@@ -6716,15 +6977,15 @@ const SideBar = () => {
                 <Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2 } />
                 <Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1 } />
                 <Route path="/financial-guarantee-grade3" component={ financialGuaranteeGrade3 } />
-				<Route path="/financial-guarantee-grade2" component={ financialGuaranteeGrade2 } />
-				<Route path="/financial-guarantee-grade1" component={ financialGuaranteeGrade1 } />
-				<Route path="/allowance-grade3" component={ allowanceGrade3 } />
+		<Route path="/financial-guarantee-grade2" component={ financialGuaranteeGrade2 } />
+		<Route path="/financial-guarantee-grade1" component={ financialGuaranteeGrade1 } />
+		<Route path="/allowance-grade3" component={ allowanceGrade3 } />
                 <Route path="/allowance-grade2" component={ allowanceGrade2 } />
                 <Route path="/allowance-grade1" component={ allowanceGrade1 } />
                 <Route path="/special-tradings-grade3" component={ specialTradingsGrade3 } />
-				<Route path="/special-tradings-grade2" component={ specialTradingsGrade2 } />
-				<Route path="/special-tradings-grade1" component={ specialTradingsGrade1 } />
-				<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
+		<Route path="/special-tradings-grade2" component={ specialTradingsGrade2 } />
+		<Route path="/special-tradings-grade1" component={ specialTradingsGrade1 } />
+		<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
                 <Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
                 <Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
                 <Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
