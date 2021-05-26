@@ -5652,7 +5652,7 @@ const NonCurrentAssetsGrade3 = () => {
 	    		<br />
 	    		<div>この価値の減少分を表現する方法のことを<span className="underline font-color2">減価償却</span>と呼びます。</div>
 	    		<br />
-	    		<div>減価償却は固定資産費用化をいかに表現するかをテーマとしているため、「いかに使った分を計測するか」という観点より、様々な種類が考案されてきました。</div>
+	    		<div>減価償却は「資産価値の減少」という抽象的な事実をいかに表現するか？をテーマとしているため、「いかに使った分を計測するか」という観点より、様々な種類が考案されてきました。</div>
 			<br />
 	    		<div>以下の表がその方法の種類となりますが、このうち簿記の3級では定額法のみが範囲となります。</div>
 	    		<br />
@@ -5782,6 +5782,85 @@ const NonCurrentAssetsGrade3 = () => {
 	    
 	    	<section className="font-color">
 			<Element name="non-current-assets-grade3-4" className="element" >
+				<h1 className="intro">固定資産売却時の会計処理</h1>	
+			</Element>
+	    		<div>固定資産は購入後、売却することで差額分が利益、もしくは損失として計上されます。</div>
+	    		<div>固定資産売却時に得た利益を<span className="underline font-color2">固定資産売却益</span>、損失分を<span className="underline font-color2">固定資産売却損</span>と呼びます。</div>
+	    		<br />
+	    		<div>例えば、100,000円で購入したパソコンにプレミアがついたため、150,000円で売却し、現金を得たという場合、以下のような仕訳となります。</div>
+			<br />
+	    		<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金　150,000</td>
+						<td className="table-align">工具器具備品　100,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align"></td>
+						<td className="table-align">固定資産売却益  50,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>100,000円で購入したパソコンにプレミアがついたため、150,000円で売却し、現金を得た</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金150,000円の増加</div>
+					<div>なぜ発生したか（貸方）：100,000円で購入したパソコンを売却したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の増加になることから、現金で処理</div>
+					<div>なぜ発生したか（貸方）：パソコンの売却になるため、工具器具備品で処理。また、購入時と売却時の差額は、固定資産売却益で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するため、借方に現金を配置します</div>
+					<div>なぜ発生したか（貸方）：工具器具備品という資産が減少するため、貸方に工具器具備品を配置します。また、固定資産売却益という収益が増加するため、貸方に固定資産売却益を配置します。</div>
+				</div>
+	    		<br />
+	    		<div>逆に、100,000円で購入したパソコンを50,000円で売却し、現金を得たという場合、以下のような仕訳となります。</div>
+			<br />
+	    		<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金　50,000</td>
+						<td className="table-align">工具器具備品　100,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align">固定資産売却損  50,000</td>
+						<td className="table-align"></td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>100,000円で購入したパソコンを50,000円で売却し、現金を得た</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金50,000円の増加</div>
+					<div>なぜ発生したか（貸方）：100,000円で購入したパソコンを売却したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の増加になることから、現金で処理</div>
+					<div>なぜ発生したか（貸方）：パソコンの売却になるため、工具器具備品で処理。また、購入時と売却時の差額は、固定資産売却損で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するため、借方に現金を配置します</div>
+					<div>なぜ発生したか（貸方）：工具器具備品という資産が減少するため、貸方に工具器具備品を配置します。また、固定資産売却損という費用が増加するため、貸方に固定資産売却損を配置します。</div>
+				</div>
+	    		<br />
+		</section>
+	    
+	    	<section className="font-color">
+			<Element name="non-current-assets-grade3-5 className="element" >
 				<h1 className="intro">資本的支出・収益的支出とは</h1>	
 			</Element>
 	    		<div>固定資産は購入後もメンテンナンス費用など、様々な費用が発生するという性質を持っています。</div>
@@ -5826,7 +5905,7 @@ const NonCurrentAssetsGrade3 = () => {
 					<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置します</div>
 				</div>
 	    		<br />
-		</section>
+		</section> 	
         </>
     );
 }
@@ -6181,8 +6260,9 @@ const nonCurrentAssetsGrade3 = () => {
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >固定資産とは</ScrollLink></li>
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
 					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	　　 </ul>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >固定資産売却時の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-5" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+				</ul>
                 </aside>
                 <NonCurrentAssetsGrade3 />
             </aside>
