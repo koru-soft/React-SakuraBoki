@@ -4865,7 +4865,7 @@ const AllowanceGrade3 = () => {
     return (
         <>
             <section className="font-color">
-				<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+				<Element name="allowance-grade3-1" className="element" >
 					<h1 className="intro">貸倒れの会計処理</h1>	
 				</Element>
 				<div>取引先が倒産したなど、本来回収できたはずの売掛金を回収できなくなったという事象を、<span className="underline font-color2">貸倒れ</span>と呼びます。</div>
@@ -4949,7 +4949,7 @@ const AllowanceGrade3 = () => {
 				</div>
 	    			<br />	
 	    				
-	    			<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+	    			<Element name="allowance-grade3-2" className="element" >
 					<h1 className="intro">貸倒損失の会計処理</h1>	
 				</Element>
 	    			<div>事前に貸倒引当金を計上していなかったにも関わらず、貸倒れが発生した場合、<span className="underline font-color2">貸倒損失</span>にて処理を行います。</div>
@@ -4984,7 +4984,7 @@ const AllowanceGrade3 = () => {
 					<div>最終的に発生したもの（借方）：貸倒損失という費用が増加するので、借方に貸倒損失を計上</div>
 					<div>なぜ発生したか（貸方）：売掛金という資産が減少するので、貸方に売掛金を計上</div>
 				</div>
-	    			<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+	    			<Element name="allowance-grade3-3" className="element" >
 					<h1 className="intro">償却債権取立益の会計処理</h1>	
 				</Element>
 	    			<div>前期以前に、貸倒れとして処理した売掛金が回収出来る場合があります。</div>
@@ -5021,7 +5021,7 @@ const AllowanceGrade3 = () => {
 					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を計上</div>
 					<div>なぜ発生したか（貸方）：償却債権取立益という収益が増加するので、貸方に償却債権取立益を計上</div>
 				</div>
-	    			<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+	    			<Element name="allowance-grade3-4" className="element" >
 					<h1 className="intro">実績法とは</h1>	
 				</Element>
 	    			<div>最後に、貸倒れの金額をいくらで見積ればよいかについて、その方法の1つを紹介します。</div>
@@ -5098,6 +5098,15 @@ const allowanceGrade3 = () => {
                     <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
                     <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
                 </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-1" spy={true} smooth={true} duration={500} >貸倒れの会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-2" spy={true} smooth={true} duration={500} >貸倒損失の会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-3" spy={true} smooth={true} duration={500} >償却債権取立益の会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-4" spy={true} smooth={true} duration={500} >実績法とは</ScrollLink></li>
+	    	　　　</ul>
+                </aside>
                 <AllowanceGrade3 />
             </aside>
         </main>
