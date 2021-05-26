@@ -4866,9 +4866,198 @@ const AllowanceGrade3 = () => {
         <>
             <section className="font-color">
 				<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
-					<h1 className="intro">貸倒引当金の会計処理</h1>	
+					<h1 className="intro">貸倒れの会計処理</h1>	
 				</Element>
-				<div>取引先が倒産し、売掛金が回収出来なくなったことを<span className="underline font-color2">貸倒れ</span>と呼びます。</div>
+				<div>取引先が倒産したなど、本来回収できたはずの売掛金を回収できなくなったという事象を、<span className="underline font-color2">貸倒れ</span>と呼びます。</div>
+	    			<br />
+	    			<div>貸倒れの会計処理として、貸倒れが発生した場合に備えて、事前にその対策をしておいた場合と、対策をしていなかった、もしくは対策していたがその範囲を超えてしまったという場合で大きく処理が2種類に分かれていきます。</div>
+	    			<br />
+	    			<div>まずは事前にその対策をしておいた場合の会計処理を見ていきましょう。</div>
+	    			<br />
+	    			<div>事前に貸倒れの金額を計上しておくことで、その金額の範囲内であれば、貸倒れが発生しても当初の予定への変更がなくなります。</div>
+	    			<div>このように貸倒れの金額を事前に計上する場合、<span className="underline font-color2">貸倒引当金繰入</span>という費用勘定科目にて、事前計上する費用金額を計上します。</div>
+	    			<br />
+	    			<div>一方、事前計上された売掛金を処理するため、<span className="underline font-color2">貸倒引当金</span>というマイナスの売掛金を事前計上することで、売掛金も相殺することが可能となります。</div>
+	    			<br />
+	    			<div>ただし、貸倒れが発生する売掛金の金額は正確に見積もることは出来ないため、実態と必ず差額が発生します。</div>
+	    			<div>このとき、事前に計上していた範囲を超えた金額については、<span className="underline font-color2">貸倒損失</span>という勘定科目にて、処理を行います。</div>
+	    			<br />
+	    			<div>例えば、貸倒れの発生に備えて、事前に貸倒引当金を30,000円計上したという場合、以下の仕訳となります</div>
+	    			<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">貸倒引当金繰入  30,000</td>
+						<td className="table-align">貸倒引当金  30,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>貸倒れの発生に備えて、事前に貸倒引当金を30,000円計上した</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：30,000円分の貸倒引当金の繰入</div>
+					<div>なぜ発生したか（貸方）：回収できないことを見越したマイナスの売掛金を計上するため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：貸倒引当金の繰入となるため、貸倒引当金繰入で処理</div>
+					<div>なぜ発生したか（貸方）：マイナスの売掛金の計上となるため、貸倒引当金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：貸倒引当金繰入という費用が増加するので、借方に貸倒引当金繰入を配置</div>
+					<div>なぜ発生したか（貸方）：貸倒引当金というマイナスの資産を計上するので、貸方に貸倒引当金を計上</div>
+				</div>
+	    			<br />
+	    			<div>後日、実際に売掛金が40,000円分貸倒れたとします。この場合、以下の仕訳となります。</div>
+	    			<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">貸倒引当金  30,000</td>
+						<td className="table-align">売掛金  40,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align">貸倒損失  10,000</td>
+						<td className="table-align"></td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>貸倒れの発生に備えて、事前に貸倒引当金を30,000円計上した</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：30,000円分の貸倒引当金の繰入</div>
+					<div>なぜ発生したか（貸方）：回収できないことを見越したマイナスの売掛金を計上するため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：貸倒引当金の繰入となるため、貸倒引当金繰入で処理</div>
+					<div>なぜ発生したか（貸方）：マイナスの売掛金の計上となるため、貸倒引当金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：貸倒引当金繰入という費用が増加するので、借方に貸倒引当金繰入を配置</div>
+					<div>なぜ発生したか（貸方）：貸倒引当金というマイナスの資産を計上するので、貸方に貸倒引当金を計上</div>
+				</div>
+	    			<br />	
+	    				
+	    			<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+					<h1 className="intro">貸倒損失の会計処理</h1>	
+				</Element>
+	    			<div>事前に貸倒引当金を計上していなかったにも関わらず、貸倒れが発生した場合、<span className="underline font-color2">貸倒損失</span>にて処理を行います。</div>
+	    			<br />
+	    			<div>例えば、貸倒引当金の計上がないまま、貸倒れが30,000円発生したという場合、以下の仕訳となります</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">貸倒損失  30,000</td>
+						<td className="table-align">売掛金  30,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>貸倒引当金の計上がないまま、貸倒れが30,000円発生した</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：30,000円分の貸倒れ</div>
+					<div>なぜ発生したか（貸方）：売掛金が30,000円分発生していたため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：貸方引当金を計上していない上での貸倒れの発生になるため、貸倒損失で処理</div>
+					<div>なぜ発生したか（貸方）：売掛金の貸倒れとなることから、売掛金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：貸倒損失という費用が増加するので、借方に貸倒損失を計上</div>
+					<div>なぜ発生したか（貸方）：売掛金という資産が減少するので、貸方に売掛金を計上</div>
+				</div>
+	    			<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+					<h1 className="intro">償却債権取立益の会計処理</h1>	
+				</Element>
+	    			<div>前期以前に、貸倒れとして処理した売掛金が回収出来る場合があります。</div>
+	    			<br />
+	    			<div>このような場合、改めて得た回収できた売上を<span className="underline font-color2">償却債権取立益</span>と呼びます。</div>
+				<br />
+	    			<div>例えば、前期に貸倒れとして計上した売掛金30,000円が、当期に現金で回収できたという場合、以下の仕訳となります。</div>
+	    			<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金  30,000</td>
+						<td className="table-align">償却債権取立益  30,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>前期に貸倒れとして計上した売掛金30,000円が、当期に現金で回収できた</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：30,000円分の現金</div>
+					<div>なぜ発生したか（貸方）：前期に貸倒れたはずの売上が、今期に回収できたため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の獲得になるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：前期に貸倒れたはずの売上の回収になるため、償却債権取立益で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を計上</div>
+					<div>なぜ発生したか（貸方）：償却債権取立益という収益が増加するので、貸方に償却債権取立益を計上</div>
+				</div>
+	    			<Element name="assignment-of-accounts-receivable-grade3-1" className="element" >
+					<h1 className="intro">実績法とは</h1>	
+				</Element>
+	    			<div>最後に、貸倒れの金額をいくらで見積ればよいかについて、その方法の1つを紹介します。</div>
+	    			<br />
+	    			<div>売掛金の残高に対して、任意の率を乗じて貸倒引当金の金額を計算する方法を<span className="underline font-color2">実績法</span>と呼びます。</div>
+				<br />
+				<div>例えば、売掛金の残高100,000円に対して、2％の貸倒れを見積もった。ただし、貸倒引当金の残高が1,000円あるという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">貸倒引当金繰入  1,000</td>
+						<td className="table-align">貸倒引当金  1,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>売掛金の残高100,000円に対して、2％の貸倒れを見積もった。ただし、貸倒引当金の残高が1,000円ある</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：10000 X 2% = 2,000円の貸倒引当金の繰入。ただし、すでに1,000円が計上済みとのことから、残りの1,000円が繰入額として発生</div>
+					<div>なぜ発生したか（貸方）：回収できないことを見越したマイナスの売掛金を計上するため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：貸倒引当金の繰入となるため、貸倒引当金繰入で処理</div>
+					<div>なぜ発生したか（貸方）：マイナスの売掛金の計上となるため、貸倒引当金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：貸倒引当金繰入という費用が増加するので、借方に貸倒引当金繰入を配置</div>
+					<div>なぜ発生したか（貸方）：貸倒引当金というマイナスの資産を計上するので、貸方に貸倒引当金を計上</div>
+				</div>
 			</section>
         </>
     );
