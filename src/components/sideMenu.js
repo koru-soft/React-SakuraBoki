@@ -428,8 +428,6 @@ const KindOfAccount = () => {
 	);
 }
 
-<div></div>
-
 const kindOfAccount = () => {
     return (
         <>
@@ -4160,6 +4158,38 @@ const OtherGrade3 = () => {
 					<td className="table-padding-1 table-align">1年を超えて返済期限が発生する借入金</td>
 				</tr>
 			</table>
+	    		<br />
+	    		<div>例えば、銀行から融資を受けたため、1,000,000円が普通預金口座に入金された。ただし、本融資は5年をかけて返済する予定であるという場合、以下の仕訳が成立します。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+				    <tr>
+					<th className="table-align">借方（運用形態）</th>
+					<th className="table-align">貸方（調達源泉）</th>
+				    </tr>
+				    <tr>
+					<td className="table-align">普通預金　1,000,000</td>
+					<td className="table-align">長期借入金　1,000,000</td>
+				    </tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+				<div>■　仕訳の手順　■</div>
+				<br />
+				<div>銀行から融資を受けたため、1,000,000円が普通預金口座に入金された。ただし、本融資は5年をかけて返済する予定である</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：普通預金に1,000,000円が振り込まれたという事象</div>
+				<div>なぜ発生したか（貸方）：借金したため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：普通預金口座のお金の増加になるので、普通預金で処理</div>
+				<div>なぜ発生したか（貸方）：5年で返済する借金となるので、長期借入金で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：普通預金という資産が増加するので、借方に普通預金を配置</div>
+				<div>なぜ発生したか（貸方）：長期借入金という負債が増加するので、貸方に長期借入金を配置</div>
+				</div>
+				<br />
 		</section>
 
 		<section className="font-color">
