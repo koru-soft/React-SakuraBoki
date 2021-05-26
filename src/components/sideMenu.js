@@ -142,6 +142,7 @@ const Bookkeeping = () => {
                     </tr>
                 </table>
                 <br />
+	    	<div>なお、明治時代には二重扣ノ式（にじゅうこうのしき）と呼ばれていました。</div>
 	    
                 <Element name="bookkeeping4" className="element" >
                 	<h1 className="intro">仕訳とは</h1>
@@ -336,17 +337,64 @@ const KindOfAccount = () => {
 			</Element>
 				<div>資産・負債の性質と収益・費用の性質を合わせ持つ勘定科目を<span className="underline font-color2">混合勘定</span>と呼びます。</div>
 				<br />
-				<div>例えば、固定資産の勘定科目は、その支払った金額が資産としての価値を持つ一方、費用としての性質も持っています。</div>
-				<div>そこで、減価償却という方法で、「資産の性質」と「費用の性質」を分解するのです。</div>
+				<div>例えば、仕事で使うボールペンを購入した場合、このボールペンの購入代金には、ボールペンという物理的な資産としての性質と、経費という費用としての性質が二重で備わっています。</div>
+				<div>そこで、会計ではどちらの性質を先に計上しても、最終的に同じような会計処理となるよう、「消耗品」という資産勘定と、「消耗品費」という費用勘定の2種類を事前に用意することで、このような状況に対応しようとしました。</div>
 				<br />
-				<div>なお、資産の性質を先に計上しても、費用の性質を先に計上しても、最終的に計上される金額は同じとなります。</div>
+				<div>資産としての性質を先に計上する方法を<span className="underline font-color2">資産処理法</span>、費用としての性質を先に計上する方法を<span className="underline font-color2">費用処理法</span>と呼びます。</div>
 				<br />
-				<div>このような考え方に基づき、混合勘定の仕訳では<span className="underline font-color2">資産処理法</span>と<span className="underline font-color2">費用処理法</span>の2種類に大きく分かれていきます。</div>
+				<div>しかしながら、計上方法によってはどちらの方法を採用するかによって、計上される金額に差額が発生することがあります。</div>
+				<div>そのため、このような勘定の存在は複式簿記の欠陥として知られています。/div>
+		
 			<Element name="kind-of-account4" className="element" >
 				<h1 className="intro">対照勘定</h1>
 			</Element>
 				<div>2種類の勘定科目がペアの関係となっており、同じ金額で同時に発生し同時に消滅する勘定科目を<span className="underline font-color2">対照勘定</span>と言います。</div>
 				<div>簿記上の取引ではないけれど記録しておきたい事柄を記録するために利用します。</div>
+				<div>代表的な評価勘定として、以下の勘定科目があります。</div>
+				<br />
+				<table border="1" cellspacing="0" className="table-color">
+				    <tr>
+						<th className="table-size table-align" columnspan="2">ペアの勘定科目</th>
+						<th className="table-size table-align"></th>
+				    </tr>
+				    <tr>
+						<td className="table-size table-align">試用販売未収金</td>
+						<td className="table-size table-align">試用仮売上</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">割賦販売未収金</td>
+						<td className="table-size table-align">割賦仮売上</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">保証債務見返</td>
+						<td className="table-size table-align">保証債務</td>
+				    </tr>
+					tr>
+						<td className="table-size table-align">裏書義務見返</td>
+						<td className="table-size table-align">裏書義務</td>
+				    </tr>
+					tr>
+						<td className="table-size table-align">割引義務見返</td>
+						<td className="table-size table-align">割引義務</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">保証債務見返</td>
+						<td className="table-size table-align">保証債務</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">保管有価証券</td>
+						<td className="table-size table-align">預り有価証券</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">貸付有価証券</td>
+						<td className="table-size table-align">有価証券</td>
+				    </tr>
+					<tr>
+						<td className="table-size table-align">保管有価証券</td>
+						<td className="table-size table-align">借入有価証券</td>
+				    </tr>
+				</table>
+				<br />
 
 			<Element name="kind-of-account5" className="element" >
 				<h1 className="intro">未決算勘定</h1>
