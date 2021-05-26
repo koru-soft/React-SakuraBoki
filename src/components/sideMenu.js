@@ -343,7 +343,7 @@ const KindOfAccount = () => {
 				<div>資産としての性質を先に計上する方法を<span className="underline font-color2">資産処理法</span>、費用としての性質を先に計上する方法を<span className="underline font-color2">費用処理法</span>と呼びます。</div>
 				<br />
 				<div>しかしながら、計上方法によってはどちらの方法を採用するかによって、計上される金額に差額が発生することがあります。</div>
-				<div>そのため、このような勘定の存在は複式簿記の欠陥として知られています。/div>
+				<div>そのため、このような勘定の存在は複式簿記の欠陥として知られています。</div>
 		
 			<Element name="kind-of-account4" className="element" >
 				<h1 className="intro">対照勘定</h1>
@@ -369,11 +369,11 @@ const KindOfAccount = () => {
 						<td className="table-size table-align">保証債務見返</td>
 						<td className="table-size table-align">保証債務</td>
 				    </tr>
-					tr>
+					<tr>
 						<td className="table-size table-align">裏書義務見返</td>
 						<td className="table-size table-align">裏書義務</td>
 				    </tr>
-					tr>
+					<tr>
 						<td className="table-size table-align">割引義務見返</td>
 						<td className="table-size table-align">割引義務</td>
 				    </tr>
@@ -1420,7 +1420,7 @@ const AccountsListGrade2 = () => {
 				<tr>
 					<td className="table-size table-align"></td>
 					<td className="table-size table-align">関連会社売却益</td>
-					<td className="table-size table-padding-1></td>
+					<td className="table-size table-padding-1"></td>
 				</tr>
 				<tr>
 					<td className="table-size table-align"></td>
@@ -5085,7 +5085,7 @@ const AllowanceGrade3 = () => {
 				</Element>
 	    			<div>前期以前に、貸倒れとして処理した売掛金が回収出来る場合があります。</div>
 	    			<br />
-	    			<div>このような場合、改めて得た回収できた売上を<span className="underline font-color2">償却債権取立益</span>と呼びます。</div>
+	    			<div>このような場合、改めて回収できた売上を<span className="underline font-color2">償却債権取立益</span>と呼びます。</div>
 				<br />
 	    			<div>例えば、前期に貸倒れとして計上した売掛金30,000円が、当期に現金で回収できたという場合、以下の仕訳となります。</div>
 	    			<br />
@@ -5821,16 +5821,15 @@ const NonCurrentAssetsGrade3 = () => {
 			<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 					<tr>
-						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align table-size50">借方（運用形態）</th>
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">現金　150,000</td>
+						<td className="table-align" rowspan="2">現金　150,000</td>
 						<td className="table-align">工具器具備品　100,000</td>
 					</tr>
 	    				<tr>
-						<td className="table-align"></td>
-						<td className="table-align">固定資産売却益  50,000</td>
+						<td className="table-align">固定資産売却益　50,000</td>
 					</tr>
 				</table>
 				<br />
@@ -5856,16 +5855,15 @@ const NonCurrentAssetsGrade3 = () => {
 			<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 					<tr>
-						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align table-size50">借方（運用形態）</th>
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
 						<td className="table-align">現金　50,000</td>
-						<td className="table-align">工具器具備品　100,000</td>
+						<td className="table-align" rowspan="2">工具器具備品　100,000</td>
 					</tr>
 	    				<tr>
 						<td className="table-align">固定資産売却損  50,000</td>
-						<td className="table-align"></td>
 					</tr>
 				</table>
 				<br />
@@ -5890,7 +5888,7 @@ const NonCurrentAssetsGrade3 = () => {
 		</section>
 	    
 	    	<section className="font-color">
-			<Element name="non-current-assets-grade3-5 className="element" >
+			<Element name="non-current-assets-grade3-5" className="element">
 				<h1 className="intro">資本的支出・収益的支出とは</h1>	
 			</Element>
 	    		<div>固定資産は購入後もメンテンナンス費用など、様々な費用が発生するという性質を持っています。</div>
@@ -5909,11 +5907,10 @@ const NonCurrentAssetsGrade3 = () => {
 					</tr>
 					<tr>
 						<td className="table-align">建物　6,000</td>
-						<td className="table-align">現金　10,000</td>
+						<td className="table-align" rowspan="2">現金　10,000</td>
 					</tr>
 	    				<tr>
 						<td className="table-align">修繕費　4,000</td>
-						<td className="table-align"></td>
 					</tr>
 				</table>
 				<br />
@@ -7547,7 +7544,8 @@ const SideBar = () => {
             <div className="grid1-sakura"></div>
             <li className="topLogo-sakura li"><Link to="/">サクラボキ</Link></li>
             <div className="grid2-sakura"></div>
-            <li className="changeYozakuraMode li" {/*onClick={ changeYozakuraMode }*/}>ヨザクラモードに切り替える（開発中）</li>
+            <li className="changeYozakuraMode li">ヨザクラモードに切り替える<br />（開発中）</li>
+			{/*onClick={ changeYozakuraMode }*/}
             <div className="grid3-sakura"></div>
             <span className="icon-sakura" id="icon-sakura" onClick={ test }><BiFoodMenu /></span>
         </header>
