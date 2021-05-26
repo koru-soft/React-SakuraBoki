@@ -5040,11 +5040,6 @@ const SpecialTradingsGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -5149,11 +5144,6 @@ const VariousServiceTransferGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -5213,11 +5203,6 @@ const FinancialInstrumentGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -5277,11 +5262,6 @@ const SecuriteisGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -5986,11 +5966,6 @@ const IntangibleAssetsGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6050,11 +6025,6 @@ const BookImpairmentGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6114,11 +6084,6 @@ const InvestmentsAndOtherAssetsGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6178,11 +6143,6 @@ const DeferredAssetsGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6244,11 +6204,6 @@ const LeaseGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6334,11 +6289,6 @@ const ForeignCurrencyGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6424,11 +6374,6 @@ const AssetRetirementObligationsGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6616,11 +6561,6 @@ const TaxEffectGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
@@ -6770,11 +6710,6 @@ const AccountingChangesAndCorrectionOfErrorsGrade3 = () => {
     return (
         <>
             <Title title="本論点はボキ３級では出題範囲外になります。"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
         </>
     );
 }
