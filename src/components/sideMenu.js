@@ -5036,15 +5036,6 @@ const specialTradingsGrade3 = () => {
 				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
 				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
 			</div>
-	    	<aside className="subMenu">
-				<ul>
-					<li className="table-of-contents">目次</li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
-					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
-	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
-	    	　　 </ul>
-                </aside>
                 <SpecialTradingsGrade3 />
             </aside>
         </main>
@@ -5123,6 +5114,11 @@ const variousServiceTransferGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <VariousServiceTransferGrade3 />
             </aside>
         </main>
@@ -5133,6 +5129,11 @@ const variousServiceTransferGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <VariousServiceTransferGrade3 />
             </aside>
         </main>
@@ -5143,6 +5144,11 @@ const variousServiceTransferGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <VariousServiceTransferGrade3 />
             </aside>
         </main>
@@ -5172,6 +5178,11 @@ const financialInstrumentGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <FinancialInstrumentGrade3 />
             </aside>
         </main>
@@ -5182,6 +5193,11 @@ const financialInstrumentGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <FinancialInstrumentGrade3 />
             </aside>
         </main>
@@ -5192,6 +5208,11 @@ const financialInstrumentGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <FinancialInstrumentGrade3 />
             </aside>
         </main>
@@ -5930,6 +5951,11 @@ const intangibleAssetsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <IntangibleAssetsGrade3 />
             </aside>
         </main>
@@ -5940,6 +5966,11 @@ const intangibleAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <IntangibleAssetsGrade3 />
             </aside>
         </main>
@@ -5950,6 +5981,11 @@ const intangibleAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <IntangibleAssetsGrade3 />
             </aside>
         </main>
@@ -5979,6 +6015,11 @@ const bookImpairmentGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <BookImpairmentGrade3 />
             </aside>
         </main>
@@ -5989,6 +6030,11 @@ const bookImpairmentGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <BookImpairmentGrade3 />
             </aside>
         </main>
@@ -5999,6 +6045,11 @@ const bookImpairmentGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <BookImpairmentGrade3 />
             </aside>
         </main>
@@ -6028,6 +6079,11 @@ const investmentsAndOtherAssetsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <InvestmentsAndOtherAssetsGrade3 />
             </aside>
         </main>
@@ -6035,9 +6091,14 @@ const investmentsAndOtherAssetsGrade3 = () => {
 }
 
 const investmentsAndOtherAssetsGrade2 = () => {
-    return 
+    return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <InvestmentsAndOtherAssetsGrade3 />
             </aside>
         </main>
@@ -6048,6 +6109,11 @@ const investmentsAndOtherAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <InvestmentsAndOtherAssetsGrade3 />
             </aside>
         </main>
@@ -6077,6 +6143,11 @@ const deferredAssetsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <DeferredAssetsGrade3 />
             </aside>
         </main>
@@ -6087,6 +6158,11 @@ const deferredAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <DeferredAssetsGrade3 />
             </aside>
         </main>
@@ -6097,6 +6173,11 @@ const deferredAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <DeferredAssetsGrade3 />
             </aside>
         </main>
@@ -6308,6 +6389,11 @@ const assetRetirementObligationsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <AssetRetirementObligationsGrade3 />
             </aside>
         </main>
@@ -6318,6 +6404,11 @@ const assetRetirementObligationsGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <AssetRetirementObligationsGrade3 />
             </aside>
         </main>
@@ -6328,6 +6419,11 @@ const assetRetirementObligationsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <AssetRetirementObligationsGrade3 />
             </aside>
         </main>
@@ -6357,6 +6453,41 @@ const profitAndLossGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <ProfitAndLossGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const profitAndLossGrade2 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <ProfitAndLossGrade3 />
+            </aside>
+        </main>
+    );
+}
+
+const profitAndLossGrade1 = () => {
+    return (
+        <main className="mainArticle">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <ProfitAndLossGrade3 />
             </aside>
         </main>
@@ -6386,7 +6517,12 @@ const taxGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <LeaseAccounting />
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <TaxGrade3 />
             </aside>
         </main>
     );
@@ -6396,7 +6532,12 @@ const taxGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <LeaseAccounting />
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <TaxGrade3 />
             </aside>
         </main>
     );
@@ -6406,7 +6547,12 @@ const taxGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
-                <LeaseAccounting />
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <TaxGrade3 />
             </aside>
         </main>
     );
@@ -6525,6 +6671,11 @@ const unbalancedAccountGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <UnbalancedAccountGrade3 />
             </aside>
         </main>
@@ -6535,6 +6686,11 @@ const unbalancedAccountGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <UnbalancedAccountGrade3 />
             </aside>
         </main>
@@ -6545,6 +6701,11 @@ const unbalancedAccountGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <UnbalancedAccountGrade3 />
             </aside>
         </main>
@@ -6574,6 +6735,11 @@ const accountingChangesAndCorrectionOfErrorsGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <AccountingChangesAndCorrectionOfErrorsGrade3 />
             </aside>
         </main>
@@ -6584,6 +6750,11 @@ const accountingChangesAndCorrectionOfErrorsGrade2 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <AccountingChangesAndCorrectionOfErrorsGrade3 />
             </aside>
         </main>
@@ -6594,6 +6765,11 @@ const accountingChangesAndCorrectionOfErrorsGrade1 = () => {
     return (
         <main className="mainArticle">
             <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
                 <AccountingChangesAndCorrectionOfErrorsGrade3 />
             </aside>
         </main>
@@ -7059,7 +7235,7 @@ const SideBar = () => {
 			<li className="sideList menu-sakura-color"><Link to="/asset-retirement-obligations-grade3">資産除去債務</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/profit-and-loss-grade3">収益と費用</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/tax-grade3">税金</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/accounting-for-income-taxes-grade3">税効果会計</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">税効果会計</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/unbalanced-account-grade3">未決算</Link></li>
 			<li className="sideList menu-sakura-color"><Link to="/accounting-changes-and-correction-of-errors-grade3">会計上の変更および誤謬の訂正</Link></li>
                 </ul>
@@ -7145,7 +7321,7 @@ const SideBar = () => {
                 <Route path="/account-grade3" component={ accountGrade3 } />
                 <Route path="/account-grade2" component={ accountGrade2 } />
                 <Route path="/account-grade1" component={ accountGrade1 } />
-		<Route path="/kind-of-account" component={ kindOfAccount } />
+				<Route path="/kind-of-account" component={ kindOfAccount } />
                 <Route path="/accounts-list-grade3" component={ accountsListGrade3 } />
                 <Route path="/accounts-list-grade2" component={ accountsListGrade2 } />
                 <Route path="/accounts-list-grade1" component={ accountsListGrade1 } />
@@ -7218,9 +7394,9 @@ const SideBar = () => {
 		<Route path="/tax-grade3" component={ taxGrade3 } />
 		<Route path="/tax-grade2" component={ taxGrade2 } />
 		<Route path="/tax-grade1" component={ taxGrade1 } />
-		<Route path="/accounting-for-income-taxes-grade3" component={ accountingForIncomeTaxesGrade3 } />
+		{/* <Route path="/accounting-for-income-taxes-grade3" component={ accountingForIncomeTaxesGrade3 } />
 		<Route path="/accounting-for-income-taxes-grade2" component={ accountingForIncomeTaxesGrade2 } />
-		<Route path="/accounting-for-income-taxes-grade1" component={ accountingForIncomeTaxesGrade1 } />
+		<Route path="/accounting-for-income-taxes-grade1" component={ accountingForIncomeTaxesGrade1 } /> */}
 		<Route path="/unbalanced-account-grade3" component={ unbalancedAccountGrade3 } />
 		<Route path="/unbalanced-account-grade2" component={ unbalancedAccountGrade2 } />
 		<Route path="/unbalanced-account-grade1" component={ unbalancedAccountGrade1 } />
@@ -7228,24 +7404,24 @@ const SideBar = () => {
 		<Route path="/accounting-changes-and-correction-of-errors-grade2" component={ accountingChangesAndCorrectionOfErrorsGrade2 } />
 		<Route path="/accounting-changes-and-correction-of-errors-grade1" component={ accountingChangesAndCorrectionOfErrorsGrade1 } />
 		<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
-                <Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
-                <Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
-                <Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
-                <Route path="/tax-effect-grade2" component={ taxEffectGrade2 } />
-                <Route path="/tax-effect-grade1" component={ taxEffectGrade1 } />
-                <Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
-                <Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
-                <Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
-                <Route path="/corporate-accounting-principles" component={ corporateAccountingPrinciples } />
-                <Route path="/profit-and-loss-accounting" component={ profitAndLossAccounting } />
-                <Route path="/asset-accounting" component={ assetAccounting } />
-                <Route path="/liabilities-accounting" component={ liabilitiesAccounting } />
-                <Route path="/net-assets-accounting" component={ netAssetsAccounting } />
-                <Route path="/inventory-accounting" component={ inventoryAccounting } />
-                <Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } />
-                <Route path="/lease-accounting" component={ leaseAccounting } />
-                <Route path="/financial-statements-theory" component={ financialStatementsTheory } />
-                <Route component={ home } />{/* ←404の場合 */}
+		<Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
+		<Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
+		<Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
+		<Route path="/tax-effect-grade2" component={ taxEffectGrade2 } />
+		<Route path="/tax-effect-grade1" component={ taxEffectGrade1 } />
+		<Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
+		<Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
+		<Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
+		<Route path="/corporate-accounting-principles" component={ corporateAccountingPrinciples } />
+		<Route path="/profit-and-loss-accounting" component={ profitAndLossAccounting } />
+		<Route path="/asset-accounting" component={ assetAccounting } />
+		<Route path="/liabilities-accounting" component={ liabilitiesAccounting } />
+		<Route path="/net-assets-accounting" component={ netAssetsAccounting } />
+		<Route path="/inventory-accounting" component={ inventoryAccounting } />
+		{/* <Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } /> */}
+		{/* <Route path="/lease-accounting" component={ leaseAccounting } /> */}
+		<Route path="/financial-statements-theory" component={ financialStatementsTheory } />
+		<Route component={ home } />{/* ←404の場合 */}
             </Switch>
         </BrowserRouter>
     );
@@ -7318,20 +7494,20 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-		<Route path="/cash-grade2" component={ cashGrade2 } />
-		<Route path="/cash-grade1" component={ cashGrade1 } />
+				<Route path="/cash-grade2" component={ cashGrade2 } />
+				<Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-		<Route path="/savings-grade2" component={ savingsGrade2 } />
-		<Route path="/savings-grade1" component={ savingsGrade1 } />
+				<Route path="/savings-grade2" component={ savingsGrade2 } />
+				<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
-		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
+				<Route path="/tradings-grade2" component={ tradingsGrade2 } />
+				<Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+				<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+				<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-		<Route path="/other-grade2" component={ otherGrade2 } />
-		<Route path="/other-grade1" component={ otherGrade1 } />
+				<Route path="/other-grade2" component={ otherGrade2 } />
+				<Route path="/other-grade1" component={ otherGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
@@ -7362,8 +7538,8 @@ const SideBar = () => {
                 <Route path="/liabilities-accounting" component={ liabilitiesAccounting } />
                 <Route path="/net-assets-accounting" component={ netAssetsAccounting } />
                 <Route path="/inventory-accounting" component={ inventoryAccounting } />
-                <Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } />
-                <Route path="/lease-accounting" component={ leaseAccounting } />
+                {/* <Route path="/non-current-assets-accounting" component={ nonCurrentAssetsAccounting } /> */}
+                {/* <Route path="/lease-accounting" component={ leaseAccounting } /> */}
                 <Route path="/financial-statements-theory" component={ financialStatementsTheory } />
                 <Route component={ home } />{/* ←404の場合 */}
             </Switch>
