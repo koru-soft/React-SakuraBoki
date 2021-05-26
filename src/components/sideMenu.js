@@ -7207,8 +7207,8 @@ const SideBar = () => {
 			<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
 			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
 			{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
-			<li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
-			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li>
+			{/* <li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+			<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li> */}
                 </ul>
 
                 <h2 className="titleColor">諸取引の処理</h2>
