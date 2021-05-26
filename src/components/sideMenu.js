@@ -6985,6 +6985,42 @@ const SideBar = () => {
                 <Route path="/special-tradings-grade3" component={ specialTradingsGrade3 } />
 		<Route path="/special-tradings-grade2" component={ specialTradingsGrade2 } />
 		<Route path="/special-tradings-grade1" component={ specialTradingsGrade1 } />
+		<Route path="/various-service-transfer-grade3" component={ variousServiceTransferGrade3 } />
+		<Route path="/various-service-transfer-grade2" component={ variousServiceTransferGrade2 } />
+		<Route path="/various-service-transfer-grade1" component={ variousServiceTransferGrade1 } />
+		<Route path="/financial-instrument-grade3" component={ financialInstrumentGrade3 } />
+		<Route path="/financial-instrument-grade2" component={ financialInstrumentGrade2 } />
+		<Route path="/financial-instrument-grade1" component={ financialInstrumentGrade1 } />
+		<Route path="/intangible-assets-grade3" component={ intangibleAssetsGrade3 } />
+		<Route path="/intangible-assets-grade2" component={ intangibleAssetsGrade3 } />
+		<Route path="/intangible-assets-grade1" component={ intangibleAssetsGrade3 } />
+		<Route path="/book-impairment-grade3" component={ bookImpairmentGrade3 } />
+		<Route path="/book-impairment-grade2" component={ bookImpairmentGrade2 } />
+		<Route path="/book-impairment-grade1" component={ bookImpairmentGrade1 } />
+		<Route path="/investments-and-other-assets-grade3" component={ investmentsAndOtherAssetsGrade3 } />
+		<Route path="/investments-and-other-assets-grade2" component={ investmentsAndOtherAssetsGrade2 } />
+		<Route path="/investments-and-other-assets-grade1" component={ investmentsAndOtherAssetsGrade1 } />
+		<Route path="/deferred-assets-grade3" component={ deferredAssetsGrade3 } />
+		<Route path="/deferred-assets-grade2" component={ deferredAssetsGrade2 } />
+		<Route path="/deferred-assets-grade1" component={ deferredAssetsGrade1 } />
+		<Route path="/asset-retirement-obligations-grade3" component={ assetRetirementObligationsGrade3 } />
+		<Route path="/asset-retirement-obligations-grade2" component={ assetRetirementObligationsGrade2 } />
+		<Route path="/asset-retirement-obligations-grade1" component={ assetRetirementObligationsGrade1 } />
+		<Route path="/profit-and-loss-grade3" component={ profitAndLossGrade3 } />
+		<Route path="/profit-and-loss-grade2" component={ profitAndLossGrade2 } />
+		<Route path="/profit-and-loss-grade1" component={ profitAndLossGrade1 } />
+		<Route path="/tax-grade3" component={ taxGrade3 } />
+		<Route path="/tax-grade2" component={ taxGrade2 } />
+		<Route path="/tax-grade1" component={ taxGrade1 } />
+		<Route path="/accounting-for-income-taxes-grade3" component={ accountingForIncomeTaxesGrade3 } />
+		<Route path="/accounting-for-income-taxes-grade2" component={ accountingForIncomeTaxesGrade2 } />
+		<Route path="/accounting-for-income-taxes-grade1" component={ accountingForIncomeTaxesGrade1 } />
+		<Route path="/unbalanced-account-grade3" component={ unbalancedAccountGrade3 } />
+		<Route path="/unbalanced-account-grade2" component={ unbalancedAccountGrade2 } />
+		<Route path="/unbalanced-account-grade1" component={ unbalancedAccountGrade1 } />
+		<Route path="/accounting-changes-and-correction-of-errors-grade3" component={ accountingChangesAndCorrectionOfErrorsGrade3 } />
+		<Route path="/accounting-changes-and-correction-of-errors-grade2" component={ accountingChangesAndCorrectionOfErrorsGrade2 } />
+		<Route path="/accounting-changes-and-correction-of-errors-grade1" component={ accountingChangesAndCorrectionOfErrorsGrade1 } />
 		<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
                 <Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
                 <Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
@@ -7076,20 +7112,20 @@ const SideBar = () => {
                 <Route path="/final-tax-return" component={ finalTaxReturn } />
                 <Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
                 <Route path="/cash-grade3" component={ cashGrade3 } />
-				<Route path="/cash-grade2" component={ cashGrade2 } />
-				<Route path="/cash-grade1" component={ cashGrade1 } />
+		<Route path="/cash-grade2" component={ cashGrade2 } />
+		<Route path="/cash-grade1" component={ cashGrade1 } />
                 <Route path="/savings-grade3" component={ savingsGrade3 } />
-				<Route path="/savings-grade2" component={ savingsGrade2 } />
-				<Route path="/savings-grade1" component={ savingsGrade1 } />
+		<Route path="/savings-grade2" component={ savingsGrade2 } />
+		<Route path="/savings-grade1" component={ savingsGrade1 } />
                 <Route path="/tradings-grade3" component={ tradingsGrade3 } />
-				<Route path="/tradings-grade2" component={ tradingsGrade2 } />
-				<Route path="/tradings-grade1" component={ tradingsGrade1 } />
+		<Route path="/tradings-grade2" component={ tradingsGrade2 } />
+		<Route path="/tradings-grade1" component={ tradingsGrade1 } />
                 <Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-				<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-				<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
+		<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
+		<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
                 <Route path="/other-grade3" component={ otherGrade3 } />
-				<Route path="/other-grade2" component={ otherGrade2 } />
-				<Route path="/other-grade1" component={ otherGrade1 } />
+		<Route path="/other-grade2" component={ otherGrade2 } />
+		<Route path="/other-grade1" component={ otherGrade1 } />
                 <Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
                 <Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
                 <Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
