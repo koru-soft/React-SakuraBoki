@@ -5821,7 +5821,7 @@ const NonCurrentAssetsGrade3 = () => {
 			<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 					<tr>
-						<th className="table-align table-size50">借方（運用形態）</th>
+						<th className="table-align table-size-50">借方（運用形態）</th>
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
@@ -5855,7 +5855,7 @@ const NonCurrentAssetsGrade3 = () => {
 			<br />
 	    		<table border="1" cellspacing="0" className="table-color">
 					<tr>
-						<th className="table-align table-size50">借方（運用形態）</th>
+						<th className="table-align table-size-50">借方（運用形態）</th>
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
