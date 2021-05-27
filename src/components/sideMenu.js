@@ -6814,12 +6814,93 @@ const assetRetirementObligationsGrade1 = () => {
 const ProfitAndLossGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
+		<section className="font-color">
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">消耗品費の会計処理</h1>	
+			</Element>
+			<div>ボールペンやティッシュペーパー、ゴミ袋の購入費用など、10万円未満の「使ったらなくなる」という性質をもつ資産の支払いに発生した費用を<span className="underline font-color2">消耗品費</span>と呼びます。</div>
+	    		<br />
+			<div>消耗性をもつ資産は、資産としての性質も、費用としての性質もどちらも兼ね備えています。</div>
+	    		<div>そのため、先に資産として計上するか、費用として計上するかを記帳者に委ねています。</div>
+	    		<br />
+			<div>もし、先に資産として計上する場合は、<span className="underline font-color2">消耗品</span>、費用として計上する場合は<span className="underline font-color2">消耗品費</span>として処理を行います。</div>
+	    
+	    <div></div>
+	    <div></div>
+	    <div></div>
+	    
+	    
+	    
+	    		<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">旅費交通費の会計処理</h1>	
+			</Element>
+	    		<div>仕事のために利用した電車代やバス代などの費用を<span className="underline font-color2">旅費交通費</span>と呼びます。</div>
+	    
+	    		<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">通信費の会計処理</h1>	
+			</Element>
+	    		<div>電話料金、インターネットの通信料金、クラウドソフトの利用料金など、通信にかかった費用を<span className="underline font-color2">通信費</span>と呼びます。</div>
+	    
+	    		<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">水道光熱費の会計処理</h1>	
+			</Element>
+	    		<div>水道代、ガス代、電気代をまとめて<span className="underline font-color2">水道光熱費</span>と呼びます。</div>
+	    
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">広告宣伝費の会計処理</h1>	
+			</Element>
+	    		<div>テレビ、新聞、雑誌、インターネットなどのメディアへの掲載料など、様々な広告にかかる料金や宣伝費用を<span className="underline font-color2">広告宣伝費</span>と呼びます。</div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">給料手当の会計処理</h1>	
+			</Element>
+	    		<div>従業員に支払った給料を処理する勘定科目を<span className="underline font-color2">給料手当</span>と呼びます。</div>
+	    		<div>もしくは単に、給料や給与と呼ぶこともあります。</div>
+	    		<br />
+	    		<div>給料を支払う場合、一般的には源泉所得税の徴収を行ったり、社会保険料を事前に差し引いた形で支払いを行います。</div>
+	    		<br />
+	    		<div>そのため、実際に仕訳を行う場合には、総支給額を<span className="underline font-color2">給料手当</span>、源泉徴収分や社会保険料の差し引き分を<span className="underline font-color2">預り金</span>として登録することが必要となります。</div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">法定福利費の会計処理</h1>	
+			</Element>
+	    		<div>健康保険や厚生年金保険料、雇用保険料、労災保険料などの支払いで発生した費用を<span className="underline font-color2">法定福利費</span>と呼びます。</div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">福利厚生費の会計処理</h1>	
+			</Element>
+	    		<div>結婚祝いの支払いや慰安旅行の費用など、役員・従業員のために支払われる費用を<span className="underline font-color2">福利厚生費</span>と呼びます。</div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">家賃の会計処理</h1>	
+			</Element>
+	    		<div>建物を借りている場合に発生する家賃の費用を支払家賃、建物を貸している場合に発生する家賃の収益を<span className="underline font-color2">受取家賃</span>と呼びます。</div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">地代の会計処理</h1>	
+			</Element>
+	    		<div>土地を借りている場合に発生する土地の費用を<span className="underline font-color2">支払地代</span>、土地を貸している場合に発生する土地の収益を<span className="underline font-color2">受取地代</span>と呼びます。</div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">手数料の会計処理</h1>	
+			</Element>
+	    		<div></div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">利息の会計処理</h1>	
+			</Element>
+	    		<div></div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">雑費と雑損失の会計処理</h1>	
+			</Element>
+	    		<div></div>
+
+			<Element name="profit-and-loss-grade3-1" className="element" >
+				<h1 className="intro">雑収入の会計処理</h1>	
+			</Element>
+	    		<div></div>
+		</section>
         </>
     );
 }
@@ -6828,11 +6909,28 @@ const profitAndLossGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
-			<div className="level_change_wrapper">
-				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-			</div>
+		<div className="level_change_wrapper">
+			
+		</div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-1" spy={true} smooth={true} duration={500} >消耗品費の会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-2" spy={true} smooth={true} duration={500} >旅費交通費の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-3" spy={true} smooth={true} duration={500} >通信費の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-4" spy={true} smooth={true} duration={500} >水道光熱費の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-5" spy={true} smooth={true} duration={500} >広告宣伝費の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-6" spy={true} smooth={true} duration={500} >給料手当の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-7" spy={true} smooth={true} duration={500} >法定福利費の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-8" spy={true} smooth={true} duration={500} >福利厚生費の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-9" spy={true} smooth={true} duration={500} >家賃の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-10" spy={true} smooth={true} duration={500} >地代の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-11" spy={true} smooth={true} duration={500} >手数料の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-12" spy={true} smooth={true} duration={500} >利息の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-13" spy={true} smooth={true} duration={500} >雑費と雑損失の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-14" spy={true} smooth={true} duration={500} >雑収入の会計処理</ScrollLink></li>	
+		　　　</ul>
+                </aside>
                 <ProfitAndLossGrade3 />
             </aside>
         </main>
@@ -6844,9 +6942,9 @@ const profitAndLossGrade2 = () => {
         <main className="mainArticle">
             <aside>
 			<div className="level_change_wrapper">
-				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+				<Link to="/profit-and-loss-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/profit-and-loss-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/profit-and-loss-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
 			</div>
                 <ProfitAndLossGrade3 />
             </aside>
@@ -6859,9 +6957,9 @@ const profitAndLossGrade1 = () => {
         <main className="mainArticle">
             <aside>
 			<div className="level_change_wrapper">
-				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+				<Link to="/profit-and-loss-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/profit-and-loss-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/profit-and-loss-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
 			</div>
                 <ProfitAndLossGrade3 />
             </aside>
@@ -6892,11 +6990,22 @@ const taxGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
-			<div className="level_change_wrapper">
-				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
-				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
-				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
-			</div>
+		<div className="level_change_wrapper">
+			<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+			<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+			<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+		</div>
+		<aside className="subMenu">
+		    <ul>
+			<li className="table-of-contents">目次</li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-1" spy={true} smooth={true} duration={500} >租税公課の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-2" spy={true} smooth={true} duration={500} >法人税の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-3" spy={true} smooth={true} duration={500} >消費税の仕組み</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-4" spy={true} smooth={true} duration={500} >税込経理と税抜経理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-4" spy={true} smooth={true} duration={500} >消費税の経理処理方法</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-4" spy={true} smooth={true} duration={500} >消費税の会計処理</ScrollLink></li>
+		   </ul>
+		</aside>
                 <TaxGrade3 />
             </aside>
         </main>
