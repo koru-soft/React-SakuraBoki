@@ -6823,35 +6823,29 @@ const ProfitAndLossGrade3 = () => {
 			<div>消耗性をもつ資産は、資産としての性質も、費用としての性質もどちらも兼ね備えています。</div>
 	    		<div>そのため、先に資産として計上するか、費用として計上するかを記帳者に委ねています。</div>
 	    		<br />
-			<div>もし、先に資産として計上する場合は、<span className="underline font-color2">消耗品</span>、費用として計上する場合は<span className="underline font-color2">消耗品費</span>として処理を行います。</div>
+			<div>もし、先に資産として計上する場合は、<span className="underline font-color2">消耗品</span>、費用として計上する場合は<span className="underline font-color2">消耗品費</span>として処理を行います。</div>    
 	    
-	    <div></div>
-	    <div></div>
-	    <div></div>
-	    
-	    
-	    
-	    		<Element name="profit-and-loss-grade3-1" className="element" >
+	    		<Element name="profit-and-loss-grade3-2" className="element" >
 				<h1 className="intro">旅費交通費の会計処理</h1>	
 			</Element>
 	    		<div>仕事のために利用した電車代やバス代などの費用を<span className="underline font-color2">旅費交通費</span>と呼びます。</div>
 	    
-	    		<Element name="profit-and-loss-grade3-1" className="element" >
+	    		<Element name="profit-and-loss-grade3-3" className="element" >
 				<h1 className="intro">通信費の会計処理</h1>	
 			</Element>
 	    		<div>電話料金、インターネットの通信料金、クラウドソフトの利用料金など、通信にかかった費用を<span className="underline font-color2">通信費</span>と呼びます。</div>
 	    
-	    		<Element name="profit-and-loss-grade3-1" className="element" >
+	    		<Element name="profit-and-loss-grade3-4" className="element" >
 				<h1 className="intro">水道光熱費の会計処理</h1>	
 			</Element>
 	    		<div>水道代、ガス代、電気代をまとめて<span className="underline font-color2">水道光熱費</span>と呼びます。</div>
 	    
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-5" className="element" >
 				<h1 className="intro">広告宣伝費の会計処理</h1>	
 			</Element>
 	    		<div>テレビ、新聞、雑誌、インターネットなどのメディアへの掲載料など、様々な広告にかかる料金や宣伝費用を<span className="underline font-color2">広告宣伝費</span>と呼びます。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-6" className="element" >
 				<h1 className="intro">給料手当の会計処理</h1>	
 			</Element>
 	    		<div>従業員に支払った給料を処理する勘定科目を<span className="underline font-color2">給料手当</span>と呼びます。</div>
@@ -6861,45 +6855,66 @@ const ProfitAndLossGrade3 = () => {
 	    		<br />
 	    		<div>そのため、実際に仕訳を行う場合には、総支給額を<span className="underline font-color2">給料手当</span>、源泉徴収分や社会保険料の差し引き分を<span className="underline font-color2">預り金</span>として登録することが必要となります。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-7" className="element" >
 				<h1 className="intro">法定福利費の会計処理</h1>	
 			</Element>
 	    		<div>健康保険や厚生年金保険料、雇用保険料、労災保険料などの支払いで発生した費用を<span className="underline font-color2">法定福利費</span>と呼びます。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-8" className="element" >
 				<h1 className="intro">福利厚生費の会計処理</h1>	
 			</Element>
 	    		<div>結婚祝いの支払いや慰安旅行の費用など、役員・従業員のために支払われる費用を<span className="underline font-color2">福利厚生費</span>と呼びます。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-9" className="element" >
 				<h1 className="intro">家賃の会計処理</h1>	
 			</Element>
 	    		<div>建物を借りている場合に発生する家賃の費用を支払家賃、建物を貸している場合に発生する家賃の収益を<span className="underline font-color2">受取家賃</span>と呼びます。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-10" className="element" >
 				<h1 className="intro">地代の会計処理</h1>	
 			</Element>
 	    		<div>土地を借りている場合に発生する土地の費用を<span className="underline font-color2">支払地代</span>、土地を貸している場合に発生する土地の収益を<span className="underline font-color2">受取地代</span>と呼びます。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-11" className="element" >
 				<h1 className="intro">手数料の会計処理</h1>	
 			</Element>
-	    		<div></div>
+	    		<div>小売業を営む事業者が、不動産の仲介手数料を得た場合など、本業以外の活動から発生した収入を、<span className="underline font-color2">受取手数料</span>と呼びます。</div>
+	    		<br />
+	    		<div>一方、金融機関への振込にかかる手数料などで発生した費用を<span className="underline font-color2">支払手数料</span>と呼びます。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-12" className="element" >
 				<h1 className="intro">利息の会計処理</h1>	
 			</Element>
-	    		<div></div>
+	    		<div>お金を貸し付けることなどで発生した利息部分の収入を、<span className="underline font-color2">受取利息</span>と呼びます。</div>
+	    		<br />
+	    		<div>一方、お金を借りることなどで発生した、利息部分の費用を、<span className="underline font-color2">支払利息</span>と呼びます。</div>
 
-			<Element name="profit-and-loss-grade3-1" className="element" >
+			<Element name="profit-and-loss-grade3-13" className="element" >
 				<h1 className="intro">雑費と雑損失の会計処理</h1>	
 			</Element>
-	    		<div></div>
-
-			<Element name="profit-and-loss-grade3-1" className="element" >
+	    		<div>発生した費用が、既存のどの費用勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような支払いが発生した場合、<span className="underline font-color2">雑費</span>か<span className="underline font-color2">雑損失</span>で処理を行います。</div>
+			<br />
+	    		<div>違いは以下の通りです</div>
+	    		<br />
+	    		<table border="1" cellspacing="0" className="table-color">
+				<tr>
+				    <th className="table-size-30 table-align">勘定科目の名前</th>
+				    <th className="table-align">どんなもの？</th>
+				</tr>
+				<tr>
+				    <td className="table-align">雑費</td>
+				    <td className="table-align">販売費及び一般管理費に該当するような、主に営業活動で発生した出費</td>
+				</tr>
+				<tr>
+				    <td className="table-align">雑損失</td>
+				    <td className="table-align">営業外費用に該当するような、主に営業活動以外で発生した出費</td>
+				</tr>
+			</table>
+	    
+			<Element name="profit-and-loss-grade3-14" className="element" >
 				<h1 className="intro">雑収入の会計処理</h1>	
 			</Element>
-	    		<div></div>
+	    		<div>発生した収益が、営業外収益に該当するものの、既存のどの収益勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような収益が発生した場合、<span className="underline font-color2">雑収入</span>で処理を行います。</div>
 		</section>
         </>
     );
