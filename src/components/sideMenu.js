@@ -363,7 +363,7 @@ const KindOfAccount = () => {
 				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
 						<th className="table-size table-align" colspan="2">ペアの勘定科目</th>
-						<th className="table-size table-align"></th>
+						
 				    </tr>
 				    <tr>
 						<td className="table-size table-align">試用販売未収金</td>
