@@ -3432,8 +3432,8 @@ const PromissoryNotesGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					    </tr>
 					    <tr>
-						<td className="table-align">仕入　10,000</td>
-						<td className="table-align">支払手形　10,000</td>
+						<td className="table-align">仕入 10,000</td>
+						<td className="table-align">支払手形 10,000</td>
 					    </tr>
 			</table>
 			<br />
@@ -3463,8 +3463,8 @@ const PromissoryNotesGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 				</tr>
 				<tr>
-				<td className="table-align">受取手形　10,000</td>
-				<td className="table-align">売上　10,000</td>
+				<td className="table-align">受取手形 10,000</td>
+				<td className="table-align">売上 10,000</td>
 				</tr>
 			</table>
 			<br />
@@ -3493,13 +3493,14 @@ const PromissoryNotesGrade3 = () => {
 			</Element>
 			<div>電子債権記録機関に必要事項を電子記録することで発生する債権、債務を<span className="underline font-color2">電子記録債権</span>または<span className="underline font-color2">電子記録債務</span>といいます。</div>
 			<br />
-			<div>手形は紛失や盗難の危険があるのに対し、電子記録債権（または債務）は電子データになるため、物理的な紛失や盗難のリスクを抑えることができます。</div>
+	    		<div>電子記録債権（または債務）は手形の代替手段として機能することが想定されているため、会計処理は手形のルールに準じて処理することとなっています。</div>
 			<br />
-			<div>また、手形は印紙税がかかるのに対し、電子記録債権（または債務）であれば印紙の貼付が不要のため、印紙税を節約することが出来ます。</div>
+	    		<div>このような債権が存在するメリットとして、例えば手形は紛失や盗難の危険があるのに対し、電子記録債権（または債務）は電子データになるため、物理的な紛失や盗難のリスクを抑えるこが出来るという点があります。</div>
 			<br />
-			<div>電子記録債権（または債務）は手形の代替手段として機能することが想定されているため、会計処理は手形のルールに準じて処理することとなっています。</div>
+			<div>他にも、手形は印紙税がかかるのに対し、電子記録債権（または債務）であれば印紙の貼付が不要のため、印紙税を節約することが出来るといった点もポイントになります。</div>
 			<br />
-			<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
+			<div>それでは仕訳を見ていきましょう。</div>
+	    		<div>10,000円の売掛金の回収のため、取引銀行を通じ、債権の発生記録の請求を行い、得意先の承諾を得て、電子記録に係る債権が生じたという場合、以下の仕訳となります。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
 					    <tr>
@@ -3507,27 +3508,27 @@ const PromissoryNotesGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					    </tr>
 					    <tr>
-						<td className="table-align">受取手形　10,000</td>
-						<td className="table-align">売上　10,000</td>
+						<td className="table-align">電子記録債権 10,000</td>
+						<td className="table-align">売掛金 10,000</td>
 					    </tr>
 			</table>
 			<br />
 			<div className="explanation-wrapper">
 				<div>■　仕訳の手順　■</div>
 				<br />
-				<div>商品10,000円を販売し、代金を約束手形で受取った</div>
+				<div>10,000円の売掛金の回収のため、取引銀行を通じ、債権の発生記録の請求を行い、得意先の承諾を得て、電子記録に係る債権が生じた</div>
 				<br />
 				<div>①因果分析</div>
-				<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
-				<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
+				<div>最終的に発生したもの（借方）：10,000円分の電子記録された債権</div>
+				<div>なぜ発生したか（貸方）：売掛金が10,000円分発生していたため</div>
 				<br />
 				<div>②勘定科目の割当</div>
-				<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
-				<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
+				<div>最終的に発生したもの（借方）：電子記録に係る債権になるため、電子記録債権で処理</div>
+				<div>なぜ発生したか（貸方）：事前に存在していた売掛金の振替になるため、売掛金で処理</div>
 				<br />
 				<div>③勘定科目の配置</div>
-				<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
-				<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
+				<div>最終的に発生したもの（借方）：電子記録債権という資産が増加するため、借方に電子記録債権を配置</div>
+				<div>なぜ発生したか（貸方）：売掛金という資産が減少するため、貸方に売掛金を配置</div>
 			</div>
 	    	</section>
 	    	
@@ -3547,8 +3548,8 @@ const PromissoryNotesGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 				</tr>
 				<tr>
-				<td className="table-align">受取手形　10,000</td>
-				<td className="table-align">売上　10,000</td>
+				<td className="table-align">受取手形 10,000</td>
+				<td className="table-align">売上 10,000</td>
 				</tr>
 			</table>
 			<br />
@@ -3591,8 +3592,8 @@ const PromissoryNotesGrade2 = () => {
 			    <th>貸方（調達源泉）</th>
 			</tr>
 			<tr>
-			    <td>電子記録債権　1,000</td>
-			    <td>売掛金　1,000</td>
+			    <td>電子記録債権 1,000</td>
+			    <td>売掛金 1,000</td>
 			</tr>
 		    </table>
 		    <div>電子記録債権は、債権者または債務者が電子債権記録機関に発生記録の請求を行い、同機関がその記録を行うことによって発生します。債権者は電子記録債権、債務者は電子記録債務で処理します。</div>
