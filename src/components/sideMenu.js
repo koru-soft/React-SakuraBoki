@@ -122,7 +122,7 @@ const Bookkeeping = () => {
 
 	    	<Element name="bookkeeping3" className="element" ></Element>
                 <h1 className="intro">複式簿記とは</h1>
-                <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼びます。</div>
+                <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼び、この方法によって記録した帳簿のことを<span className="underline font-color2">複式簿記</span>と呼びます。</div>
 	    	<div>例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
                 <br />
                 <div>最終的に発生したもの（結果）：チョコレート</div>
@@ -142,7 +142,15 @@ const Bookkeeping = () => {
                     </tr>
                 </table>
                 <br />
-	    	<div>なお、明治時代には二重扣ノ式（にじゅうこうのしき）と呼ばれていました。</div>
+	    	<div>なお、複式簿記は明治時代には
+	    		<ruby>
+				<rb>二重扣ノ式</rb>
+				<rp>（</rp>
+				<rt>にじゅうこうのしき</rt>
+				<rp>）</rp>
+				</ruby>
+	   		と呼ばれていました。
+	    	</div>
 	    
                 <Element name="bookkeeping4" className="element" >
                 	<h1 className="intro">仕訳とは</h1>
@@ -261,7 +269,7 @@ const Bookkeeping = () => {
 	    	<br />
 	    	<div>なお、会計期間の公準は別名、<span className="underline font-color2">継続企業の公準</span>と呼ばれます。企業は半永久的に活動を続けるという前提のことを指します。</div>
 	    	<br />
-	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキのシクミの基礎となります。</div>
+	    	<div>以上の方法で、1年間のお金の動きを仕訳という方法で記録していくことで、最終的に貸借対照表や損益計算書を作成していくことが、ボキの仕組みの基礎となります。</div>
 	    </section>
         </>
     );
@@ -354,7 +362,7 @@ const KindOfAccount = () => {
 				<br />
 				<table border="1" cellspacing="0" className="table-color">
 				    <tr>
-						<th className="table-size table-align" columnspan="2">ペアの勘定科目</th>
+						<th className="table-size table-align" colspan="2">ペアの勘定科目</th>
 						<th className="table-size table-align"></th>
 				    </tr>
 				    <tr>
@@ -2085,8 +2093,8 @@ const CashGrade3 = () => {
 					<th className="table-size table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-size table-align">消耗品費　100</td>
-					<td className="table-size table-align">現金　100</td>
+					<td className="table-size table-align">消耗品費 100</td>
+					<td className="table-size table-align">現金 100</td>
 				    </tr>
 				</table>
                     <br />
@@ -2116,8 +2124,8 @@ const CashGrade3 = () => {
 					<th className="table-size table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-size table-align">現金　10,000</td>
-					<td className="table-size table-align">普通預金　10,000</td>
+					<td className="table-size table-align">現金 10,000</td>
+					<td className="table-size table-align">普通預金 10,000</td>
 				    </tr>
 				</table>
 				    <br />
@@ -2192,8 +2200,8 @@ const CashGrade3 = () => {
 					<th className="table-size table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-size table-align">現金　10,000</td>
-					<td className="table-size table-align">売掛金　10,000</td>
+					<td className="table-size table-align">現金 10,000</td>
+					<td className="table-size table-align">売掛金 10,000</td>
 				    </tr>
 				</table>
 	    			<br />
@@ -2223,7 +2231,7 @@ const CashGrade3 = () => {
 	    			<div>例えば、誰かにお金をあげたいと考えます。</div>
 				<div>一番シンプルな方法は、お金を現金の形で手渡しすることです。</div>
 	    			<br />
-				<div>では、仮に1,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
+				<div>では、仮に1,000,000,000,000円を渡すとしたらどうしますか？また、相手が遠隔地にいたらどうしますか？</div>
 				<div>手渡しも可能ではあるのですが、わざわざ現地まで大量の現金を抱えて持っていくのはいろいろなリスクが伴います。</div>
 	    			<br />
 				<div>ここで登場するのが<span className="underline font-color2">小切手</span>です。以下のようなメリットがあります。</div>
@@ -2270,8 +2278,8 @@ const CashGrade3 = () => {
 					<th className="table-size table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-size table-align">現金過不足　2,000</td>
-					<td className="table-size table-align">現金　2,000</td>
+					<td className="table-size table-align">現金過不足 2,000</td>
+					<td className="table-size table-align">現金 2,000</td>
 				    </tr>
 				</table>
 	    			<br />
@@ -2301,8 +2309,8 @@ const CashGrade3 = () => {
 					<th className="table-size table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-size table-align">通信費　1,500</td>
-					<td className="table-size table-align">現金過不足　1,500</td>
+					<td className="table-size table-align">通信費 1,500</td>
+					<td className="table-size table-align">現金過不足 1,500</td>
 				    </tr>
 				</table>
 	    			<br />
@@ -2326,6 +2334,7 @@ const CashGrade3 = () => {
 	    			<br />
 	    			<div>現金過不足の調査の結果、500円分は原因が不明だったとします。</div>
 	    			<div>現金化不足は原因が判明するまでの一時的な勘定科目なので、その原因が不明であってもいつまでも帳簿上に残しておくことは出来ません。</div>
+				<br />
 	    			<div>そこで、決算日においても原因がわからない現金過不足に関しては、雑収入や雑損失に振替えます。</div>
 	    			<div>このように期中に一時的に計上した勘定科目に対して、決算時にその整理を行うための仕訳を、<span className="underline font-color2">決算整理仕訳</span>と呼びます。</div>
 	    			<br />
@@ -2336,7 +2345,7 @@ const CashGrade3 = () => {
 				    </tr>
 				    <tr>
 					<td className="table-size table-align">雑損失 500</td>
-					<td className="table-size table-align">現金過不足　500</td>
+					<td className="table-size table-align">現金過不足 500</td>
 				    </tr>
 				</table>
 	    			<br />
@@ -2529,7 +2538,7 @@ const SavingsGrade3 = () => {
 		</tr>
 		<tr>
 		    <td className="table-align">定期預金</td>
-		    <td className="table-align">官予め満期日を設定し、満期日までは降ろせない預金</td>
+		    <td className="table-align">予め満期日を設定し、満期日までは降ろせない預金</td>
 		</tr>
 		<tr>
 		    <td className="table-align">別段預金</td>
@@ -2551,8 +2560,8 @@ const SavingsGrade3 = () => {
 					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-align">普通預金　10,000</td>
-					<td className="table-align">現金　10,000</td>
+					<td className="table-align">普通預金 10,000</td>
+					<td className="table-align">現金 10,000</td>
 				    </tr>
 				</table>
 			<br />
@@ -2588,8 +2597,8 @@ const SavingsGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 			    </tr>
 			    <tr>
-				<td className="table-align">定期預金　10,000</td>
-				<td className="table-align">現金　10,000</td>
+				<td className="table-align">定期預金 10,000</td>
+				<td className="table-align">現金 10,000</td>
 			    </tr>
 			</table>
 			<br />
@@ -2627,8 +2636,8 @@ const SavingsGrade3 = () => {
 					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-align">交際費　10,000</td>
-					<td className="table-align">当座預金　10,000</td>
+					<td className="table-align">交際費 10,000</td>
+					<td className="table-align">当座預金 10,000</td>
 				    </tr>
 			</table>
 			<br />
@@ -2660,8 +2669,8 @@ const SavingsGrade3 = () => {
 					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-align">当座預金　10,000</td>
-					<td className="table-align">売掛金　10,000</td>
+					<td className="table-align">当座預金 10,000</td>
+					<td className="table-align">売掛金 10,000</td>
 				    </tr>
 			</table>
 			<br />
@@ -2693,8 +2702,8 @@ const SavingsGrade3 = () => {
 					<th className="table-align">貸方（調達源泉）</th>
 				    </tr>
 				    <tr>
-					<td className="table-align">現金　10,000</td>
-					<td className="table-align">売掛金　10,000</td>
+					<td className="table-align">現金 10,000</td>
+					<td className="table-align">売掛金 10,000</td>
 				    </tr>
 			</table>
 			<br />
@@ -2722,7 +2731,7 @@ const SavingsGrade3 = () => {
 			<h1 className="intro">当座借越の会計処理</h1>	
 		</Element>
 		<div>当座預金の残高を超えた支払いが発生した場合に、予め契約を結んでおくことで銀行が借入限度額まで支払いに応じてくれる契約のことを<span className="underline font-color2">当座借越</span>と呼びます。</div>
-	    <br />
+	    	<br />
 		<div>例えば、当座預金残高が10,000円しかなかったものの、15,000円の買掛金の支払いを小切手で行ったとします。</div>
 		<div>口座にお金が入っていないので、支払いは出来ないはずですが、予め当座借越契約を結んでおけばオーバーした分は銀行側が支払ってくれるのです。今回は10,000円で設定をしましょう。</div>
 		<br />
@@ -2732,12 +2741,11 @@ const SavingsGrade3 = () => {
 					<th className="table-align">貸方（調達源泉）</th>
 				</tr>
 				<tr>
-					<td className="table-align" rowspan="2">買掛金　15,000</td>
-					<td className="table-align">当座預金　10,000</td>
+					<td className="table-align" rowspan="2">買掛金 15,000</td>
+					<td className="table-align">当座預金 10,000</td>
 				</tr>
 				<tr>
-					
-					<td className="table-align">当座借越　5,000</td>
+					<td className="table-align">当座借越 5,000</td>
 				</tr>
 			</table>
 		<br />
@@ -2756,7 +2764,7 @@ const SavingsGrade3 = () => {
 			<br />
 			<div>③勘定科目の配置</div>
 			<div>最終的に発生したもの（借方）：買掛金という負債の支払いになるので、借方に配置し、負債を減少させます。</div>
-			<div>なぜ発生したか（貸方）：当座預金残高10,000円が減るので、貸方に当座預金を配置します。また、オーバー分を銀行からの負債で対応するので、当座借越を貸方に配置します。</div>
+			<div>なぜ発生したか（貸方）：当座預金という資産の残高10,000円が減るので、貸方に当座預金を配置します。また、オーバー分を銀行からの負債で対応するので、当座借越という負債を貸方に配置します。</div>
 		</div>
 		<br />
 		<div>最後に、期首日の時点で行う再振替仕訳について言及します。</div>
@@ -2769,8 +2777,8 @@ const SavingsGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 			    </tr>
 			    <tr>
-				<td className="table-align">当座借越　5,000</td>
-				<td className="table-align">当座預金　5,000</td>
+				<td className="table-align">当座借越 5,000</td>
+				<td className="table-align">当座預金 5,000</td>
 			    </tr>
 		</table>
 		<br />
@@ -2784,12 +2792,12 @@ const SavingsGrade3 = () => {
 			<div>なぜ発生したか（貸方）：当座預金残高のマイナス残高</div>
 			<br />
 			<div>②勘定科目の割当</div>
-			<div>最終的に発生したもの（借方）：</div>
-			<div>なぜ発生したか（貸方）：</div>
+			<div>最終的に発生したもの（借方）：前期計上の当座借越の相殺のための仕訳とることから、当座借越で処理</div>
+			<div>なぜ発生したか（貸方）：当座預金のマイナス残高を表すことから、当座預金で処理</div>
 			<br />
 			<div>③勘定科目の配置</div>
-			<div>最終的に発生したもの（借方）：</div>
-			<div>なぜ発生したか（貸方）：</div>
+			<div>最終的に発生したもの（借方）：当座借越という負債が減少するので、借方に当座借越を配置</div>
+			<div>なぜ発生したか（貸方）：当座預金という資産が減少するので、貸方に当座預金を配置</div>
 		</div>
 	    </section>
     	</>
@@ -2908,8 +2916,8 @@ const TradingsGrade3 = () => {
 							<th className="table-align">貸方（調達源泉）</th>
 						    </tr>
 						    <tr>
-							<td className="table-align">仕入　10,200</td>
-							<td className="table-align">現金　10,200</td>
+							<td className="table-align">仕入 10,200</td>
+							<td className="table-align">現金 10,200</td>
 						    </tr>
 				</table>
 				<br />
@@ -2939,11 +2947,11 @@ const TradingsGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">現金　9,800</td>
-						<td className="table-align">売上　10,000</td>
+						<td className="table-align">現金 9,800</td>
+						<td className="table-align">売上 10,000</td>
 					</tr>
 	    				<tr>
-						<td className="table-align">発送費　200</td>
+						<td className="table-align">発送費 200</td>
 						<td className="table-align"></td>
 					</tr>
 				</table>
@@ -3006,8 +3014,8 @@ const TradingsGrade3 = () => {
 							<th className="table-align">貸方（調達源泉）</th>
 						    </tr>
 						    <tr>
-							<td className="table-align">仕入　10,000</td>
-							<td className="table-align">買掛金　10,000</td>
+							<td className="table-align">仕入 10,000</td>
+							<td className="table-align">買掛金 10,000</td>
 						    </tr>
 				</table>
 				<br />
@@ -3037,8 +3045,8 @@ const TradingsGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">買掛金　10,000</td>
-						<td className="table-align">現金　10,000</td>
+						<td className="table-align">買掛金 10,000</td>
+						<td className="table-align">現金 10,000</td>
 					</tr>
 				</table>
 				<br />
@@ -3068,8 +3076,8 @@ const TradingsGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">売掛金　10,000</td>
-						<td className="table-align">売上　10,000</td>
+						<td className="table-align">売掛金 10,000</td>
+						<td className="table-align">売上 10,000</td>
 					</tr>
 				</table>
 				<br />
@@ -3099,8 +3107,8 @@ const TradingsGrade3 = () => {
 							<th className="table-align">貸方（調達源泉）</th>
 						    </tr>
 						    <tr>
-							<td className="table-align">現金　10,000</td>
-							<td className="table-align">売掛金　10,000</td>
+							<td className="table-align">現金 10,000</td>
+							<td className="table-align">売掛金 10,000</td>
 						    </tr>
 				</table>
 				<br />
@@ -3169,8 +3177,8 @@ const TradingsGrade3 = () => {
 							<th className="table-align">貸方（調達源泉）</th>
 						    </tr>
 						    <tr>
-							<td className="table-align">未収入金　100,000</td>
-							<td className="table-align">工具器具備品　100,000</td>
+							<td className="table-align">未収入金 100,000</td>
+							<td className="table-align">工具器具備品 100,000</td>
 						    </tr>
 					</table>
 					<br />
@@ -3198,13 +3206,15 @@ const TradingsGrade3 = () => {
 				<Element name="tradings-grade3-5" className="element" >
 					<h1 className="intro">分記法とは</h1>	
 				</Element>
-
+				<div>本論点は2021年より簿記3級の範囲外となりました。</div>
+	    			<div>しかしながら、概要だけは把握しておくと売上原価対立法など、簿記2級以降の商品売買の仕訳の理解を助けてくれるので、紹介します。</div>
+	    			<br />
 				<div>商品売買が発生した際、商品、商品売買益の勘定科目を用いて記帳する方法を <span className="underline font-color2">分記法</span>と呼びます。</div>
 				<br />
 				<div>原価部分を商品、販売時の利益と原価部分との差額を商品売買益として処理するので、都度原価の算出が必要となり手間がかかる分、利益の把握が容易な記帳方法です。</div>
 				<br />
 				<div>不動産の販売事業など、少量かつ高額な商品の仕入や売上を管理する必要がある事業で用いられることがあります。</div>
-	    		<br />
+	    			<br />
 				<div>例えば販売用の商品を10,000円仕入れ、代金は現金で払ったとした場合、以下の仕訳となります。</div>
 				<br />
 				<table border="1" cellspacing="0" className="table-color">
@@ -3213,8 +3223,8 @@ const TradingsGrade3 = () => {
 							<th className="table-align">貸方（調達源泉）</th>
 						    </tr>
 						    <tr>
-							<td className="table-align">商品　10,000</td>
-							<td className="table-align">現金　10,000</td>
+							<td className="table-align">商品 10,000</td>
+							<td className="table-align">現金 10,000</td>
 						    </tr>
 				</table>
 				<br />
@@ -3244,11 +3254,11 @@ const TradingsGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align" rowspan="2">現金　15,000</td>
-						<td className="table-align">商品　10,000</td>
+						<td className="table-align" rowspan="2">現金 15,000</td>
+						<td className="table-align">商品 10,000</td>
 					</tr>
 					<tr>
-						<td className="table-align">商品売買益　5,000</td>
+						<td className="table-align">商品売買益 5,000</td>
 					</tr>
 				</table>
 				<br />
