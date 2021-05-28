@@ -7689,38 +7689,109 @@ const TaxGrade3 = () => {
 	    	<div>例えば、収入印紙を10,000円、現金で購入したという場合、以下の仕訳となります。</div>
 	    	<br />
 	    	<table border="1" cellspacing="0" className="table-color">
-					<tr>
-						<th className="table-align">借方（運用形態）</th>
-						<th className="table-align">貸方（調達源泉）</th>
-					</tr>
-					<tr>
-						<td className="table-align">租税公課 10,000</td>
-						<td className="table-align">現金 10,000</td>
-					</tr>
-				</table>
-				<br />
-				<div className="explanation-wrapper">
-					<div>■　仕訳の手順　■</div>
-					<br />
-					<div>収入印紙を10,000円、現金で購入した</div>
-					<br />
-					<div>①因果分析</div>
-					<div>最終的に発生したもの（借方）：10,000円分の収入印紙の購入代金</div>
-					<div>なぜ発生したか（貸方）：現金で購入したため</div>
-					<br />
-					<div>②勘定科目の割当</div>
-					<div>最終的に発生したもの（借方）：収入印紙の購入代金は、印紙税法に定められた印紙税の納税として考えるため、租税公課で処理</div>
-					<div>なぜ発生したか（貸方）：現金での購入になるので、現金で処理</div>
-					<br />
-					<div>③勘定科目の配置</div>
-					<div>最終的に発生したもの（借方）：租税公課という費用が増加するので、借方に租税公課を配置</div>
-					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
-				</div>
-	    
+			<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+			</tr>
+			<tr>
+				<td className="table-align">租税公課 10,000</td>
+				<td className="table-align">現金 10,000</td>
+			</tr>
+		</table>
+		<br />
+		<div className="explanation-wrapper">
+			<div>■　仕訳の手順　■</div>
+			<br />
+			<div>収入印紙を10,000円、現金で購入した</div>
+			<br />
+			<div>①因果分析</div>
+			<div>最終的に発生したもの（借方）：10,000円分の収入印紙の購入代金</div>
+			<div>なぜ発生したか（貸方）：現金で購入したため</div>
+			<br />
+			<div>②勘定科目の割当</div>
+			<div>最終的に発生したもの（借方）：収入印紙の購入代金は、印紙税法に定められた印紙税の納税として考えるため、租税公課で処理</div>
+			<div>なぜ発生したか（貸方）：現金での購入になるので、現金で処理</div>
+			<br />
+			<div>③勘定科目の配置</div>
+			<div>最終的に発生したもの（借方）：租税公課という費用が増加するので、借方に租税公課を配置</div>
+			<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+		</div>
 	    
 	    	<Element name="non-current-assets-grade3-1" className="element" >
-			<h1 className="intro">法人税の会計処理</h1>	
+			<h1 className="intro">法人税の会計処理</h1>
 		</Element>
+	    	<div>法人は事業を運営することで獲得した利益に応じて、法人税、住民税、事業税などが発生します。</div>
+	    	<div>この費用を処理する勘定科目を<span className="underline font-color2">法人税、住民税及び事業税</span>、もしくは<span className="underline font-color2">法人税等</span>と呼びます。</div>
+	    	<br />
+	    	<div>また、年1回の決算の会社などでは、事業年度の中間において、半年分の税金の前払いが必要となります。</div>
+	    	<div>これを、<span className="underline font-color2">中間納付</span>と呼びます。</div>
+	    	<br />
+	    	<div>中間納付を行った場合、<span className="underline font-color2">仮払法人税等</span>にて中間納付金額を計上し、その後決算で法人税の額が確定したら、差額を処理するという流れとなります。</div>
+	    	<br />
+	    	<div>例えば、年度の中間において、法人税を10,000円、現金で中間納付したという場合、以下の仕訳となります。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0" className="table-color">
+			<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+			</tr>
+			<tr>
+				<td className="table-align">仮払法人税等 10,000</td>
+				<td className="table-align">現金 10,000</td>
+			</tr>
+		</table>
+		<br />
+		<div className="explanation-wrapper">
+			<div>■　仕訳の手順　■</div>
+			<br />
+			<div>年度の中間において、法人税を10,000円、現金で中間納付した</div>
+			<br />
+			<div>①因果分析</div>
+			<div>最終的に発生したもの（借方）：10,000円分の法人税の中間納付代金</div>
+			<div>なぜ発生したか（貸方）：現金で支払ったため</div>
+			<br />
+			<div>②勘定科目の割当</div>
+			<div>最終的に発生したもの（借方）：法人税の中間納付分になるので、仮払法人税等で処理</div>
+			<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+			<br />
+			<div>③勘定科目の配置</div>
+			<div>最終的に発生したもの（借方）：仮払法人税等という資産が増加するので、借方に仮払法人税等を配置</div>
+			<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+		</div>
+	    	<br />
+	    	<div>続いて、決算で法人税の金額が20,000円であると確定した。ただし、前期に計上した仮払法人税10,000円を加味すると以下の仕訳となります。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0" className="table-color">
+			<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+			</tr>
+			<tr>
+				<td className="table-align">法人税等 20,000</td>
+				<td className="table-align" rowspan="2">仮払法人税等 10,000</td>
+			</tr>
+	    		<tr>
+				<td className="table-align">未払法人税等 10,000</td>
+			</tr>
+		</table>
+		<br />
+		<div className="explanation-wrapper">
+			<div>■　仕訳の手順　■</div>
+			<br />
+			<div>決算で法人税の金額が20,000円であると確定した。ただし、前期に計上した仮払法人税10,000円を加味する</div>
+			<br />
+			<div>①因果分析</div>
+			<div>最終的に発生したもの（借方）：20,000円分の法人税の確定金額</div>
+			<div>なぜ発生したか（貸方）：前期にすでに納税済みであった10,000円分、および追加納税分10,000円を計上</div>
+			<br />
+			<div>②勘定科目の割当</div>
+			<div>最終的に発生したもの（借方）：法人税の確定分になるので、法人税等もしくは法人税・住民税及び事業税で処理</div>
+			<div>なぜ発生したか（貸方）：すでに納税済み</div>
+			<br />
+			<div>③勘定科目の配置</div>
+			<div>最終的に発生したもの（借方）：仮払法人税等という資産が増加するので、借方に仮払法人税等を配置</div>
+			<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+		</div>
 	    
 	    	<Element name="non-current-assets-grade3-1" className="element" >
 			<h1 className="intro">消費税の仕組み</h1>	
