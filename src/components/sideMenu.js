@@ -7532,7 +7532,7 @@ const ProfitAndLossGrade3 = () => {
 					</tr>
 					<tr>
 						<td className="table-align">雑費 150,000</td>
-						<td className="table-align" rowspan="2">普通預金 150,000</td>
+						<td className="table-align">普通預金 150,000</td>
 					</tr>
 				</table>
 				<br />
@@ -7558,7 +7558,38 @@ const ProfitAndLossGrade3 = () => {
 				<h1 className="intro">雑収入の会計処理</h1>	
 				</Element>
 	    			<div>発生した収益が、営業外収益に該当するものの、既存のどの収益勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような収益が発生した場合、<span className="underline font-color2">雑収入</span>で処理を行います。</div>
-		</section>
+				<br />
+	    			<div>例えば、事務所で不要になった物品を売却し、10,000円分現金を得たという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金 10,000</td>
+						<td className="table-align">雑収入 10,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>事務所で不要になった物品を売却し、10,000円分現金を得た</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金10,000円の受取り</div>
+					<div>なぜ発生したか（貸方）：営業外収益に該当するような、不要物品の売却に伴う収入</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の獲得になるため、現金で処理</div>
+					<div>なぜ発生したか（貸方）：営業外収益に該当し、かつ少額で重要性が少ない収入であると考え、雑収入で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：雑収入という収益が増加するので、貸方に雑収入を配置</div>
+				</div>
+	    	</section>
         </>
     );
 }
