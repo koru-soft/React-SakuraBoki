@@ -342,7 +342,7 @@ const KindOfAccount = () => {
 				    </tr>
 				</table>
 				<br />
-				<div>このような勘定を用意することで、定位置に配置したにもかかわらず、逆位置に配置した時と同じ意味合いを持たせることが出来るのです。</div>
+				<div>このような勘定を用意することで、定位置に配置したにもかかわらず、逆位置に配置した時と同じ意味合いを持たせることが出来るようになるということがポイントです。</div>
 				<br />
 				<div>例えば、資産は通常、借方に配置すると増加を表しますが、評価勘定の場合には借方に配置したにもかかわらず、資産の減少を表すことになります。</div>
 			
@@ -7661,18 +7661,83 @@ const profitAndLossGrade1 = () => {
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜収益と費用コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 
-
+<span className="underline font-color2"></span>
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜税金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
 const TaxGrade3 = () => {
     return (
         <>
-            <Title title="Lorem Ipusum"/>
-            <section>
-                <article>
-             		Lorem Ipusum
-                </article>
-            </section>
+            <section className="font-color">
+		<Element name="non-current-assets-grade3-1" className="element" >
+			<h1 className="intro">租税公課の会計処理</h1>	
+		</Element>
+		<div>国税や地方税のような税金を<span className="underline font-color2">租税</span>、各種証明書発行の際に発生する手数料など、国や地方公共団体から課せられる公的な課金のことを<span className="underline font-color2">公課</span>と呼びます。</div>
+		<br />
+	    	<div>対象となる支払いには以下のものがあります。</div>
+		<br />
+		<table border="1" cellspacing="0" className="table-color">
+			<tr>
+				<th className="table-align table-size-50">租税に該当する支払い</th>
+				<th className="table-align">公課に該当する支払い</th>
+			</tr>
+			<tr>
+				<td className="table-align">固定資産税<br />自動車税<br />印紙税<br />税込経理の場合に納付する消費税</td>
+				<td className="table-align">国や地方公共団体が発行する各種証明書の発行費用<br />延滞税などの罰金<br />商工会などの会費</td>
+			</tr>
+		</table>
+		<br />
+	    	<div>例えば、収入印紙を10,000円、現金で購入したという場合、以下の仕訳となります。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">租税公課 10,000</td>
+						<td className="table-align">現金 10,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>収入印紙を10,000円、現金で購入した</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：10,000円分の収入印紙の購入代金</div>
+					<div>なぜ発生したか（貸方）：現金で購入したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：収入印紙の購入代金は、印紙税法に定められた印紙税の納税として考えるため、租税公課で処理</div>
+					<div>なぜ発生したか（貸方）：現金での購入になるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：租税公課という費用が増加するので、借方に租税公課を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+	    
+	    
+	    	<Element name="non-current-assets-grade3-1" className="element" >
+			<h1 className="intro">法人税の会計処理</h1>	
+		</Element>
+	    
+	    	<Element name="non-current-assets-grade3-1" className="element" >
+			<h1 className="intro">消費税の仕組み</h1>	
+		</Element>
+	    
+	    	<Element name="non-current-assets-grade3-1" className="element" >
+			<h1 className="intro">税込経理と税抜経理</h1>	
+		</Element>
+	    
+	    	<Element name="non-current-assets-grade3-1" className="element" >
+			<h1 className="intro">消費税の経理処理方法</h1>	
+		</Element>
+	    
+	    	<Element name="non-current-assets-grade3-1" className="element" >
+			<h1 className="intro">消費税の会計処理</h1>	
+		</Element>
+	  </section>
         </>
     );
 }
