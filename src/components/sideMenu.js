@@ -4877,11 +4877,10 @@ const AssignmentOfAccountsReceivableGrade3 = () => {
 					</tr>
 					<tr>
 						<td className="table-align">クレジット売掛金  9,900</td>
-						<td className="table-align">売上  10,000</td>
+						<td className="table-align" rowspan="2">売上  10,000</td>
 					</tr>
 	    				<tr>
 						<td className="table-align">支払手数料  100</td>
-						<td className="table-align"></td>
 					</tr>
 				</table>
 				<br />
