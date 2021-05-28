@@ -643,7 +643,7 @@ const AccountGrade2 = () => {
 				<div>このサイクルのことを<span className="underline font-color2">営業サイクル</span>と呼び、このサイクルの中で発生した資産か負債かどうかを元に、資産や負債を区別する基準のことを、<span className="underline font-color2">正規営業循環基準</span>と呼びます。</div>
 				<br />
 				<div>また、これとは別に発生した資産や負債が1年以内に現金化、費用化されるかどうかで資産や負債に区別する基準があり、これを<span className="underline font-color2">1年基準</span>と呼びます。</div>
-				<div>現行の会計ルールでは、まず正常営業循環基準が優先して適用され、これに該当しないものは1年基準で判定するという流れで勘定科目を分類していくことになります。</div>
+				<div>現行の会計ルールでは、まず正規営業循環基準が優先して適用され、これに該当しないものは1年基準で判定するという流れで勘定科目を分類していくことになります。</div>
 			
 				<Element name="accountGrade2-2" className="element" >
 					<h1 className="intro">流動資産とは</h1>
