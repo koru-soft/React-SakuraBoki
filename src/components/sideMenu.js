@@ -3546,10 +3546,11 @@ const PromissoryNotesGrade3 = () => {
 			<Element name="promissory-notes-grade3-4" className="element" >
 				<h1 className="intro">手形借入金・手形貸付金とは</h1>	
 			</Element>
-			<div>お金を貸し借りした場合、一般的にはその証拠として借用証書というものを受け渡ししますが、借用証書の代わりに約束手形をやり取りする場合があります。</div>
-			<div>借用証書の代わりに約束手形を振り出してお金を貸し借りすることを手形借入れもしくは手形貸付けといいます。</div>
-			<div>お金を借りる側は手形借入金勘定（負債）、お金を貸す側は手形貸付金勘定（資産）で処理します。</div>
-			<div>手形借入金勘定は将来手形のお金を支払わなければならないという義務なので負債となります。また、手形貸付金勘定は将来手形のお金を受け取れるという権利なので資産となります。</div>
+			<div>ただ単にお金を貸し借りした場合、借入金や貸付金などで処理を行いますが、お金の貸し借りに約束手形をやり取りする場合、これを区別して処理する必要があります。</div>
+			<br />
+			<div>約束手形を振り出してお金を借りることを<span className="underline font-color2">手形借入金</span>と呼び、お金を貸し出し約束手形を受け取った場合、<span className="underline font-color2">手形貸付金</span>という勘定科目にて処理を行います。</div>
+			<br />
+			<div>このように、お金の貸し借りに用いる手形のことを、<span className="underline font-color2">金融手形</span>と呼び、通常の商取引と区別して処理が必要となります。</div>
 			<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
@@ -7294,6 +7295,7 @@ const ProfitAndLossGrade3 = () => {
 				<h1 className="intro">地代の会計処理</h1>	
 				</Element>
 	    		<div>土地を借りている場合に発生する土地の費用を<span className="underline font-color2">支払地代</span>、土地を貸している場合に発生する土地の収益を<span className="underline font-color2">受取地代</span>と呼びます。</div>
+				<br />
 				<div>例えば、営業用の土地を月額60,000円で借りており、当月分を現金で支払ったという場合、以下の仕訳となります。</div>
 				<br />
 	    			<table border="1" cellspacing="0" className="table-color">
@@ -7440,8 +7442,8 @@ const ProfitAndLossGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align" rowspan="2">短期借入金 5,000</td>
-						<td className="table-align">現金 5,500</td>
+						<td className="table-align">短期借入金 5,000</td>
+						<td className="table-align" rowspan="2">現金 5,500</td>
 					</tr>
 	    				<tr>
 						<td className="table-align">支払利息 500</td>
@@ -7466,7 +7468,7 @@ const ProfitAndLossGrade3 = () => {
 					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
 				</div>
 	    			<br />
-				<div>逆に、1年以内に返済が予定されている貸付金について、当付分の返済があり、現金で受け取った。ただし、発生した利息分は500円であったという場合、以下の仕訳となります。</div>
+				<div>逆に、1年以内に返済が予定されている貸付金について、当月分の返済があり、現金で受け取った。ただし、発生した利息分は500円であったという場合、以下の仕訳となります。</div>
 				<br />
 	    			<table border="1" cellspacing="0" className="table-color">
 					<tr>
@@ -7474,8 +7476,8 @@ const ProfitAndLossGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">現金 5,500</td>
-						<td className="table-align" rowspan="2">短期貸付金 5,000</td>
+						<td className="table-align"　rowspan="2">現金 5,500</td>
+						<td className="table-align">短期貸付金 5,000</td>
 					</tr>
 	    				<tr>
 						<td className="table-align">受取利息 500</td>
@@ -7514,11 +7516,11 @@ const ProfitAndLossGrade3 = () => {
 				</tr>
 				<tr>
 				    <td className="table-align">雑費</td>
-				    <td className="table-align">営業活動で発生した少額かつ重要性の低い出費（販売費及び一般管理費に該当）</td>
+				    <td className="table-padding-1 table-align">営業活動で発生した少額かつ重要性の低い出費<br />（販売費及び一般管理費に該当）</td>
 				</tr>
 				<tr>
 				    <td className="table-align">雑損失</td>
-				    <td className="table-align">営業活動以外で発生した少額かつ重要性の低い出費（営業外費用に該当）</td>
+				    <td className="table-padding-1 table-align">営業活動以外で発生した少額かつ重要性の低い出費<br />（営業外費用に該当）</td>
 				</tr>
 				</table>
 	    			<br />
@@ -7681,8 +7683,8 @@ const TaxGrade3 = () => {
 				<th className="table-align">公課に該当する支払い</th>
 			</tr>
 			<tr>
-				<td className="table-align">固定資産税<br />自動車税<br />印紙税<br />税込経理の場合に納付する消費税</td>
-				<td className="table-align">国や地方公共団体が発行する各種証明書の発行費用<br />延滞税などの罰金<br />商工会などの会費</td>
+				<td className="table-align table-padding-1">固定資産税<br />自動車税<br />印紙税<br />税込経理の場合に納付する消費税</td>
+				<td className="table-align table-padding-1">国や地方公共団体が発行する各種証明書の発行費用<br />延滞税などの罰金<br />商工会などの会費</td>
 			</tr>
 		</table>
 		<br />
@@ -7767,8 +7769,8 @@ const TaxGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 			</tr>
 			<tr>
-				<td className="table-align">法人税等 20,000</td>
-				<td className="table-align" rowspan="2">仮払法人税等 10,000</td>
+				<td className="table-align" rowspan="2">法人税等 20,000</td>
+				<td className="table-align">仮払法人税等 10,000</td>
 			</tr>
 	    		<tr>
 				<td className="table-align">未払法人税等 10,000</td>
