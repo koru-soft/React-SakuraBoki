@@ -117,13 +117,15 @@ const Bookkeeping = () => {
 	    		<h1 className="intro">簿記とは</h1>
 	    	</Element>
                 <div>１年間のお金の動き（<span className="underline font-color2">取引</span>）を、帳簿と呼ばれるものに記録することを、略して<span className="underline font-color2">簿記</span>と呼びます。</div>
-	    	    <div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
-                <div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
+				<div>したがって、「<span className="underline font-color2">お金の動きをいかに描写するか</span>」が簿記のテーマとなります。</div>
+                <br />
+				<div>世の中には演劇、音楽、動画、執筆など様々な表現手段がありますが、簿記はお金に特化した表現手段の1つなのです。</div>
 
 	    	<Element name="bookkeeping3" className="element" ></Element>
                 <h1 className="intro">複式簿記とは</h1>
                 <div>お金の動きを原因と結果の因果関係に分解して記録する方法のことを、<span className="underline font-color2">複式</span>と呼び、この方法によって記録した帳簿のことを<span className="underline font-color2">複式簿記</span>と呼びます。</div>
-	    	<div>例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
+	    		<br />
+				<div>例えば、現金100円を使ってチョコレートを買った時、以下のような分解が出来ます。</div>
                 <br />
                 <div>最終的に発生したもの（結果）：チョコレート</div>
                 <div>何故、その結果は発生したのか（原因）：現金100円を使ったため</div>
@@ -196,7 +198,7 @@ const Bookkeeping = () => {
             	<div>もし、この仕組みがなければ、各自がそれぞれの実態に合わせて具体的な取引内容を記録していくことになりますが、全員がその内容をみて共通の理解が出来るかというと、そうではありません。</div>
 	    	<div>また、取引内容の説明を追加すれば理解は出来るかもしれませんが、1年間に発生したすべてのお金の動きに注釈を付けていては、管理コストが非常に高くなります。</div>
 	    	<br />
-            	<div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「消費される」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
+            	<div>そこで、「チョコレート」「鉛筆」「ノート」など、何か物を購入するという行為に関して、共通する性質は「使ったらなくなる」ことであると考え、具体的に何を購入したかは問わず、その性質で記録することにしたのです。</div>
 	    	<br />
 	    	<table border="1" cellspacing="0" className="table-color">
                     <tr>
@@ -242,7 +244,8 @@ const Bookkeeping = () => {
 	    	<div>仕訳において、借方に記入された金額の合計と貸方に記入された金額の合計は一致するという原則のことを<span className="underline font-color2">貸借平均の原理</span>と呼びます。</div>
 		<br />
 	    	<div>なぜ一致するのかというと、仕訳はお金が動いたという事実を、因果という2つの側面から見たことを表すものになるため、動いた金額は変わらないからです。</div>
-	    	<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
+	    	<br />
+			<div>例えば、現金100円を使ってチョコレートを買ったという例について、以下の仕訳を見て下さい。</div>
 	    	<br />
 	    	<table border="1" cellspacing="0" className="table-color">
                     <tr>
@@ -339,6 +342,9 @@ const KindOfAccount = () => {
 				    </tr>
 				</table>
 				<br />
+				<div>このような勘定を用意することで、定位置に配置したにもかかわらず、逆位置に配置した時と同じ意味合いを持たせることが出来るのです。</div>
+				<br />
+				<div>例えば、資産は通常、借方に配置すると増加を表しますが、評価勘定の場合には借方に配置したにもかかわらず、資産の減少を表すことになります。</div>
 			
 			<Element name="kind-of-account3" className="element" >
 				<h1 className="intro">混合勘定</h1>
@@ -357,6 +363,7 @@ const KindOfAccount = () => {
 				<h1 className="intro">対照勘定</h1>
 			</Element>
 				<div>2種類の勘定科目がペアの関係となっており、同じ金額で同時に発生し同時に消滅する勘定科目を<span className="underline font-color2">対照勘定</span>と言います。</div>
+				<br />
 				<div>簿記上の取引ではないけれど記録しておきたい事柄を記録するために利用します。</div>
 				<div>代表的な評価勘定として、以下の勘定科目があります。</div>
 				<br />
@@ -408,6 +415,7 @@ const KindOfAccount = () => {
 				<h1 className="intro">未決算勘定</h1>
 			</Element>
 				<div>適切に処理するための勘定科目や金額が決まっていないときに一時的に使う勘定科目を<span className="underline font-color2">未決算勘定</span>と言います。</div>
+				<br />
 				<div>これらの勘定科目は一時的に計上されるもののため、最終的な確定申告や決算書の中には表示されません。</div>
 				<div>代表的な勘定科目に以下のものがあります。</div>
 				<br />
@@ -555,7 +563,7 @@ const AccountGrade3 = () => {
 				<Element name="accountGrade3-5" className="element" >
 					<h1 className="intro">純資産とは</h1>
 				</Element>
-				<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます</div>
+				<div>業務で使うお金のうち、自分で用意したという性質をもつ財産を<span className="underline font-color2">純資産</span>と呼びます。</div>
 				<div>「自分で用意した」というのは、具体的には次の2つのお金を意味しています。これらは、負債のように他人から資産を得たのではなく、自身の力によって生み出した資産になります。</div>
 				<br />
 				<div>①事業を開始する際に、仕事で使うと決めた自分のお金</div>
@@ -725,38 +733,40 @@ const AccountGrade1 = () => {
 					<h1 className="intro">財務会計の概念フレームワークとは</h1>	
 				</Element>
 				<div>財務会計の基礎にある前提や概念を体系化したものを<span className="underline font-color2">財務会計の概念フレームワーク</span>と呼びます。</div>
+				<br />
 				<div>世の中には様々な取引が存在するため、中には既存の会計ルール（企業会計原則）では対応が出来ない想定外の事象が発生することがあります。</div>
 				<div>こういった場合に、発生したお金の動きをどのように解釈・処理していけばよいか、の指針を示してくれるものが概念フレームワークになります。</div>
+				<br />
 				<div>なお、このフレームワークは現行のIFRS（国際会計基準）の基礎ともなっている考え方です。</div>
 				
 				<Element name="accountGrade1-2" className="element" >
 					<h1 className="intro">資産とは</h1>
 				</Element>
-				<div><span className="underline font-color2">資産とは、過去の取引または事象の結果として、報告主体が支配している経済的資源をいう</span></div>
+				<div>資産とは、<span className="underline font-color2">過去の取引または事象の結果として、報告主体が支配している経済的資源をいう</span></div>
 				<br />
 				
 				<Element name="accountGrade1-3" className="element" >
 					<h1 className="intro">負債とは</h1>
 				</Element>
-				<div><span className="underline font-color2">負債とは、過去の取引または事象の結果として、報告主体が支配している経済的資源を放棄もしくは引き渡す義務、またはその同等物をいう</span></div>
+				<div>負債とは、<span className="underline font-color2">過去の取引または事象の結果として、報告主体が支配している経済的資源を放棄もしくは引き渡す義務、またはその同等物をいう</span></div>
 				<br />
 				
 				<Element name="accountGrade1-4" className="element" >
 					<h1 className="intro">純資産とは</h1>
 				</Element>
-				<div><span className="underline font-color2">純資産とは、資産と負債の差額をいう。</span></div>
+				<div>純資産とは、<span className="underline font-color2">資産と負債の差額をいう。</span></div>
 				<br />
 				
 				<Element name="accountGrade1-5" className="element" >
 					<h1 className="intro">収益とは</h1>
 				</Element>
-				<div><span className="underline font-color2">収益とは、純利益または少数株主損益を増加させる項目であり、特定期間の期末までに生じた資産の増加や負債の減少に見合う額のうち、投資のリスクから解放された部分である</span></div>
+				<div>収益とは、<span className="underline font-color2">純利益または少数株主損益を増加させる項目であり、特定期間の期末までに生じた資産の増加や負債の減少に見合う額のうち、投資のリスクから解放された部分である</span></div>
 				<br />
 				
 				<Element name="accountGrade1-6" className="element" >
 					<h1 className="intro">費用とは</h1>
 				</Element>
-				<div><span className="underline font-color2">費用とは、純利益または少数株主損益を減少させる項目であり、特定期間の期末までに生じた資産の減少や負債の増加に見合う額のうち、投資のリスクから解放された部分である</span></div>
+				<div>費用とは、<span className="underline font-color2">純利益または少数株主損益を減少させる項目であり、特定期間の期末までに生じた資産の減少や負債の増加に見合う額のうち、投資のリスクから解放された部分である</span></div>
 			</section>
 		</>
 	);
@@ -6824,76 +6834,667 @@ const ProfitAndLossGrade3 = () => {
 	    		<div>そのため、先に資産として計上するか、費用として計上するかを記帳者に委ねています。</div>
 	    		<br />
 			<div>もし、先に資産として計上する場合は、<span className="underline font-color2">消耗品</span>、費用として計上する場合は<span className="underline font-color2">消耗品費</span>として処理を行います。</div>    
-	    
+			<br />
+				<div>例えば、ゴミ袋を30枚セットで10,000円で購入し、現金で支払ったという場合、資産の計上を先に扱うのであれば、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">消耗品 10,000</td>
+						<td className="table-align">現金 10,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>ゴミ袋を30枚セットで10,000円で購入し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：ゴミ袋料金10,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：ゴミ袋が手元に残るので、消耗品で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：消耗品という資産が増加するので、借方に消耗品を追加</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>次に、決算時にゴミ袋の枚数を確認したところ、3,000円分が残っていたことがわかった場合、以下の振替を行います。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">消耗品費 7,000</td>
+						<td className="table-align">消耗品 7,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>決算時にゴミ袋の枚数を確認したところ、3,000円分が残っていたことがわかった</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：1年間に使った金額は、10,000 - 3,000 = 7,000円であるから、7,000円のゴミ袋代が経費として発生している</div>
+					<div>なぜ発生したか（貸方）：1年間に7,000円分のゴミ袋を使用したため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：使ったゴミ袋の分、経費を計上するので消耗品費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：消耗品費という費用が増加するので、借方に消耗品費を追加</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>次に、費用を先に計上する方法を見ていきます。</div>
+				<div>ゴミ袋を30枚セットで10,000円で購入し、現金で支払ったという場合、費用の計上を先に扱うのであれば、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">消耗品費 10,000</td>
+						<td className="table-align">現金 10,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>ゴミ袋を30枚セットで10,000円で購入し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：ゴミ袋料金10,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：ゴミ袋の経費が発生しているので、消耗品費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：消耗品費という費用が増加するので、借方に消耗品費を追加</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>また、決算時にゴミ袋の枚数を確認したところ、3,000円分が残っていたことがわかった場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">消耗品 3,000</td>
+						<td className="table-align">消耗品費 3,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>ゴミ袋を30枚セットで10,000円で購入し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：未使用のゴミ袋3,000円</div>
+					<div>なぜ発生したか（貸方）：ゴミ袋の料金を支払っていたため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：未使用のゴミ袋が手元に残るので、消耗品で処理</div>
+					<div>なぜ発生したか（貸方）：一度経費として計上した金額から、未使用分の金額を引いた消耗品費を計上するため、消耗品費で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：消耗品という資産が増加するので、借方に消耗品を追加</div>
+					<div>なぜ発生したか（貸方）：消耗品費という費用が減少するので、貸方に消耗品費を配置</div>
+				</div>
+
 	    		<Element name="profit-and-loss-grade3-2" className="element" >
 				<h1 className="intro">旅費交通費の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>仕事のために利用した電車代やバス代などの費用を<span className="underline font-color2">旅費交通費</span>と呼びます。</div>
-	    
+				<br />
+				<div>例えば、電車代が500円発生し、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">旅費交通費 500</td>
+						<td className="table-align">現金 500</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>電車代が500円発生し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：電車代500円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：電車代の支払いになるので、旅費交通費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：旅費交通費という費用が増加するので、借方に旅費交通費を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+
 	    		<Element name="profit-and-loss-grade3-3" className="element" >
 				<h1 className="intro">通信費の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>電話料金、インターネットの通信料金、クラウドソフトの利用料金など、通信にかかった費用を<span className="underline font-color2">通信費</span>と呼びます。</div>
-	    
+				<br />
+				<div>例えば、インターネット通信料が4,000円発生し、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">通信費 4,000</td>
+						<td className="table-align">現金 4,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>インターネット通信料が4,000円発生し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：インターネット通信料金4,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：インターネット通信料金の支払いになるので、通信費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：通信費という費用が増加するので、借方に通信費を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+
 	    		<Element name="profit-and-loss-grade3-4" className="element" >
 				<h1 className="intro">水道光熱費の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>水道代、ガス代、電気代をまとめて<span className="underline font-color2">水道光熱費</span>と呼びます。</div>
-	    
-			<Element name="profit-and-loss-grade3-5" className="element" >
-				<h1 className="intro">広告宣伝費の会計処理</h1>	
-			</Element>
-	    		<div>テレビ、新聞、雑誌、インターネットなどのメディアへの掲載料など、様々な広告にかかる料金や宣伝費用を<span className="underline font-color2">広告宣伝費</span>と呼びます。</div>
+				<br />
+				<div>例えば、水道代が3,000円発生し、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">水道光熱費 3,000</td>
+						<td className="table-align">現金 3,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>水道代が3,000円発生し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：水道代3,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：水道代の支払いになるので、水道光熱費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：水道光熱費という費用が増加するので、借方に水道光熱費を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-6" className="element" >
+				<Element name="profit-and-loss-grade3-5" className="element" >
+				<h1 className="intro">広告宣伝費の会計処理</h1>	
+				</Element>
+	    		<div>テレビ、新聞、雑誌、インターネットなどのメディアへの掲載料など、様々な広告にかかる料金や宣伝費用を<span className="underline font-color2">広告宣伝費</span>と呼びます。</div>
+				<br />
+				<div>例えば、雑誌への広告掲載料が50,000円発生し、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">広告宣伝費 50,000</td>
+						<td className="table-align">現金 50,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>雑誌への広告掲載料が50,000円発生し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：雑誌への広告掲載料金50,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：雑誌への広告掲載料金の支払いになるので、広告宣伝費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：広告宣伝費という費用が増加するので、借方に広告宣伝費を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+
+				<Element name="profit-and-loss-grade3-6" className="element" >
 				<h1 className="intro">給料手当の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>従業員に支払った給料を処理する勘定科目を<span className="underline font-color2">給料手当</span>と呼びます。</div>
 	    		<div>もしくは単に、給料や給与と呼ぶこともあります。</div>
 	    		<br />
 	    		<div>給料を支払う場合、一般的には源泉所得税の徴収を行ったり、社会保険料を事前に差し引いた形で支払いを行います。</div>
 	    		<br />
 	    		<div>そのため、実際に仕訳を行う場合には、総支給額を<span className="underline font-color2">給料手当</span>、源泉徴収分や社会保険料の差し引き分を<span className="underline font-color2">預り金</span>として登録することが必要となります。</div>
+				<br />
+				<div>例えば、従業員への給料が210,000円発生した。ただし、源泉所得税が15,000円、社会保険料が10,000円発生していたため、これらを事前に控除して現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align" rowspan="3">給料手当 210,000</td>
+						<td className="table-align">預り金 15,000</td>
+					</tr>
+					<tr>
+						<td className="table-align">預り金 10,000</td>
+					</tr>
+					<tr>
+						<td className="table-align">現金 185,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>従業員への給料が210,000円発生した。ただし、源泉所得税が15,000円、社会保険料が10,000円発生していたため、これらを事前に控除して現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：従業員への給料210,000円（総支給額）</div>
+					<div>なぜ発生したか（貸方）：源泉所得税や社会保険料を控除した金額にて、現金（手取り）を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：従業員への給料の支払いになるので、給料手当で処理</div>
+					<div>なぜ発生したか（貸方）：会社負担分の源泉所得税や社会保険料は、後日税務署に納める金額になるため、預り金で処理。また、残りの手取り金額は現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：給料手当という費用が増加するので、借方に給料手当を配置</div>
+					<div>なぜ発生したか（貸方）：預り金という負債が増加するので、貸方に預り金を配置。また、現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-7" className="element" >
+				<Element name="profit-and-loss-grade3-7" className="element" >
 				<h1 className="intro">法定福利費の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>健康保険や厚生年金保険料、雇用保険料、労災保険料などの支払いで発生した費用を<span className="underline font-color2">法定福利費</span>と呼びます。</div>
+				<br />
+				<div>例えば、従業員の健康保険料として会社負担分が15,000円発生し、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">法定福利費 15,000</td>
+						<td className="table-align">現金 15,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>従業員の健康保険料として、会社負担分が15,000円発生し、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：従業員の健康保険料15,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：従業員の健康保険料の支払いになるので、法定福利費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：法定福利費という費用が増加するので、借方に法定福利費を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-8" className="element" >
+				<Element name="profit-and-loss-grade3-8" className="element" >
 				<h1 className="intro">福利厚生費の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>結婚祝いの支払いや慰安旅行の費用など、役員・従業員のために支払われる費用を<span className="underline font-color2">福利厚生費</span>と呼びます。</div>
+				<br />
+				<div>例えば、従業員に結婚祝い金を30,000円、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">福利厚生費 30,000</td>
+						<td className="table-align">現金 30,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>従業員に結婚祝い金を30,000円、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：従業員の結婚祝い金30,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：従業員の結婚祝い金の支払いになるので、福利厚生費で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：福利厚生費という費用が増加するので、借方に福利厚生費を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-9" className="element" >
+				<Element name="profit-and-loss-grade3-9" className="element" >
 				<h1 className="intro">家賃の会計処理</h1>	
-			</Element>
-	    		<div>建物を借りている場合に発生する家賃の費用を支払家賃、建物を貸している場合に発生する家賃の収益を<span className="underline font-color2">受取家賃</span>と呼びます。</div>
+				</Element>
+	    		<div>建物を借りている場合に発生する家賃の費用を<span className="underline font-color2">支払家賃</span>、建物を貸している場合に発生する家賃の収益を<span className="underline font-color2">受取家賃</span>と呼びます。</div>
+				<br />
+				<div>例えば、家賃を60,000円、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">支払家賃 60,000</td>
+						<td className="table-align">現金 60,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>家賃を60,000円、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：家賃60,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：家賃の支払いになるので、支払家賃で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：支払家賃という費用が増加するので、借方に支払家賃を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<br />
+				<div>逆に、不動産賃貸業をメインとしていない事業者が、建物の空き部屋を貸付け、家賃を60,000円、現金で受け取ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金 60,000</td>
+						<td className="table-align">受取家賃 60,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>不動産賃貸業をメインとしていない事業者が、建物の空き部屋を貸付け、家賃を60,000円、現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金60,000円</div>
+					<div>なぜ発生したか（貸方）：家賃を受け取ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の受取になるので、現金で処理</div>
+					<div>なぜ発生したか（貸方）：家賃という収益が発生しているため、受取家賃で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：受取家賃という収益が増加するので、貸方に受取家賃を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-10" className="element" >
+				<Element name="profit-and-loss-grade3-10" className="element" >
 				<h1 className="intro">地代の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>土地を借りている場合に発生する土地の費用を<span className="underline font-color2">支払地代</span>、土地を貸している場合に発生する土地の収益を<span className="underline font-color2">受取地代</span>と呼びます。</div>
+				<div>例えば、営業用の土地を月額60,000円で借りており、当月分を現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">支払地代 60,000</td>
+						<td className="table-align">現金 60,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>営業用の土地を月額60,000円で借りており、当月分を現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：土地を借りた代金60,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：土地の借入の支払いになるので、支払地代で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：支払地代という費用が増加するので、借方に支払地代を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<div>逆に、不動産賃貸業をメインとしていない事業者が、土地を貸付け、60,000円を現金で受け取ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金 60,000</td>
+						<td className="table-align">受取地代 60,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>不動産賃貸業をメインとしていない事業者が、土地を貸付け、60,000円を現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金60,000円</div>
+					<div>なぜ発生したか（貸方）：土地の貸付による収入を受け取ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の受取になるので、現金で処理</div>
+					<div>なぜ発生したか（貸方）：地代という収益が発生しているため、受取地代で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：受取地代という収益が増加するので、貸方に受取地代を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-11" className="element" >
+				<Element name="profit-and-loss-grade3-11" className="element" >
 				<h1 className="intro">手数料の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>小売業を営む事業者が、不動産の仲介手数料を得た場合など、本業以外の活動から発生した収入を、<span className="underline font-color2">受取手数料</span>と呼びます。</div>
 	    		<br />
 	    		<div>一方、金融機関への振込にかかる手数料などで発生した費用を<span className="underline font-color2">支払手数料</span>と呼びます。</div>
+				<br />
+				<div>例えば、口座振り込みにて、取引先への支払いを行った際に200円の手数料が発生し、普通預金口座から支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">支払手数料 200</td>
+						<td className="table-align">普通預金 200</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>口座振り込みにて、取引先への支払いを行った際に200円の手数料が発生し、普通預金口座から支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：口座振り込みに係る手数料200円</div>
+					<div>なぜ発生したか（貸方）：普通預金を使って振り込みを行ったため、</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：手数料の支払いになるので、支払手数料で処理</div>
+					<div>なぜ発生したか（貸方）：普通預金口座での支払いになるので、普通預金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：支払手数料という費用が増加するので、借方に支払手数料を配置</div>
+					<div>なぜ発生したか（貸方）：普通預金という資産が減少するので、貸方に普通預金を配置</div>
+				</div>
+				<div>逆に、本業以外の事業にて、手数料による収入が200円発生し、普通預金に入金されたという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">普通預金 200</td>
+						<td className="table-align">受取手数料 200</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>本業以外の事業にて、手数料による収入が200円発生し、普通預金に入金された</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：普通預金口座の200円の増加</div>
+					<div>なぜ発生したか（貸方）：手数料による収入が上がったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：普通預金口座の残高増加になるので、普通預金で処理</div>
+					<div>なぜ発生したか（貸方）：手数料という収益が発生しているため、受取手数料で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：普通預金という資産が増加するので、借方に普通預金を配置</div>
+					<div>なぜ発生したか（貸方）：受取手数料という収益が増加するので、貸方に受取手数料を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-12" className="element" >
+				<Element name="profit-and-loss-grade3-12" className="element" >
 				<h1 className="intro">利息の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>お金を貸し付けることなどで発生した利息部分の収入を、<span className="underline font-color2">受取利息</span>と呼びます。</div>
 	    		<br />
 	    		<div>一方、お金を借りることなどで発生した、利息部分の費用を、<span className="underline font-color2">支払利息</span>と呼びます。</div>
+				<div>例えば、家賃を60,000円、現金で支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">支払家賃 60,000</td>
+						<td className="table-align">現金 60,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>家賃を60,000円、現金で支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：家賃60,000円</div>
+					<div>なぜ発生したか（貸方）：現金を使ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：家賃の支払いになるので、支払家賃で処理</div>
+					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：支払家賃という費用が増加するので、借方に支払家賃を配置</div>
+					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
+				</div>
+				<div>逆に、不動産賃貸業をメインとしていない事業者が、建物の空き部屋を貸付け、家賃を60,000円、現金で受け取ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">現金 60,000</td>
+						<td className="table-align">受取家賃 60,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>不動産賃貸業をメインとしていない事業者が、建物の空き部屋を貸付け、家賃を60,000円、現金で受け取った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：現金60,000円</div>
+					<div>なぜ発生したか（貸方）：家賃を受け取ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：現金の受取になるので、現金で処理</div>
+					<div>なぜ発生したか（貸方）：家賃という収益が発生しているため、受取家賃で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
+					<div>なぜ発生したか（貸方）：受取家賃という収益が増加するので、貸方に受取家賃を配置</div>
+				</div>
 
-			<Element name="profit-and-loss-grade3-13" className="element" >
+				<Element name="profit-and-loss-grade3-13" className="element" >
 				<h1 className="intro">雑費と雑損失の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>発生した費用が、既存のどの費用勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような支払いが発生した場合、<span className="underline font-color2">雑費</span>か<span className="underline font-color2">雑損失</span>で処理を行います。</div>
-			<br />
+				<br />
 	    		<div>違いは以下の通りです</div>
 	    		<br />
 	    		<table border="1" cellspacing="0" className="table-color">
@@ -6911,9 +7512,9 @@ const ProfitAndLossGrade3 = () => {
 				</tr>
 			</table>
 	    
-			<Element name="profit-and-loss-grade3-14" className="element" >
+				<Element name="profit-and-loss-grade3-14" className="element" >
 				<h1 className="intro">雑収入の会計処理</h1>	
-			</Element>
+				</Element>
 	    		<div>発生した収益が、営業外収益に該当するものの、既存のどの収益勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような収益が発生した場合、<span className="underline font-color2">雑収入</span>で処理を行います。</div>
 		</section>
         </>
@@ -6924,26 +7525,28 @@ const profitAndLossGrade3 = () => {
     return (
         <main className="mainArticle">
             <aside>
-		<div className="level_change_wrapper">
-			
-		</div>
+			<div className="level_change_wrapper">
+				<Link to="/profit-and-loss-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/profit-and-loss-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/profit-and-loss-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
 	    	<aside className="subMenu">
                     <ul>
                         <li className="table-of-contents">目次</li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-1" spy={true} smooth={true} duration={500} >消耗品費の会計処理</ScrollLink></li>
                         <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-2" spy={true} smooth={true} duration={500} >旅費交通費の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-3" spy={true} smooth={true} duration={500} >通信費の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-4" spy={true} smooth={true} duration={500} >水道光熱費の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-5" spy={true} smooth={true} duration={500} >広告宣伝費の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-6" spy={true} smooth={true} duration={500} >給料手当の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-7" spy={true} smooth={true} duration={500} >法定福利費の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-8" spy={true} smooth={true} duration={500} >福利厚生費の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-9" spy={true} smooth={true} duration={500} >家賃の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-10" spy={true} smooth={true} duration={500} >地代の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-11" spy={true} smooth={true} duration={500} >手数料の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-12" spy={true} smooth={true} duration={500} >利息の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-13" spy={true} smooth={true} duration={500} >雑費と雑損失の会計処理</ScrollLink></li>
-			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-14" spy={true} smooth={true} duration={500} >雑収入の会計処理</ScrollLink></li>	
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-3" spy={true} smooth={true} duration={500} >通信費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-4" spy={true} smooth={true} duration={500} >水道光熱費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-5" spy={true} smooth={true} duration={500} >広告宣伝費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-6" spy={true} smooth={true} duration={500} >給料手当の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-7" spy={true} smooth={true} duration={500} >法定福利費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-8" spy={true} smooth={true} duration={500} >福利厚生費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-9" spy={true} smooth={true} duration={500} >家賃の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-10" spy={true} smooth={true} duration={500} >地代の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-11" spy={true} smooth={true} duration={500} >手数料の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-12" spy={true} smooth={true} duration={500} >利息の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-13" spy={true} smooth={true} duration={500} >雑費と雑損失の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-14" spy={true} smooth={true} duration={500} >雑収入の会計処理</ScrollLink></li>	
 		　　　</ul>
                 </aside>
                 <ProfitAndLossGrade3 />
