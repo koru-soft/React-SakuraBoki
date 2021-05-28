@@ -7866,15 +7866,72 @@ const TaxGrade3 = () => {
 	    	<Element name="non-current-assets-grade3-1" className="element" >
 			<h1 className="intro">消費税の仕組み</h1>	
 		</Element>
-	    	
+	    	<div>「国内の」商品・製品の販売やサービスの提供などの取引に対して広く公平に課税される税を<span className="underline font-color2">消費税</span>と呼びます。</div>
+	    	<br />
+	    	<div>したがって、商品やサービスの提供が行われた地域が日本国内であれば原則、課税対象となります。</div>
+	    	<div>なお、このような考え方を<span className="underline font-color2">消費地課税主義</span>と呼び、消費税が発生する取引なのかどうかを判断するポイントの1つとなります。</div>
+	    	<br />
+	    	<div>さて、事業を運営していく中で、①2年前の1年間の課税売上が1000万を超えた、もしくは②1年前の上半期の課税売上が1000万を超えた場合、消費税の納税義務が発生します。</div>
+	    	<div>ところで、消費税の納税額はどのように算出すれば良いでしょうか？</div>
+	   	<br />
+	    	<div>例えば、八百屋を経営していると仮定します。</div>
+	    	<div>店頭で販売するための野菜を農家から仕入れる際、代金として500円（うち、50円が税額）を農家に支払いました。</div>
+	    	<div>その後、店頭で販売した野菜が売れ、消費者より代金1,000円（うち、100円が税額）を受け取りました。</div>
+	    	<div>この時、納めるべき税額はお客様から支払われた100円…ではなく、農家へ支払った50円を引いた残額50円となります</div>
+	    	<br />
+	    	<div>したがって、消費税の納税額は次の式で計算されるので、覚えておいて下さい。</div>
+	    	<br />
+	    	<div>納付する消費税額　＝　<span className="underline font-color2">受け取った消費税　ー　支払った消費税</span></div>
+	    	<br />
+	    	<div>なお、簿記3級の範囲ではありませんが、上記、支払った消費税額の計算方法を<span className="underline font-color2">仕入税額控除</span>と呼び、採用する方法によって納付する消費税額が変化するためご注意下さい。</div>
 	    
 	    	<Element name="non-current-assets-grade3-1" className="element" >
 			<h1 className="intro">税込経理と税抜経理</h1>	
 		</Element>
+	 	<div>消費税を含めた金額で収益や費用を計上する経理処理方法を<span className="underline font-color2">税込経理</span>、消費税分は収益や費用とは別に計上する経理処理方法を<span className="underline font-color2">税抜経理</span>と呼びます。</div>	
+		<br />
+		<div>前述のとおり、消費税は基準期間にて売上高が1,000万円を超えるまでは納税義務が免除されます。</div>
+	    	<div>このように、納税義務が免除された事業者のことを<span className="underline font-color2">免税事業者</span>、納税義務が課された事業者のことを<span className="underline font-color2">課税事業者</span>と呼びます。</div>
+		<br />
+	    	<div>さて、税込経理と税抜経理では、どちらが先に売上高が1,000万を超えるでしょうか。</div>
+	    	<br />
+	    	<div>例えば、売上が現金で10,000円上がった（税率は10％）とした場合、税込経理では以下の仕訳となります。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0" className="table-color">
+			<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+			</tr>
+			<tr>
+				<td className="table-align">現金 11,000</td>
+				<td className="table-align">売上高 11,000</td>
+			</tr>
+		</table>
+	    	<br />
+	    	<div>一方、売上が現金で10,000円上がった（税率は10％）とした場合、税抜経理では以下の仕訳となります。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0" className="table-color">
+			<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+			</tr>
+			<tr>
+				<td className="table-align">現金 11,000</td>
+				<td className="table-align">売上高 10,000</td>
+			</tr>
+	    		<tr>
+				<td className="table-align">仮受消費税 1,000</td>
+			</tr>
+		</table>
+	    	<br />
+	    	<div>ここで、税込経理と税抜経理で計上された売上高の金額を比較すると、消費税がかさ増しされた分、税込経理の売上高の方が多く計上されていることがわかります。</div>
+	    	<br />
+	    	<div>このような背景から、日本の消費税のルールでは、免税事業者は税込経理、課税事業者は税込経理と税抜経理から選択するといったルールにすることで、課税事業者をなるべく多く作り出すといった施策が採られているのです。</div>
 	    
 	    	<Element name="non-current-assets-grade3-1" className="element" >
 			<h1 className="intro">消費税の経理処理方法</h1>	
 		</Element>
+	    	
 	    
 	    	<Element name="non-current-assets-grade3-1" className="element" >
 			<h1 className="intro">消費税の会計処理</h1>	
@@ -7883,6 +7940,9 @@ const TaxGrade3 = () => {
         </>
     );
 }
+
+<br />
+<div></div>
 
 const taxGrade3 = () => {
     return (
