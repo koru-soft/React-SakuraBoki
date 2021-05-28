@@ -5070,11 +5070,10 @@ const AllowanceGrade3 = () => {
 					</tr>
 					<tr>
 						<td className="table-align">貸倒引当金  30,000</td>
-						<td className="table-align">売掛金  40,000</td>
+						<td className="table-align" rowspan="2">売掛金  40,000</td>
 					</tr>
 	    				<tr>
 						<td className="table-align">貸倒損失  10,000</td>
-						<td className="table-align"></td>
 					</tr>
 				</table>
 				<br />
