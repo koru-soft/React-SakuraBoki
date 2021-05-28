@@ -7324,6 +7324,7 @@ const ProfitAndLossGrade3 = () => {
 					<div>最終的に発生したもの（借方）：支払地代という費用が増加するので、借方に支払地代を配置</div>
 					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
 				</div>
+	    			<br />
 				<div>逆に、不動産賃貸業をメインとしていない事業者が、土地を貸付け、60,000円を現金で受け取ったという場合、以下の仕訳となります。</div>
 				<br />
 	    			<table border="1" cellspacing="0" className="table-color">
@@ -7358,9 +7359,9 @@ const ProfitAndLossGrade3 = () => {
 				<Element name="profit-and-loss-grade3-11" className="element" >
 				<h1 className="intro">手数料の会計処理</h1>	
 				</Element>
-	    		<div>小売業を営む事業者が、不動産の仲介手数料を得た場合など、本業以外の活動から発生した収入を、<span className="underline font-color2">受取手数料</span>と呼びます。</div>
-	    		<br />
-	    		<div>一方、金融機関への振込にかかる手数料などで発生した費用を<span className="underline font-color2">支払手数料</span>と呼びます。</div>
+				<div>小売業を営む事業者が、不動産の仲介手数料を得た場合など、本業以外の活動から発生した収入を、<span className="underline font-color2">受取手数料</span>と呼びます。</div>
+				<br />
+				<div>一方、金融機関への振込にかかる手数料などで発生した費用を<span className="underline font-color2">支払手数料</span>と呼びます。</div>
 				<br />
 				<div>例えば、口座振り込みにて、取引先への支払いを行った際に200円の手数料が発生し、普通預金口座から支払ったという場合、以下の仕訳となります。</div>
 				<br />
@@ -7392,6 +7393,7 @@ const ProfitAndLossGrade3 = () => {
 					<div>最終的に発生したもの（借方）：支払手数料という費用が増加するので、借方に支払手数料を配置</div>
 					<div>なぜ発生したか（貸方）：普通預金という資産が減少するので、貸方に普通預金を配置</div>
 				</div>
+	    			<br />
 				<div>逆に、本業以外の事業にて、手数料による収入が200円発生し、普通預金に入金されたという場合、以下の仕訳となります。</div>
 				<br />
 	    			<table border="1" cellspacing="0" className="table-color">
@@ -7426,10 +7428,11 @@ const ProfitAndLossGrade3 = () => {
 				<Element name="profit-and-loss-grade3-12" className="element" >
 				<h1 className="intro">利息の会計処理</h1>	
 				</Element>
-	    		<div>お金を貸し付けることなどで発生した利息部分の収入を、<span className="underline font-color2">受取利息</span>と呼びます。</div>
-	    		<br />
-	    		<div>一方、お金を借りることなどで発生した、利息部分の費用を、<span className="underline font-color2">支払利息</span>と呼びます。</div>
-				<div>例えば、家賃を60,000円、現金で支払ったという場合、以下の仕訳となります。</div>
+				<div>お金を貸し付けることなどで発生した利息部分の収入を、<span className="underline font-color2">受取利息</span>と呼びます。</div>
+				<br />
+				<div>一方、お金を借りることなどで発生した、利息部分の費用を、<span className="underline font-color2">支払利息</span>と呼びます。</div>
+				<br />
+	    			<div>例えば、短期借入金の当月分の返済を5,000円、現金で支払った。なお、発生した利息は500円だったという場合、以下の仕訳となります。</div>
 				<br />
 	    			<table border="1" cellspacing="0" className="table-color">
 					<tr>
@@ -7437,29 +7440,33 @@ const ProfitAndLossGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">支払家賃 60,000</td>
-						<td className="table-align">現金 60,000</td>
+						<td className="table-align" rowspan="2">短期借入金 5,000</td>
+						<td className="table-align">現金 5,500</td>
+					</tr>
+	    				<tr>
+						<td className="table-align">支払利息 500</td>
 					</tr>
 				</table>
 				<br />
 				<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
 					<br />
-					<div>家賃を60,000円、現金で支払った</div>
+					<div>1年以内に返済予定となっている借金の当月分の返済を5,000円、現金で支払った。なお、発生した利息は500円だった</div>
 					<br />
 					<div>①因果分析</div>
-					<div>最終的に発生したもの（借方）：家賃60,000円</div>
+					<div>最終的に発生したもの（借方）：借金の当月分の返済額5,000円と、利息の支払い500円</div>
 					<div>なぜ発生したか（貸方）：現金を使ったため</div>
 					<br />
 					<div>②勘定科目の割当</div>
-					<div>最終的に発生したもの（借方）：家賃の支払いになるので、支払家賃で処理</div>
+					<div>最終的に発生したもの（借方）：借金の返済になるので、短期借入金で処理。また、利息分に関しては支払利息で処理</div>
 					<div>なぜ発生したか（貸方）：現金での支払いになるので、現金で処理</div>
 					<br />
 					<div>③勘定科目の配置</div>
-					<div>最終的に発生したもの（借方）：支払家賃という費用が増加するので、借方に支払家賃を配置</div>
+					<div>最終的に発生したもの（借方）：短期借入金という負債が減少するので、借方に短期借入金を配置。また、支払利息という費用が増加するので、借方に支払利息を追加</div>
 					<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
 				</div>
-				<div>逆に、不動産賃貸業をメインとしていない事業者が、建物の空き部屋を貸付け、家賃を60,000円、現金で受け取ったという場合、以下の仕訳となります。</div>
+	    			<br />
+				<div>逆に、1年以内に返済が予定されている貸付金について、当付分の返済があり、現金で受け取った。ただし、発生した利息分は500円であったという場合、以下の仕訳となります。</div>
 				<br />
 	    			<table border="1" cellspacing="0" className="table-color">
 					<tr>
@@ -7467,55 +7474,90 @@ const ProfitAndLossGrade3 = () => {
 						<th className="table-align">貸方（調達源泉）</th>
 					</tr>
 					<tr>
-						<td className="table-align">現金 60,000</td>
-						<td className="table-align">受取家賃 60,000</td>
+						<td className="table-align">現金 5,500</td>
+						<td className="table-align" rowspan="2">短期貸付金 5,000</td>
+					</tr>
+	    				<tr>
+						<td className="table-align">受取利息 500</td>
 					</tr>
 				</table>
 				<br />
 				<div className="explanation-wrapper">
 					<div>■　仕訳の手順　■</div>
 					<br />
-					<div>不動産賃貸業をメインとしていない事業者が、建物の空き部屋を貸付け、家賃を60,000円、現金で受け取った</div>
+					<div>1年以内に返済が予定されている貸付金について、当付分の返済があり、現金で受け取った。ただし、発生した利息分は500円であった</div>
 					<br />
 					<div>①因果分析</div>
-					<div>最終的に発生したもの（借方）：現金60,000円</div>
-					<div>なぜ発生したか（貸方）：家賃を受け取ったため</div>
+					<div>最終的に発生したもの（借方）：現金5,500円</div>
+					<div>なぜ発生したか（貸方）：短期での貸付金という債権を行使したほか、貸付に伴う利息が発生したため</div>
 					<br />
 					<div>②勘定科目の割当</div>
 					<div>最終的に発生したもの（借方）：現金の受取になるので、現金で処理</div>
-					<div>なぜ発生したか（貸方）：家賃という収益が発生しているため、受取家賃で処理</div>
+					<div>なぜ発生したか（貸方）：短期での貸付分の返済分になるため、短期貸付金で処理。また、貸付に伴う利息分を収益として得るため、受取利息で処理</div>
 					<br />
 					<div>③勘定科目の配置</div>
 					<div>最終的に発生したもの（借方）：現金という資産が増加するので、借方に現金を配置</div>
-					<div>なぜ発生したか（貸方）：受取家賃という収益が増加するので、貸方に受取家賃を配置</div>
+					<div>なぜ発生したか（貸方）：短期貸付金という資産が減少するので、貸方に短期貸付金を配置。また、受取利息という収益が増加するので、貸方に受取利息を配置</div>
 				</div>
 
 				<Element name="profit-and-loss-grade3-13" className="element" >
 				<h1 className="intro">雑費と雑損失の会計処理</h1>	
 				</Element>
-	    		<div>発生した費用が、既存のどの費用勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような支払いが発生した場合、<span className="underline font-color2">雑費</span>か<span className="underline font-color2">雑損失</span>で処理を行います。</div>
+				<div>発生した費用が、既存のどの費用勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような支払いが発生した場合、<span className="underline font-color2">雑費</span>か<span className="underline font-color2">雑損失</span>で処理を行います。</div>
+					<br />
+				<div>違いは以下の通りです</div>
 				<br />
-	    		<div>違いは以下の通りです</div>
-	    		<br />
-	    		<table border="1" cellspacing="0" className="table-color">
+				<table border="1" cellspacing="0" className="table-color">
 				<tr>
 				    <th className="table-size-30 table-align">勘定科目の名前</th>
 				    <th className="table-align">どんなもの？</th>
 				</tr>
 				<tr>
 				    <td className="table-align">雑費</td>
-				    <td className="table-align">販売費及び一般管理費に該当するような、主に営業活動で発生した出費</td>
+				    <td className="table-align">営業活動で発生した少額かつ重要性の低い出費（販売費及び一般管理費に該当）</td>
 				</tr>
 				<tr>
 				    <td className="table-align">雑損失</td>
-				    <td className="table-align">営業外費用に該当するような、主に営業活動以外で発生した出費</td>
+				    <td className="table-align">営業活動以外で発生した少額かつ重要性の低い出費（営業外費用に該当）</td>
 				</tr>
-			</table>
+				</table>
+	    			<br />
+	    			<div>それでは仕訳を見ていきましょう。</div>
+	    			<div>事務所の引っ越しがあったため、業者に150,000円を普通預金口座より支払ったという場合、以下の仕訳となります。</div>
+				<br />
+	    			<table border="1" cellspacing="0" className="table-color">
+					<tr>
+						<th className="table-align">借方（運用形態）</th>
+						<th className="table-align">貸方（調達源泉）</th>
+					</tr>
+					<tr>
+						<td className="table-align">雑費 150,000</td>
+						<td className="table-align" rowspan="2">普通預金 150,000</td>
+					</tr>
+				</table>
+				<br />
+				<div className="explanation-wrapper">
+					<div>■　仕訳の手順　■</div>
+					<br />
+					<div>事務所の引っ越しがあったため、業者に50,000円を普通預金口座より支払った</div>
+					<br />
+					<div>①因果分析</div>
+					<div>最終的に発生したもの（借方）：一般管理費に該当する、少額の50,000円の支払い</div>
+					<div>なぜ発生したか（貸方）：引っ越しの契約を行い、その代金を普通預金口座から支払ったため</div>
+					<br />
+					<div>②勘定科目の割当</div>
+					<div>最終的に発生したもの（借方）：一般管理費に属する少額の支払いになり、またその他適切な勘定科目がないと考え、雑費で処理</div>
+					<div>なぜ発生したか（貸方）：普通預金口座からの支払いとなるため、普通預金で処理</div>
+					<br />
+					<div>③勘定科目の配置</div>
+					<div>最終的に発生したもの（借方）：雑費という費用が増加するので、借方に雑費を配置</div>
+					<div>なぜ発生したか（貸方）：普通預金という資産が減少するので、貸方に普通預金を配置</div>
+				</div>
 	    
 				<Element name="profit-and-loss-grade3-14" className="element" >
 				<h1 className="intro">雑収入の会計処理</h1>	
 				</Element>
-	    		<div>発生した収益が、営業外収益に該当するものの、既存のどの収益勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような収益が発生した場合、<span className="underline font-color2">雑収入</span>で処理を行います。</div>
+	    			<div>発生した収益が、営業外収益に該当するものの、既存のどの収益勘定科目にも該当していなかった場合や、金額が少なく重要性が乏しいような収益が発生した場合、<span className="underline font-color2">雑収入</span>で処理を行います。</div>
 		</section>
         </>
     );
