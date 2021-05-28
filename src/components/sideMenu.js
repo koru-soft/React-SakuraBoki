@@ -3546,12 +3546,11 @@ const PromissoryNotesGrade3 = () => {
 			<Element name="promissory-notes-grade3-4" className="element" >
 				<h1 className="intro">手形借入金・手形貸付金とは</h1>	
 			</Element>
-			<div>ただ単にお金を貸し借りした場合、借入金や貸付金などで処理を行いますが、お金の貸し借りに約束手形をやり取りする場合、これを区別して処理する必要があります。</div>
+			<div>お金の貸し借りに用いる手形のことを、<span className="underline font-color2">金融手形</span>と呼び、通常の商取引と区別して処理が必要となります。</div>
 			<br />
-			<div>約束手形を振り出してお金を借りることを<span className="underline font-color2">手形借入金</span>と呼び、お金を貸し出し約束手形を受け取った場合、<span className="underline font-color2">手形貸付金</span>という勘定科目にて処理を行います。</div>
+			<div>約束手形を振り出して借金を行ったという場合<span className="underline font-color2">手形借入金</span>、約束手形を振り出してお金を貸した場合<span className="underline font-color2">手形貸付金</span>という勘定科目にて処理を行います。</div>
 			<br />
-			<div>このように、お金の貸し借りに用いる手形のことを、<span className="underline font-color2">金融手形</span>と呼び、通常の商取引と区別して処理が必要となります。</div>
-			<div>例えば、商品10,000円を販売し、代金を約束手形で受取ったという場合、以下の仕訳となります。</div>
+			<div>例えば、約束手形を振り出して200,000円の借金を行い、現金を得たという場合、以下の仕訳となります。</div>
 			<br />
 			<table border="1" cellspacing="0" className="table-color">
 				<tr>
@@ -3559,27 +3558,58 @@ const PromissoryNotesGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 				</tr>
 				<tr>
-				<td className="table-align">受取手形 10,000</td>
-				<td className="table-align">売上 10,000</td>
+				<td className="table-align">現金 200,000</td>
+				<td className="table-align">手形借入金 200,000</td>
 				</tr>
 			</table>
 			<br />
 			<div className="explanation-wrapper">
 				<div>■　仕訳の手順　■</div>
 				<br />
-				<div>商品10,000円を販売し、代金を約束手形で受取った</div>
+				<div>約束手形を振り出して200,000円の借金を行い、現金を得た</div>
 				<br />
 				<div>①因果分析</div>
-				<div>最終的に発生したもの（借方）：10,000円分の約束手形</div>
-				<div>なぜ発生したか（貸方）：商品10,000円分を販売し、売上が上がったため</div>
+				<div>最終的に発生したもの（借方）：200,000円の現金</div>
+				<div>なぜ発生したか（貸方）：借用証書の代わりに約束手形を振り出したため</div>
 				<br />
 				<div>②勘定科目の割当</div>
-				<div>最終的に発生したもの（借方）：約束手形の受取になるので、受取手形で処理</div>
-				<div>なぜ発生したか（貸方）：販売による10,000円の売上の発生になるので、売上で処理</div>
+				<div>最終的に発生したもの（借方）：現金の獲得になるため、現金で処理/div>
+				<div>なぜ発生したか（貸方）：約束手形の振り出しになるため、手形借入金で処理</div>
 				<br />
 				<div>③勘定科目の配置</div>
-				<div>最終的に発生したもの（借方）：受取手形という資産が増加するため、借方に受取手形を配置</div>
-				<div>なぜ発生したか（貸方）：売上という収益が増加するため、貸方に売上を配置</div>
+				<div>最終的に発生したもの（借方）：現金という資産が増加するため、借方に現金を配置</div>
+				<div>なぜ発生したか（貸方）：手形借入金という負債が増加するため、貸方に手形借入金を配置</div>
+			</div>
+	    		<br />
+			<div>続いて、約束手形を振り出して200,000円の現金融資を行ったという場合、以下の仕訳となります。</div>
+			<br />
+			<table border="1" cellspacing="0" className="table-color">
+				<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+				</tr>
+				<tr>
+				<td className="table-align">手形貸付金 200,000</td>
+				<td className="table-align">現金 200,000</td>
+				</tr>
+			</table>
+			<br />
+			<div className="explanation-wrapper">
+				<div>■　仕訳の手順　■</div>
+				<br />
+				<div>約束手形を振り出して200,000円の現金融資を行った</div>
+				<br />
+				<div>①因果分析</div>
+				<div>最終的に発生したもの（借方）：借用証書の代わりに振り出した約束手形</div>
+				<div>なぜ発生したか（貸方）：現金を支払ったため</div>
+				<br />
+				<div>②勘定科目の割当</div>
+				<div>最終的に発生したもの（借方）：約束手形の振り出しによる融資となるため、手形貸付金で処理/div>
+				<div>なぜ発生したか（貸方）：現金での支払いとなるため、現金で処理</div>
+				<br />
+				<div>③勘定科目の配置</div>
+				<div>最終的に発生したもの（借方）：手形貸付金という資産が増加するため、借方に手形貸付金を配置</div>
+				<div>なぜ発生したか（貸方）：現金という資産が減少するため、貸方に現金を配置</div>
 			</div>
 	    	</section>
         </>
