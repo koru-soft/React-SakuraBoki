@@ -7713,8 +7713,8 @@ const TaxGrade3 = () => {
 				<th className="table-align">公課に該当する支払い</th>
 			</tr>
 			<tr>
-				<td className="table-align table-padding-1">固定資産税<br />自動車税<br />印紙税<br />税込経理の場合に納付する消費税</td>
-				<td className="table-align table-padding-1">国や地方公共団体が発行する各種証明書の発行費用<br />延滞税などの罰金<br />商工会などの会費</td>
+				<td className="table-align table-padding-1">印紙税<br />自動車税<br />固定資産税<br />税込経理の場合に納付する消費税</td>
+				<td className="table-align table-padding-1">延滞税などの罰金<br />商工会などの会費<br />国や地方公共団体が発行する各種証明書の発行費用</td>
 			</tr>
 		</table>
 		<br />
@@ -7824,10 +7824,49 @@ const TaxGrade3 = () => {
 			<div>最終的に発生したもの（借方）：仮払法人税等という資産が増加するので、借方に仮払法人税等を配置</div>
 			<div>なぜ発生したか（貸方）：現金という資産が減少するので、貸方に現金を配置</div>
 		</div>
+	    	<br />
+	    	<div>なお、後日税務署へ法人税を納税した場合には、未払法人税等を相殺する仕訳を立てることで、会計処理が完了となります。</div>
+	    	<br />
+	    	<div>一方、決算で法人税の金額が5,000円であると確定した。ただし、前期に計上した仮払法人税10,000円を加味するという場合、以下の仕訳となります。</div>
+	    	<br />
+	    	<table border="1" cellspacing="0" className="table-color">
+			<tr>
+				<th className="table-align">借方（運用形態）</th>
+				<th className="table-align">貸方（調達源泉）</th>
+			</tr>
+			<tr>
+				<td className="table-align">法人税等 5,000</td>
+				<td className="table-align" rowspan="2">仮払法人税等 10,000</td>
+			</tr>
+	    		<tr>
+				<td className="table-align">未収法人税等 5,000</td>
+			</tr>
+		</table>
+		<br />
+		<div className="explanation-wrapper">
+			<div>■　仕訳の手順　■</div>
+			<br />
+			<div>決算で法人税の金額が5,000円であると確定した。ただし、前期に計上した仮払法人税10,000円を加味する</div>
+			<br />
+			<div>①因果分析</div>
+			<div>最終的に発生したもの（借方）：5,000円分の法人税の確定金額および、払いすぎてしまっていた差額5,000円の還付</div>
+			<div>なぜ発生したか（貸方）：前期にすでに納税済みであった10,000円分があったため、まずはすでに支払済み金額から法人税の確定分を処理</div>
+			<br />
+			<div>②勘定科目の割当</div>
+			<div>最終的に発生したもの（借方）：法人税の確定金額になるため、法人税等もしくは法人税、住民税及び事業税で処理。また、還付分に関しては未収法人税等で処理</div>
+			<div>なぜ発生したか（貸方）：すでに納税済みの金額があるため、改めて追加で資金を支払う必要がない。よって、すでに計上済みの仮払消費税等で処理</div>
+			<br />
+			<div>③勘定科目の配置</div>
+			<div>最終的に発生したもの（借方）：法人税等という費用が増加するので、借方に法人税等を配置。また、還付分に関しては未収法人税等という資産が増加するので、借方に未収法人税等を配置</div>
+			<div>なぜ発生したか（貸方）：仮払法人税等という資産が減少するので、貸方に仮払法人税等を配置</div>
+		</div>
+	    	<br />
+	    	<div>なお、後日税務署から法人税が還付された場合には、未収法人税等を相殺する仕訳を立てることで、会計処理が完了となります。</div>
 	    
 	    	<Element name="non-current-assets-grade3-1" className="element" >
 			<h1 className="intro">消費税の仕組み</h1>	
 		</Element>
+	    	
 	    
 	    	<Element name="non-current-assets-grade3-1" className="element" >
 			<h1 className="intro">税込経理と税抜経理</h1>	
