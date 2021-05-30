@@ -953,7 +953,6 @@ const accountGrade2 = () => {
                 <AccountGrade2 />
             </aside>
         </main>
-		<Calculator />
 		</>
     );
 }
@@ -998,7 +997,7 @@ const accountGrade2Calculator = () => {
 
 const accountGrade1 = () => {
     return (
-        <main className="mainArticleAddCalc sakura-color">
+        <main className="mainArticle">
             <aside>
 	    	<div className="level_change_wrapper">
                     <Link to="/account-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
@@ -1895,6 +1894,7 @@ const accountsListGrade3 = () => {
 
 const accountsListGrade3Calculator = () => {
     return (
+		<>
         <main className="mainArticleAddCalc sakura-color">
             <aside>
 	    	<div className="level_change_wrapper">
@@ -1905,6 +1905,8 @@ const accountsListGrade3Calculator = () => {
                 <AccountsListGrade3 />
             </aside>
         </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -2796,6 +2798,34 @@ const cashGrade3 = () => {
     );
 }
 
+const cashGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+                <div className="level_change_wrapper">
+                    <Link to="/cash-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/cash-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/cash-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-1" spy={true} smooth={true} duration={500} >現金とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-2" spy={true} smooth={true} duration={500} >通貨代用証券とは</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-3" spy={true} smooth={true} duration={500} >小切手とは</ScrollLink></li>
+	    		<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-4" spy={true} smooth={true} duration={500} >小口現金とは</ScrollLink></li>
+	    	    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade3-5" spy={true} smooth={true} duration={500} >現金の残高ズレについて</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <CashGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const cashGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -2818,6 +2848,31 @@ const cashGrade2 = () => {
     );
 }
 
+const cashGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+                <div className="level_change_wrapper">
+                    <Link to="/cash-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/cash-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/cash-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade2-1" spy={true} smooth={true} duration={500} >株式配当金領収証とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade2-2" spy={true} smooth={true} duration={500} >期限到来済公社債利札とは</ScrollLink></li>
+	    	    </ul>
+                </aside>
+                <CashGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const cashGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -2836,6 +2891,30 @@ const cashGrade1 = () => {
                 <CashGrade1 />
             </aside>
         </main>
+    );
+}
+
+const cashGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+                <div className="level_change_wrapper">
+                    <Link to="/cash-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/cash-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/cash-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="cashGrade1-1" spy={true} smooth={true} duration={500} >その他の通貨代用証券について</ScrollLink></li>
+	    	    </ul>
+                </aside>
+                <CashGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -3194,6 +3273,34 @@ const savingsGrade3 = () => {
     );
 }
 
+const savingsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/savings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/savings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/savings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-1" spy={true} smooth={true} duration={500} >預金とは</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-2" spy={true} smooth={true} duration={500} >普通預金の会計処理</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-3" spy={true} smooth={true} duration={500} >定期預金の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-4" spy={true} smooth={true} duration={500} >当座預金の会計処理</ScrollLink></li>
+                    	<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="savingsGrade3-5" spy={true} smooth={true} duration={500} >当座借越の会計処理</ScrollLink></li>	    	    
+	    	    </ul>
+            </aside>
+            <SavingsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const savingsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -3209,6 +3316,24 @@ const savingsGrade2 = () => {
     );
 }
 
+const savingsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/savings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/savings-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/savings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <SavingsGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const savingsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -3221,6 +3346,24 @@ const savingsGrade1 = () => {
                 <SavingsGrade1 />
             </aside>
         </main>
+    );
+}
+
+const savingsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/savings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/savings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/savings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <SavingsGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜預金コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
@@ -3673,6 +3816,34 @@ const tradingsGrade3 = () => {
     );
 }
 
+const tradingsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+            </div>
+			<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-1" spy={true} smooth={true} duration={500} >三分法とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-2" spy={true} smooth={true} duration={500} >発生主義とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-3" spy={true} smooth={true} duration={500} >掛取引とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-4" spy={true} smooth={true} duration={500} >混同しやすい債権・債務</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tradings-grade3-5" spy={true} smooth={true} duration={500} >分記法とは</ScrollLink></li>	    	    
+	    	    </ul>
+            </aside>
+            <TradingsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const tradingsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -3688,6 +3859,24 @@ const tradingsGrade2 = () => {
     );
 }
 
+const tradingsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/tradings-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <TradingsGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const tradingsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -3700,6 +3889,24 @@ const tradingsGrade1 = () => {
                 <TradingsGrade1 />
             </aside>
         </main>
+    );
+}
+
+const tradingsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/tradings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <TradingsGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
@@ -4451,6 +4658,33 @@ const promissoryNotesGrade3 = () => {
     );
 }
 
+const promissoryNotesGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/promissory-notes-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/promissory-notes-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/promissory-notes-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+			<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-1" spy={true} smooth={true} duration={500} >手形とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-2" spy={true} smooth={true} duration={500} >約束手形の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-3" spy={true} smooth={true} duration={500} >電子記録債権・電子記録債務の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="promissory-notes-grade3-4" spy={true} smooth={true} duration={500} >手形借入金・手形貸付金とは</ScrollLink></li>
+	    	    		</ul>
+            		</aside>
+                <PromissoryNotesGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const promissoryNotesGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -4466,6 +4700,24 @@ const promissoryNotesGrade2 = () => {
     );
 }
 
+const promissoryNotesGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/promissory-notes-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/promissory-notes-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/promissory-notes-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <PromissoryNotesGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const promissoryNotesGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -4478,6 +4730,24 @@ const promissoryNotesGrade1 = () => {
                 <PromissoryNotesGrade1 />
             </aside>
         </main>
+    );
+}
+
+const promissoryNotesGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/promissory-notes-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/promissory-notes-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/promissory-notes-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <PromissoryNotesGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5144,6 +5414,37 @@ const otherGrade3 = () => {
     );
 }
 
+const otherGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/other-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/other-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/other-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+			<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-1" spy={true} smooth={true} duration={500} >貸付金・借入金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-2" spy={true} smooth={true} duration={500} >未収入金（未収金）・未払金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-3" spy={true} smooth={true} duration={500} >前払金（前渡金）・前受金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-4" spy={true} smooth={true} duration={500} >仮払金・仮受金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-5" spy={true} smooth={true} duration={500} >立替金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-6" spy={true} smooth={true} duration={500} >預り金の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-7" spy={true} smooth={true} duration={500} >受取商品券の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="other-grade3-8" spy={true} smooth={true} duration={500} >差入保証金の会計処理</ScrollLink></li>
+				</ul>
+            </aside>
+                <OtherGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const otherGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5159,6 +5460,24 @@ const otherGrade2 = () => {
     );
 }
 
+const otherGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/other-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/other-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/other-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <OtherGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const otherGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -5171,6 +5490,24 @@ const otherGrade1 = () => {
                 <OtherGrade1 />
             </aside>
         </main>
+    );
+}
+
+const otherGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/other-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/other-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/other-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <OtherGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5287,6 +5624,30 @@ const assignmentOfAccountsReceivableGrade3 = () => {
     );
 }
 
+const assignmentOfAccountsReceivableGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/assignment-of-accounts-receivable-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/assignment-of-accounts-receivable-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/assignment-of-accounts-receivable-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="assignment-of-accounts-receivable-grade3-1" spy={true} smooth={true} duration={500} >クレジット売掛金の会計処理</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <AssignmentOfAccountsReceivableGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const assignmentOfAccountsReceivableGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5308,6 +5669,30 @@ const assignmentOfAccountsReceivableGrade2 = () => {
     );
 }
 
+const assignmentOfAccountsReceivableGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/assignment-of-accounts-receivable-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="assignment-of-accounts-receivable-grade3-1" spy={true} smooth={true} duration={500} >クレジット売掛金の会計処理</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <AssignmentOfAccountsReceivableGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const assignmentOfAccountsReceivableGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -5326,6 +5711,30 @@ const assignmentOfAccountsReceivableGrade1 = () => {
                 <AssignmentOfAccountsReceivableGrade3 />
             </aside>
         </main>
+    );
+}
+
+const assignmentOfAccountsReceivableGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/assignment-of-accounts-receivable-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/assignment-of-accounts-receivable-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="assignment-of-accounts-receivable-grade3-1" spy={true} smooth={true} duration={500} >クレジット売掛金の会計処理</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <AssignmentOfAccountsReceivableGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5587,6 +5996,33 @@ const allowanceGrade3 = () => {
     );
 }
 
+const allowanceGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-1" spy={true} smooth={true} duration={500} >貸倒れの会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-2" spy={true} smooth={true} duration={500} >貸倒損失の会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-3" spy={true} smooth={true} duration={500} >償却債権取立益の会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="allowance-grade3-4" spy={true} smooth={true} duration={500} >実績法とは</ScrollLink></li>
+	    	　　　</ul>
+                </aside>
+                <AllowanceGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const allowanceGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5602,6 +6038,24 @@ const allowanceGrade2 = () => {
     );
 }
 
+const allowanceGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const allowanceGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -5614,6 +6068,24 @@ const allowanceGrade1 = () => {
                 <AllowanceGrade1 />
             </aside>
         </main>
+    );
+}
+
+const allowanceGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/allowance-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/allowance-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/allowance-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <AllowanceGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5652,6 +6124,24 @@ const financialGuaranteeGrade3 = () => {
     );
 }
 
+const financialGuaranteeGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+            <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const financialGuaranteeGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5676,6 +6166,33 @@ const financialGuaranteeGrade2 = () => {
     );
 }
 
+const financialGuaranteeGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const financialGuaranteeGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -5697,6 +6214,33 @@ const financialGuaranteeGrade1 = () => {
                 <FinancialGuaranteeGrade3 />
             </aside>
         </main>
+    );
+}
+
+const financialGuaranteeGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/financial-guarantee-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/financial-guarantee-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/financial-guarantee-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+                </aside>
+                <FinancialGuaranteeGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5757,6 +6301,24 @@ const specialTradingsGrade3 = () => {
     );
 }
 
+const specialTradingsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <SpecialTradingsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const specialTradingsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5778,6 +6340,33 @@ const specialTradingsGrade2 = () => {
 			<SpecialTradingsGrade2 />
             </aside>
         </main>
+    );
+}
+
+const specialTradingsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+			</aside>
+			<SpecialTradingsGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5805,6 +6394,32 @@ const specialTradingsGrade1 = () => {
     );
 }
 
+const specialTradingsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-1" spy={true} smooth={true} duration={500} >保証債務とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+	    			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="special-tradings-grade3-4" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+	    	　　 </ul>
+			</aside>
+			<SpecialTradingsGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
 
 /* 〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜特殊商品売買コンテンツ〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜 */
 
@@ -5835,6 +6450,24 @@ const variousServiceTransferGrade3 = () => {
     );
 }
 
+const variousServiceTransferGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <VariousServiceTransferGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const variousServiceTransferGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5850,6 +6483,24 @@ const variousServiceTransferGrade2 = () => {
     );
 }
 
+const variousServiceTransferGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <VariousServiceTransferGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const variousServiceTransferGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -5862,6 +6513,24 @@ const variousServiceTransferGrade1 = () => {
                 <VariousServiceTransferGrade3 />
             </aside>
         </main>
+    );
+}
+
+const variousServiceTransferGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <VariousServiceTransferGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5894,6 +6563,24 @@ const financialInstrumentGrade3 = () => {
     );
 }
 
+const financialInstrumentGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <FinancialInstrumentGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const financialInstrumentGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5909,6 +6596,24 @@ const financialInstrumentGrade2 = () => {
     );
 }
 
+const financialInstrumentGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <FinancialInstrumentGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const financialInstrumentGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -5921,6 +6626,24 @@ const financialInstrumentGrade1 = () => {
                 <FinancialInstrumentGrade3 />
             </aside>
         </main>
+    );
+}
+
+const financialInstrumentGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <FinancialInstrumentGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -5980,6 +6703,24 @@ const securiteisGrade3 = () => {
     );
 }
 
+const securiteisGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <SecuriteisGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const securiteisGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -5995,6 +6736,24 @@ const securiteisGrade2 = () => {
     );
 }
 
+const securiteisGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <SecuriteisGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const securiteisGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -6007,6 +6766,24 @@ const securiteisGrade1 = () => {
                 <SecuriteisGrade1 />
             </aside>
         </main>
+    );
+}
+
+const securiteisGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/securiteis-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/securiteis-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/securiteis-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <SecuriteisGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -6398,20 +7175,6 @@ const NonCurrentAssetsGrade2 = () => {
 		</div>
 		<div>定額法では、耐用年数の代わりに償却率（しょうきゃくりつ）を使って計算する方法もあります。</div>
 		<div>償却率を使って減価償却費を計算する場合は（取得原価ー残存価額）に償却率をかけて1年分の減価償却費を計算します（期中取得の場合は月割で計算します）。</div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
 	
             </article>
         </section>
@@ -6675,6 +7438,34 @@ const nonCurrentAssetsGrade3 = () => {
     );
 }
 
+const nonCurrentAssetsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+				<Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+				<ul>
+					<li className="table-of-contents">目次</li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-1" spy={true} smooth={true} duration={500} >固定資産とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-2" spy={true} smooth={true} duration={500} >減価償却とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-3" spy={true} smooth={true} duration={500} >定額法とは</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-4" spy={true} smooth={true} duration={500} >固定資産売却時の会計処理</ScrollLink></li>
+					<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="non-current-assets-grade3-5" spy={true} smooth={true} duration={500} >資本的支出・収益的支出について</ScrollLink></li>
+				</ul>
+                </aside>
+                <NonCurrentAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const nonCurrentAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -6690,6 +7481,24 @@ const nonCurrentAssetsGrade2 = () => {
     );
 }
 
+const nonCurrentAssetsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+				<div className="level_change_wrapper">
+					<Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+					<Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+					<Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+				</div>
+				<NonCurrentAssetsGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const nonCurrentAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -6702,6 +7511,24 @@ const nonCurrentAssetsGrade1 = () => {
                 <NonCurrentAssetsGrade1 />
             </aside>
         </main>
+    );
+}
+
+const nonCurrentAssetsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+				<div className="level_change_wrapper">
+					<Link to="/non-current-assets-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+					<Link to="/non-current-assets-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+					<Link to="/non-current-assets-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+				</div>
+                <NonCurrentAssetsGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -6734,6 +7561,24 @@ const intangibleAssetsGrade3 = () => {
     );
 }
 
+const intangibleAssetsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <IntangibleAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const intangibleAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -6749,6 +7594,24 @@ const intangibleAssetsGrade2 = () => {
     );
 }
 
+const intangibleAssetsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <IntangibleAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const intangibleAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -6761,6 +7624,24 @@ const intangibleAssetsGrade1 = () => {
                 <IntangibleAssetsGrade3 />
             </aside>
         </main>
+    );
+}
+
+const intangibleAssetsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <IntangibleAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -6793,6 +7674,24 @@ const bookImpairmentGrade3 = () => {
     );
 }
 
+const bookImpairmentGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <BookImpairmentGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const bookImpairmentGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -6808,6 +7707,24 @@ const bookImpairmentGrade2 = () => {
     );
 }
 
+const bookImpairmentGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <BookImpairmentGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const bookImpairmentGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -6820,6 +7737,24 @@ const bookImpairmentGrade1 = () => {
                 <BookImpairmentGrade3 />
             </aside>
         </main>
+    );
+}
+
+const bookImpairmentGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <BookImpairmentGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -6852,6 +7787,24 @@ const investmentsAndOtherAssetsGrade3 = () => {
     );
 }
 
+const investmentsAndOtherAssetsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <InvestmentsAndOtherAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const investmentsAndOtherAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -6867,6 +7820,24 @@ const investmentsAndOtherAssetsGrade2 = () => {
     );
 }
 
+const investmentsAndOtherAssetsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <InvestmentsAndOtherAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const investmentsAndOtherAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -6879,6 +7850,24 @@ const investmentsAndOtherAssetsGrade1 = () => {
                 <InvestmentsAndOtherAssetsGrade3 />
             </aside>
         </main>
+    );
+}
+
+const investmentsAndOtherAssetsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <InvestmentsAndOtherAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -6911,6 +7900,24 @@ const deferredAssetsGrade3 = () => {
     );
 }
 
+const deferredAssetsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <DeferredAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const deferredAssetsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -6926,6 +7933,24 @@ const deferredAssetsGrade2 = () => {
     );
 }
 
+const deferredAssetsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <DeferredAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const deferredAssetsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -6938,6 +7963,24 @@ const deferredAssetsGrade1 = () => {
                 <DeferredAssetsGrade3 />
             </aside>
         </main>
+    );
+}
+
+const deferredAssetsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <DeferredAssetsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -6998,6 +8041,24 @@ const leaseGrade3 = () => {
     );
 }
 
+const leaseGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/lease-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/lease-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/lease-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <LeaseGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const leaseGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -7013,6 +8074,24 @@ const leaseGrade2 = () => {
     );
 }
 
+const leaseGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/lease-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/lease-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/lease-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <LeaseGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const leaseGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -7025,6 +8104,24 @@ const leaseGrade1 = () => {
                 <LeaseGrade1 />
             </aside>
         </main>
+    );
+}
+
+const leaseGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/lease-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/lease-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/lease-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <LeaseGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -7083,6 +8180,24 @@ const foreignCurrencyGrade3 = () => {
     );
 }
 
+const foreignCurrencyGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/foreign-currency-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/foreign-currency-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/foreign-currency-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ForeignCurrencyGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const foreignCurrencyGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -7098,6 +8213,24 @@ const foreignCurrencyGrade2 = () => {
     );
 }
 
+const foreignCurrencyGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/foreign-currency-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/foreign-currency-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/foreign-currency-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <ForeignCurrencyGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const foreignCurrencyGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -7110,6 +8243,24 @@ const foreignCurrencyGrade1 = () => {
                 <ForeignCurrencyGrade3 />
             </aside>
         </main>
+    );
+}
+
+const foreignCurrencyGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/foreign-currency-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/foreign-currency-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/foreign-currency-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <ForeignCurrencyGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -7142,6 +8293,24 @@ const assetRetirementObligationsGrade3 = () => {
     );
 }
 
+const assetRetirementObligationsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <AssetRetirementObligationsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const assetRetirementObligationsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -7157,6 +8326,24 @@ const assetRetirementObligationsGrade2 = () => {
     );
 }
 
+const assetRetirementObligationsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <AssetRetirementObligationsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const assetRetirementObligationsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -7169,6 +8356,24 @@ const assetRetirementObligationsGrade1 = () => {
                 <AssetRetirementObligationsGrade3 />
             </aside>
         </main>
+    );
+}
+
+const assetRetirementObligationsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <AssetRetirementObligationsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -7986,6 +9191,43 @@ const profitAndLossGrade3 = () => {
     );
 }
 
+const profitAndLossGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/profit-and-loss-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/profit-and-loss-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/profit-and-loss-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+	    	<aside className="subMenu">
+                    <ul>
+                        <li className="table-of-contents">目次</li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-1" spy={true} smooth={true} duration={500} >消耗品費の会計処理</ScrollLink></li>
+                        <li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-2" spy={true} smooth={true} duration={500} >旅費交通費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-3" spy={true} smooth={true} duration={500} >通信費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-4" spy={true} smooth={true} duration={500} >水道光熱費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-5" spy={true} smooth={true} duration={500} >広告宣伝費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-6" spy={true} smooth={true} duration={500} >給料手当の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-7" spy={true} smooth={true} duration={500} >法定福利費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-8" spy={true} smooth={true} duration={500} >福利厚生費の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-9" spy={true} smooth={true} duration={500} >家賃の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-10" spy={true} smooth={true} duration={500} >地代の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-11" spy={true} smooth={true} duration={500} >手数料の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-12" spy={true} smooth={true} duration={500} >利息の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-13" spy={true} smooth={true} duration={500} >雑費と雑損失の会計処理</ScrollLink></li>
+						<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="profit-and-loss-grade3-14" spy={true} smooth={true} duration={500} >雑収入の会計処理</ScrollLink></li>	
+		　　　</ul>
+                </aside>
+                <ProfitAndLossGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const profitAndLossGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -8001,6 +9243,24 @@ const profitAndLossGrade2 = () => {
     );
 }
 
+const profitAndLossGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/profit-and-loss-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/profit-and-loss-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+				<Link to="/profit-and-loss-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <ProfitAndLossGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const profitAndLossGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -8013,6 +9273,24 @@ const profitAndLossGrade1 = () => {
                 <ProfitAndLossGrade3 />
             </aside>
         </main>
+    );
+}
+
+const profitAndLossGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/profit-and-loss-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+				<Link to="/profit-and-loss-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/profit-and-loss-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+			</div>
+                <ProfitAndLossGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -8535,6 +9813,34 @@ const taxGrade3 = () => {
     );
 }
 
+const taxGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+		<div className="level_change_wrapper">
+			<Link to="/tax-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+			<Link to="/tax-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+			<Link to="/tax-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+		</div>
+		<aside className="subMenu">
+		    <ul>
+			<li className="table-of-contents">目次</li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tax-grade3-1" spy={true} smooth={true} duration={500} >租税公課の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tax-grade3-2" spy={true} smooth={true} duration={500} >法人税の会計処理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tax-grade3-3" spy={true} smooth={true} duration={500} >消費税の仕組み</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tax-grade3-4" spy={true} smooth={true} duration={500} >税込経理と税抜経理</ScrollLink></li>
+			<li className="padding-inline-start"><ScrollLink activeClass="active" className="test1" to="tax-grade3-5" spy={true} smooth={true} duration={500} >消費税の会計処理</ScrollLink></li>
+		   </ul>
+		</aside>
+                <TaxGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const taxGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -8550,6 +9856,24 @@ const taxGrade2 = () => {
     );
 }
 
+const taxGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <TaxGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const taxGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -8562,6 +9886,24 @@ const taxGrade1 = () => {
                 <TaxGrade3 />
             </aside>
         </main>
+    );
+}
+
+const taxGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <TaxGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -8620,6 +9962,24 @@ const taxEffectGrade3 = () => {
     );
 }
 
+const taxEffectGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tax-effect-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+                    <Link to="/tax-effect-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/tax-effect-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <TaxEffectGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const taxEffectGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -8635,6 +9995,24 @@ const taxEffectGrade2 = () => {
     );
 }
 
+const taxEffectGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tax-effect-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/tax-effect-grade2"><div className="select_level bookkeeping2 action">ボキ2級</div></Link>
+                    <Link to="/tax-effect-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+                </div>
+                <TaxEffectGrade2 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const taxEffectGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -8647,6 +10025,24 @@ const taxEffectGrade1 = () => {
                 <TaxEffectGrade1 />
             </aside>
         </main>
+    );
+}
+
+const taxEffectGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+	    	<div className="level_change_wrapper">
+                    <Link to="/tax-effect-grade3"><div className="select_level bookkeeping3">ボキ3級</div></Link>
+                    <Link to="/tax-effect-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+                    <Link to="/tax-effect-grade1"><div className="select_level bookkeeping1 action">ボキ1級</div></Link>
+                </div>
+                <TaxEffectGrade1 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -8684,6 +10080,24 @@ const unbalancedAccountGrade3 = () => {
     );
 }
 
+const unbalancedAccountGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <UnbalancedAccountGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const unbalancedAccountGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -8699,6 +10113,24 @@ const unbalancedAccountGrade2 = () => {
     );
 }
 
+const unbalancedAccountGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <UnbalancedAccountGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const unbalancedAccountGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -8711,6 +10143,24 @@ const unbalancedAccountGrade1 = () => {
                 <UnbalancedAccountGrade3 />
             </aside>
         </main>
+    );
+}
+
+const unbalancedAccountGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <UnbalancedAccountGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -8743,6 +10193,24 @@ const accountingChangesAndCorrectionOfErrorsGrade3 = () => {
     );
 }
 
+const accountingChangesAndCorrectionOfErrorsGrade3Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <AccountingChangesAndCorrectionOfErrorsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const accountingChangesAndCorrectionOfErrorsGrade2 = () => {
     return (
         <main className="mainArticle">
@@ -8758,6 +10226,24 @@ const accountingChangesAndCorrectionOfErrorsGrade2 = () => {
     );
 }
 
+const accountingChangesAndCorrectionOfErrorsGrade2Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <AccountingChangesAndCorrectionOfErrorsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
+    );
+}
+
 const accountingChangesAndCorrectionOfErrorsGrade1 = () => {
     return (
         <main className="mainArticle">
@@ -8770,6 +10256,24 @@ const accountingChangesAndCorrectionOfErrorsGrade1 = () => {
                 <AccountingChangesAndCorrectionOfErrorsGrade3 />
             </aside>
         </main>
+    );
+}
+
+const accountingChangesAndCorrectionOfErrorsGrade1Calculator = () => {
+    return (
+		<>
+        <main className="mainArticleAddCalc sakura-color">
+            <aside>
+			<div className="level_change_wrapper">
+				<Link to="/special-tradings-grade3"><div className="select_level bookkeeping3 action">ボキ3級</div></Link>
+				<Link to="/special-tradings-grade2"><div className="select_level bookkeeping2">ボキ2級</div></Link>
+				<Link to="/special-tradings-grade1"><div className="select_level bookkeeping1">ボキ1級</div></Link>
+			</div>
+                <AccountingChangesAndCorrectionOfErrorsGrade3 />
+            </aside>
+        </main>
+		<Calculator />
+		</>
     );
 }
 
@@ -9586,92 +11090,92 @@ const SideBar = () => {
 			<Route path="/accounts-list-grade2" component={ accountsListGrade2Calculator } />
 			<Route path="/accounts-list-grade1" component={ accountsListGrade1Calculator } />
 			<Route path="/trial-balance" component={ trialBalanceCalculator } />
-			<Route path="/final-tax-return" component={ finalTaxReturn } />
-			<Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriod } />
-			<Route path="/cash-grade3" component={ cashGrade3 } />
-			<Route path="/cash-grade2" component={ cashGrade2 } />
-			<Route path="/cash-grade1" component={ cashGrade1 } />
-			<Route path="/savings-grade3" component={ savingsGrade3 } />
-			<Route path="/savings-grade2" component={ savingsGrade2 } />
-			<Route path="/savings-grade1" component={ savingsGrade1 } />
-			<Route path="/tradings-grade3" component={ tradingsGrade3 } />
-			<Route path="/tradings-grade2" component={ tradingsGrade2 } />
-			<Route path="/tradings-grade1" component={ tradingsGrade1 } />
-			<Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3 } />
-			<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2 } />
-			<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1 } />
-			<Route path="/other-grade3" component={ otherGrade3 } />
-			<Route path="/other-grade2" component={ otherGrade2 } />
-			<Route path="/other-grade1" component={ otherGrade1 } />
-			<Route path="/assignment-of-accounts-receivable-grade3" component={ assignmentOfAccountsReceivableGrade3 } />
-			<Route path="/assignment-of-accounts-receivable-grade2" component={ assignmentOfAccountsReceivableGrade2 } />
-			<Route path="/assignment-of-accounts-receivable-grade1" component={ assignmentOfAccountsReceivableGrade1 } />
-			<Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3 } />
-			<Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2 } />
-			<Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1 } />
-			<Route path="/securiteis-grade3" component={ securiteisGrade3 } />
-			<Route path="/securiteis-grade2" component={ securiteisGrade2 } />
-			<Route path="/securiteis-grade1" component={ securiteisGrade1 } />
-			<Route path="/lease-grade3" component={ leaseGrade3 } />
-			<Route path="/lease-grade2" component={ leaseGrade2 } />
-			<Route path="/lease-grade1" component={ leaseGrade1 } />
-			<Route path="/research-and-development-costs-grade3" component={ researchAndDevelopmentCostsGrade3 } />
-			<Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2 } />
-			<Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1 } />
-			<Route path="/financial-guarantee-grade3" component={ financialGuaranteeGrade3 } />
-			<Route path="/financial-guarantee-grade2" component={ financialGuaranteeGrade2 } />
-			<Route path="/financial-guarantee-grade1" component={ financialGuaranteeGrade1 } />
-			<Route path="/allowance-grade3" component={ allowanceGrade3 } />
-			<Route path="/allowance-grade2" component={ allowanceGrade2 } />
-			<Route path="/allowance-grade1" component={ allowanceGrade1 } />
-			<Route path="/special-tradings-grade3" component={ specialTradingsGrade3 } />
-			<Route path="/special-tradings-grade2" component={ specialTradingsGrade2 } />
-			<Route path="/special-tradings-grade1" component={ specialTradingsGrade1 } />
-			<Route path="/various-service-transfer-grade3" component={ variousServiceTransferGrade3 } />
-			<Route path="/various-service-transfer-grade2" component={ variousServiceTransferGrade2 } />
-			<Route path="/various-service-transfer-grade1" component={ variousServiceTransferGrade1 } />
-			<Route path="/financial-instrument-grade3" component={ financialInstrumentGrade3 } />
-			<Route path="/financial-instrument-grade2" component={ financialInstrumentGrade2 } />
-			<Route path="/financial-instrument-grade1" component={ financialInstrumentGrade1 } />
-			<Route path="/intangible-assets-grade3" component={ intangibleAssetsGrade3 } />
-			<Route path="/intangible-assets-grade2" component={ intangibleAssetsGrade3 } />
-			<Route path="/intangible-assets-grade1" component={ intangibleAssetsGrade3 } />
-			<Route path="/book-impairment-grade3" component={ bookImpairmentGrade3 } />
-			<Route path="/book-impairment-grade2" component={ bookImpairmentGrade2 } />
-			<Route path="/book-impairment-grade1" component={ bookImpairmentGrade1 } />
-			<Route path="/investments-and-other-assets-grade3" component={ investmentsAndOtherAssetsGrade3 } />
-			<Route path="/investments-and-other-assets-grade2" component={ investmentsAndOtherAssetsGrade2 } />
-			<Route path="/investments-and-other-assets-grade1" component={ investmentsAndOtherAssetsGrade1 } />
-			<Route path="/deferred-assets-grade3" component={ deferredAssetsGrade3 } />
-			<Route path="/deferred-assets-grade2" component={ deferredAssetsGrade2 } />
-			<Route path="/deferred-assets-grade1" component={ deferredAssetsGrade1 } />
-			<Route path="/asset-retirement-obligations-grade3" component={ assetRetirementObligationsGrade3 } />
-			<Route path="/asset-retirement-obligations-grade2" component={ assetRetirementObligationsGrade2 } />
-			<Route path="/asset-retirement-obligations-grade1" component={ assetRetirementObligationsGrade1 } />
-			<Route path="/profit-and-loss-grade3" component={ profitAndLossGrade3 } />
-			<Route path="/profit-and-loss-grade2" component={ profitAndLossGrade2 } />
-			<Route path="/profit-and-loss-grade1" component={ profitAndLossGrade1 } />
-			<Route path="/tax-grade3" component={ taxGrade3 } />
-			<Route path="/tax-grade2" component={ taxGrade2 } />
-			<Route path="/tax-grade1" component={ taxGrade1 } />
+			{/* <Route path="/final-tax-return" component={ finalTaxReturnCalculator } />
+			<Route path="/the-end-of-the-fiscal-period" component={ theEndOfTheFiscalPeriodCalculator } /> */}
+			<Route path="/cash-grade3" component={ cashGrade3Calculator } />
+			<Route path="/cash-grade2" component={ cashGrade2Calculator } />
+			<Route path="/cash-grade1" component={ cashGrade1Calculator } />
+			<Route path="/savings-grade3" component={ savingsGrade3Calculator } />
+			<Route path="/savings-grade2" component={ savingsGrade2Calculator } />
+			<Route path="/savings-grade1" component={ savingsGrade1Calculator } />
+			<Route path="/tradings-grade3" component={ tradingsGrade3Calculator } />
+			<Route path="/tradings-grade2" component={ tradingsGrade2Calculator } />
+			<Route path="/tradings-grade1" component={ tradingsGrade1Calculator } />
+			<Route path="/promissory-notes-grade3" component={ promissoryNotesGrade3Calculator } />
+			<Route path="/promissory-notes-grade2" component={ promissoryNotesGrade2Calculator } />
+			<Route path="/promissory-notes-grade1" component={ promissoryNotesGrade1Calculator } />
+			<Route path="/other-grade3" component={ otherGrade3Calculator } />
+			<Route path="/other-grade2" component={ otherGrade2Calculator } />
+			<Route path="/other-grade1" component={ otherGrade1Calculator } />
+			<Route path="/assignment-of-accounts-receivable-grade3" component={ assignmentOfAccountsReceivableGrade3Calculator } />
+			<Route path="/assignment-of-accounts-receivable-grade2" component={ assignmentOfAccountsReceivableGrade2Calculator } />
+			<Route path="/assignment-of-accounts-receivable-grade1" component={ assignmentOfAccountsReceivableGrade1Calculator } />
+			<Route path="/non-current-assets-grade3" component={ nonCurrentAssetsGrade3Calculator } />
+			<Route path="/non-current-assets-grade2" component={ nonCurrentAssetsGrade2Calculator } />
+			<Route path="/non-current-assets-grade1" component={ nonCurrentAssetsGrade1Calculator } />
+			<Route path="/securiteis-grade3" component={ securiteisGrade3Calculator } />
+			<Route path="/securiteis-grade2" component={ securiteisGrade2Calculator } />
+			<Route path="/securiteis-grade1" component={ securiteisGrade1Calculator } />
+			<Route path="/lease-grade3" component={ leaseGrade3Calculator } />
+			<Route path="/lease-grade2" component={ leaseGrade2Calculator } />
+			<Route path="/lease-grade1" component={ leaseGrade1Calculator } />
+			{/* <Route path="/research-and-development-costs-grade3" component={ researchAndDevelopmentCostsGrade3Calculator } />
+			<Route path="/research-and-development-costs-grade2" component={ researchAndDevelopmentCostsGrade2Calculator } />
+			<Route path="/research-and-development-costs-grade1" component={ researchAndDevelopmentCostsGrade1Calculator } /> */}
+			<Route path="/financial-guarantee-grade3" component={ financialGuaranteeGrade3Calculator } />
+			<Route path="/financial-guarantee-grade2" component={ financialGuaranteeGrade2Calculator } />
+			<Route path="/financial-guarantee-grade1" component={ financialGuaranteeGrade1Calculator } />
+			<Route path="/allowance-grade3" component={ allowanceGrade3Calculator } />
+			<Route path="/allowance-grade2" component={ allowanceGrade2Calculator } />
+			<Route path="/allowance-grade1" component={ allowanceGrade1Calculator } />
+			<Route path="/special-tradings-grade3" component={ specialTradingsGrade3Calculator } />
+			<Route path="/special-tradings-grade2" component={ specialTradingsGrade2Calculator } />
+			<Route path="/special-tradings-grade1" component={ specialTradingsGrade1Calculator } />
+			<Route path="/various-service-transfer-grade3" component={ variousServiceTransferGrade3Calculator } />
+			<Route path="/various-service-transfer-grade2" component={ variousServiceTransferGrade2Calculator } />
+			<Route path="/various-service-transfer-grade1" component={ variousServiceTransferGrade1Calculator } />
+			<Route path="/financial-instrument-grade3" component={ financialInstrumentGrade3Calculator } />
+			<Route path="/financial-instrument-grade2" component={ financialInstrumentGrade2Calculator } />
+			<Route path="/financial-instrument-grade1" component={ financialInstrumentGrade1Calculator } />
+			<Route path="/intangible-assets-grade3" component={ intangibleAssetsGrade3Calculator } />
+			<Route path="/intangible-assets-grade2" component={ intangibleAssetsGrade3Calculator } />
+			<Route path="/intangible-assets-grade1" component={ intangibleAssetsGrade3Calculator } />
+			<Route path="/book-impairment-grade3" component={ bookImpairmentGrade3Calculator } />
+			<Route path="/book-impairment-grade2" component={ bookImpairmentGrade2Calculator } />
+			<Route path="/book-impairment-grade1" component={ bookImpairmentGrade1Calculator } />
+			<Route path="/investments-and-other-assets-grade3" component={ investmentsAndOtherAssetsGrade3Calculator } />
+			<Route path="/investments-and-other-assets-grade2" component={ investmentsAndOtherAssetsGrade2Calculator } />
+			<Route path="/investments-and-other-assets-grade1" component={ investmentsAndOtherAssetsGrade1Calculator } />
+			<Route path="/deferred-assets-grade3" component={ deferredAssetsGrade3Calculator } />
+			<Route path="/deferred-assets-grade2" component={ deferredAssetsGrade2Calculator } />
+			<Route path="/deferred-assets-grade1" component={ deferredAssetsGrade1Calculator } />
+			<Route path="/asset-retirement-obligations-grade3" component={ assetRetirementObligationsGrade3Calculator } />
+			<Route path="/asset-retirement-obligations-grade2" component={ assetRetirementObligationsGrade2Calculator } />
+			<Route path="/asset-retirement-obligations-grade1" component={ assetRetirementObligationsGrade1Calculator } />
+			<Route path="/profit-and-loss-grade3" component={ profitAndLossGrade3Calculator } />
+			<Route path="/profit-and-loss-grade2" component={ profitAndLossGrade2Calculator } />
+			<Route path="/profit-and-loss-grade1" component={ profitAndLossGrade1Calculator } />
+			<Route path="/tax-grade3" component={ taxGrade3Calculator } />
+			<Route path="/tax-grade2" component={ taxGrade2Calculator } />
+			<Route path="/tax-grade1" component={ taxGrade1Calculator } />
 			{/* <Route path="/accounting-for-income-taxes-grade3" component={ accountingForIncomeTaxesGrade3 } />
 			<Route path="/accounting-for-income-taxes-grade2" component={ accountingForIncomeTaxesGrade2 } />
 			<Route path="/accounting-for-income-taxes-grade1" component={ accountingForIncomeTaxesGrade1 } /> */}
-			<Route path="/unbalanced-account-grade3" component={ unbalancedAccountGrade3 } />
-			<Route path="/unbalanced-account-grade2" component={ unbalancedAccountGrade2 } />
-			<Route path="/unbalanced-account-grade1" component={ unbalancedAccountGrade1 } />
-			<Route path="/accounting-changes-and-correction-of-errors-grade3" component={ accountingChangesAndCorrectionOfErrorsGrade3 } />
-			<Route path="/accounting-changes-and-correction-of-errors-grade2" component={ accountingChangesAndCorrectionOfErrorsGrade2 } />
-			<Route path="/accounting-changes-and-correction-of-errors-grade1" component={ accountingChangesAndCorrectionOfErrorsGrade1 } />
-			<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3 } />
-			<Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2 } />
-			<Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1 } />
-			<Route path="/tax-effect-grade3" component={ taxEffectGrade3 } />
-			<Route path="/tax-effect-grade2" component={ taxEffectGrade2 } />
-			<Route path="/tax-effect-grade1" component={ taxEffectGrade1 } />
-			<Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3 } />
-			<Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2 } />
-			<Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1 } />
+			<Route path="/unbalanced-account-grade3" component={ unbalancedAccountGrade3Calculator } />
+			<Route path="/unbalanced-account-grade2" component={ unbalancedAccountGrade2Calculator } />
+			<Route path="/unbalanced-account-grade1" component={ unbalancedAccountGrade1Calculator } />
+			<Route path="/accounting-changes-and-correction-of-errors-grade3" component={ accountingChangesAndCorrectionOfErrorsGrade3Calculator } />
+			<Route path="/accounting-changes-and-correction-of-errors-grade2" component={ accountingChangesAndCorrectionOfErrorsGrade2Calculator } />
+			<Route path="/accounting-changes-and-correction-of-errors-grade1" component={ accountingChangesAndCorrectionOfErrorsGrade1Calculator } />
+			<Route path="/foreign-currency-grade3" component={ foreignCurrencyGrade3Calculator } />
+			<Route path="/foreign-currency-grade2" component={ foreignCurrencyGrade2Calculator } />
+			<Route path="/foreign-currency-grade1" component={ foreignCurrencyGrade1Calculator } />
+			<Route path="/tax-effect-grade3" component={ taxEffectGrade3Calculator } />
+			<Route path="/tax-effect-grade2" component={ taxEffectGrade2Calculator } />
+			<Route path="/tax-effect-grade1" component={ taxEffectGrade1Calculator } />
+			{/* <Route path="/consolidated-accounting-grade3" component={ consolidatedAccountingGrade3Calculator } />
+			<Route path="/consolidated-accounting-grade2" component={ consolidatedAccountingGrade2Calculator } />
+			<Route path="/consolidated-accounting-grade1" component={ consolidatedAccountingGrade1Calculator } /> */}
 			<Route path="/corporate-accounting-principles" component={ corporateAccountingPrinciples } />
 			<Route path="/profit-and-loss-accounting" component={ profitAndLossAccounting } />
 			<Route path="/asset-accounting" component={ assetAccounting } />
