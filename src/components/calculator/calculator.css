@@ -1,0 +1,104 @@
+.calc-area{
+    grid-row: 2;
+    grid-column: 4;
+    padding: 5vw 0;
+    /* background: red; */
+}
+
+.App {
+    padding: 10px;
+    margin: 0 1vw;
+    background: rgb(231, 249, 255);
+    color:rgb(99, 78, 96);
+    text-align: center;
+    position: fixed;
+    text-align: center;
+    display: grid;
+    width: 17%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 9vh 9vh 9vh 9vh 9vh 9vh;
+    grid-template-areas:
+        "display display display display"
+        "clear clear clear .";
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    margin: 1px;
+    border-radius: 5px;
+    grid-area: display;
+    background-color: rgb(255, 255, 195);
+}
+
+.clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    margin: 1px;
+    border-radius: 50px;
+    grid-area: clear;
+    /* background-color: rgb(251, 228, 247); */
+}
+.clear:hover{
+    color: rgb(0, 157, 255);
+    transition: all 300ms linear;
+}
+
+.num-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    margin: 1px;
+    border-radius: 50px;
+    /* background-color: rgb(252, 216, 255); */
+}
+
+.num-button:hover{
+    color: rgb(0, 157, 255);
+    transition: all 300ms linear;
+}
+
+.decimalAndEquals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    margin: 1px;
+    border-radius: 50px;
+    /* background-color: rgb(255, 203, 182); */
+}
+
+.decimalAndEquals:hover{
+    color: rgb(0, 157, 255);
+    transition: all 300ms linear;
+}
+
+.ops-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 9vh;
+    margin: 1px;
+    border-radius: 50px;
+    /* background-color: rgb(201, 228, 255); */
+}
+
+.ops-button:hover{
+    color: rgb(0, 157, 255);
+    transition: all 300ms linear;
+}
+
+@media only screen and (max-width:700px) {
+.App{
+    display: none;
+}
+}
