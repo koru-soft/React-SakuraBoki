@@ -9580,8 +9580,8 @@ const TaxGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 			</tr>
 			<tr>
-				<td className="table-align" rowspan="2">仕入 1,000</td>
-				<td className="table-align">現金 1,100</td>
+				<td className="table-align">仕入 1,000</td>
+				<td className="table-align" rowspan="2">現金 1,100</td>
 			</tr>
 	    		<tr>
 				<td className="table-align">仮払消費税 100</td>
@@ -9645,8 +9645,8 @@ const TaxGrade3 = () => {
 				<th className="table-align">貸方（調達源泉）</th>
 			</tr>
 			<tr>
-				<td className="table-align">現金 3,300</td>
-				<td className="table-align" rowspan="2">売上 3,000</td>
+				<td className="table-align" rowspan="2">現金 3,300</td>
+				<td className="table-align">売上 3,000</td>
 			</tr>
 	    		<tr>
 				<td className="table-align">仮受消費税 300</td>
