@@ -10706,7 +10706,8 @@ const SideBar = () => {
             <div className="grid1-sakura"></div>
             <li className="topLogo-sakura li"><Link to="/">サクラボキ</Link></li>
             <div className="grid2-sakura"></div>
-            <li className="changeYozakuraMode li">ヨザクラモードに切り替える</li>
+            <li className="changeYozakuraMode li"></li>
+			{/* <li className="changeYozakuraMode li">ヨザクラモードに切り替える</li> */}
 			{/*onClick={ changeYozakuraMode }*/}
             <div className="grid3-sakura"></div>
 			<div id="drawer">
@@ -10994,7 +10995,8 @@ const SideBar = () => {
 				<div className="grid1-sakura"></div>
 				<li className="topLogo-sakura li"><Link to="/">サクラボキ</Link></li>
 				<div className="grid2-sakura"></div>
-				<li className="changeYozakuraMode li">ヨザクラモードに切り替える<br />（開発中）</li>
+				<li className="changeYozakuraMode li"></li>
+				{/* <li className="changeYozakuraMode li">ヨザクラモードに切り替える<br />（開発中）</li> */}
 				{/*onClick={ changeYozakuraMode }*/}
 				<div className="grid3-sakura"></div>
 				<span className="icon-sakura" id="icon-sakura" onClick={ test }><BiFoodMenu /></span>

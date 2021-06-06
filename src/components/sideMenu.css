@@ -489,6 +489,10 @@ a:hover {
         background: rgb(46, 46, 46);
     }
 
+    .calculator_button_inner{
+        display: none;
+    }
+
     .material-icons-outlined{
         content: e5d2;
         font-family: 'Material Icons';
