@@ -2,6 +2,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  box-sizing: border-box;
   /* background: aliceblue; */
   /* background: rgb(156, 216, 246); */
   /* background: rgb(245, 232, 207); */

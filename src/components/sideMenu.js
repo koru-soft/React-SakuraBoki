@@ -10706,7 +10706,7 @@ const SideBar = () => {
             <div className="grid1-sakura"></div>
             <li className="topLogo-sakura li"><Link to="/">サクラボキ</Link></li>
             <div className="grid2-sakura"></div>
-            <li className="changeYozakuraMode li">ヨザクラモードに切り替える<br />（開発中）</li>
+            <li className="changeYozakuraMode li">ヨザクラモードに切り替える</li>
 			{/*onClick={ changeYozakuraMode }*/}
             <div className="grid3-sakura"></div>
 			<div id="drawer">
@@ -10734,7 +10734,7 @@ const SideBar = () => {
 						<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
 						<li className="sideList menu-sakura-color"><Link to="/financial-guarantee-grade3">債務の保証</Link></li>
 						<li className="sideList menu-sakura-color"><Link to="/special-tradings-grade3">特殊商品売買</Link></li>
-						<li className="sideList menu-sakura-color"><Link to="/various-service-transfer-grade3">様々な財又はサービスの顧客への移転</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/various-service-transfer-grade3">様々な財又はサービス<br />の顧客への移転</Link></li>
 						<li className="sideList menu-sakura-color"><Link to="/financial-instrument-grade3">金融商品取引</Link></li>
 						<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
 						<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">有形固定資産</Link></li>
