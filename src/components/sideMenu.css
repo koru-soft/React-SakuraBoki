@@ -443,6 +443,10 @@ a:hover {
     z-index: 99;
 }
 
+#drawer{
+    display: none;
+}
+
 
 /* レスポンシブ対応 */
 
@@ -498,12 +502,11 @@ a:hover {
 
     .icon-sakura{
         color: rgb(233, 88, 132);
-        background: rgb(239, 195, 189); 
         grid-column: 4;
+        font-size: 50px;
+        cursor: pointer;
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        font-size: 40px;
+        
     }
 
     .icon-yozakura{
@@ -530,5 +533,50 @@ a:hover {
     .select_level{
         padding: 1vh 4vw;
     }
+
+    #drawer {
+        background: rgb(239, 195, 189);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .unshown {
+        display:none;
+      }
+      
+      #close {
+        display: none;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0;
+        transition: .3s ease-in-out;
+      }
+      #menu-content {
+        padding: 10vw;
+        overflow: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 90%;
+        max-width: 330px;
+        height: 100%;
+        background: rgb(255, 216, 216);
+        transition: .3s ease-in-out;
+        transform: translateX(200%);
+      }
+      #input:checked ~ #close {
+        display: block;
+        opacity: .5;
+      }
+      #input:checked ~ #menu-content {
+        transform: translateX(40%);
+        box-shadow: 6px 0 25px rgba(0,0,0,.15);
+      }
 
 }

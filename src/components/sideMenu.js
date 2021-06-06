@@ -10709,7 +10709,50 @@ const SideBar = () => {
             <li className="changeYozakuraMode li">ヨザクラモードに切り替える<br />（開発中）</li>
 			{/*onClick={ changeYozakuraMode }*/}
             <div className="grid3-sakura"></div>
-            <span className="icon-sakura" id="icon-sakura" onClick={ test }><BiFoodMenu /></span>
+			<div id="drawer">
+				<input id="input" type="checkbox" class="unshown" />
+				<label id="open" for="input"><span className="icon-sakura" id="icon-sakura" onClick={ test }><BiFoodMenu /></span></label>
+				<label class="unshown" id="close" for="input"></label>
+				<div id="menu-content">
+					<h2 className="titleColor"><Link to="/">HOME</Link></h2>
+					<h2 className="titleColor">基本原理</h2>
+					<ul className="sideMenu menu-sakura-color">
+						<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
+					</ul>
+					<h2 className="titleColor">諸取引の処理</h2>
+					<ul className="sideMenu">
+						<li className="sideList menu-sakura-color"><Link to="/cash-grade3">現金</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/savings-grade3">預金</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/tradings-grade3">商品売買</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/promissory-notes-grade3">手形</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/other-grade3">その他の債権と債務等</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/assignment-of-accounts-receivable-grade3">債権の譲渡</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/allowance-grade3">引当金</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/financial-guarantee-grade3">債務の保証</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/special-tradings-grade3">特殊商品売買</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/various-service-transfer-grade3">様々な財又はサービスの顧客への移転</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/financial-instrument-grade3">金融商品取引</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/securiteis-grade3">有価証券</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/non-current-assets-grade3">有形固定資産</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/intangible-assets-grade3">無形固定資産</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/book-impairment-grade3">固定資産の減損</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/investments-and-other-assets-grade3">投資その他の資産</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/deferred-assets-grade3">繰延資産</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/lease-grade3">リース取引</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/foreign-currency-grade3">外貨建取引</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/asset-retirement-obligations-grade3">資産除去債務</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/profit-and-loss-grade3">収益と費用</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/tax-grade3">税金</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/tax-effect-grade3">税効果会計</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/unbalanced-account-grade3">未決算</Link></li>
+						<li className="sideList menu-sakura-color"><Link to="/accounting-changes-and-correction-of-errors-grade3">会計上の変更および誤謬の訂正</Link></li>
+					</ul>
+				</div>
+			</div>
         </header>
 
 		<span onClick={ startCalculator } className="calculator_button_inner"><AiFillCalculator /></span>
@@ -10963,16 +11006,16 @@ const SideBar = () => {
 			<h2 className="titleColor"><Link to="/">HOME</Link></h2>
 			<h2 className="titleColor">基本原理</h2>
 			<ul className="sideMenu menu-sakura-color">
-		<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
-		<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
-		<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
-		<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
-		{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/}
-		<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
-		{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
-		{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
-		{/* <li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
-		<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li> */}
+				<li className="sideList menu-sakura-color"><Link to="/bookkeeping">簿記の仕組み</Link></li>
+				<li className="sideList menu-sakura-color"><Link to="/account-grade3">勘定科目の基礎</Link></li>
+				<li className="sideList menu-sakura-color"><Link to="/kind-of-account">勘定科目の種類</Link></li>
+				<li className="sideList menu-sakura-color"><Link to="/accounts-list-grade3">勘定科目一覧表</Link></li>
+				{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">様々な仕訳</Link></li>*/}
+				<li className="sideList menu-sakura-color"><Link to="/trial-balance">試算表</Link></li>
+				{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">プライベート処理</Link></li>*/}
+				{/*<li className="sideList menu-sakura-color"><Link to="/trial-balance">源泉徴収と年末調整</Link></li>*/}
+				{/* <li className="sideList menu-sakura-color"><Link to="/final-tax-return">確定申告</Link></li>
+				<li className="sideList menu-sakura-color"><Link to="/the-end-of-the-fiscal-period">決算</Link></li> */}
 			</ul>
 
 			<h2 className="titleColor">諸取引の処理</h2>
