@@ -508,7 +508,11 @@ a:hover {
         font-size: 50px;
         cursor: pointer;
         display: flex;
-        
+    }
+
+    .icon-sakura:hover{
+        transition-duration:0.5s;
+        color: rgb(0, 157, 255);
     }
 
     .icon-yozakura{
@@ -523,6 +527,7 @@ a:hover {
 
     .mainArticle{
         grid-column: 2 / span 3;
+        padding: 5vw 0;
     }
 
     .mainArticleAddCalc{
