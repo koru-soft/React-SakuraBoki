@@ -480,6 +480,10 @@ a:hover {
         font-size: 5vw;
     }
 
+    .sakura-header{
+        grid-template-columns: 5vw 35vw 1fr 25vw 5vw;
+    }
+
     .grid5-yozakura{
         grid-column: 5;
         background: rgb(46, 46, 46);

@@ -8,6 +8,6 @@
 
     .mainWrapper{
         grid-template-rows: 100px 1fr;
-        grid-template-columns: 5vw 25vw 1fr 15vw 5vw;
+        grid-template-columns: 5vw 18vw 1fr 20vw 5vw;
     }
 }
